@@ -1,4 +1,4 @@
-import { env } from "cloudflare:workers";
+import { getDb } from "@/lib/db";
 import { createProject, mutate, DomainError, id } from "@/lib/teamvibe/domain";
 import { demoUsers, sampleProject } from "@/lib/teamvibe/seed";
 import type { Project, User } from "@/lib/teamvibe/types";
@@ -12,18 +12,12 @@ const json = (
     status,
     headers: { "Cache-Control": "no-store", ...headers },
   });
-const db = () => {
-  if (!env.DB)
-    throw new DomainError(
-      "로컬 데이터베이스가 준비되지 않았습니다. README의 초기화를 실행해 주세요.",
-      503,
-    );
-  return env.DB;
-};
+const db = () => getDb();
 const databaseSetupMessage =
-  "로컬 데이터베이스 초기화가 필요합니다. 실행할 때와 같은 TEAMVIBE_STATE_PATH 설정으로 터미널에서 npm run db:init을 실행한 뒤 다시 시도하세요. 기존 데이터 폴더는 지우지 마세요.";
+  "데이터베이스 연결에 실패했습니다. TURSO_DATABASE_URL / TURSO_AUTH_TOKEN 환경 변수를 확인하세요.";
 async function databaseReady() {
   const d = db();
+  await d.ensureSchema();
   await d.batch([
     d.prepare("SELECT id, archived FROM users LIMIT 0"),
     d.prepare("SELECT id, version, data FROM projects LIMIT 0"),
@@ -78,17 +72,21 @@ async function save(previous: Project, p: Project) {
       409,
     );
 }
-function assertLocal(req: Request) {
-  const url = new URL(req.url);
-  if (!["localhost", "127.0.0.1", "[::1]"].includes(url.hostname))
-    throw new DomainError("로컬 테스트 환경에서만 사용할 수 있습니다.", 403);
+function assertSameOrigin(req: Request) {
   const origin = req.headers.get("Origin");
-  if (origin && origin !== url.origin)
+  if (!origin) return;
+  // Compare hosts only: behind Vercel's proxy req.url may be http while the
+  // browser's Origin is https.
+  const host =
+    req.headers.get("x-forwarded-host") ??
+    req.headers.get("host") ??
+    new URL(req.url).host;
+  if (new URL(origin).host !== host)
     throw new DomainError("다른 출처의 요청은 허용하지 않습니다.", 403);
 }
 async function handle(req: Request) {
   try {
-    assertLocal(req);
+    assertSameOrigin(req);
     const url = new URL(req.url);
     const parts = url.pathname.slice(5).split("/").filter(Boolean);
     if (parts[0] === "health") {
@@ -96,7 +94,7 @@ async function handle(req: Request) {
         await databaseReady();
         return json({
           ok: true,
-          mode: "local",
+          mode: "vercel",
           ai: "manual-chatgpt",
           database: "ready",
         });
@@ -104,7 +102,7 @@ async function handle(req: Request) {
         return json(
           {
             ok: false,
-            mode: "local",
+            mode: "vercel",
             ai: "manual-chatgpt",
             database: "not-ready",
             error: databaseSetupMessage,

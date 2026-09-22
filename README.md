@@ -4,6 +4,17 @@
 
 처음 받았다면 [처음 실행하기](docs/START_HERE.md)에서 실행 명령, 대표 화면과 검증 자료 위치를 확인하세요. [완료 기준과 근거](docs/ACCEPTANCE.md)는 각 요구사항을 실제 코드·UI·검사 결과에 연결합니다.
 
+## Vercel 배포
+
+데이터베이스는 [Turso](https://turso.tech)(libsql, SQLite 호환)를 사용합니다. Vercel 프로젝트 환경 변수에 다음 두 값을 설정하면 첫 요청 때 테이블이 자동 생성됩니다.
+
+```
+TURSO_DATABASE_URL=libsql://<db>-<org>.turso.io
+TURSO_AUTH_TOKEN=<turso db tokens create <db>>
+```
+
+로컬에서는 `.env.example`을 `.env.local`로 복사하면 `file:local.db` 파일 DB로 동작합니다. `npm run dev` / `npm run build`는 표준 Next.js 명령입니다.
+
 ## 로컬 제출 묶음
 
 `npm run submission:pack`은 코드·잠금 파일·합성 데이터·문서·시연 화면·보존된 실제 세션 로그를 새 `outputs/submissions/…/TeamVibe.tar.gz`로 만듭니다. macOS/Linux의 `tar` 명령이 필요하며 외부 업로드는 하지 않습니다. 설치된 의존성, 로컬 데이터베이스, 환경변수·키 파일, 생성된 빌드와 이전 압축 파일은 포함하지 않습니다. 기존 압축과 데이터를 덮어쓰거나 삭제하지 않습니다. 최신 경로와 압축 SHA-256은 `outputs/latest-submission.json`에 기록됩니다.

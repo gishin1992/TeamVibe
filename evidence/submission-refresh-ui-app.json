@@ -1,0 +1,17 @@
+{
+  "context": {
+    "projectId": "9625ca84-086f-4a5c-b7a1-ea0be983fef8",
+    "runId": "9e3f371d-d45f-4929-937f-b0cb38bf0365",
+    "storyId": "4209a508-3dc0-49ee-926f-14733e11baee",
+    "storyRevision": 2,
+    "prdRevision": 1,
+    "baseReleaseId": ""
+  },
+  "files": {
+    "index.html": "<!doctype html><html lang=\"ko\"><head><meta charset=\"UTF-8\"><link rel=\"stylesheet\" href=\"styles.css\"></head><body><main class=\"panel\"><p>TEAMVIBE · 합성 확인 도구</p><h1>함께 만든 확인 화면</h1><p id=\"status\" role=\"status\">대기 중</p><button id=\"confirm\">확인</button><button id=\"reset\">초기화</button></main><script src=\"app.js\"></script></body></html>",
+    "app.js": "const status = document.getElementById(\"status\");document.getElementById(\"confirm\").addEventListener(\"click\",()=>{status.textContent=\"확인 완료\";});document.getElementById(\"reset\").addEventListener(\"click\",()=>{status.textContent=\"대기 중\";});"
+  },
+  "deletedFiles": [],
+  "log": "로컬 합성 코드 생성. 반입 시점에는 브라우저에서 실행하지 않았음. 통합 후 별도 실제 검사 예정.",
+  "source": "Codex 로컬 합성 결과 · 외부 ChatGPT 호출 없음"
+}

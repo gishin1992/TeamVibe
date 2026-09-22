@@ -1,0 +1,46 @@
+# dependencies
+node_modules/
+
+# build output
+.next/
+.vinext/
+.open-next/
+dist/
+build-output/
+*.tsbuildinfo
+next-env.d.ts
+
+# runtime / local state
+.wrangler/
+.sites-runtime/
+outputs/
+*.sqlite
+*.sqlite-journal
+*.db
+
+# env / secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# codex / agent sessions
+.codex/
+evidence/agent-sessions/
+*.jsonl
+
+# logs
+*.log
+npm-debug.log*
+coverage/
+test-results/
+playwright-report/
+
+# misc
+SOURCE-ZIP-MANIFEST.json
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp

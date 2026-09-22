@@ -1,0 +1,17 @@
+{
+  "at": "2026-09-21T13:09:43.545Z",
+  "action": "Paste synthetic plan, close, visit overview, return and reopen",
+  "requirement": {
+    "expectedRaw": "{\n  \"batchId\": \"planning-draft-requirement\",\n  \"projectId\": \"27d457aa-b234-4fbc-82dd-1ed660221ba1\",\n  \"projectVersion\": 7,\n  \"source\": \"합성 수동 응답 · 실제 ChatGPT 호출 없음\",\n  \"requirements\": [\n    {\n      \"key\": \"cancel\",\n      \"title\": \"승인 전 신청 취소\",\n      \"description\": \"직원은 승인 전 신청을 취소한다.\",\n      \"priority\": \"must\",\n      \"status\": \"proposed\",\n      \"reviewNote\": \"취소 허용 상태를 팀이 검토한다.\",\n      \"sourceRefs\": [\n        {\n          \"messageId\": \"f4b0f963-a6d8-4ee6-be42-5af5e38b78c6\",\n          \"revision\": 1\n        }\n      ]\n    }\n  ]\n}",
+    "actual": {
+      "prompt": null,
+      "raw": ""
+    },
+    "lost": true
+  },
+  "story": {
+    "expectedRaw": "{\n  \"planId\": \"planning-draft-story\",\n  \"projectId\": \"27d457aa-b234-4fbc-82dd-1ed660221ba1\",\n  \"prdRevision\": 1,\n  \"source\": \"합성 설계 응답 · 실행 결과가 아님\",\n  \"stories\": [\n    {\n      \"key\": \"list\",\n      \"title\": \"신청 목록 보기\",\n      \"description\": \"직원이 합성 신청 내역의 품목과 수량을 확인한다.\",\n      \"acceptance\": [\n        \"품목과 수량을 목록에 표시한다.\"\n      ],\n      \"tests\": [\n        \"합성 신청 2건을 표시하고 각 수량을 비교한다.\"\n      ],\n      \"dependencies\": [],\n      \"existingDependencies\": [],\n      \"requirementIds\": [],\n      \"ownerId\": \"jimin\"\n    }\n  ]\n}",
+    "actual": "",
+    "lost": true
+  }
+}

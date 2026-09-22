@@ -1,0 +1,425 @@
+{
+  "at": "2026-09-21T08:51:42.101Z",
+  "url": "http://127.0.0.1:8787",
+  "rootStatus": 200,
+  "projectCount": 7,
+  "verifiedBrowserProject": {
+    "id": "ec3786ee-75f9-4fd5-bd5c-88355fbe6aef",
+    "createdAt": "2026-09-21T08:41:39.909Z",
+    "name": "검증 · 협업 비품 앱 1789980099903",
+    "description": "합성 데이터만 사용하는 독립 검증 프로젝트",
+    "goal": "팀이 합의하고 병렬 개발 결과를 통합해 검증한다.",
+    "inviteCode": "2b16ca6f7d02",
+    "ownerId": "jimin",
+    "members": [
+      "jimin",
+      "seoyeon",
+      "hyunwoo"
+    ],
+    "version": 28,
+    "conversations": [
+      {
+        "id": "e0438ebe-eb9c-4104-a3f9-b9258f05f229",
+        "createdAt": "2026-09-21T08:41:39.953Z",
+        "title": "직원 신청 경험",
+        "ownerId": "jimin",
+        "messages": [
+          {
+            "id": "d283fbc1-66cb-4239-9f32-04c2c9cae27c",
+            "createdAt": "2026-09-21T08:41:39.960Z",
+            "authorId": "jimin",
+            "kind": "user",
+            "text": "비품 이름과 수량을 적어 신청하고 취소하고 싶어요.",
+            "source": ""
+          },
+          {
+            "id": "97669c30-c30d-41a9-850e-3bd875b93ef3",
+            "createdAt": "2026-09-21T08:41:39.960Z",
+            "authorId": "guide",
+            "kind": "guide",
+            "text": "로컬 진행 도우미: 이 기능은 누가 사용하나요? 성공한 상태와 예외 상황, 수정·취소 규칙도 적어 주세요. 더 깊이 논의하려면 ChatGPT 작업 묶음을 복사하고 응답을 가져오세요."
+          },
+          {
+            "id": "a520fe44-51d8-4de5-a93c-1e140c47c151",
+            "createdAt": "2026-09-21T08:41:39.974Z",
+            "authorId": "jimin",
+            "kind": "chatgpt",
+            "text": "완료 조건에 입력 검증과 취소를 포함하세요.",
+            "source": "API 통합 검증용 합성 응답 — 실제 ChatGPT 응답 아님"
+          }
+        ]
+      }
+    ],
+    "requirements": [
+      {
+        "id": "42ef63e9-4042-4687-b7cc-3db5e90af167",
+        "createdAt": "2026-09-21T08:41:39.998Z",
+        "title": "신청 화면",
+        "description": "직원이 품목과 수량을 입력해 신청한다.",
+        "priority": "must",
+        "status": "accepted",
+        "sourceIds": [],
+        "decision": "팀이 합성 환경의 정상·오류·삭제 흐름을 검토하기로 합의."
+      },
+      {
+        "id": "b1103de9-fd8a-4416-8340-872740d94d78",
+        "createdAt": "2026-09-21T08:41:40.007Z",
+        "title": "화면 스타일",
+        "description": "목록과 입력 필드가 모바일에서도 읽기 좋게 표시된다.",
+        "priority": "must",
+        "status": "accepted",
+        "sourceIds": [],
+        "decision": "팀이 합성 환경의 정상·오류·삭제 흐름을 검토하기로 합의."
+      }
+    ],
+    "prd": {
+      "body": "# 검증 · 협업 비품 앱 1789980099903\n\n## 해결할 문제\n합성 데이터만 사용하는 독립 검증 프로젝트\n\n## 목표\n팀이 합의하고 병렬 개발 결과를 통합해 검증한다.\n\n## 대상 사용자\n프로젝트 팀이 검토하여 사용자와 권한을 구체화하세요.\n\n## 기능 요구사항\n### 1. 신청 화면\n직원이 품목과 수량을 입력해 신청한다.\n- 우선순위: must\n- 검토 상태: accepted\n- 결정: 팀이 합성 환경의 정상·오류·삭제 흐름을 검토하기로 합의.\n\n### 2. 화면 스타일\n목록과 입력 필드가 모바일에서도 읽기 좋게 표시된다.\n- 우선순위: must\n- 검토 상태: accepted\n- 결정: 팀이 합성 환경의 정상·오류·삭제 흐름을 검토하기로 합의.\n\n## 완료 및 테스트 기준\n각 요구사항의 정상 흐름, 빈 상태, 오류 상태, 수정과 취소/삭제를 확인합니다.\n\n## 범위와 제약\n로컬 테스트 환경, 합성 데이터만 사용합니다. 외부 연계는 별도 합의 후 진행합니다.\n\n## 미결정 사항\n현재 등록된 미결정 사항 없음\n",
+      "revision": 1,
+      "approvals": [
+        "jimin",
+        "seoyeon",
+        "hyunwoo"
+      ],
+      "history": [
+        {
+          "revision": 0,
+          "body": "",
+          "at": "2026-09-21T08:41:40.024Z",
+          "authorId": "jimin"
+        }
+      ]
+    },
+    "stories": [
+      {
+        "id": "bcbe9f8c-6920-470d-a6cb-b398d0459e07",
+        "createdAt": "2026-09-21T08:41:40.058Z",
+        "title": "신청 화면",
+        "description": "사용자로서 직원이 품목과 수량을 입력해 신청한다.\n팀이 합성 환경의 정상·오류·삭제 흐름을 검토하기로 합의.",
+        "acceptance": [
+          "신청 화면의 정상 사용 흐름을 완료할 수 있다.",
+          "잘못된 입력에 이유를 표시하고 기존 입력을 유지한다.",
+          "생성한 항목을 수정하고 취소/삭제할 수 있다."
+        ],
+        "tests": [
+          "정상 입력으로 신청 화면 실행 결과를 확인한다.",
+          "빈 입력과 잘못된 입력이 저장되지 않는지 확인한다.",
+          "수정과 삭제 후 새로고침해 결과를 확인한다."
+        ],
+        "dependencies": [],
+        "requirementIds": [
+          "42ef63e9-4042-4687-b7cc-3db5e90af167"
+        ],
+        "ownerId": "",
+        "status": "review",
+        "prdRevision": 1
+      },
+      {
+        "id": "a6b2fbdd-5171-4c7b-a766-ed024406530b",
+        "createdAt": "2026-09-21T08:41:40.058Z",
+        "title": "화면 스타일",
+        "description": "사용자로서 목록과 입력 필드가 모바일에서도 읽기 좋게 표시된다.\n팀이 합성 환경의 정상·오류·삭제 흐름을 검토하기로 합의.",
+        "acceptance": [
+          "화면 스타일의 정상 사용 흐름을 완료할 수 있다.",
+          "잘못된 입력에 이유를 표시하고 기존 입력을 유지한다.",
+          "생성한 항목을 수정하고 취소/삭제할 수 있다."
+        ],
+        "tests": [
+          "정상 입력으로 화면 스타일 실행 결과를 확인한다.",
+          "빈 입력과 잘못된 입력이 저장되지 않는지 확인한다.",
+          "수정과 삭제 후 새로고침해 결과를 확인한다."
+        ],
+        "dependencies": [],
+        "requirementIds": [
+          "b1103de9-fd8a-4416-8340-872740d94d78"
+        ],
+        "ownerId": "",
+        "status": "review",
+        "prdRevision": 1
+      },
+      {
+        "id": "226b6a45-5337-4d5c-94bd-f3cc0a7c70bb",
+        "createdAt": "2026-09-21T08:41:40.181Z",
+        "title": "신청 상태 필터 추가 검토",
+        "description": "대기 중인 신청만 모아 보는 필터를 추가한다.",
+        "acceptance": [
+          "피드백에 적힌 문제를 재현하고 해결할 수 있다."
+        ],
+        "tests": [
+          "기존 문제를 재현한 절차에서 수정 결과와 회귀 여부를 확인한다."
+        ],
+        "dependencies": [],
+        "requirementIds": [],
+        "ownerId": "jimin",
+        "status": "backlog",
+        "prdRevision": 1
+      }
+    ],
+    "runs": [
+      {
+        "id": "f50b0ea3-4d67-46d5-afe6-13d23e2211a6",
+        "createdAt": "2026-09-21T08:41:40.105Z",
+        "storyId": "bcbe9f8c-6920-470d-a6cb-b398d0459e07",
+        "title": "신청 화면",
+        "status": "integrated",
+        "prompt": "TeamVibe 개발 작업 — 신청 화면\n프로젝트: 검증 · 협업 비품 앱 1789980099903\n스토리 ID: bcbe9f8c-6920-470d-a6cb-b398d0459e07\nPRD 버전: 1\n\n사용자로서 직원이 품목과 수량을 입력해 신청한다.\n팀이 합성 환경의 정상·오류·삭제 흐름을 검토하기로 합의.\n\n완료 조건:\n- 신청 화면의 정상 사용 흐름을 완료할 수 있다.\n- 잘못된 입력에 이유를 표시하고 기존 입력을 유지한다.\n- 생성한 항목을 수정하고 취소/삭제할 수 있다.\n\n테스트 기준:\n- 정상 입력으로 신청 화면 실행 결과를 확인한다.\n- 빈 입력과 잘못된 입력이 저장되지 않는지 확인한다.\n- 수정과 삭제 후 새로고침해 결과를 확인한다.\n\n의존 스토리: 없음\n\n공동 PRD:\n# 검증 · 협업 비품 앱 1789980099903\n\n## 해결할 문제\n합성 데이터만 사용하는 독립 검증 프로젝트\n\n## 목표\n팀이 합의하고 병렬 개발 결과를 통합해 검증한다.\n\n## 대상 사용자\n프로젝트 팀이 검토하여 사용자와 권한을 구체화하세요.\n\n## 기능 요구사항\n### 1. 신청 화면\n직원이 품목과 수량을 입력해 신청한다.\n- 우선순위: must\n- 검토 상태: accepted\n- 결정: 팀이 합성 환경의 정상·오류·삭제 흐름을 검토하기로 합의.\n\n### 2. 화면 스타일\n목록과 입력 필드가 모바일에서도 읽기 좋게 표시된다.\n- 우선순위: must\n- 검토 상태: accepted\n- 결정: 팀이 합성 환경의 정상·오류·삭제 흐름을 검토하기로 합의.\n\n## 완료 및 테스트 기준\n각 요구사항의 정상 흐름, 빈 상태, 오류 상태, 수정과 취소/삭제를 확인합니다.\n\n## 범위와 제약\n로컬 테스트 환경, 합성 데이터만 사용합니다. 외부 연계는 별도 합의 후 진행합니다.\n\n## 미결정 사항\n현재 등록된 미결정 사항 없음\n\n\n반환 형식: JSON 객체 {\"files\":{\"index.html\":\"...\",\"styles.css\":\"...\",\"app.js\":\"...\"},\"log\":\"실제 수행한 작업과 검증 결과\",\"source\":\"ChatGPT 세션 식별용 제목 또는 로컬 로그 파일명\"}. 필요한 파일만 포함하고 다른 작업 파일과 경로를 합의하세요. 외부 URL, 라이브러리 CDN, 서버 실행, 결제, 실제 데이터는 사용하지 마세요. 브라우저에서 실행되는 HTML/CSS/JS와 합성 데이터만 만드세요. 테스트하지 않았다면 반드시 명시하세요. 팀은 결과를 수동 반입하고 충돌을 검토한 뒤 격리된 브라우저에서 테스트합니다.",
+        "files": {
+          "index.html": "<!doctype html><html lang=\"ko\"><head><title>팀 비품 신청</title><link rel=\"stylesheet\" href=\"styles.css\"></head><body><main><h1>팀 비품 신청</h1><p>합성 테스트 시스템</p><form id=\"request-form\"><label>품목<input id=\"item\" required></label><label>수량<input id=\"quantity\" type=\"number\" min=\"1\" value=\"1\" required></label><button type=\"submit\">신청하기</button></form><p id=\"status\" role=\"status\"></p><ul id=\"requests\"></ul></main><script src=\"app.js\"></script></body></html>",
+          "app.js": "const form=document.querySelector('#request-form');const requests=document.querySelector('#requests');form.addEventListener('submit',e=>{e.preventDefault();const item=document.querySelector('#item');const qty=document.querySelector('#quantity');if(!item.value.trim()||Number(qty.value)<1)return;const li=document.createElement('li');const label=document.createElement('span');label.textContent=item.value+' · '+qty.value+'개 · 승인 대기';li.append(label);const edit=document.createElement('button');edit.textContent='수정';edit.addEventListener('click',()=>{item.value=label.textContent.split(' · ')[0];li.remove();document.querySelector('#status').textContent='수정 후 다시 신청해 주세요.'});li.append(edit);const remove=document.createElement('button');remove.textContent='취소';remove.addEventListener('click',()=>{li.remove();document.querySelector('#status').textContent='신청을 취소했습니다.'});li.append(remove);requests.prepend(li);document.querySelector('#status').textContent='신청을 등록했습니다.';form.reset()});"
+        },
+        "log": "합성 앱 HTML/JS 작성. 이 시점에는 브라우저 동작 검증 전.",
+        "source": "Codex의 실제 로컬 API 통합 검증 세션",
+        "prdRevision": 1
+      },
+      {
+        "id": "7b217e9e-6a71-43a7-8895-76ef61dce840",
+        "createdAt": "2026-09-21T08:41:40.105Z",
+        "storyId": "a6b2fbdd-5171-4c7b-a766-ed024406530b",
+        "title": "화면 스타일",
+        "status": "integrated",
+        "prompt": "TeamVibe 개발 작업 — 화면 스타일\n프로젝트: 검증 · 협업 비품 앱 1789980099903\n스토리 ID: a6b2fbdd-5171-4c7b-a766-ed024406530b\nPRD 버전: 1\n\n사용자로서 목록과 입력 필드가 모바일에서도 읽기 좋게 표시된다.\n팀이 합성 환경의 정상·오류·삭제 흐름을 검토하기로 합의.\n\n완료 조건:\n- 화면 스타일의 정상 사용 흐름을 완료할 수 있다.\n- 잘못된 입력에 이유를 표시하고 기존 입력을 유지한다.\n- 생성한 항목을 수정하고 취소/삭제할 수 있다.\n\n테스트 기준:\n- 정상 입력으로 화면 스타일 실행 결과를 확인한다.\n- 빈 입력과 잘못된 입력이 저장되지 않는지 확인한다.\n- 수정과 삭제 후 새로고침해 결과를 확인한다.\n\n의존 스토리: 없음\n\n공동 PRD:\n# 검증 · 협업 비품 앱 1789980099903\n\n## 해결할 문제\n합성 데이터만 사용하는 독립 검증 프로젝트\n\n## 목표\n팀이 합의하고 병렬 개발 결과를 통합해 검증한다.\n\n## 대상 사용자\n프로젝트 팀이 검토하여 사용자와 권한을 구체화하세요.\n\n## 기능 요구사항\n### 1. 신청 화면\n직원이 품목과 수량을 입력해 신청한다.\n- 우선순위: must\n- 검토 상태: accepted\n- 결정: 팀이 합성 환경의 정상·오류·삭제 흐름을 검토하기로 합의.\n\n### 2. 화면 스타일\n목록과 입력 필드가 모바일에서도 읽기 좋게 표시된다.\n- 우선순위: must\n- 검토 상태: accepted\n- 결정: 팀이 합성 환경의 정상·오류·삭제 흐름을 검토하기로 합의.\n\n## 완료 및 테스트 기준\n각 요구사항의 정상 흐름, 빈 상태, 오류 상태, 수정과 취소/삭제를 확인합니다.\n\n## 범위와 제약\n로컬 테스트 환경, 합성 데이터만 사용합니다. 외부 연계는 별도 합의 후 진행합니다.\n\n## 미결정 사항\n현재 등록된 미결정 사항 없음\n\n\n반환 형식: JSON 객체 {\"files\":{\"index.html\":\"...\",\"styles.css\":\"...\",\"app.js\":\"...\"},\"log\":\"실제 수행한 작업과 검증 결과\",\"source\":\"ChatGPT 세션 식별용 제목 또는 로컬 로그 파일명\"}. 필요한 파일만 포함하고 다른 작업 파일과 경로를 합의하세요. 외부 URL, 라이브러리 CDN, 서버 실행, 결제, 실제 데이터는 사용하지 마세요. 브라우저에서 실행되는 HTML/CSS/JS와 합성 데이터만 만드세요. 테스트하지 않았다면 반드시 명시하세요. 팀은 결과를 수동 반입하고 충돌을 검토한 뒤 격리된 브라우저에서 테스트합니다.",
+        "files": {
+          "styles.css": "*{box-sizing:border-box}body{margin:0;background:#f4f7fc;color:#25334e;font:16px/1.7 Arial,sans-serif}main{max-width:760px;margin:55px auto;padding:30px}h1{font-size:30px}p{color:#7d8ca4}form{display:flex;gap:15px;flex-wrap:wrap;padding:25px;background:white;border:1px solid #e0e7f2;border-radius:12px}label{display:flex;flex-direction:column;font-size:14px;gap:7px;flex:1}input{font:inherit;padding:10px;border:1px solid #dce3ee;border-radius:7px;min-width:120px;width:100%}button{font:inherit;padding:9px 15px;border:0;border-radius:7px;background:#365cec;color:white;cursor:pointer;align-self:end}li{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding:18px;background:white;border-radius:8px;margin:12px 0}li span{flex:1}ul{list-style:none;padding:0}li button{font-size:13px;background:#edf2ff;color:#506ec6}"
+        },
+        "log": "반응형 스타일 작성. 이 시점에는 브라우저 검증 전.",
+        "source": "Codex의 실제 로컬 API 통합 검증 세션",
+        "prdRevision": 1
+      }
+    ],
+    "releases": [
+      {
+        "id": "4e5550d2-2887-4e93-b7c2-8813456d09c2",
+        "createdAt": "2026-09-21T08:41:40.160Z",
+        "title": "시연 릴리스 v1",
+        "runIds": [
+          "f50b0ea3-4d67-46d5-afe6-13d23e2211a6",
+          "7b217e9e-6a71-43a7-8895-76ef61dce840"
+        ],
+        "files": {
+          "index.html": "<!doctype html><html lang=\"ko\"><head><title>팀 비품 신청</title><link rel=\"stylesheet\" href=\"styles.css\"></head><body><main><h1>팀 비품 신청</h1><p>합성 테스트 시스템</p><form id=\"request-form\"><label>품목<input id=\"item\" required></label><label>수량<input id=\"quantity\" type=\"number\" min=\"1\" value=\"1\" required></label><button type=\"submit\">신청하기</button></form><p id=\"status\" role=\"status\"></p><ul id=\"requests\"></ul></main><script src=\"app.js\"></script></body></html>",
+          "app.js": "const form=document.querySelector('#request-form');const requests=document.querySelector('#requests');form.addEventListener('submit',e=>{e.preventDefault();const item=document.querySelector('#item');const qty=document.querySelector('#quantity');if(!item.value.trim()||Number(qty.value)<1)return;const li=document.createElement('li');const label=document.createElement('span');label.textContent=item.value+' · '+qty.value+'개 · 승인 대기';li.append(label);const edit=document.createElement('button');edit.textContent='수정';edit.addEventListener('click',()=>{item.value=label.textContent.split(' · ')[0];li.remove();document.querySelector('#status').textContent='수정 후 다시 신청해 주세요.'});li.append(edit);const remove=document.createElement('button');remove.textContent='취소';remove.addEventListener('click',()=>{li.remove();document.querySelector('#status').textContent='신청을 취소했습니다.'});li.append(remove);requests.prepend(li);document.querySelector('#status').textContent='신청을 등록했습니다.';form.reset()});",
+          "styles.css": "*{box-sizing:border-box}body{margin:0;background:#f4f7fc;color:#25334e;font:16px/1.7 Arial,sans-serif}main{max-width:760px;margin:55px auto;padding:30px}h1{font-size:30px}p{color:#7d8ca4}form{display:flex;gap:15px;flex-wrap:wrap;padding:25px;background:white;border:1px solid #e0e7f2;border-radius:12px}label{display:flex;flex-direction:column;font-size:14px;gap:7px;flex:1}input{font:inherit;padding:10px;border:1px solid #dce3ee;border-radius:7px;min-width:120px;width:100%}button{font:inherit;padding:9px 15px;border:0;border-radius:7px;background:#365cec;color:white;cursor:pointer;align-self:end}li{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding:18px;background:white;border-radius:8px;margin:12px 0}li span{flex:1}ul{list-style:none;padding:0}li button{font-size:13px;background:#edf2ff;color:#506ec6}"
+        },
+        "status": "active"
+      }
+    ],
+    "testResults": [
+      {
+        "id": "d7766d4b-f344-489b-8f11-432f392f535f",
+        "createdAt": "2026-09-21T08:43:13.215Z",
+        "releaseId": "4e5550d2-2887-4e93-b7c2-8813456d09c2",
+        "title": "브라우저 실동작: 신청·수정·취소·입력 검증",
+        "steps": "Codex 인앱 브라우저의 격리 iframe에서 합성 키보드 2개 신청 → 수정으로 합성 마우스 3개 저장 → 취소 → 합성 의자 수량 0으로 제출.",
+        "expected": "신청 목록에 올바른 품목/수량 표시, 수정한 값 반영, 취소 후 목록에서 제거, 0 수량 제출은 차단.",
+        "actual": "실제 DOM에서 합성 키보드 · 2개 · 승인 대기, 수정 후 합성 마우스 · 3개 · 승인 대기 확인. 취소 메시지와 빈 목록 확인. 수량 0 제출 후 목록은 비어 있음. 초기 sandbox에서 폼 제출이 막힌 문제를 수정하고 재검증함. 원본 도구 실행 기록은 evidence/agent-sessions에 보존.",
+        "status": "passed",
+        "authorId": "jimin",
+        "kind": "manual"
+      }
+    ],
+    "feedback": [
+      {
+        "id": "512b5287-668a-44fe-bb5c-5d37291f1883",
+        "createdAt": "2026-09-21T08:41:40.173Z",
+        "releaseId": "4e5550d2-2887-4e93-b7c2-8813456d09c2",
+        "title": "신청 상태 필터 추가 검토",
+        "body": "대기 중인 신청만 모아 보는 필터를 추가한다.",
+        "status": "open",
+        "authorId": "jimin",
+        "storyId": "226b6a45-5337-4d5c-94bd-f3cc0a7c70bb"
+      }
+    ],
+    "events": [
+      {
+        "id": "d0c051d6-f29e-4ddd-a52b-0e568ac4e867",
+        "at": "2026-09-21T08:41:39.936Z",
+        "actorId": "seoyeon",
+        "action": "member.join",
+        "detail": "이서연"
+      },
+      {
+        "id": "63db763a-e800-43b9-a340-9411cc1e69ee",
+        "at": "2026-09-21T08:41:39.943Z",
+        "actorId": "hyunwoo",
+        "action": "member.join",
+        "detail": "박현우"
+      },
+      {
+        "id": "3de78f74-36dc-46be-a4eb-91aba20f7ae8",
+        "at": "2026-09-21T08:41:39.953Z",
+        "actorId": "jimin",
+        "action": "conversation.save",
+        "detail": "직원 신청 경험"
+      },
+      {
+        "id": "30195eb2-f445-46d1-8363-93b5eccd0e91",
+        "at": "2026-09-21T08:41:39.960Z",
+        "actorId": "jimin",
+        "action": "message.save",
+        "detail": "직원 신청 경험"
+      },
+      {
+        "id": "19abb04f-678e-4dc4-ad1e-3902d3ed8e52",
+        "at": "2026-09-21T08:41:39.974Z",
+        "actorId": "jimin",
+        "action": "message.save",
+        "detail": "직원 신청 경험"
+      },
+      {
+        "id": "a1d54095-9346-4c46-949c-dcefb3878007",
+        "at": "2026-09-21T08:41:39.998Z",
+        "actorId": "jimin",
+        "action": "requirement.save",
+        "detail": "신청 화면"
+      },
+      {
+        "id": "67e158ba-b6c2-42ae-bd9c-ef3653b0fa93",
+        "at": "2026-09-21T08:41:40.007Z",
+        "actorId": "jimin",
+        "action": "requirement.save",
+        "detail": "화면 스타일"
+      },
+      {
+        "id": "b89495b3-ec8e-42fa-8850-8293f37f7c59",
+        "at": "2026-09-21T08:41:40.024Z",
+        "actorId": "jimin",
+        "action": "prd.generate",
+        "detail": "요구사항 기반 규칙 초안"
+      },
+      {
+        "id": "80834f6a-a2de-4c5d-819b-4b74489c8973",
+        "at": "2026-09-21T08:41:40.031Z",
+        "actorId": "jimin",
+        "action": "prd.approve",
+        "detail": "v1 동의"
+      },
+      {
+        "id": "02bbd488-250f-41f6-a362-b5c7b72bd6db",
+        "at": "2026-09-21T08:41:40.043Z",
+        "actorId": "seoyeon",
+        "action": "prd.approve",
+        "detail": "v1 동의"
+      },
+      {
+        "id": "ea0a856d-c77c-4f97-947b-a556129f82e8",
+        "at": "2026-09-21T08:41:40.050Z",
+        "actorId": "hyunwoo",
+        "action": "prd.approve",
+        "detail": "v1 동의"
+      },
+      {
+        "id": "4adb7c0c-b313-43c8-b0fe-cc11fe7a9ae2",
+        "at": "2026-09-21T08:41:40.058Z",
+        "actorId": "jimin",
+        "action": "story.generate",
+        "detail": "규칙 기반 분할 초안 · 독립성 검토 필요"
+      },
+      {
+        "id": "0648eb23-f7cc-46a8-9619-d380ed665639",
+        "at": "2026-09-21T08:41:40.077Z",
+        "actorId": "jimin",
+        "action": "story.save",
+        "detail": "신청 화면"
+      },
+      {
+        "id": "494d05bf-81f2-42e8-a115-032f9d066978",
+        "at": "2026-09-21T08:41:40.085Z",
+        "actorId": "jimin",
+        "action": "story.save",
+        "detail": "화면 스타일"
+      },
+      {
+        "id": "172c9003-6f1e-4752-9751-d96fc025cd9b",
+        "at": "2026-09-21T08:41:40.092Z",
+        "actorId": "jimin",
+        "action": "project.edit",
+        "detail": "검증 · 협업 비품 앱 1789980099903"
+      },
+      {
+        "id": "898b984a-7f0c-4947-801e-cdd53e3f86ed",
+        "at": "2026-09-21T08:41:40.105Z",
+        "actorId": "jimin",
+        "action": "run.start",
+        "detail": "2개 수동 ChatGPT 작업 시작"
+      },
+      {
+        "id": "caba0e8a-fd1d-454a-8cb4-1ac61fc4cf95",
+        "at": "2026-09-21T08:41:40.119Z",
+        "actorId": "jimin",
+        "action": "run.submit",
+        "detail": "신청 화면"
+      },
+      {
+        "id": "46a5f4b7-0d69-405c-9f63-586dcbf84b79",
+        "at": "2026-09-21T08:41:40.140Z",
+        "actorId": "jimin",
+        "action": "run.submit",
+        "detail": "화면 스타일"
+      },
+      {
+        "id": "b29439ce-3510-4c9a-8fbb-ade652a818ef",
+        "at": "2026-09-21T08:41:40.153Z",
+        "actorId": "jimin",
+        "action": "run.submit",
+        "detail": "화면 스타일"
+      },
+      {
+        "id": "12e728c8-d07f-496e-969b-f67d58584bf9",
+        "at": "2026-09-21T08:41:40.160Z",
+        "actorId": "jimin",
+        "action": "release.create",
+        "detail": "시연 릴리스 v1"
+      },
+      {
+        "id": "9156e9d2-8897-4bbc-bed7-12205dd17c94",
+        "at": "2026-09-21T08:41:40.173Z",
+        "actorId": "jimin",
+        "action": "feedback.save",
+        "detail": "신청 상태 필터 추가 검토"
+      },
+      {
+        "id": "b80bb8c9-532b-4dea-b926-d00b3fda3423",
+        "at": "2026-09-21T08:41:40.181Z",
+        "actorId": "jimin",
+        "action": "feedback.story",
+        "detail": "신청 상태 필터 추가 검토"
+      },
+      {
+        "id": "9eb995d9-b2c8-4991-a5a3-d85b808e2a70",
+        "at": "2026-09-21T08:41:40.188Z",
+        "actorId": "jimin",
+        "action": "item.delete",
+        "detail": ""
+      },
+      {
+        "id": "057a300c-a4b2-47ba-8e0e-6d954da34984",
+        "at": "2026-09-21T08:41:40.196Z",
+        "actorId": "jimin",
+        "action": "item.restore",
+        "detail": ""
+      },
+      {
+        "id": "5aa3f901-5b1b-4980-9cc4-3b838991f68d",
+        "at": "2026-09-21T08:41:40.203Z",
+        "actorId": "jimin",
+        "action": "project.delete",
+        "detail": ""
+      },
+      {
+        "id": "f9259813-f17a-431d-b55f-8625ca1ae258",
+        "at": "2026-09-21T08:41:40.210Z",
+        "actorId": "jimin",
+        "action": "project.restore",
+        "detail": ""
+      },
+      {
+        "id": "929f0134-7eae-4cb6-a5fc-d0b5abb3d66e",
+        "at": "2026-09-21T08:43:13.215Z",
+        "actorId": "jimin",
+        "action": "test.save",
+        "detail": "브라우저 실동작: 신청·수정·취소·입력 검증"
+      }
+    ],
+    "updatedAt": "2026-09-21T08:43:13.215Z"
+  },
+  "result": "passed"
+}

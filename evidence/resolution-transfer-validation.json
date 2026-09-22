@@ -1,0 +1,34 @@
+{
+  "at": "2026-09-21T10:12:47.315Z",
+  "checks": [
+    {
+      "name": "npm run typecheck followed by npm test",
+      "session": 95640,
+      "exitCode": 0,
+      "evidence": "test-resolution-transfer-final.log"
+    },
+    {
+      "name": "Sites portable build-site.mjs",
+      "session": 26689,
+      "exitCode": 0
+    }
+  ],
+  "sourceHashes": {
+    "components/resolution-transfer.tsx": "23374a018915ab03a519f3118a58feec7d05277e07d274a68e4dbd2a9bb67178",
+    "components/integration-review.tsx": "ece9d7c74420588290e5be185a1ef19d0c027da62e17742a861ab1324f5810a2",
+    "components/workspace.tsx": "7b9b97ea5914dedb551f7950793e0b1237564b8f69ed5e4b7752eb5449724e37",
+    "lib/teamvibe/integration.ts": "2a58269e7e14b70ba6808fc629a85cce1899b536ef42478956d29b0f1429f563",
+    "lib/teamvibe/domain.ts": "8ce64f1d9c517f42a837ce6785809cae70b52a2d29cc589929703746d8353254",
+    "lib/teamvibe/types.ts": "94842ff24c0af8877d88cd406ff9a89c800e2d4b1d2f4efa9f5be4fce607d09d",
+    "app/globals.css": "7642977b611c51db681c4914452876021cbe3ba3b91c8bca676703d656abde86",
+    "tests/resolution-transfer.mjs": "0afad5a7e9cad7922812d9a5895db54fa16f908c884ab86d83ad1c95e195e62a",
+    "tests/integration-baseline.mjs": "cbfb5e6a1a37f9f038075cdc03328f24ecbe8fe4fa95f2a16dfb07315d168173"
+  },
+  "notes": [
+    "최종 제품 코드 이후 타입 검사·전체 테스트·빌드 완료. 이후 문서와 증거만 갱신",
+    "중간 빌드 15951/89517은 이후 코드 수정 전 결과이므로 최신 검증으로 사용하지 않음",
+    "lint는 이 변경 이후 재실행하지 않음",
+    "실제 UI 결과는 resolution-transfer-browser-result.json과 story-named-links-browser-result.json",
+    "외부 ChatGPT 전송·호출 없이 합성 응답 반입. 클립보드 복사 완료는 미검증"
+  ]
+}

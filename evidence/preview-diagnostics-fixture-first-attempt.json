@@ -1,0 +1,210 @@
+{
+  "reason": "Preparation used absent activeReleaseId property; final activation rejected 400. Application behaved correctly. Fixture code fixed to use captured release identity.",
+  "project": {
+    "id": "55d3d340-a443-4411-b0e9-758933ea5778",
+    "createdAt": "2026-09-21T12:31:59.371Z",
+    "name": "미리보기 실행 오류 · 수정 확인",
+    "description": "오류 표시와 격리 경계, 재실행을 확인하는 합성 코드",
+    "goal": "팀원이 실행 오류를 확인하고 수정 요청에 사용할 수 있다.",
+    "inviteCode": "56f10f0888b1",
+    "ownerId": "jimin",
+    "members": [
+      "jimin"
+    ],
+    "version": 11,
+    "conversations": [],
+    "requirements": [],
+    "prd": {
+      "body": "# 실행 오류 안내\n합성 오류를 확인한 뒤 수정된 화면을 직접 검증한다.",
+      "revision": 1,
+      "approvals": [
+        "jimin"
+      ],
+      "history": [
+        {
+          "revision": 0,
+          "body": "",
+          "at": "2026-09-21T12:31:59.469Z",
+          "authorId": "jimin"
+        }
+      ],
+      "sourceRevision": 0
+    },
+    "stories": [
+      {
+        "id": "527f0da8-34db-4b87-9a71-65e15f4df5cd",
+        "createdAt": "2026-09-21T12:31:59.484Z",
+        "title": "실행 오류 확인",
+        "description": "오류 감지 자체를 테스트 통과로 기록하지 않는다.",
+        "acceptance": [
+          "버튼으로 확인 횟수를 증가시킬 수 있다."
+        ],
+        "tests": [
+          "실제 버튼 동작을 확인한다."
+        ],
+        "dependencies": [],
+        "requirementIds": [],
+        "ownerId": "jimin",
+        "status": "review",
+        "prdRevision": 1,
+        "revision": 2
+      }
+    ],
+    "runs": [
+      {
+        "id": "aeff388e-004b-4abf-8a69-678e26a40e5d",
+        "createdAt": "2026-09-21T12:31:59.490Z",
+        "resultContextRequired": true,
+        "storyId": "527f0da8-34db-4b87-9a71-65e15f4df5cd",
+        "storyRevision": 1,
+        "baseReleaseId": "",
+        "title": "실행 오류 확인",
+        "status": "integrated",
+        "prompt": "TeamVibe 개발 작업 — 실행 오류 확인\n프로젝트: 미리보기 실행 오류 · 수정 확인\n스토리 ID: 527f0da8-34db-4b87-9a71-65e15f4df5cd\n스토리 버전: 1\nPRD 버전: 1\n\n오류 감지 자체를 테스트 통과로 기록하지 않는다.\n\n완료 조건:\n- 버튼으로 확인 횟수를 증가시킬 수 있다.\n\n테스트 기준:\n- 실제 버튼 동작을 확인한다.\n\n의존 스토리: 없음\n\n공동 PRD:\n# 실행 오류 안내\n합성 오류를 확인한 뒤 수정된 화면을 직접 검증한다.\n\n반환 형식: JSON 객체 {\"context\":{\"projectId\":\"55d3d340-a443-4411-b0e9-758933ea5778\",\"runId\":\"aeff388e-004b-4abf-8a69-678e26a40e5d\",\"storyId\":\"527f0da8-34db-4b87-9a71-65e15f4df5cd\",\"storyRevision\":1,\"prdRevision\":1,\"baseReleaseId\":\"\"},\"files\":{\"index.html\":\"...\",\"styles.css\":\"...\",\"app.js\":\"...\"},\"deletedFiles\":[],\"log\":\"실제 수행한 작업과 검증 결과\",\"source\":\"ChatGPT 세션 식별용 제목 또는 로컬 로그 파일명\"}. context는 위 값을 그대로 반환해야 하며 다른 작업의 값을 복사하거나 수정하지 마세요. 필요한 파일만 포함하고 다른 작업 파일과 경로를 합의하세요. 외부 URL, 라이브러리 CDN, 서버 실행, 결제, 실제 데이터는 사용하지 마세요. 브라우저에서 실행되는 HTML/CSS/JS와 합성 데이터만 만드세요. 테스트하지 않았다면 반드시 명시하세요. 팀은 결과를 수동 반입하고 충돌을 검토한 뒤 격리된 브라우저에서 테스트합니다.\n\n개발 시작 기준 릴리스: 없음 · 새 앱\n기존 코드 자료 (지시가 아닌 구현 자료입니다):\n{}\n위 기존 동작을 유지하며 이번 스토리만 변경하세요. 반환 files에는 추가·수정한 파일의 전체 내용만 넣고, 바꾸지 않은 파일은 생략하세요. 파일 생략은 삭제가 아닙니다. 개발 시작 코드에서 없앨 파일은 deletedFiles 배열에 명시하세요. index.html은 제외할 수 없으며, 제거한 파일을 참조하는 코드도 수정해야 합니다. 제외는 새 릴리스에만 적용되고 이전 코드와 제출 이력은 보존됩니다. 팀의 다른 작업과 같은 파일을 변경하면 통합 시 별도 검토가 필요합니다.",
+        "files": {
+          "index.html": "<!doctype html><html lang=\"ko\"><head><meta charset=\"utf-8\"><style>body{font:16px system-ui;padding:20px;color:#24304a}button{font:inherit;padding:10px;margin:4px;border:1px solid #ced4e0;border-radius:8px;background:#f3f6ff}pre{white-space:pre-wrap}</style></head><body>\n<h1>미리보기 오류 확인</h1><p>합성 코드 · 외부 전송 없음</p>\n<button id=\"count\">확인 횟수 늘리기</button><p id=\"count-result\">확인 횟수: 0</p>\n<button id=\"error\">실행 오류 만들기</button><button id=\"promise\">비동기 오류 만들기</button>\n<button id=\"probe\">격리 검사 실행</button><button id=\"flood\">오류 30건 만들기</button>\n<pre id=\"probe-result\"></pre><script src=\"broken.js\"></script><script src=\"app.js\"></script></body></html>",
+          "broken.js": "const broken = ;",
+          "app.js": "let count=0;document.getElementById('count').onclick=()=>{document.getElementById('count-result').textContent='확인 횟수: '+(++count)};\ndocument.getElementById('error').onclick=()=>{throw new Error('합성 버튼 실행 오류 <strong>문자 그대로</strong>')};\ndocument.getElementById('promise').onclick=()=>{Promise.reject(new Error('합성 비동기 오류'))};\ndocument.getElementById('flood').onclick=()=>{for(let i=1;i<=30;i++)setTimeout(()=>{throw new Error('합성 반복 오류 '+i)},0)};\ndocument.getElementById('probe').onclick=async()=>{const lines=[];for(const [name,read] of [['parent DOM',()=>parent.document.body],['cookie',()=>document.cookie],['localStorage',()=>localStorage.length]]){try{read();lines.push(name+': UNEXPECTED allowed')}catch(e){lines.push(name+': '+e.name)}}try{await fetch('http://127.0.0.1:61651/sink/fetch');lines.push('fetch: UNEXPECTED allowed')}catch{lines.push('fetch: blocked')}const img=document.createElement('img');img.alt='차단 대상';img.src='http://127.0.0.1:61651/sink/image';document.body.append(img);document.getElementById('probe-result').textContent=lines.join('\\n')};"
+        },
+        "log": "의도적 오류가 포함된 합성 시연 코드. 아직 브라우저 미실행.",
+        "source": "scripts/prepare-preview-diagnostics-demo.mjs",
+        "prdRevision": 1,
+        "deletedFiles": []
+      },
+      {
+        "id": "bec41e38-015b-4b6e-95ca-6897a280a265",
+        "createdAt": "2026-09-21T12:31:59.516Z",
+        "resultContextRequired": true,
+        "storyId": "527f0da8-34db-4b87-9a71-65e15f4df5cd",
+        "storyRevision": 2,
+        "baseReleaseId": "4cac7c1d-647d-4270-8c5f-2ef04397d8f4",
+        "title": "실행 오류 확인",
+        "status": "integrated",
+        "prompt": "TeamVibe 개발 작업 — 실행 오류 확인\n프로젝트: 미리보기 실행 오류 · 수정 확인\n스토리 ID: 527f0da8-34db-4b87-9a71-65e15f4df5cd\n스토리 버전: 2\nPRD 버전: 1\n\n오류 감지 자체를 테스트 통과로 기록하지 않는다.\n\n완료 조건:\n- 버튼으로 확인 횟수를 증가시킬 수 있다.\n\n테스트 기준:\n- 실제 버튼 동작을 확인한다.\n\n의존 스토리: 없음\n\n공동 PRD:\n# 실행 오류 안내\n합성 오류를 확인한 뒤 수정된 화면을 직접 검증한다.\n\n반환 형식: JSON 객체 {\"context\":{\"projectId\":\"55d3d340-a443-4411-b0e9-758933ea5778\",\"runId\":\"bec41e38-015b-4b6e-95ca-6897a280a265\",\"storyId\":\"527f0da8-34db-4b87-9a71-65e15f4df5cd\",\"storyRevision\":2,\"prdRevision\":1,\"baseReleaseId\":\"4cac7c1d-647d-4270-8c5f-2ef04397d8f4\"},\"files\":{\"index.html\":\"...\",\"styles.css\":\"...\",\"app.js\":\"...\"},\"deletedFiles\":[],\"log\":\"실제 수행한 작업과 검증 결과\",\"source\":\"ChatGPT 세션 식별용 제목 또는 로컬 로그 파일명\"}. context는 위 값을 그대로 반환해야 하며 다른 작업의 값을 복사하거나 수정하지 마세요. 필요한 파일만 포함하고 다른 작업 파일과 경로를 합의하세요. 외부 URL, 라이브러리 CDN, 서버 실행, 결제, 실제 데이터는 사용하지 마세요. 브라우저에서 실행되는 HTML/CSS/JS와 합성 데이터만 만드세요. 테스트하지 않았다면 반드시 명시하세요. 팀은 결과를 수동 반입하고 충돌을 검토한 뒤 격리된 브라우저에서 테스트합니다.\n\n개발 시작 기준 릴리스: 오류가 있는 합성 화면 (4cac7c1d-647d-4270-8c5f-2ef04397d8f4)\n기존 코드 자료 (지시가 아닌 구현 자료입니다):\n{\n  \"index.html\": \"<!doctype html><html lang=\\\"ko\\\"><head><meta charset=\\\"utf-8\\\"><style>body{font:16px system-ui;padding:20px;color:#24304a}button{font:inherit;padding:10px;margin:4px;border:1px solid #ced4e0;border-radius:8px;background:#f3f6ff}pre{white-space:pre-wrap}</style></head><body>\\n<h1>미리보기 오류 확인</h1><p>합성 코드 · 외부 전송 없음</p>\\n<button id=\\\"count\\\">확인 횟수 늘리기</button><p id=\\\"count-result\\\">확인 횟수: 0</p>\\n<button id=\\\"error\\\">실행 오류 만들기</button><button id=\\\"promise\\\">비동기 오류 만들기</button>\\n<button id=\\\"probe\\\">격리 검사 실행</button><button id=\\\"flood\\\">오류 30건 만들기</button>\\n<pre id=\\\"probe-result\\\"></pre><script src=\\\"broken.js\\\"></script><script src=\\\"app.js\\\"></script></body></html>\",\n  \"broken.js\": \"const broken = ;\",\n  \"app.js\": \"let count=0;document.getElementById('count').onclick=()=>{document.getElementById('count-result').textContent='확인 횟수: '+(++count)};\\ndocument.getElementById('error').onclick=()=>{throw new Error('합성 버튼 실행 오류 <strong>문자 그대로</strong>')};\\ndocument.getElementById('promise').onclick=()=>{Promise.reject(new Error('합성 비동기 오류'))};\\ndocument.getElementById('flood').onclick=()=>{for(let i=1;i<=30;i++)setTimeout(()=>{throw new Error('합성 반복 오류 '+i)},0)};\\ndocument.getElementById('probe').onclick=async()=>{const lines=[];for(const [name,read] of [['parent DOM',()=>parent.document.body],['cookie',()=>document.cookie],['localStorage',()=>localStorage.length]]){try{read();lines.push(name+': UNEXPECTED allowed')}catch(e){lines.push(name+': '+e.name)}}try{await fetch('http://127.0.0.1:61651/sink/fetch');lines.push('fetch: UNEXPECTED allowed')}catch{lines.push('fetch: blocked')}const img=document.createElement('img');img.alt='차단 대상';img.src='http://127.0.0.1:61651/sink/image';document.body.append(img);document.getElementById('probe-result').textContent=lines.join('\\\\n')};\"\n}\n위 기존 동작을 유지하며 이번 스토리만 변경하세요. 반환 files에는 추가·수정한 파일의 전체 내용만 넣고, 바꾸지 않은 파일은 생략하세요. 파일 생략은 삭제가 아닙니다. 개발 시작 코드에서 없앨 파일은 deletedFiles 배열에 명시하세요. index.html은 제외할 수 없으며, 제거한 파일을 참조하는 코드도 수정해야 합니다. 제외는 새 릴리스에만 적용되고 이전 코드와 제출 이력은 보존됩니다. 팀의 다른 작업과 같은 파일을 변경하면 통합 시 별도 검토가 필요합니다.",
+        "files": {
+          "index.html": "<h1>수정한 확인 화면</h1><button id=\"confirm\">확인하기</button><p id=\"result\">확인 전</p><script src=\"app.js\"></script>",
+          "app.js": "document.getElementById('confirm').onclick=()=>{document.getElementById('result').textContent='확인 완료'};"
+        },
+        "log": "의도적 오류를 제거한 합성 수정본. 아직 브라우저 미실행.",
+        "source": "scripts/prepare-preview-diagnostics-demo.mjs",
+        "prdRevision": 1,
+        "deletedFiles": [
+          "broken.js"
+        ]
+      }
+    ],
+    "releases": [
+      {
+        "id": "4cac7c1d-647d-4270-8c5f-2ef04397d8f4",
+        "createdAt": "2026-09-21T12:31:59.504Z",
+        "title": "오류가 있는 합성 화면",
+        "baseReleaseId": "",
+        "runIds": [
+          "aeff388e-004b-4abf-8a69-678e26a40e5d"
+        ],
+        "files": {
+          "index.html": "<!doctype html><html lang=\"ko\"><head><meta charset=\"utf-8\"><style>body{font:16px system-ui;padding:20px;color:#24304a}button{font:inherit;padding:10px;margin:4px;border:1px solid #ced4e0;border-radius:8px;background:#f3f6ff}pre{white-space:pre-wrap}</style></head><body>\n<h1>미리보기 오류 확인</h1><p>합성 코드 · 외부 전송 없음</p>\n<button id=\"count\">확인 횟수 늘리기</button><p id=\"count-result\">확인 횟수: 0</p>\n<button id=\"error\">실행 오류 만들기</button><button id=\"promise\">비동기 오류 만들기</button>\n<button id=\"probe\">격리 검사 실행</button><button id=\"flood\">오류 30건 만들기</button>\n<pre id=\"probe-result\"></pre><script src=\"broken.js\"></script><script src=\"app.js\"></script></body></html>",
+          "broken.js": "const broken = ;",
+          "app.js": "let count=0;document.getElementById('count').onclick=()=>{document.getElementById('count-result').textContent='확인 횟수: '+(++count)};\ndocument.getElementById('error').onclick=()=>{throw new Error('합성 버튼 실행 오류 <strong>문자 그대로</strong>')};\ndocument.getElementById('promise').onclick=()=>{Promise.reject(new Error('합성 비동기 오류'))};\ndocument.getElementById('flood').onclick=()=>{for(let i=1;i<=30;i++)setTimeout(()=>{throw new Error('합성 반복 오류 '+i)},0)};\ndocument.getElementById('probe').onclick=async()=>{const lines=[];for(const [name,read] of [['parent DOM',()=>parent.document.body],['cookie',()=>document.cookie],['localStorage',()=>localStorage.length]]){try{read();lines.push(name+': UNEXPECTED allowed')}catch(e){lines.push(name+': '+e.name)}}try{await fetch('http://127.0.0.1:61651/sink/fetch');lines.push('fetch: UNEXPECTED allowed')}catch{lines.push('fetch: blocked')}const img=document.createElement('img');img.alt='차단 대상';img.src='http://127.0.0.1:61651/sink/image';document.body.append(img);document.getElementById('probe-result').textContent=lines.join('\\n')};"
+        },
+        "deletedFiles": [],
+        "resolutions": [],
+        "status": "superseded"
+      },
+      {
+        "id": "fb035fb5-c1ed-4d19-bee5-a5e0b3bf18b3",
+        "createdAt": "2026-09-21T12:31:59.528Z",
+        "title": "오류를 제거한 확인 화면",
+        "baseReleaseId": "4cac7c1d-647d-4270-8c5f-2ef04397d8f4",
+        "runIds": [
+          "aeff388e-004b-4abf-8a69-678e26a40e5d",
+          "bec41e38-015b-4b6e-95ca-6897a280a265"
+        ],
+        "files": {
+          "index.html": "<h1>수정한 확인 화면</h1><button id=\"confirm\">확인하기</button><p id=\"result\">확인 전</p><script src=\"app.js\"></script>",
+          "app.js": "document.getElementById('confirm').onclick=()=>{document.getElementById('result').textContent='확인 완료'};"
+        },
+        "deletedFiles": [
+          "broken.js"
+        ],
+        "resolutions": [],
+        "status": "active"
+      }
+    ],
+    "testResults": [],
+    "feedback": [],
+    "events": [
+      {
+        "id": "5bbd085e-8414-4506-8147-18996f474a0e",
+        "at": "2026-09-21T12:31:59.469Z",
+        "actorId": "jimin",
+        "action": "prd.save",
+        "detail": "v1"
+      },
+      {
+        "id": "9afa39e1-678a-468b-ac25-be20d5687a9e",
+        "at": "2026-09-21T12:31:59.476Z",
+        "actorId": "jimin",
+        "action": "prd.approve",
+        "detail": "v1 동의"
+      },
+      {
+        "id": "dca0235f-a470-4dda-bf55-966d428f88d8",
+        "at": "2026-09-21T12:31:59.484Z",
+        "actorId": "jimin",
+        "action": "story.save",
+        "detail": "실행 오류 확인"
+      },
+      {
+        "id": "f67c2eb1-422b-4501-804a-78113900d5af",
+        "at": "2026-09-21T12:31:59.490Z",
+        "actorId": "jimin",
+        "action": "run.start",
+        "detail": "1개 수동 ChatGPT 작업 시작"
+      },
+      {
+        "id": "f738d002-9353-4943-afc3-465c8d907c02",
+        "at": "2026-09-21T12:31:59.497Z",
+        "actorId": "jimin",
+        "action": "run.submit",
+        "detail": "실행 오류 확인"
+      },
+      {
+        "id": "4a6c0877-5160-47df-af90-d5421bd9cee1",
+        "at": "2026-09-21T12:31:59.504Z",
+        "actorId": "jimin",
+        "action": "release.create",
+        "detail": "오류가 있는 합성 화면"
+      },
+      {
+        "id": "ed883ea3-482e-41d7-a515-d6a87b6be740",
+        "at": "2026-09-21T12:31:59.510Z",
+        "actorId": "jimin",
+        "action": "story.save",
+        "detail": "실행 오류 확인"
+      },
+      {
+        "id": "1ec5961e-e50d-470b-b6bc-7d919bb6a6e8",
+        "at": "2026-09-21T12:31:59.516Z",
+        "actorId": "jimin",
+        "action": "run.start",
+        "detail": "1개 수동 ChatGPT 작업 시작"
+      },
+      {
+        "id": "65d41e00-d3b9-4521-90b6-acf159c8a5d6",
+        "at": "2026-09-21T12:31:59.522Z",
+        "actorId": "jimin",
+        "action": "run.submit",
+        "detail": "실행 오류 확인"
+      },
+      {
+        "id": "2a0b5a0c-b8e5-4f36-aed6-9a4c7f98e201",
+        "at": "2026-09-21T12:31:59.528Z",
+        "actorId": "jimin",
+        "action": "release.create",
+        "detail": "오류를 제거한 확인 화면"
+      }
+    ],
+    "updatedAt": "2026-09-21T12:31:59.528Z"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "at": "2026-09-21T13:54:55.252Z",
+  "candidateArchive": {
+    "path": "/Users/takykim/workspace/codex/TeamVibe/outputs/submissions/2026-09-21T13-49-20-277Z-hT2Fk0/TeamVibe.tar.gz",
+    "sha256": "63d81629495a2fe1ab75afdebc99745f8d4383f070ba6691803f60861497d8b6",
+    "files": 592
+  },
+  "installation": {
+    "session": 56538,
+    "exitCode": 0,
+    "packagesAdded": 673,
+    "offline": true,
+    "existingNodeModulesReused": false,
+    "sourceManifestVerifiedAfterRestore": {
+      "ok": true,
+      "files": 592,
+      "capturedAt": "2026-09-21T13:49:20.277Z",
+      "note": "목록에 있는 파일의 무결성 검사입니다. 앱 실행·기능 통과를 뜻하지 않으며 추가 파일은 검사하지 않습니다."
+    },
+    "tool": "Sites install-dependencies.mjs",
+    "scope": "New node_modules populated from existing npm cache on same macOS/Node24.16 host; no fresh registry download."
+  },
+  "migrationsAndTypecheck": {
+    "session": 19483,
+    "exitCode": 0,
+    "migrations": 2
+  },
+  "build": {
+    "session": 37588,
+    "exitCode": 0,
+    "location": "/Users/takykim/workspace/codex/TeamVibe/.sites-runtime/submission-check-v9u3Pr/TeamVibe"
+  },
+  "tests": {
+    "session": 17740,
+    "exitCode": 0,
+    "command": "TEAMVIBE_URL=http://127.0.0.1:50486 npm test",
+    "log": "evidence/test-submission-built.log",
+    "target": "Extracted package build, fresh isolated local DB",
+    "integrity": "evidence/submission-integrity-result.json"
+  },
+  "runtime": {
+    "initialSession": 33691,
+    "restartedSession": 15590,
+    "port": 50486,
+    "bothIntentionallyStopped": true,
+    "mainDevServerRetained": true,
+    "appRuntimeFilesUnchangedSinceCandidate": 133
+  },
+  "browser": {
+    "result": "evidence/submission-browser-result.json",
+    "observations": 9,
+    "allPassed": true,
+    "screenshot": "evidence/screenshots/submission-built-preview.png"
+  },
+  "server": {
+    "at": "2026-09-21T13:53:13.328Z",
+    "projectId": "f5f60358-fc90-4b5d-ab1a-f11294e1cbc3",
+    "version": 9,
+    "entireProjectUnchangedAcrossRestart": true,
+    "originalWorkspaceDemosUnchanged": true,
+    "isolatedDatabase": "/Users/takykim/workspace/codex/TeamVibe/.sites-runtime/submission-check-v9u3Pr/TeamVibe/.wrangler/state",
+    "doneStories": 1,
+    "testRecords": 1,
+    "coverage": 1
+  },
+  "sourceHashes": {
+    "scripts/package-submission.mjs": "bf163e824097913aa24f428901aed7742be94aa756822093b5ded4a55aad1722",
+    "scripts/verify-submission.mjs": "33da932f9c5438db7983ec4f5866fe71fbfd1b00e2479c6ce78b2854a2a92a8a",
+    "scripts/test.mjs": "6b2e392b1026b5fd0cb1ab29417f832a8f26f291b9e537992dfbcb75b8c4947e",
+    "tests/submission-integrity.mjs": "94192aa99738c2501020e9f29fb6e32a40638a166181f7d7fa7e1d691d8e33d9",
+    "docs/START_HERE.md": "ce82f5e697c3b9f887f0331f8a6d1e1d5a0e82f5b84acd5c5ea7831a7e69f971",
+    "README.md": "ddd6d9ed941e8c670a229e42088bb39bc8c6cec1eb7e20e996d669b9031a8b96"
+  },
+  "finalArchive": "See outputs/latest-submission.json and its sibling archive.json; final packaging adds docs, test helper/evidence, and updated actual-session snapshot without changing verified runtime files.",
+  "limits": [
+    "Same computer and operating system; no cache-empty registry install or other OS verification.",
+    "UI project creation, actual iframe click, test and completion verified. Intermediate requirements/story/run/release preparation used local API.",
+    "Manifest validates listed file integrity only, not functionality or authenticity, and does not reject unlisted added files.",
+    "Session log is a timestamped snapshot, not the full future conversation."
+  ]
+}

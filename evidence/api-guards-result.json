@@ -1,0 +1,48 @@
+{
+  "at": "2026-09-21T23:33:19.909Z",
+  "base": "http://127.0.0.1:51491",
+  "projectId": "ff2fd70f-e625-4b37-8266-bc8ce3aad4e3",
+  "report": [
+    {
+      "name": "다른 Origin에서 변경 요청 차단",
+      "status": "passed"
+    },
+    {
+      "name": "요구사항 변경 시 승인 해제, PRD 반영 전 재승인 차단",
+      "status": "passed"
+    },
+    {
+      "name": "순환 의존성, 미완료 선행 작업, 의존 항목 삭제 차단",
+      "status": "passed"
+    },
+    {
+      "name": "중복 작업 시작과 진행 중 스토리 변경 차단",
+      "status": "passed"
+    },
+    {
+      "name": "스토리의 모든 테스트 기준에 통과 기록을 연결해야 완료 허용",
+      "status": "passed"
+    },
+    {
+      "name": "완료 근거 삭제·실패 변경 시 재검토 전환과 후속 개발 차단",
+      "status": "passed"
+    },
+    {
+      "name": "선행 스토리 완료 후 후속 개발 시작, 작업 취소와 복원",
+      "status": "passed"
+    },
+    {
+      "name": "메시지 삭제 후 원문 복원",
+      "status": "passed"
+    },
+    {
+      "name": "프로젝트 오너 이전, 팀 나가기, 이전 권한 회수, 재참여",
+      "status": "passed"
+    },
+    {
+      "name": "초대 코드 재발급 후 기존 코드 무효화",
+      "status": "passed"
+    }
+  ],
+  "note": "API 계약 검증용 합성 fixture. 앱 브라우저 기능 검증으로 간주하지 않음."
+}

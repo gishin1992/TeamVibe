@@ -1,0 +1,13 @@
+{
+  "at": "2026-09-21T23:33:20.892Z",
+  "projectId": "cdab2942-90f0-4b03-b0b3-05757d8ac348",
+  "checks": [
+    "ready/review/done/running ownership changes preserve content revisions and existing artifacts",
+    "initial, manual, unassign, removal, leave and archived assignment records retained",
+    "invalid, unauthorized, missing, archived and stale CAS mutations rejected atomically",
+    "form comparison identifies simultaneous assignee edits",
+    "real content edits still invalidate old development",
+    "leave PRD policy retained"
+  ],
+  "note": "Synthetic API states only; browser verification is recorded separately."
+}

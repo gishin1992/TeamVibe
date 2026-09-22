@@ -1,0 +1,325 @@
+{
+  "id": "23f36d87-9bd1-4dc8-85ff-2bd4ab06468b",
+  "createdAt": "2026-09-21T12:01:56.984Z",
+  "name": "요구사항 결정 이력 · 팀 검토",
+  "description": "합성 취소 정책의 결정·통합·재검토 기록",
+  "goal": "이전 합의와 수정 이유를 팀원이 함께 확인한다.",
+  "inviteCode": "269af4e8c5f7",
+  "ownerId": "jimin",
+  "members": [
+    "jimin",
+    "seoyeon"
+  ],
+  "version": 15,
+  "conversations": [
+    {
+      "id": "e6ed36a1-a263-46ae-af9f-0765a910fe7e",
+      "createdAt": "2026-09-21T12:01:57.022Z",
+      "title": "신청 취소 범위",
+      "ownerId": "jimin",
+      "messages": [
+        {
+          "id": "a117aa6a-9569-4ed0-9202-0f69537a9912",
+          "createdAt": "2026-09-21T12:01:57.029Z",
+          "revision": 1,
+          "authorId": "jimin",
+          "kind": "user",
+          "text": "승인 전에 신청자가 취소할 수 있어야 합니다.",
+          "source": ""
+        },
+        {
+          "id": "c91dff56-4cd2-4532-ac42-a9787ffc09be",
+          "createdAt": "2026-09-21T12:01:57.029Z",
+          "authorId": "guide",
+          "kind": "guide",
+          "text": "로컬 진행 도우미: 이 기능은 누가 사용하나요? 성공한 상태와 예외 상황, 수정·취소 규칙도 적어 주세요. 더 깊이 논의하려면 ChatGPT 작업 묶음을 복사하고 응답을 가져오세요."
+        }
+      ]
+    },
+    {
+      "id": "bf8e6033-8e58-43c8-aaf5-5ee925d60e7c",
+      "createdAt": "2026-09-21T12:01:57.036Z",
+      "title": "관리자의 취소 확인",
+      "ownerId": "seoyeon",
+      "messages": [
+        {
+          "id": "9b5d0ee6-0972-4615-8f65-19cc8596eb6e",
+          "createdAt": "2026-09-21T12:01:57.042Z",
+          "revision": 2,
+          "authorId": "seoyeon",
+          "kind": "user",
+          "text": "승인 후에는 담당자가 취소 사유를 확인하고 처리 날짜도 남겨야 합니다.",
+          "source": "",
+          "history": [
+            {
+              "revision": 1,
+              "text": "승인 후에는 담당자가 취소 사유를 확인해야 합니다.",
+              "source": "",
+              "at": "2026-09-21T12:01:57.042Z",
+              "authorId": "seoyeon"
+            }
+          ],
+          "updatedAt": "2026-09-21T12:03:33.281Z",
+          "updatedBy": "seoyeon"
+        },
+        {
+          "id": "ab5f2ea8-7404-45ac-bfa9-e4b7a38a0c27",
+          "createdAt": "2026-09-21T12:01:57.042Z",
+          "authorId": "guide",
+          "kind": "guide",
+          "text": "로컬 진행 도우미: 이 기능은 누가 사용하나요? 성공한 상태와 예외 상황, 수정·취소 규칙도 적어 주세요. 더 깊이 논의하려면 ChatGPT 작업 묶음을 복사하고 응답을 가져오세요."
+        }
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "id": "0427162b-8d70-480e-acc8-c759c06455f3",
+      "createdAt": "2026-09-21T12:01:57.049Z",
+      "title": "취소와 사유 관리",
+      "description": "승인 후에는 담당자가 취소를 확인하고 사유를 함께 남긴다.",
+      "priority": "must",
+      "status": "proposed",
+      "sourceIds": [
+        "a117aa6a-9569-4ed0-9202-0f69537a9912",
+        "9b5d0ee6-0972-4615-8f65-19cc8596eb6e"
+      ],
+      "decision": "담당자 확인과 취소 사유 기록을 함께 적용하기로 합의했다.",
+      "sourceRevisions": {
+        "a117aa6a-9569-4ed0-9202-0f69537a9912": 1,
+        "9b5d0ee6-0972-4615-8f65-19cc8596eb6e": 1
+      },
+      "authorId": "jimin",
+      "revision": 5,
+      "change": "source-updated",
+      "history": [
+        {
+          "title": "신청자의 취소",
+          "description": "승인 전 신청자가 직접 취소한다.",
+          "priority": "must",
+          "status": "accepted",
+          "decision": "우선 승인 전 취소만 시연 범위에 포함한다.",
+          "sourceIds": [
+            "a117aa6a-9569-4ed0-9202-0f69537a9912"
+          ],
+          "sourceRevisions": {
+            "a117aa6a-9569-4ed0-9202-0f69537a9912": 1
+          },
+          "revision": 1,
+          "at": "2026-09-21T12:01:57.049Z",
+          "authorId": "jimin",
+          "change": "created"
+        },
+        {
+          "title": "승인 후 취소 검토",
+          "description": "승인 후에는 담당자가 확인한 뒤 취소한다.",
+          "priority": "must",
+          "status": "conflict",
+          "decision": "담당자 확인 없이 취소할 수 있는지 팀 의견이 다르다.",
+          "sourceIds": [
+            "a117aa6a-9569-4ed0-9202-0f69537a9912"
+          ],
+          "sourceRevisions": {
+            "a117aa6a-9569-4ed0-9202-0f69537a9912": 1
+          },
+          "revision": 2,
+          "at": "2026-09-21T12:02:24.314Z",
+          "authorId": "seoyeon",
+          "change": "edited"
+        },
+        {
+          "title": "취소와 사유 관리",
+          "description": "승인 후에는 담당자가 취소를 확인하고 사유를 함께 남긴다.",
+          "priority": "must",
+          "status": "proposed",
+          "decision": "취소와 사유 입력을 하나의 절차로 묶어 재검토한다.",
+          "sourceIds": [
+            "a117aa6a-9569-4ed0-9202-0f69537a9912",
+            "9b5d0ee6-0972-4615-8f65-19cc8596eb6e"
+          ],
+          "sourceRevisions": {
+            "9b5d0ee6-0972-4615-8f65-19cc8596eb6e": 1,
+            "a117aa6a-9569-4ed0-9202-0f69537a9912": 1
+          },
+          "revision": 3,
+          "at": "2026-09-21T12:02:45.474Z",
+          "authorId": "seoyeon",
+          "change": "merged"
+        },
+        {
+          "title": "취소와 사유 관리",
+          "description": "승인 후에는 담당자가 취소를 확인하고 사유를 함께 남긴다.",
+          "priority": "must",
+          "status": "accepted",
+          "decision": "담당자 확인과 취소 사유 기록을 함께 적용하기로 합의했다.",
+          "sourceIds": [
+            "a117aa6a-9569-4ed0-9202-0f69537a9912",
+            "9b5d0ee6-0972-4615-8f65-19cc8596eb6e"
+          ],
+          "sourceRevisions": {
+            "a117aa6a-9569-4ed0-9202-0f69537a9912": 1,
+            "9b5d0ee6-0972-4615-8f65-19cc8596eb6e": 1
+          },
+          "revision": 4,
+          "at": "2026-09-21T12:03:22.189Z",
+          "authorId": "seoyeon",
+          "change": "edited"
+        }
+      ],
+      "updatedAt": "2026-09-21T12:03:33.281Z",
+      "updatedBy": "seoyeon",
+      "sourceHistory": [
+        {
+          "sourceIds": [
+            "a117aa6a-9569-4ed0-9202-0f69537a9912"
+          ],
+          "sourceRevisions": {
+            "a117aa6a-9569-4ed0-9202-0f69537a9912": 1
+          },
+          "at": "2026-09-21T12:02:45.474Z",
+          "authorId": "seoyeon"
+        }
+      ]
+    },
+    {
+      "id": "efd19eab-fe4d-4f68-8fc5-d65af77d4140",
+      "createdAt": "2026-09-21T12:01:57.056Z",
+      "title": "취소 사유 기록",
+      "description": "취소할 때 사유를 함께 남긴다.",
+      "priority": "should",
+      "status": "accepted",
+      "sourceIds": [
+        "9b5d0ee6-0972-4615-8f65-19cc8596eb6e"
+      ],
+      "decision": "취소 경위를 팀이 확인하기 위해 사유를 기록한다.",
+      "sourceRevisions": {
+        "9b5d0ee6-0972-4615-8f65-19cc8596eb6e": 1
+      },
+      "authorId": "seoyeon",
+      "revision": 1,
+      "change": "created",
+      "deletedAt": "2026-09-21T12:02:45.474Z"
+    }
+  ],
+  "prd": {
+    "body": "# 요구사항 결정 이력 · 팀 검토\n\n## 해결할 문제\n합성 취소 정책의 결정·통합·재검토 기록\n\n## 목표\n이전 합의와 수정 이유를 팀원이 함께 확인한다.\n\n## 대상 사용자\n프로젝트 팀이 검토하여 사용자와 권한을 구체화하세요.\n\n## 기능 요구사항\n### 1. 신청자의 취소\n승인 전 신청자가 직접 취소한다.\n- 우선순위: must\n- 검토 상태: accepted\n- 결정: 우선 승인 전 취소만 시연 범위에 포함한다.\n\n### 2. 취소 사유 기록\n취소할 때 사유를 함께 남긴다.\n- 우선순위: should\n- 검토 상태: accepted\n- 결정: 취소 경위를 팀이 확인하기 위해 사유를 기록한다.\n\n## 완료 및 테스트 기준\n각 요구사항의 정상 흐름, 빈 상태, 오류 상태, 수정과 취소/삭제를 확인합니다.\n\n## 범위와 제약\n로컬 테스트 환경, 합성 데이터만 사용합니다. 외부 연계는 별도 합의 후 진행합니다.\n\n## 미결정 사항\n현재 등록된 미결정 사항 없음\n",
+    "revision": 1,
+    "approvals": [],
+    "history": [
+      {
+        "revision": 0,
+        "body": "",
+        "at": "2026-09-21T12:01:57.062Z",
+        "authorId": "jimin"
+      }
+    ],
+    "sourceRevision": 2
+  },
+  "stories": [],
+  "runs": [],
+  "releases": [],
+  "testResults": [],
+  "feedback": [],
+  "events": [
+    {
+      "id": "488300aa-d8cd-48a0-bade-2892a11bb505",
+      "at": "2026-09-21T12:01:57.015Z",
+      "actorId": "seoyeon",
+      "action": "member.join",
+      "detail": "이서연"
+    },
+    {
+      "id": "01c8b3f4-be64-4ce8-80e3-56b7fc2d9e59",
+      "at": "2026-09-21T12:01:57.022Z",
+      "actorId": "jimin",
+      "action": "conversation.save",
+      "detail": "신청 취소 범위"
+    },
+    {
+      "id": "8be43bab-02a5-4c98-aff9-a83fabe1c1e0",
+      "at": "2026-09-21T12:01:57.029Z",
+      "actorId": "jimin",
+      "action": "message.save",
+      "detail": "신청 취소 범위"
+    },
+    {
+      "id": "d0b96976-fcb8-40ae-99f0-d705a51c7436",
+      "at": "2026-09-21T12:01:57.036Z",
+      "actorId": "seoyeon",
+      "action": "conversation.save",
+      "detail": "관리자의 취소 확인"
+    },
+    {
+      "id": "710ef9b8-cd3c-4264-a558-d4e88a7abf99",
+      "at": "2026-09-21T12:01:57.042Z",
+      "actorId": "seoyeon",
+      "action": "message.save",
+      "detail": "관리자의 취소 확인"
+    },
+    {
+      "id": "b2a55277-4248-4478-ac8c-6e87e5a61cc3",
+      "at": "2026-09-21T12:01:57.049Z",
+      "actorId": "jimin",
+      "action": "requirement.save",
+      "detail": "신청자의 취소"
+    },
+    {
+      "id": "b5ff0573-f236-45aa-b427-1d692ba61329",
+      "at": "2026-09-21T12:01:57.056Z",
+      "actorId": "seoyeon",
+      "action": "requirement.save",
+      "detail": "취소 사유 기록"
+    },
+    {
+      "id": "755deafa-8947-4b76-af8e-89ce7c07386e",
+      "at": "2026-09-21T12:01:57.062Z",
+      "actorId": "jimin",
+      "action": "prd.generate",
+      "detail": "요구사항 기반 규칙 초안"
+    },
+    {
+      "id": "9b056002-85c4-4147-9c2a-3d5324f3c74f",
+      "at": "2026-09-21T12:01:57.069Z",
+      "actorId": "jimin",
+      "action": "prd.approve",
+      "detail": "v1 동의"
+    },
+    {
+      "id": "d4f39046-4e97-4868-b801-76b80759d2a7",
+      "at": "2026-09-21T12:01:57.076Z",
+      "actorId": "seoyeon",
+      "action": "prd.approve",
+      "detail": "v1 동의"
+    },
+    {
+      "id": "d11a6ba4-8cc6-4080-9f00-c2823b6dbd6f",
+      "at": "2026-09-21T12:02:24.314Z",
+      "actorId": "seoyeon",
+      "action": "requirement.save",
+      "detail": "승인 후 취소 검토"
+    },
+    {
+      "id": "2143e0a7-66bb-471b-aa39-2db07706dc75",
+      "at": "2026-09-21T12:02:45.474Z",
+      "actorId": "seoyeon",
+      "action": "requirement.merge",
+      "detail": "취소 사유 기록 → 취소와 사유 관리 · 원문 보관, 재검토 필요"
+    },
+    {
+      "id": "3bd75241-b28c-417c-b934-da559490f71a",
+      "at": "2026-09-21T12:03:22.189Z",
+      "actorId": "seoyeon",
+      "action": "requirement.save",
+      "detail": "취소와 사유 관리"
+    },
+    {
+      "id": "dc0988b0-dd32-4fc0-b5d2-3d10ce523896",
+      "at": "2026-09-21T12:03:33.281Z",
+      "actorId": "seoyeon",
+      "action": "message.save",
+      "detail": "관리자의 취소 확인"
+    }
+  ],
+  "updatedAt": "2026-09-21T12:03:33.281Z",
+  "requirementsVersion": 6
+}

@@ -1,0 +1,13 @@
+{
+  "at": "2026-09-21T23:33:18.551Z",
+  "directory": "/Users/takykim/workspace/codex/TeamVibe/.sites-runtime/submission-integrity-PRTd2Z",
+  "checks": [
+    "clean matching files",
+    "same-size tamper and changed-size tamper",
+    "missing file",
+    "unsafe and duplicate manifest paths",
+    "symlink file and parent directory",
+    "explicitly limited listed-file scope"
+  ],
+  "note": "Synthetic files only. No app execution; no existing files deleted."
+}

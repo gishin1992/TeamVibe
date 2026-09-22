@@ -1,0 +1,91 @@
+{
+  "at": "2026-09-21T11:36:55.927Z",
+  "projectId": "8ef17d2c-d682-4c21-884a-33c903bc8e80",
+  "observations": [
+    {
+      "at": "2026-09-21T11:33:22.045Z",
+      "name": "v1 actual iframe heading",
+      "observed": "팀 검토 준비",
+      "passed": true
+    },
+    {
+      "name": "new release has no inherited records",
+      "passed": true
+    },
+    {
+      "name": "archived release and original criterion visible",
+      "passed": true
+    },
+    {
+      "name": "old criterion remains editable",
+      "passed": true
+    },
+    {
+      "at": "2026-09-21T11:33:56.244Z",
+      "name": "viewing old record did not switch active preview",
+      "observed": "팀 검토 완료",
+      "passed": true
+    },
+    {
+      "name": "all releases lists both observed records",
+      "passed": true
+    },
+    {
+      "name": "current filter shows only v2",
+      "passed": true
+    },
+    {
+      "name": "empty failed filter is explicit",
+      "passed": true
+    },
+    {
+      "name": "mobile release selection no overflow",
+      "scrollWidth": 390,
+      "width": 390,
+      "passed": true
+    },
+    {
+      "name": "mobile expanded criterion snapshot",
+      "passed": true
+    },
+    {
+      "name": "release filter remains selected after last record archived",
+      "selected": "3770caaa-5685-4e56-ae23-3fd2ced692e5",
+      "passed": true
+    },
+    {
+      "name": "record restored with old criterion under archived release",
+      "passed": true
+    },
+    {
+      "name": "prior revision preserves criterion snapshot",
+      "passed": false
+    },
+    {
+      "name": "prior revision criterion visible after scrolling",
+      "resolvesObservation": 12,
+      "passed": false,
+      "note": "The immediate mobile visibility observation was false; the expanded original criterion is visible after scrolling, with details open and text retained."
+    },
+    {
+      "name": "legacy records explicitly lack original criterion text",
+      "passed": true
+    },
+    {
+      "name": "prior revision criterion confirmed by screenshot and expanded DOM",
+      "method": "visual inspection plus details open attribute and rendered dialog text",
+      "resolvesObservations": [
+        12,
+        13
+      ],
+      "passed": true,
+      "evidence": "evidence/screenshots/test-record-prior-criterion-desktop.png",
+      "note": "Both isVisible probes returned false. The captured screenshot visibly shows the original v1 criterion at the bottom, and the previous read returned details open=\"\" with the same rendered text. The false probe results are retained."
+    }
+  ],
+  "limits": [
+    "Only static headings in v1 and v2 were actually observed; no business functionality is claimed.",
+    "Two isVisible probes returned false; both remain in the evidence. Expanded DOM state and a visually inspected screenshot independently confirm the original criterion.",
+    "Existing pre-feature records explicitly show missing historical criterion text; no invented snapshot."
+  ]
+}

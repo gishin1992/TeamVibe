@@ -1,0 +1,10 @@
+{
+  "at": "2026-09-21T23:24:18.593Z",
+  "firstAttempt": {
+    "type": "project.update",
+    "status": 400,
+    "error": "지원하지 않는 작업입니다.",
+    "projectUnchanged": true
+  },
+  "correction": "Inspected domain.ts; actual type is project.edit. This peer mutation uses the same synthetic owner in a separate API session, not a second browser or second team member."
+}

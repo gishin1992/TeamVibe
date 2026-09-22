@@ -1,0 +1,36 @@
+{
+  "at": "2026-09-21T10:02:54.184Z",
+  "checks": [
+    {
+      "name": "npm run typecheck",
+      "session": 23934,
+      "exitCode": 0
+    },
+    {
+      "name": "npm test",
+      "session": 9823,
+      "exitCode": 0,
+      "evidence": "test-integration-baseline.log"
+    },
+    {
+      "name": "Sites build-site.mjs",
+      "session": 77800,
+      "exitCode": 0
+    }
+  ],
+  "sourceHashes": {
+    "components/integration-review.tsx": "1b5f4804a6c43af7b5662643a9bfcdc0a13a2438066b160b65fad6363d5bc569",
+    "components/workspace.tsx": "d22c3e122c7003b2018167f44b31c4992cb7d38694c81e482123b3f442006cbc",
+    "lib/teamvibe/integration.ts": "20a3b082caf742d94e06192881238ab30c1f4b02dad7af35f16278dcb943e900",
+    "lib/teamvibe/domain.ts": "90e59b9fda8754a444f9cd05fc8f527c83dbe2e074be24d65b62fffa719d9fe3",
+    "lib/teamvibe/types.ts": "977b356582252f476737e709ff20aec5dda5e65cce1bf4d6c96604c0968a486c",
+    "app/globals.css": "e1dfdafae64768abd771de5f1dcbf7f4fc1ee0013ef30823f6a3cfd74d3d00d7",
+    "tests/integration-baseline.mjs": "89c1cc572f133cfd470be36976e5f814be8639afaa087e7d049711c69e846160"
+  },
+  "notes": [
+    "검증 실행 후 제품 코드 변경 없음. 문서와 실제 증거만 추가",
+    "lint는 이 변경 이후 재실행하지 않음",
+    "원본 실행 출력은 이 작업의 agent-sessions JSONL에 보존",
+    "최신 API 묶음 로그는 test-integration-baseline.log"
+  ]
+}

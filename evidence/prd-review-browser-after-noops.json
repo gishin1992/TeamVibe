@@ -1,0 +1,137 @@
+{
+  "id": "522cb693-67c1-4c23-853f-2a63d341748e",
+  "createdAt": "2026-09-21T11:50:58.769Z",
+  "name": "문서 검토 · 변경 없는 저장 검사",
+  "description": "동의 보존을 확인하는 합성 프로젝트",
+  "goal": "내용을 바꾸지 않은 저장은 합의를 불필요하게 해제하지 않는다.",
+  "inviteCode": "61b045ce2daa",
+  "ownerId": "jimin",
+  "members": [
+    "jimin",
+    "seoyeon"
+  ],
+  "version": 12,
+  "conversations": [],
+  "requirements": [
+    {
+      "id": "7cd150c6-90c2-4753-8f35-fe376d57e46a",
+      "createdAt": "2026-09-21T11:50:58.807Z",
+      "title": "합성 검토 기준",
+      "description": "팀이 문서를 함께 검토한다.",
+      "priority": "must",
+      "status": "accepted",
+      "sourceIds": [],
+      "decision": "합성 시연 범위에 합의했다.",
+      "sourceRevisions": {}
+    }
+  ],
+  "prd": {
+    "body": "# 문서 검토 · 변경 없는 저장 검사\n\n## 해결할 문제\n동의 보존을 확인하는 합성 프로젝트\n\n## 목표\n내용을 바꾸지 않은 저장은 합의를 불필요하게 해제하지 않는다.\n\n## 대상 사용자\n프로젝트 팀이 검토하여 사용자와 권한을 구체화하세요.\n\n## 기능 요구사항\n### 1. 합성 검토 기준\n팀이 문서를 함께 검토한다.\n- 우선순위: must\n- 검토 상태: accepted\n- 결정: 합성 시연 범위에 합의했다.\n\n## 완료 및 테스트 기준\n각 요구사항의 정상 흐름, 빈 상태, 오류 상태, 수정과 취소/삭제를 확인합니다.\n\n## 범위와 제약\n로컬 테스트 환경, 합성 데이터만 사용합니다. 외부 연계는 별도 합의 후 진행합니다.\n\n## 미결정 사항\n현재 등록된 미결정 사항 없음",
+    "revision": 2,
+    "approvals": [
+      "jimin",
+      "seoyeon"
+    ],
+    "history": [
+      {
+        "revision": 0,
+        "body": "",
+        "at": "2026-09-21T11:50:58.813Z",
+        "authorId": "jimin"
+      },
+      {
+        "revision": 1,
+        "body": "# 문서 검토 · 변경 없는 저장 검사\n\n## 해결할 문제\n동의 보존을 확인하는 합성 프로젝트\n\n## 목표\n내용을 바꾸지 않은 저장은 합의를 불필요하게 해제하지 않는다.\n\n## 대상 사용자\n프로젝트 팀이 검토하여 사용자와 권한을 구체화하세요.\n\n## 기능 요구사항\n### 1. 합성 검토 기준\n팀이 문서를 함께 검토한다.\n- 우선순위: must\n- 검토 상태: accepted\n- 결정: 합성 시연 범위에 합의했다.\n\n## 완료 및 테스트 기준\n각 요구사항의 정상 흐름, 빈 상태, 오류 상태, 수정과 취소/삭제를 확인합니다.\n\n## 범위와 제약\n로컬 테스트 환경, 합성 데이터만 사용합니다. 외부 연계는 별도 합의 후 진행합니다.\n\n## 미결정 사항\n현재 등록된 미결정 사항 없음\n",
+        "at": "2026-09-21T11:53:07.781Z",
+        "authorId": "jimin"
+      }
+    ],
+    "sourceRevision": 2
+  },
+  "stories": [],
+  "runs": [],
+  "releases": [],
+  "testResults": [],
+  "feedback": [],
+  "events": [
+    {
+      "id": "4ccb1020-2b1f-47f7-acd1-c2ea7a4ea1a9",
+      "at": "2026-09-21T11:50:58.798Z",
+      "actorId": "seoyeon",
+      "action": "member.join",
+      "detail": "이서연"
+    },
+    {
+      "id": "6d4fb874-da53-4028-8c72-e1587a0f4d4b",
+      "at": "2026-09-21T11:50:58.807Z",
+      "actorId": "jimin",
+      "action": "requirement.save",
+      "detail": "합성 검토 기준"
+    },
+    {
+      "id": "343b36ea-141f-4021-ab90-75299871146d",
+      "at": "2026-09-21T11:50:58.813Z",
+      "actorId": "jimin",
+      "action": "prd.generate",
+      "detail": "요구사항 기반 규칙 초안"
+    },
+    {
+      "id": "7f37f718-22fd-4cac-b2ea-c44eb4675d52",
+      "at": "2026-09-21T11:50:58.819Z",
+      "actorId": "jimin",
+      "action": "prd.approve",
+      "detail": "v1 동의"
+    },
+    {
+      "id": "4cd9f284-5039-4c8c-9698-6d9ee19c6092",
+      "at": "2026-09-21T11:50:58.825Z",
+      "actorId": "seoyeon",
+      "action": "prd.approve",
+      "detail": "v1 동의"
+    },
+    {
+      "id": "ecfed098-acfd-4d8d-aea2-a54e0f08a888",
+      "at": "2026-09-21T11:50:58.832Z",
+      "actorId": "jimin",
+      "action": "requirement.save",
+      "detail": "합성 검토 기준"
+    },
+    {
+      "id": "8505f15c-7a61-48bc-a27d-d22528eb370a",
+      "at": "2026-09-21T11:53:07.781Z",
+      "actorId": "jimin",
+      "action": "prd.save",
+      "detail": "v2"
+    },
+    {
+      "id": "228ba951-9a93-4b06-9710-6bf7fff805f1",
+      "at": "2026-09-21T11:53:07.788Z",
+      "actorId": "jimin",
+      "action": "prd.approve",
+      "detail": "v2 동의"
+    },
+    {
+      "id": "713d1643-b47e-47f9-9b4e-1a866431d386",
+      "at": "2026-09-21T11:53:07.795Z",
+      "actorId": "seoyeon",
+      "action": "prd.approve",
+      "detail": "v2 동의"
+    },
+    {
+      "id": "dcceeab3-f879-4f2b-85d4-5a932b0707b7",
+      "at": "2026-09-21T11:53:23.104Z",
+      "actorId": "jimin",
+      "action": "requirement.save",
+      "detail": "합성 검토 기준"
+    },
+    {
+      "id": "aa4c97cd-2e21-4a92-b556-0edbd97b6f79",
+      "at": "2026-09-21T11:53:24.105Z",
+      "actorId": "jimin",
+      "action": "prd.save",
+      "detail": "v2"
+    }
+  ],
+  "updatedAt": "2026-09-21T11:53:24.105Z",
+  "requirementsVersion": 2
+}

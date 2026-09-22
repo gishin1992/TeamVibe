@@ -1,0 +1,10 @@
+{
+  "at": "2026-09-21T12:12:40.251Z",
+  "revision": 2,
+  "status": "backlog",
+  "priorRunsTestsReleasesPrdUnchanged": true,
+  "completionRejected": {
+    "status": 400,
+    "error": "검토 대기 상태의 스토리만 완료할 수 있습니다."
+  }
+}

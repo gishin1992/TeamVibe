@@ -1,0 +1,46 @@
+{
+  "at": "2026-09-21T11:56:33.401Z",
+  "typecheck": {
+    "session": 57522,
+    "exitCode": 0
+  },
+  "tests": {
+    "session": 57522,
+    "exitCode": 0,
+    "log": "evidence/test-prd-review.log"
+  },
+  "build": {
+    "session": 78796,
+    "exitCode": 0,
+    "command": "npm run build"
+  },
+  "browser": {
+    "checks": 7,
+    "passed": true,
+    "evidence": "evidence/prd-review-browser-result.json"
+  },
+  "server": {
+    "unchangedSavesPreservedRequirementsAndPRD": true,
+    "finalRevision": 3,
+    "finalSourceRevision": 4,
+    "finalApprovals": 2,
+    "originalDocumentBodyPreserved": true
+  },
+  "resolvedRegressions": [
+    "Generated PRD terminal newline incorrectly counted as a content change; comparison uses the same trim normalization as input.",
+    "First full test attempt 64496 failed because reference order was not saved; order is now saved without revoking agreement."
+  ],
+  "sourceHashes": {
+    "lib/teamvibe/domain.ts": "f0a4e91889499058f8676d4f96876091d06240d201b35e097671e15f47be3c03",
+    "lib/teamvibe/prd-review.ts": "094d2b7fce781701feeac841d1b96b238169fe3d15445cc34732ed7efada694c",
+    "components/workspace.tsx": "ae98940b0b28a952e7ad48bc376769b299409284fcd585851972cbd0f4a96749",
+    "app/globals.css": "6309215a0c2d7f0dd77de511611fffb6044296e63833683c049e9116fbc79187",
+    "tests/prd-review.mjs": "1706afd74794b692d8372ab3b66533dfd9b6648cb82ae9ed2dc6e1ee9bae85d9",
+    "scripts/test.mjs": "ccc00bd6ac1156ae08df2131f5ab2fa9daa5806363a471029f183e6c7723918a"
+  },
+  "limitations": [
+    "No-op save attempts still create an activity event and increment project CAS version.",
+    "Document content validity is reviewed by people, not automatically verified.",
+    "No new lint or actual ChatGPT call."
+  ]
+}

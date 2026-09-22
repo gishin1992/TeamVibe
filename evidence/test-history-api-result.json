@@ -1,0 +1,14 @@
+{
+  "at": "2026-09-21T23:33:23.592Z",
+  "projectId": "ecc64576-78ea-4338-9d15-3358b7710960",
+  "revisions": 5,
+  "checks": [
+    "original author and per-revision author preserved",
+    "failed/blocked current status ignores historical passes",
+    "identical save does not create history",
+    "passing again still requires explicit completion",
+    "release binding immutable",
+    "soft-delete/restore and CAS preserve record history"
+  ],
+  "note": "Synthetic API state fixture. No browser execution claimed."
+}

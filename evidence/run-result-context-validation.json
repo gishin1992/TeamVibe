@@ -1,0 +1,72 @@
+{
+  "at": "2026-09-21T12:24:24.895Z",
+  "typecheck": {
+    "session": 88750,
+    "exitCode": 0,
+    "finalUiSession": 74997,
+    "finalUiExitCode": 0
+  },
+  "tests": {
+    "session": 88750,
+    "exitCode": 0,
+    "log": "evidence/test-run-result-context.log"
+  },
+  "build": {
+    "session": 87960,
+    "exitCode": 0,
+    "command": "node /Users/takykim/.codex/plugins/cache/openai-curated-remote/sites/0.1.65/scripts/build-site.mjs"
+  },
+  "initialAttempt": {
+    "session": 29738,
+    "exitCode": 1,
+    "log": "evidence/test-run-result-context-first-attempt.log",
+    "reason": "Fixture renamed project and thereby invalidated PRD before restart; replaced with independent conversation addition, keeping domain rules unchanged."
+  },
+  "browser": {
+    "observations": 10,
+    "passed": true,
+    "evidence": "evidence/run-result-browser-result.json"
+  },
+  "server": {
+    "bothUiRejectionsLeftWholeProjectUnchanged": true,
+    "integratedRuns": 2,
+    "releaseFiles": 2,
+    "actualUiTestRecords": 1,
+    "coveredCriteria": 2,
+    "storyStatus": "review",
+    "promptsPreserved": true
+  },
+  "sourceHashes": {
+    "lib/teamvibe/run-result.ts": "173477c4a979ae1edfe5f3d6a6337f06db22cdb19507a9ba79f958145b480b32",
+    "lib/teamvibe/domain.ts": "247cee2f0932720298bb328ddb0662341ce9525e0f5897686f57ae106d563f0d",
+    "lib/teamvibe/types.ts": "0b3f1d78b3749cd177a754325f4312630bb6492feac9c49b9c357a483683600d",
+    "lib/teamvibe/form-conflicts.ts": "56987274a91ceb556abcf97e9682245cfe03e1b4111a2777c6dba93db16bb404",
+    "components/workspace.tsx": "8166eb16d5037ea61fa3dc7e857c12cc7dd038770f7ac4fd907e30014315ff9c",
+    "scripts/result-context.mjs": "6e1fc00fc6f7562332412f7a7d8a305f3dc976c79d034e837838adc26dadec68",
+    "scripts/test.mjs": "d610b4adcb09ceb5bd4fde8d0b8f1bf3763b9baac2f119413b057748966b2a7b",
+    "scripts/prepare-run-result-demo.mjs": "cd071a0979df312a13f0efcb7d18c76da351a02ab38ea853c8633b4e86e354dc",
+    "tests/run-result-context.mjs": "6afd64d0f9d3ec935aa85ee02917863029d549d4a84b9c987f81318a4c9c5271",
+    "tests/form-conflicts.mjs": "c187833ae9252cb3b64506b498782b8531ec8fe9886b7c90ca5b8cc8fe6970bc",
+    "tests/api-flow.mjs": "2704610fd06de2183969af24f15419b36bcc1eb176cec1bc31a631084b2781c7",
+    "tests/api-guards.mjs": "041eccb4337fd1fa260f9983e2dcfb060ae5bfc05e064ac2e2dbaa663f340510",
+    "tests/artifact-removal.mjs": "6db660b7e51f0ebf5fe7acfa124d45d4c8be28288067ad5f3edbb6f1dde53f34",
+    "tests/feedback-lifecycle.mjs": "ab2d2bb41caf931c2f3e7d4fa19c74cb6a7d8ff64128ec0d7f5460e9892b5a32",
+    "tests/integration-baseline.mjs": "5f712427595a4badce6c080d74bd7fb0f8858ec0ce28428b860dcde55abbab71",
+    "tests/prd-review.mjs": "6183d87f36e52abf373cff62e5117dd74592bf3159ee1be01adffde70c0c870c",
+    "tests/resolution-transfer.mjs": "3519c8be3ce8ae2964451ec34128faae1e40c979f4491c60b5198d3ab2980e32",
+    "tests/serve-browser-fixtures.mjs": "f01ed0abb8d74e61b197297c4081e603f88a8967688e4fc8098bf25aa9d65e68",
+    "tests/story-editing.mjs": "eea9207124edf3ef43bebc204fcccf2cf627bd4264181ff4cd7191af2f82e8dc",
+    "tests/story-revision.mjs": "f199c28ab40ebbdbf8fd7cc732bd063d7dd051e5fc16dd52da108d582de44c46",
+    "tests/test-history.mjs": "1c83c98c4826945d9f13402f88a925b400a2809078212a94dd6d0f29f328eb69",
+    "tests/test-record-lifecycle.mjs": "67b3a24bb67e49dca4432d70152d96a9880950c698720569381e8a177c0e7ea9",
+    "scripts/prepare-story-editing-demo.mjs": "7cd14e5415cd82874f201e48384292690ab73ce5e9a581dc6d0339388cc1d619",
+    "scripts/prepare-test-history-demo.mjs": "8630d54ef5a676b9202d6cc5d8fe13cf2b634ba0e9740d80b8b05eec2e3cdf33",
+    "scripts/prepare-test-record-demo.mjs": "12a6341820e47c1bced233b088059b15d1af8f1e8299c173105609f38b51a9dd"
+  },
+  "limitations": [
+    "No actual pre-fix wrong-target submission was executed; original risk identified from code.",
+    "Legacy runs may accept missing context; displayed limitation and pure validator compatibility tested, legacy project not modified.",
+    "Context prevents accidental destination mismatch; it does not prove code correctness or authenticity.",
+    "No real ChatGPT call, external publication, new lint or broad security claim."
+  ]
+}

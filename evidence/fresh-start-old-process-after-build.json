@@ -1,0 +1,22 @@
+{
+  "at": "2026-09-21T11:42:40.477Z",
+  "observations": [
+    {
+      "endpoint": "/api/health",
+      "status": 200,
+      "body": {
+        "ok": true,
+        "mode": "local",
+        "ai": "manual-chatgpt"
+      }
+    },
+    {
+      "endpoint": "/api/bootstrap",
+      "status": 500,
+      "body": {
+        "error": "저장소 처리 중 오류가 발생했습니다. 입력을 보존한 상태로 다시 시도해 주세요."
+      }
+    }
+  ],
+  "note": "The original server still served its loaded pre-fix bundle after rebuilding. It was stopped through its verified PID before starting the new npm launcher."
+}

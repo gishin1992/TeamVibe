@@ -1,0 +1,45 @@
+{
+  "at": "2026-09-21T11:27:47.963Z",
+  "projectId": "27431fed-febd-4edf-bc7a-95577776cc62",
+  "observations": [
+    {
+      "at": "2026-09-21T11:26:08.094Z",
+      "name": "iframe counter",
+      "initial": "0",
+      "afterOneClick": "1",
+      "passed": true
+    },
+    {
+      "name": "initial saved record",
+      "passed": true
+    },
+    {
+      "name": "revision authors and original actual result",
+      "passed": true,
+      "text": "검증 기록 수정 이력\n\n확인 버튼 1회 · 실제 브라우저 관찰\n\n이전 기록은 변경 경위를 보여줍니다. 완료 판단에는 현재 기록만 사용하며, 이력을 열어 보는 것은 테스트를 다시 실행하는 것이 아닙니다.\n\n현재 기록 · v2 · 통과\n확인 버튼 1회 · 실제 브라우저 관찰\n이서연 · 2026. 9. 21. 오후 8:26:45\n검증 릴리스: 확인 횟수 시연 v1 · 연결한 테스트 기준 1개\n수동 기록\n수행 절차\n김지민 시연 프로필에서 테스트 랩을 열고 확인 횟수의 초기값을 읽은 뒤 확인 버튼을 한 번 눌렀다.\n기대 결과\n초기 확인 횟수는 0이고 버튼을 한 번 누르면 1로 바뀐다.\n실제 결과\n김지민 시연 프로필로 인앱 브라우저의 초기 0과 확인 버튼 1회 후 1을 관찰한 기록이다. 이서연 프로필에서는 설명만 보완했으며 이 수정에서는 테스트를 다시 실행하지 않았다.\n이전 기록 · v1 · 통과\n확인 버튼 1회 · 실제 브라우저 관찰\n김지민 · 2026. 9. 21. 오후 8:26:15\n검증 릴리스: 확인 횟수 시연 v1 · 연결한 테스트 기준 1개\n수동 기록\n수행 절차\n김지민 시연 프로필에서 테스트 랩을 열고 확인 횟수의 초기값을 읽은 뒤 확인 버튼을 한 번 눌렀다.\n기대 결과\n초기 확인 횟수는 0이고 버튼을 한 번 누르면 1로 바뀐다.\n실제 결과\n인앱 브라우저의 격리된 미리보기에서 초기 0과 확인 버튼 1회 클릭 뒤 1을 직접 관찰했다.\nClose"
+    },
+    {
+      "name": "mobile no horizontal overflow",
+      "scrollWidth": 390,
+      "width": 390,
+      "passed": true
+    },
+    {
+      "name": "mobile original record scroll",
+      "passed": true,
+      "note": "390px screenshot shows full original record after scrolling the history sheet."
+    },
+    {
+      "name": "trash hides current test",
+      "passed": true
+    },
+    {
+      "name": "restored history unchanged in UI",
+      "passed": true
+    }
+  ],
+  "limits": [
+    "Only the initial iframe 0→1 action was executed. The teammate edit changed explanatory text without rerunning that test.",
+    "Failure/current-only completion behavior is covered separately by synthetic API fixtures."
+  ]
+}

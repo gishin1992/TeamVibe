@@ -1,0 +1,15 @@
+{
+  "at": "2026-09-21T23:33:25.381Z",
+  "passed": true,
+  "checks": [
+    "same run set regardless of order",
+    "user/project/run-set separation",
+    "old review version remains stale after remount",
+    "null file deletion and request/response preserved",
+    "functional resolution updates",
+    "delayed success and identical retyping protected",
+    "reset/success affect only current group",
+    "prior state immutable"
+  ],
+  "scope": "State helper; browser checks are separate."
+}

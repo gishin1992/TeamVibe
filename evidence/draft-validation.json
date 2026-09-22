@@ -1,0 +1,40 @@
+{
+  "at": "2026-09-21T10:50:20.739Z",
+  "typecheck": {
+    "exitCode": 0,
+    "session": 18910
+  },
+  "tests": {
+    "exitCode": 0,
+    "session": 18910,
+    "log": "evidence/test-conversation-drafts.log"
+  },
+  "build": {
+    "exitCode": 0,
+    "session": 36723,
+    "command": "node /Users/takykim/.codex/plugins/cache/openai-curated-remote/sites/0.1.65/scripts/build-site.mjs"
+  },
+  "browser": {
+    "checks": 16,
+    "passed": true,
+    "evidence": "evidence/draft-browser-result.json"
+  },
+  "server": {
+    "submittedUserMessages": 1,
+    "otherConversationsEmpty": true,
+    "unsentDraftsNotPersisted": true
+  },
+  "sourceHashes": {
+    "components/workspace.tsx": "89eae55e8480bfb0442187210ae9198e4bb051c60bfa41be56c685c8fc0d6ccf",
+    "lib/teamvibe/conversation-drafts.ts": "52d5804611a645b51f4d3db2050c7ddc6819f654b9a6abaa8dd7e562b241f62f",
+    "tests/conversation-drafts.mjs": "5e36ffc7c9baaaccf8c0901704b91304cefdf8f2fbdf21c35e847dfb132dcfe8",
+    "scripts/test.mjs": "268f146e12ccd6bcca6c9d0eba7bf90fc7a920bf719849ad352a5c8d95d66fe0",
+    "scripts/prepare-draft-demo.mjs": "bd1c3dd142d48906e4da9ec0ce62f605b29448453d471e220a3e9bc62e657cbd"
+  },
+  "limitations": [
+    "No new lint run.",
+    "Actual browser network-delay race not simulated; deferred state transition tested.",
+    "Unsent drafts are page-memory only and disappear on reload.",
+    "Profiles are local demo identity, not operational authentication."
+  ]
+}

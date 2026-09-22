@@ -1,0 +1,16 @@
+{
+  "files": {
+    "styles.css": "body{font:18px system-ui;margin:0;padding:32px;background:#eef4ff;color:#18335e}main{max-width:480px;padding:24px;margin:auto;background:white;border:2px solid #315ed9;border-radius:16px}h1{font-size:26px}button{font:inherit;background:#315ed9;color:white;border:0;border-radius:8px;padding:12px 24px}"
+  },
+  "deletedFiles": [],
+  "log": "로컬 합성 파일 작성. 준비 시점 브라우저 미실행.",
+  "source": "scripts/prepare-run-result-demo.mjs · 실제 ChatGPT 호출 없음",
+  "context": {
+    "projectId": "f1b36021-f87e-4abb-853c-e134b61328f1",
+    "runId": "53770641-2ea2-4928-8ba3-b034ed4e2e4d",
+    "storyId": "5274e132-5748-4308-a3e6-2d5292eb7870",
+    "storyRevision": 1,
+    "prdRevision": 1,
+    "baseReleaseId": ""
+  }
+}

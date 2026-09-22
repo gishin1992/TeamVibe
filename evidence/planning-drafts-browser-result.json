@@ -1,0 +1,92 @@
+{
+  "at": "2026-09-21T13:14:17.132Z",
+  "projectId": "27d457aa-b234-4fbc-82dd-1ed660221ba1",
+  "otherProjectId": "535cf708-b137-4ec6-aa48-2687b2c1a587",
+  "observations": [
+    {
+      "name": "Valid synthetic requirement response reviewed before leaving",
+      "passed": true
+    },
+    {
+      "name": "Requirement request and raw response survive workspace navigation; review resets",
+      "passed": true
+    },
+    {
+      "name": "Story response reviewed",
+      "passed": true
+    },
+    {
+      "name": "Story request and raw response survive development-tab switch; review resets",
+      "passed": true
+    },
+    {
+      "name": "Different project starts with its own empty requirement draft",
+      "passed": true
+    },
+    {
+      "name": "Another profile starts with empty request and response in same project",
+      "passed": true
+    },
+    {
+      "name": "Original profile returns to its request and response",
+      "passed": true
+    },
+    {
+      "name": "Cancelling explicit draft reset preserves request and response",
+      "passed": true
+    },
+    {
+      "name": "Confirmed reset clears only current request, response and review",
+      "passed": true
+    },
+    {
+      "name": "Resetting requirement material leaves story material intact",
+      "passed": true
+    },
+    {
+      "name": "Actual story file chooser updates response and preserves request",
+      "passed": true
+    },
+    {
+      "name": "Successful story import clears submitted request and response",
+      "passed": true
+    },
+    {
+      "name": "Retained requirement response becomes stale after story import and cannot register",
+      "passed": true
+    },
+    {
+      "name": "Refreshed synthetic requirement imports and clears its own draft",
+      "passed": true
+    },
+    {
+      "name": "Another profile draft survives first profile import and clearing",
+      "passed": true
+    },
+    {
+      "name": "Different project draft survives both imports and profile changes",
+      "passed": true
+    },
+    {
+      "name": "Mobile reset confirmation explains scope and fits 390px viewport",
+      "passed": true,
+      "details": {
+        "text": "작성 중인 자료를 지울까요?\n\n이 창의 요청과 응답 JSON을 지웁니다. 프로젝트에 이미 등록한 요구사항과 스토리는 유지됩니다.\n\n계속 검토\n자료 지우기",
+        "viewport": 390,
+        "width": 390
+      }
+    },
+    {
+      "name": "Mobile reset clears separate project draft",
+      "passed": true
+    }
+  ],
+  "notes": [
+    "Actual browser navigation, two synthetic profiles, two projects and both planning kinds.",
+    "Synthetic JSON responses; no ChatGPT request sent. Story file selected through actual file chooser.",
+    "Story imported first. Requirement response then rejected as stale; its synthetic version was updated from the newly generated visible request before re-review and import.",
+    "Request copy button exercised only to generate story request; clipboard contents not independently verified.",
+    "Explicitly cleared leftover temporary drafts in other profile and project.",
+    "No forced delayed import/file-read race in browser; stale-completion helper tested separately."
+  ]
+}

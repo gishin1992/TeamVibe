@@ -1,0 +1,51 @@
+{
+  "at": "2026-09-22T00:06:09.940Z",
+  "previousGoalTurn": "no-progress: acknowledgement only; resumed by explicit active-goal continuation",
+  "deadline": "2026-09-22T00:00:00.000Z",
+  "deadlinePassed": true,
+  "health": {
+    "ok": true,
+    "mode": "local",
+    "ai": "manual-chatgpt",
+    "database": "ready"
+  },
+  "verifiedRuntimeFiles": 163,
+  "allCurrentSourceMatchesCandidateExceptNewSampleHelper": 195,
+  "unchangedTestSourceFiles": 36,
+  "newSource": [
+    "scripts/prepare-safe-edit-demo.mjs"
+  ],
+  "verifiedSafeDemoHashes": 5,
+  "project": {
+    "id": "944c2652-b7f5-49a5-8e9a-b9d737c3ffb1",
+    "version": 24,
+    "allMembersApproved": true,
+    "done": 2,
+    "passedCriteria": 5,
+    "testRecords": 1
+  },
+  "originalProjectUnchanged": true,
+  "priorFreshInstallUIFlowSnapshotHasCurrentVersionReleaseAndCriterionLinks": true,
+  "documentationLinks": 22,
+  "temporaryPreview": {
+    "serverSession": 20440,
+    "exitCode": 0,
+    "tabAlreadyMissing": true,
+    "requests": [
+      {
+        "at": "2026-09-21T23:53:07.836Z",
+        "path": "/"
+      }
+    ]
+  },
+  "screenshot": "evidence/screenshots/final-overview.png",
+  "auditRetry": "First audit helper failed before any write: Node direct import of domain.ts cannot resolve extensionless TS dependencies. Used explicit snapshot/relationship assertions plus source and prior API test evidence; no app change.",
+  "limits": [
+    "New project prepared through local API; execution, test record and completion verified through CUA UI.",
+    "Standalone exported HTML served by local HTTP-only helper; file:// opening not tested.",
+    "In-memory synthetic app, reset on reload; no external service or backend.",
+    "Prior demo retained; use safe-edit sample for improved edit behavior.",
+    "Initial byte comparison failed on trailing newlines trimmed by domain file import. Verified complete content equality after that existing trim normalization.",
+    "No platform application source changed; prior full-suite/build results cover unchanged source, new sample has actual browser and syntax checks."
+  ]
+}

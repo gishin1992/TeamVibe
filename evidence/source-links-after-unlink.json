@@ -1,0 +1,230 @@
+{
+  "id": "48b9b3bd-d476-4cdc-bae9-c67af1195438",
+  "createdAt": "2026-09-21T11:12:24.106Z",
+  "name": "대화 출처 연결 · 변경과 검토",
+  "description": "대화 근거를 바꾸어도 이전 연결과 원문 버전을 보존하는 합성 시연",
+  "goal": "출처 선택과 해제, 팀의 동시 변경을 확인한다.",
+  "inviteCode": "dc00f49c0e22",
+  "ownerId": "jimin",
+  "members": [
+    "jimin",
+    "seoyeon"
+  ],
+  "version": 14,
+  "conversations": [
+    {
+      "id": "b4abbfe6-a2e0-49d5-b945-52bf3ca42df3",
+      "createdAt": "2026-09-21T11:12:24.144Z",
+      "title": "최초 취소 의견",
+      "ownerId": "jimin",
+      "messages": [
+        {
+          "id": "862c4d94-c638-4f9d-9f1a-1389e6834130",
+          "createdAt": "2026-09-21T11:12:24.152Z",
+          "revision": 1,
+          "authorId": "jimin",
+          "kind": "user",
+          "text": "승인을 받기 전에만 신청을 취소하고 싶어요.",
+          "source": ""
+        },
+        {
+          "id": "212ae1eb-81c6-42f4-842d-fc9a51fc6ccf",
+          "createdAt": "2026-09-21T11:12:24.152Z",
+          "authorId": "guide",
+          "kind": "guide",
+          "text": "로컬 진행 도우미: 이 기능은 누가 사용하나요? 성공한 상태와 예외 상황, 수정·취소 규칙도 적어 주세요. 더 깊이 논의하려면 ChatGPT 작업 묶음을 복사하고 응답을 가져오세요."
+        }
+      ]
+    },
+    {
+      "id": "e5ba9fbb-5679-4284-9003-a6e0d30252fc",
+      "createdAt": "2026-09-21T11:12:24.162Z",
+      "title": "담당자의 보완 의견",
+      "ownerId": "seoyeon",
+      "messages": [
+        {
+          "id": "30367e38-47dd-4817-9bbe-b621c1a4019f",
+          "createdAt": "2026-09-21T11:12:24.169Z",
+          "revision": 1,
+          "authorId": "seoyeon",
+          "kind": "user",
+          "text": "승인 후에도 담당자 확인을 받고 취소할 수 있어야 해요.",
+          "source": ""
+        },
+        {
+          "id": "70e19ba3-2f51-45b8-aa5d-e12638cb3818",
+          "createdAt": "2026-09-21T11:12:24.169Z",
+          "authorId": "guide",
+          "kind": "guide",
+          "text": "로컬 진행 도우미: 이 기능은 누가 사용하나요? 성공한 상태와 예외 상황, 수정·취소 규칙도 적어 주세요. 더 깊이 논의하려면 ChatGPT 작업 묶음을 복사하고 응답을 가져오세요."
+        }
+      ]
+    },
+    {
+      "id": "1a6d8da2-d885-48ad-8723-2e47631ca7fd",
+      "createdAt": "2026-09-21T11:12:24.176Z",
+      "title": "취소 정책 정리",
+      "ownerId": "jimin",
+      "messages": [
+        {
+          "id": "cd295386-55a8-4ec1-abf4-bbc06d76ea8e",
+          "createdAt": "2026-09-21T11:12:24.183Z",
+          "revision": 1,
+          "authorId": "jimin",
+          "kind": "chatgpt",
+          "text": "취소할 때 처리 상태와 사유를 함께 기록하는 방향을 검토하세요.",
+          "source": "합성 ChatGPT 응답 · 외부 호출 없음"
+        }
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "id": "dad8f44a-4c88-49fa-bfe0-4e8bb211d98d",
+      "createdAt": "2026-09-21T11:12:24.190Z",
+      "title": "승인 후 취소 검토",
+      "description": "취소가 가능한 시점을 정한다.",
+      "priority": "must",
+      "status": "proposed",
+      "sourceIds": [],
+      "decision": "최초 합성 의견을 검토",
+      "sourceRevisions": {},
+      "sourceHistory": [
+        {
+          "sourceIds": [
+            "862c4d94-c638-4f9d-9f1a-1389e6834130"
+          ],
+          "sourceRevisions": {
+            "862c4d94-c638-4f9d-9f1a-1389e6834130": 1
+          },
+          "at": "2026-09-21T11:12:39.275Z",
+          "authorId": "jimin"
+        },
+        {
+          "sourceIds": [
+            "30367e38-47dd-4817-9bbe-b621c1a4019f"
+          ],
+          "sourceRevisions": {
+            "30367e38-47dd-4817-9bbe-b621c1a4019f": 1
+          },
+          "at": "2026-09-21T11:12:53.690Z",
+          "authorId": "jimin"
+        }
+      ]
+    }
+  ],
+  "prd": {
+    "body": "# 대화 출처 연결 · 변경과 검토\n\n## 해결할 문제\n대화 근거를 바꾸어도 이전 연결과 원문 버전을 보존하는 합성 시연\n\n## 목표\n출처 선택과 해제, 팀의 동시 변경을 확인한다.\n\n## 대상 사용자\n프로젝트 팀이 검토하여 사용자와 권한을 구체화하세요.\n\n## 기능 요구사항\n### 1. 신청 취소 범위\n취소가 가능한 시점을 정한다.\n- 우선순위: must\n- 검토 상태: accepted\n- 결정: 최초 합성 의견을 검토\n\n## 완료 및 테스트 기준\n각 요구사항의 정상 흐름, 빈 상태, 오류 상태, 수정과 취소/삭제를 확인합니다.\n\n## 범위와 제약\n로컬 테스트 환경, 합성 데이터만 사용합니다. 외부 연계는 별도 합의 후 진행합니다.\n\n## 미결정 사항\n현재 등록된 미결정 사항 없음\n",
+    "revision": 1,
+    "approvals": [],
+    "history": [
+      {
+        "revision": 0,
+        "body": "",
+        "at": "2026-09-21T11:12:24.198Z",
+        "authorId": "jimin"
+      }
+    ],
+    "sourceRevision": 1
+  },
+  "stories": [],
+  "runs": [],
+  "releases": [],
+  "testResults": [],
+  "feedback": [],
+  "events": [
+    {
+      "id": "a64caed1-d48b-4449-93ab-7953a302b4d1",
+      "at": "2026-09-21T11:12:24.133Z",
+      "actorId": "seoyeon",
+      "action": "member.join",
+      "detail": "이서연"
+    },
+    {
+      "id": "7269ad86-5813-492b-9d47-a2c89494e230",
+      "at": "2026-09-21T11:12:24.144Z",
+      "actorId": "jimin",
+      "action": "conversation.save",
+      "detail": "최초 취소 의견"
+    },
+    {
+      "id": "99dabb2e-2203-49c6-8b75-f61e84542d36",
+      "at": "2026-09-21T11:12:24.152Z",
+      "actorId": "jimin",
+      "action": "message.save",
+      "detail": "최초 취소 의견"
+    },
+    {
+      "id": "42cf26da-9416-4be4-8ac9-a9c4f411146b",
+      "at": "2026-09-21T11:12:24.162Z",
+      "actorId": "seoyeon",
+      "action": "conversation.save",
+      "detail": "담당자의 보완 의견"
+    },
+    {
+      "id": "a2e387a0-cd2e-43d9-a723-db612d49d227",
+      "at": "2026-09-21T11:12:24.169Z",
+      "actorId": "seoyeon",
+      "action": "message.save",
+      "detail": "담당자의 보완 의견"
+    },
+    {
+      "id": "d46b443e-eca6-4d76-a1df-af56d111d21e",
+      "at": "2026-09-21T11:12:24.176Z",
+      "actorId": "jimin",
+      "action": "conversation.save",
+      "detail": "취소 정책 정리"
+    },
+    {
+      "id": "242bcfbc-221a-4ee9-be77-b75726cfa0e9",
+      "at": "2026-09-21T11:12:24.183Z",
+      "actorId": "jimin",
+      "action": "message.save",
+      "detail": "취소 정책 정리"
+    },
+    {
+      "id": "7c283c6c-6f1a-4643-9f22-9ed5e7ae6e98",
+      "at": "2026-09-21T11:12:24.190Z",
+      "actorId": "jimin",
+      "action": "requirement.save",
+      "detail": "신청 취소 범위"
+    },
+    {
+      "id": "430262c4-6b73-4688-9d17-e3ff6b14f823",
+      "at": "2026-09-21T11:12:24.198Z",
+      "actorId": "jimin",
+      "action": "prd.generate",
+      "detail": "요구사항 기반 규칙 초안"
+    },
+    {
+      "id": "dad1e388-70a7-44aa-8fbd-48b242636475",
+      "at": "2026-09-21T11:12:24.205Z",
+      "actorId": "jimin",
+      "action": "prd.approve",
+      "detail": "v1 동의"
+    },
+    {
+      "id": "858cb9ab-de5b-47e2-9353-0b621af00097",
+      "at": "2026-09-21T11:12:24.214Z",
+      "actorId": "seoyeon",
+      "action": "prd.approve",
+      "detail": "v1 동의"
+    },
+    {
+      "id": "4a7e6875-f3e9-4bf3-96ce-843a6643852f",
+      "at": "2026-09-21T11:12:39.275Z",
+      "actorId": "jimin",
+      "action": "requirement.save",
+      "detail": "승인 후 취소 검토"
+    },
+    {
+      "id": "9e5bc4fc-7839-4ba2-99e7-323d5fc11226",
+      "at": "2026-09-21T11:12:53.690Z",
+      "actorId": "jimin",
+      "action": "requirement.save",
+      "detail": "승인 후 취소 검토"
+    }
+  ],
+  "updatedAt": "2026-09-21T11:12:53.690Z",
+  "requirementsVersion": 3
+}

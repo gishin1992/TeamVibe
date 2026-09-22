@@ -1,0 +1,23 @@
+{
+  "at": "2026-09-21T11:44:06.597Z",
+  "observations": [
+    {
+      "endpoint": "/api/health",
+      "status": 503,
+      "body": {
+        "ok": false,
+        "mode": "local",
+        "ai": "manual-chatgpt",
+        "database": "not-ready",
+        "error": "로컬 데이터베이스 초기화가 필요합니다. 실행할 때와 같은 TEAMVIBE_STATE_PATH 설정으로 터미널에서 npm run db:init을 실행한 뒤 다시 시도하세요. 기존 데이터 폴더는 지우지 마세요."
+      }
+    },
+    {
+      "endpoint": "/api/bootstrap",
+      "status": 503,
+      "body": {
+        "error": "로컬 데이터베이스 초기화가 필요합니다. 실행할 때와 같은 TEAMVIBE_STATE_PATH 설정으로 터미널에서 npm run db:init을 실행한 뒤 다시 시도하세요. 기존 데이터 폴더는 지우지 마세요."
+      }
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "at": "2026-09-21T12:13:38.163Z",
+  "beforeFix": "evidence/story-noop-before-fix.json",
+  "typecheck": {
+    "session": 72642,
+    "exitCode": 0
+  },
+  "tests": {
+    "session": 72642,
+    "exitCode": 0,
+    "log": "evidence/test-story-editing.log"
+  },
+  "build": {
+    "session": 85749,
+    "exitCode": 0,
+    "command": "node /Users/takykim/.codex/plugins/cache/openai-curated-remote/sites/0.1.65/scripts/build-site.mjs"
+  },
+  "initialTypecheck": {
+    "session": 66471,
+    "exitCode": 2,
+    "error": "TS5097 .ts extension import; resolved by co-locating pure editor status helper in existing form-conflicts module"
+  },
+  "browser": {
+    "observations": 8,
+    "positive": 7,
+    "incorrectLabelExpectationRetained": true,
+    "actualLabelIndependentlyConfirmed": true,
+    "evidence": "evidence/story-editing-browser-result.json"
+  },
+  "server": {
+    "unchangedSavePreservedStoriesRunsTestsReleasesPrd": true,
+    "realEditRevision": 2,
+    "realEditStatus": "backlog",
+    "oldRunTestReleasePrdUnchanged": true,
+    "completionRejected": 400
+  },
+  "sourceHashes": {
+    "lib/teamvibe/domain.ts": "838044438331d25bdc33d5d20e68f5e654c5946aec8eeff11900414730de0c6b",
+    "lib/teamvibe/form-conflicts.ts": "954efadc15b810ce595a6c338c82219af2499f07efc2c9c550c2e534ac60aa70",
+    "components/workspace.tsx": "85bcffd3abac8bc24946a98c6a0724041f1db55b96129fccc44176fe4e7d1172",
+    "tests/story-editing.mjs": "c8fd98880e0a5f48ff3c8acd66d079eef50b4bd583d71fbd4d79d1fa87f268df",
+    "tests/form-conflicts.mjs": "2e9c9c0c9d2e0727a9a771b610be219fcae593a18ceca218bae6c322ca661f48",
+    "scripts/test.mjs": "82f69c9838906b6e6264f46973855909d067470228d42ae65912b8d63986df9e"
+  },
+  "limitations": [
+    "v1 confirmation button was actually observed; test record and completion were then entered through local API.",
+    "v2 count requirement is intentionally pending development and unverified.",
+    "No new standalone story revision history; immutable run prompts and test coverage snapshots preserve original development/test criteria.",
+    "No new lint, external AI calls or publication."
+  ]
+}

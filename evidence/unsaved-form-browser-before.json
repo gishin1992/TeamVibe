@@ -1,0 +1,55 @@
+{
+  "id": "3887234e-8f8f-45ed-92e5-aad101ab1027",
+  "createdAt": "2026-09-21T13:01:25.726Z",
+  "name": "편집 중인 문서 · 닫기 전 입력 보존",
+  "description": "창 닫기, 계속 작성, 입력 버리기와 동시 편집을 확인하는 합성 프로젝트",
+  "goal": "팀원이 작성하던 문서를 실수로 닫아 잃지 않게 한다.",
+  "inviteCode": "e1109f56f8ab",
+  "ownerId": "jimin",
+  "members": [
+    "jimin",
+    "seoyeon"
+  ],
+  "version": 3,
+  "conversations": [],
+  "requirements": [],
+  "prd": {
+    "body": "# 비품 신청 검토\n\n직원은 품목과 수량을 입력한다.\n팀은 신청 내역을 함께 확인한다.\n합성 데이터만 사용한다.",
+    "revision": 1,
+    "approvals": [],
+    "history": [
+      {
+        "revision": 0,
+        "body": "",
+        "at": "2026-09-21T13:01:25.788Z",
+        "authorId": "jimin"
+      }
+    ],
+    "sourceRevision": 0,
+    "updatedAt": "2026-09-21T13:01:25.788Z",
+    "updatedBy": "jimin",
+    "change": "edited"
+  },
+  "stories": [],
+  "runs": [],
+  "releases": [],
+  "testResults": [],
+  "feedback": [],
+  "events": [
+    {
+      "id": "92925977-6675-4c97-bba6-9c9ef6ec86a8",
+      "at": "2026-09-21T13:01:25.778Z",
+      "actorId": "seoyeon",
+      "action": "member.join",
+      "detail": "이서연"
+    },
+    {
+      "id": "c53f0299-9e74-4e4e-bd81-873c98d2bde3",
+      "at": "2026-09-21T13:01:25.788Z",
+      "actorId": "jimin",
+      "action": "prd.save",
+      "detail": "v1"
+    }
+  ],
+  "updatedAt": "2026-09-21T13:01:25.788Z"
+}

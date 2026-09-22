@@ -1,0 +1,28 @@
+{
+  "at": "2026-09-21T23:33:22.348Z",
+  "projectId": "c4be9f08-482b-4db6-8f25-8df525b316c4",
+  "invalidCases": [
+    "other-project",
+    "old-context",
+    "automatic-agreement",
+    "coerced-enum",
+    "missing-conflict-note",
+    "foreign-source",
+    "guide-source",
+    "old-source-revision",
+    "repeated-source",
+    "repeated-key",
+    "empty-batch",
+    "too-many-items"
+  ],
+  "verified": [
+    "atomic rejection",
+    "cross-member message provenance",
+    "source editing/deletion and conversation archive guards",
+    "no automatic approval",
+    "duplicate batch rejection after archive",
+    "edit/archive/restore provenance preservation",
+    "CAS and stale context rejection"
+  ],
+  "note": "Synthetic API state tests, not actual ChatGPT execution or browser validation."
+}

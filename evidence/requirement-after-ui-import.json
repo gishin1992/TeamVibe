@@ -1,0 +1,247 @@
+{
+  "id": "92ca2f8b-6f8c-40be-b5c1-67b4ae415e2a",
+  "createdAt": "2026-09-21T11:02:32.789Z",
+  "name": "팀 대화에서 요구사항 · 합성 반입",
+  "description": "서로 다른 취소 의견을 임의로 합의하지 않고 공동 검토한다.",
+  "goal": "여러 팀원의 대화 출처를 보존하며 요구사항 초안을 만든다.",
+  "inviteCode": "961ab9904fd1",
+  "ownerId": "jimin",
+  "members": [
+    "jimin",
+    "seoyeon"
+  ],
+  "version": 12,
+  "conversations": [
+    {
+      "id": "b9a691ab-453a-459f-9d94-7c4335592cab",
+      "createdAt": "2026-09-21T11:02:32.820Z",
+      "title": "신청자의 관점",
+      "ownerId": "jimin",
+      "messages": [
+        {
+          "id": "4e049043-1f13-4548-9c34-40f2611e5869",
+          "createdAt": "2026-09-21T11:02:32.827Z",
+          "revision": 1,
+          "authorId": "jimin",
+          "kind": "user",
+          "text": "비품 신청에서 품목은 필수이고 수량은 1 이상이어야 해요. 승인을 받기 전에는 신청을 수정하거나 취소하고 싶어요.",
+          "source": ""
+        },
+        {
+          "id": "980fbbcb-a512-4119-bf99-73f0b11680c0",
+          "createdAt": "2026-09-21T11:02:32.827Z",
+          "authorId": "guide",
+          "kind": "guide",
+          "text": "로컬 진행 도우미: 이 기능은 누가 사용하나요? 성공한 상태와 예외 상황, 수정·취소 규칙도 적어 주세요. 더 깊이 논의하려면 ChatGPT 작업 묶음을 복사하고 응답을 가져오세요."
+        }
+      ]
+    },
+    {
+      "id": "991fa403-d0e3-42be-b2bf-52b0e30c8cae",
+      "createdAt": "2026-09-21T11:02:32.834Z",
+      "title": "관리 담당자의 관점",
+      "ownerId": "seoyeon",
+      "messages": [
+        {
+          "id": "29e8f04c-8972-4713-b4ea-f43b7126a869",
+          "createdAt": "2026-09-21T11:02:32.840Z",
+          "revision": 2,
+          "authorId": "seoyeon",
+          "kind": "user",
+          "text": "승인 후에도 신청자의 취소 요청을 받아 담당자가 확인하면 취소할 수 있어야 해요. 모든 취소 이유를 기록하고 싶어요. 취소 이유는 필수 입력으로 하고 싶어요.",
+          "source": "",
+          "history": [
+            {
+              "revision": 1,
+              "text": "승인 후에도 신청자의 취소 요청을 받아 담당자가 확인하면 취소할 수 있어야 해요. 모든 취소 이유를 기록하고 싶어요.",
+              "source": "",
+              "at": "2026-09-21T11:02:32.840Z",
+              "authorId": "seoyeon"
+            }
+          ],
+          "updatedAt": "2026-09-21T11:03:19.441Z",
+          "updatedBy": "seoyeon"
+        },
+        {
+          "id": "8b3a98c1-bce3-493e-a5ba-46228070e699",
+          "createdAt": "2026-09-21T11:02:32.840Z",
+          "authorId": "guide",
+          "kind": "guide",
+          "text": "로컬 진행 도우미: 이 기능은 누가 사용하나요? 성공한 상태와 예외 상황, 수정·취소 규칙도 적어 주세요. 더 깊이 논의하려면 ChatGPT 작업 묶음을 복사하고 응답을 가져오세요."
+        }
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "id": "f3ee61a2-801f-4254-896c-e918b50afc65",
+      "createdAt": "2026-09-21T11:02:32.847Z",
+      "title": "품목과 수량 입력 확인",
+      "description": "품목은 필수이고 수량은 1 이상이어야 한다.",
+      "priority": "must",
+      "status": "accepted",
+      "sourceIds": [
+        "4e049043-1f13-4548-9c34-40f2611e5869"
+      ],
+      "decision": "두 사람이 확인한 합성 입력 기준",
+      "sourceRevisions": {
+        "4e049043-1f13-4548-9c34-40f2611e5869": 1
+      }
+    },
+    {
+      "id": "3dba1783-ba6e-4426-881a-9efe2470839d",
+      "createdAt": "2026-09-21T11:03:55.179Z",
+      "title": "신청 수정과 취소",
+      "description": "신청자는 자신의 신청을 수정하거나 취소하고 변경된 상태를 확인한다.",
+      "priority": "must",
+      "status": "proposed",
+      "decision": "수정 가능 시점과 항목을 검토한다.",
+      "sourceIds": [
+        "4e049043-1f13-4548-9c34-40f2611e5869"
+      ],
+      "sourceRevisions": {
+        "4e049043-1f13-4548-9c34-40f2611e5869": 1
+      },
+      "extractionSource": {
+        "batchId": "synthetic-requirements-fresh-aa9e8fb0-d8a2-4e48-a8dc-e0ddf5095e21",
+        "key": "edit-request",
+        "source": "Codex 로컬 합성 응답 · 실제 ChatGPT 호출 없음",
+        "reviewNote": "수정 가능 시점과 항목을 검토한다."
+      }
+    },
+    {
+      "id": "75b63fc5-3a1d-4cec-a6f0-b12ad5fb937d",
+      "createdAt": "2026-09-21T11:03:55.179Z",
+      "title": "승인 후 취소 가능 범위",
+      "description": "승인 이후 취소 허용 여부와 담당자 확인 절차를 결정한다.",
+      "priority": "should",
+      "status": "conflict",
+      "decision": "승인 전까지만 취소할지, 승인 후에도 담당자 확인으로 허용할지 결정해야 한다. 취소 이유 기록 범위도 확인한다. 담당자는 취소 이유의 필수 입력을 제안했다.",
+      "sourceIds": [
+        "4e049043-1f13-4548-9c34-40f2611e5869",
+        "29e8f04c-8972-4713-b4ea-f43b7126a869"
+      ],
+      "sourceRevisions": {
+        "4e049043-1f13-4548-9c34-40f2611e5869": 1,
+        "29e8f04c-8972-4713-b4ea-f43b7126a869": 2
+      },
+      "extractionSource": {
+        "batchId": "synthetic-requirements-fresh-aa9e8fb0-d8a2-4e48-a8dc-e0ddf5095e21",
+        "key": "cancel-conflict",
+        "source": "Codex 로컬 합성 응답 · 실제 ChatGPT 호출 없음",
+        "reviewNote": "승인 전까지만 취소할지, 승인 후에도 담당자 확인으로 허용할지 결정해야 한다. 취소 이유 기록 범위도 확인한다. 담당자는 취소 이유의 필수 입력을 제안했다."
+      }
+    }
+  ],
+  "prd": {
+    "body": "# 팀 대화에서 요구사항 · 합성 반입\n\n## 해결할 문제\n서로 다른 취소 의견을 임의로 합의하지 않고 공동 검토한다.\n\n## 목표\n여러 팀원의 대화 출처를 보존하며 요구사항 초안을 만든다.\n\n## 대상 사용자\n프로젝트 팀이 검토하여 사용자와 권한을 구체화하세요.\n\n## 기능 요구사항\n### 1. 품목과 수량 입력 확인\n품목은 필수이고 수량은 1 이상이어야 한다.\n- 우선순위: must\n- 검토 상태: accepted\n- 결정: 두 사람이 확인한 합성 입력 기준\n\n## 완료 및 테스트 기준\n각 요구사항의 정상 흐름, 빈 상태, 오류 상태, 수정과 취소/삭제를 확인합니다.\n\n## 범위와 제약\n로컬 테스트 환경, 합성 데이터만 사용합니다. 외부 연계는 별도 합의 후 진행합니다.\n\n## 미결정 사항\n현재 등록된 미결정 사항 없음\n",
+    "revision": 1,
+    "approvals": [],
+    "history": [
+      {
+        "revision": 0,
+        "body": "",
+        "at": "2026-09-21T11:02:32.854Z",
+        "authorId": "jimin"
+      }
+    ],
+    "sourceRevision": 1
+  },
+  "stories": [],
+  "runs": [],
+  "releases": [],
+  "testResults": [],
+  "feedback": [],
+  "events": [
+    {
+      "id": "17febb8b-0286-44b4-b25d-ad7d6382ccce",
+      "at": "2026-09-21T11:02:32.813Z",
+      "actorId": "seoyeon",
+      "action": "member.join",
+      "detail": "이서연"
+    },
+    {
+      "id": "a4103feb-f982-47d4-ae7e-8546f4470063",
+      "at": "2026-09-21T11:02:32.820Z",
+      "actorId": "jimin",
+      "action": "conversation.save",
+      "detail": "신청자의 관점"
+    },
+    {
+      "id": "bc8bb504-e425-403e-b26c-9b5d68ef9636",
+      "at": "2026-09-21T11:02:32.827Z",
+      "actorId": "jimin",
+      "action": "message.save",
+      "detail": "신청자의 관점"
+    },
+    {
+      "id": "11112c0e-69f2-4b15-97f8-9d0f681c2b4a",
+      "at": "2026-09-21T11:02:32.834Z",
+      "actorId": "seoyeon",
+      "action": "conversation.save",
+      "detail": "관리 담당자의 관점"
+    },
+    {
+      "id": "e40cc9ff-42cc-49c4-870c-a78c94e27e6c",
+      "at": "2026-09-21T11:02:32.840Z",
+      "actorId": "seoyeon",
+      "action": "message.save",
+      "detail": "관리 담당자의 관점"
+    },
+    {
+      "id": "ff64584b-3525-480e-8a3c-b64e007e38bd",
+      "at": "2026-09-21T11:02:32.847Z",
+      "actorId": "jimin",
+      "action": "requirement.save",
+      "detail": "품목과 수량 입력 확인"
+    },
+    {
+      "id": "60b45c46-980d-4221-ab79-06f6810ec448",
+      "at": "2026-09-21T11:02:32.854Z",
+      "actorId": "jimin",
+      "action": "prd.generate",
+      "detail": "요구사항 기반 규칙 초안"
+    },
+    {
+      "id": "6b49c2da-9a9f-426b-8195-511ab4f1a50a",
+      "at": "2026-09-21T11:02:32.860Z",
+      "actorId": "jimin",
+      "action": "prd.approve",
+      "detail": "v1 동의"
+    },
+    {
+      "id": "9039cef0-9a45-46ee-90ca-d57d85be0a21",
+      "at": "2026-09-21T11:02:32.867Z",
+      "actorId": "seoyeon",
+      "action": "prd.approve",
+      "detail": "v1 동의"
+    },
+    {
+      "id": "8b62e660-93dc-4b77-8514-c92ba4aedc25",
+      "at": "2026-09-21T11:03:19.441Z",
+      "actorId": "seoyeon",
+      "action": "message.save",
+      "detail": "관리 담당자의 관점"
+    },
+    {
+      "id": "d2cfb9e1-9fb9-409c-afb0-6de236521c62",
+      "at": "2026-09-21T11:03:55.179Z",
+      "actorId": "jimin",
+      "action": "requirement.import",
+      "detail": "2개 요구사항 등록 · 팀 검토 필요 · Codex 로컬 합성 응답 · 실제 ChatGPT 호출 없음"
+    }
+  ],
+  "updatedAt": "2026-09-21T11:03:55.179Z",
+  "requirementsVersion": 2,
+  "requirementImports": [
+    {
+      "id": "synthetic-requirements-fresh-aa9e8fb0-d8a2-4e48-a8dc-e0ddf5095e21",
+      "source": "Codex 로컬 합성 응답 · 실제 ChatGPT 호출 없음",
+      "at": "2026-09-21T11:03:55.179Z",
+      "requirementIds": [
+        "3dba1783-ba6e-4426-881a-9efe2470839d",
+        "75b63fc5-3a1d-4cec-a6f0-b12ad5fb937d"
+      ]
+    }
+  ]
+}

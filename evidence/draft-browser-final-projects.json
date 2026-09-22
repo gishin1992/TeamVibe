@@ -1,0 +1,150 @@
+[
+  {
+    "id": "2603e013-b52d-47ba-adcb-52821c3759dd",
+    "createdAt": "2026-09-21T10:47:12.148Z",
+    "name": "대화 초안 · 분리 시연",
+    "description": "대화·프로젝트·사용자 전환의 합성 입력 검증",
+    "goal": "전송 전 내용이 다른 대화에 섞이지 않는다.",
+    "inviteCode": "4265e80f5bb4",
+    "ownerId": "jimin",
+    "members": [
+      "jimin",
+      "seoyeon"
+    ],
+    "version": 6,
+    "conversations": [
+      {
+        "id": "8a9e7eec-8a42-46bb-aa46-fd3cb4d49304",
+        "createdAt": "2026-09-21T10:47:12.174Z",
+        "title": "지민의 신청 아이디어",
+        "ownerId": "jimin",
+        "messages": [
+          {
+            "id": "35753d81-666e-48d3-8118-500202d2e1cf",
+            "createdAt": "2026-09-21T10:48:53.698Z",
+            "revision": 1,
+            "authorId": "jimin",
+            "kind": "user",
+            "text": "신청 대화 전용 합성 초안 A",
+            "source": ""
+          },
+          {
+            "id": "3ef97425-8d1d-44af-a58d-789ce9f39d1e",
+            "createdAt": "2026-09-21T10:48:53.698Z",
+            "authorId": "guide",
+            "kind": "guide",
+            "text": "로컬 진행 도우미: 이 기능은 누가 사용하나요? 성공한 상태와 예외 상황, 수정·취소 규칙도 적어 주세요. 더 깊이 논의하려면 ChatGPT 작업 묶음을 복사하고 응답을 가져오세요."
+          }
+        ]
+      },
+      {
+        "id": "b185d082-173a-4cdd-aac0-d504e6cd92f2",
+        "createdAt": "2026-09-21T10:47:12.180Z",
+        "title": "지민의 승인 아이디어",
+        "ownerId": "jimin",
+        "messages": []
+      },
+      {
+        "id": "09f429c0-1cb9-4497-976c-c7b16e1d7914",
+        "createdAt": "2026-09-21T10:47:12.186Z",
+        "title": "서연의 조회 아이디어",
+        "ownerId": "seoyeon",
+        "messages": []
+      }
+    ],
+    "requirements": [],
+    "prd": {
+      "body": "",
+      "revision": 0,
+      "approvals": [],
+      "history": []
+    },
+    "stories": [],
+    "runs": [],
+    "releases": [],
+    "testResults": [],
+    "feedback": [],
+    "events": [
+      {
+        "id": "322dda73-39df-46a7-98cd-400dd6d82362",
+        "at": "2026-09-21T10:47:12.167Z",
+        "actorId": "seoyeon",
+        "action": "member.join",
+        "detail": "이서연"
+      },
+      {
+        "id": "94f736ab-170c-4836-92f9-dd6cdf1077dd",
+        "at": "2026-09-21T10:47:12.174Z",
+        "actorId": "jimin",
+        "action": "conversation.save",
+        "detail": "지민의 신청 아이디어"
+      },
+      {
+        "id": "591c2082-bd7c-4127-a755-b1ccd7ae569e",
+        "at": "2026-09-21T10:47:12.180Z",
+        "actorId": "jimin",
+        "action": "conversation.save",
+        "detail": "지민의 승인 아이디어"
+      },
+      {
+        "id": "bb4571eb-bc59-424f-af92-68050f5527af",
+        "at": "2026-09-21T10:47:12.186Z",
+        "actorId": "seoyeon",
+        "action": "conversation.save",
+        "detail": "서연의 조회 아이디어"
+      },
+      {
+        "id": "7ed92235-5d5c-4bfd-a523-3f0530970974",
+        "at": "2026-09-21T10:48:53.698Z",
+        "actorId": "jimin",
+        "action": "message.save",
+        "detail": "지민의 신청 아이디어"
+      }
+    ],
+    "updatedAt": "2026-09-21T10:48:53.698Z"
+  },
+  {
+    "id": "08329e88-4959-494a-af11-360e2bdc556a",
+    "createdAt": "2026-09-21T10:47:12.193Z",
+    "name": "대화 초안 · 별도 프로젝트",
+    "description": "프로젝트 간 입력 분리 합성 검증",
+    "goal": "다른 프로젝트는 별도 초안을 사용한다.",
+    "inviteCode": "84954afa9a99",
+    "ownerId": "jimin",
+    "members": [
+      "jimin"
+    ],
+    "version": 2,
+    "conversations": [
+      {
+        "id": "7637e992-2ad6-4ccc-938b-936b25dcc9a6",
+        "createdAt": "2026-09-21T10:47:12.200Z",
+        "title": "별도 프로젝트 아이디어",
+        "ownerId": "jimin",
+        "messages": []
+      }
+    ],
+    "requirements": [],
+    "prd": {
+      "body": "",
+      "revision": 0,
+      "approvals": [],
+      "history": []
+    },
+    "stories": [],
+    "runs": [],
+    "releases": [],
+    "testResults": [],
+    "feedback": [],
+    "events": [
+      {
+        "id": "85d0fd93-97f4-4bb0-bf1f-b84a940caa1e",
+        "at": "2026-09-21T10:47:12.200Z",
+        "actorId": "jimin",
+        "action": "conversation.save",
+        "detail": "별도 프로젝트 아이디어"
+      }
+    ],
+    "updatedAt": "2026-09-21T10:47:12.200Z"
+  }
+]

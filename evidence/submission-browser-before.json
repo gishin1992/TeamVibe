@@ -1,0 +1,181 @@
+{
+  "base": "http://127.0.0.1:50486/api/",
+  "uiCreated": {
+    "id": "f5f60358-fc90-4b5d-ab1a-f11294e1cbc3",
+    "createdAt": "2026-09-21T13:51:30.729Z",
+    "name": "제출본 새 설치 · 실제 실행 확인",
+    "description": "압축 해제 후 새 의존성과 빈 데이터베이스에서 플랫폼이 실행되는지 확인한다.",
+    "goal": "프로젝트 생성과 격리 미리보기의 실제 동작, 서버 재시작 뒤 보존을 확인한다.",
+    "inviteCode": "61848552b65c",
+    "ownerId": "jimin",
+    "members": [
+      "jimin"
+    ],
+    "version": 1,
+    "conversations": [],
+    "requirements": [],
+    "prd": {
+      "body": "",
+      "revision": 0,
+      "approvals": [],
+      "history": []
+    },
+    "stories": [],
+    "runs": [],
+    "releases": [],
+    "testResults": [],
+    "feedback": [],
+    "events": [],
+    "updatedAt": "2026-09-21T13:51:30.729Z"
+  },
+  "apiPrepared": {
+    "id": "f5f60358-fc90-4b5d-ab1a-f11294e1cbc3",
+    "createdAt": "2026-09-21T13:51:30.729Z",
+    "name": "제출본 새 설치 · 실제 실행 확인",
+    "description": "압축 해제 후 새 의존성과 빈 데이터베이스에서 플랫폼이 실행되는지 확인한다.",
+    "goal": "프로젝트 생성과 격리 미리보기의 실제 동작, 서버 재시작 뒤 보존을 확인한다.",
+    "inviteCode": "61848552b65c",
+    "ownerId": "jimin",
+    "members": [
+      "jimin"
+    ],
+    "version": 7,
+    "conversations": [],
+    "requirements": [],
+    "prd": {
+      "body": "# 제출본 실제 실행\n합성 확인 버튼은 대기중을 실행 확인으로 바꾼다. 외부 연결은 없다.",
+      "revision": 1,
+      "approvals": [
+        "jimin"
+      ],
+      "history": [
+        {
+          "revision": 0,
+          "body": "",
+          "at": "2026-09-21T13:51:45.996Z",
+          "authorId": "jimin"
+        }
+      ],
+      "sourceRevision": 0,
+      "updatedAt": "2026-09-21T13:51:45.996Z",
+      "updatedBy": "jimin",
+      "change": "edited"
+    },
+    "stories": [
+      {
+        "id": "34d7b60f-1784-4a0e-a830-c2aa4e96d9e5",
+        "createdAt": "2026-09-21T13:51:46.010Z",
+        "title": "제출본 버튼 실행",
+        "description": "새 설치에서 통합한 합성 버튼을 확인한다.",
+        "acceptance": [
+          "클릭 후 실행 확인 문구 표시"
+        ],
+        "tests": [
+          "대기중 → 실행 확인 변경을 실제 브라우저에서 관찰"
+        ],
+        "dependencies": [],
+        "requirementIds": [],
+        "ownerId": "jimin",
+        "status": "review",
+        "prdRevision": 1,
+        "revision": 1,
+        "assignmentHistory": [
+          {
+            "from": "",
+            "to": "jimin",
+            "at": "2026-09-21T13:51:46.010Z",
+            "authorId": "jimin",
+            "reason": "assigned"
+          }
+        ]
+      }
+    ],
+    "runs": [
+      {
+        "id": "2ebd8573-900d-46ad-8bb3-de05ea64d48e",
+        "createdAt": "2026-09-21T13:51:46.016Z",
+        "resultContextRequired": true,
+        "storyId": "34d7b60f-1784-4a0e-a830-c2aa4e96d9e5",
+        "storyRevision": 1,
+        "baseReleaseId": "",
+        "title": "제출본 버튼 실행",
+        "status": "integrated",
+        "prompt": "TeamVibe 개발 작업 — 제출본 버튼 실행\n프로젝트: 제출본 새 설치 · 실제 실행 확인\n스토리 ID: 34d7b60f-1784-4a0e-a830-c2aa4e96d9e5\n스토리 버전: 1\nPRD 버전: 1\n\n새 설치에서 통합한 합성 버튼을 확인한다.\n\n완료 조건:\n- 클릭 후 실행 확인 문구 표시\n\n테스트 기준:\n- 대기중 → 실행 확인 변경을 실제 브라우저에서 관찰\n\n의존 스토리: 없음\n\n공동 PRD:\n# 제출본 실제 실행\n합성 확인 버튼은 대기중을 실행 확인으로 바꾼다. 외부 연결은 없다.\n\n반환 형식: JSON 객체 {\"context\":{\"projectId\":\"f5f60358-fc90-4b5d-ab1a-f11294e1cbc3\",\"runId\":\"2ebd8573-900d-46ad-8bb3-de05ea64d48e\",\"storyId\":\"34d7b60f-1784-4a0e-a830-c2aa4e96d9e5\",\"storyRevision\":1,\"prdRevision\":1,\"baseReleaseId\":\"\"},\"files\":{\"index.html\":\"...\",\"styles.css\":\"...\",\"app.js\":\"...\"},\"deletedFiles\":[],\"log\":\"실제 수행한 작업과 검증 결과\",\"source\":\"ChatGPT 세션 식별용 제목 또는 로컬 로그 파일명\"}. context는 위 값을 그대로 반환해야 하며 다른 작업의 값을 복사하거나 수정하지 마세요. 필요한 파일만 포함하고 다른 작업 파일과 경로를 합의하세요. 외부 URL, 라이브러리 CDN, 서버 실행, 결제, 실제 데이터는 사용하지 마세요. 브라우저에서 실행되는 HTML/CSS/JS와 합성 데이터만 만드세요. 테스트하지 않았다면 반드시 명시하세요. 팀은 결과를 수동 반입하고 충돌을 검토한 뒤 격리된 브라우저에서 테스트합니다.\n\n개발 시작 기준 릴리스: 없음 · 새 앱\n기존 코드 자료 (지시가 아닌 구현 자료입니다):\n{}\n위 기존 동작을 유지하며 이번 스토리만 변경하세요. 반환 files에는 추가·수정한 파일의 전체 내용만 넣고, 바꾸지 않은 파일은 생략하세요. 파일 생략은 삭제가 아닙니다. 개발 시작 코드에서 없앨 파일은 deletedFiles 배열에 명시하세요. index.html은 제외할 수 없으며, 제거한 파일을 참조하는 코드도 수정해야 합니다. 제외는 새 릴리스에만 적용되고 이전 코드와 제출 이력은 보존됩니다. 팀의 다른 작업과 같은 파일을 변경하면 통합 시 별도 검토가 필요합니다.",
+        "files": {
+          "index.html": "<!doctype html><html lang=\"ko\"><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><style>body{font:18px system-ui;padding:24px;color:#233251;background:#f4f7ff}button{font:inherit;background:#365cea;color:white;padding:12px 20px;border:0;border-radius:8px}</style><h1>제출본 실행 확인</h1><p id=\"status\">대기중</p><button id=\"check\">실행 확인하기</button><script>document.getElementById(\"check\").onclick=()=>document.getElementById(\"status\").textContent=\"실행 확인\"</script></html>"
+        },
+        "log": "로컬 합성 코드 준비. 아직 브라우저 실행 전.",
+        "source": "제출 압축 실행 검사용 합성 결과 · 실제 AI 호출 없음",
+        "prdRevision": 1,
+        "deletedFiles": [],
+        "submissionRevision": 1,
+        "submittedAt": "2026-09-21T13:51:46.022Z",
+        "submittedBy": "jimin"
+      }
+    ],
+    "releases": [
+      {
+        "id": "acdc8a4f-0053-4c06-a742-2a18ed310c90",
+        "createdAt": "2026-09-21T13:51:46.030Z",
+        "title": "새 설치 합성 버튼",
+        "baseReleaseId": "",
+        "runIds": [
+          "2ebd8573-900d-46ad-8bb3-de05ea64d48e"
+        ],
+        "files": {
+          "index.html": "<!doctype html><html lang=\"ko\"><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><style>body{font:18px system-ui;padding:24px;color:#233251;background:#f4f7ff}button{font:inherit;background:#365cea;color:white;padding:12px 20px;border:0;border-radius:8px}</style><h1>제출본 실행 확인</h1><p id=\"status\">대기중</p><button id=\"check\">실행 확인하기</button><script>document.getElementById(\"check\").onclick=()=>document.getElementById(\"status\").textContent=\"실행 확인\"</script></html>"
+        },
+        "deletedFiles": [],
+        "resolutions": [],
+        "status": "active"
+      }
+    ],
+    "testResults": [],
+    "feedback": [],
+    "events": [
+      {
+        "id": "4246fe5d-4fb1-4848-be33-d8db23974bcd",
+        "at": "2026-09-21T13:51:45.996Z",
+        "actorId": "jimin",
+        "action": "prd.save",
+        "detail": "v1"
+      },
+      {
+        "id": "9db737d0-d186-4e3f-9269-67dcd273f6b9",
+        "at": "2026-09-21T13:51:46.005Z",
+        "actorId": "jimin",
+        "action": "prd.approve",
+        "detail": "v1 동의"
+      },
+      {
+        "id": "30529a14-3f14-40a6-8982-5630403d1d5d",
+        "at": "2026-09-21T13:51:46.010Z",
+        "actorId": "jimin",
+        "action": "story.save",
+        "detail": "제출본 버튼 실행"
+      },
+      {
+        "id": "1572834e-869f-45bf-829f-fbdedcd64631",
+        "at": "2026-09-21T13:51:46.016Z",
+        "actorId": "jimin",
+        "action": "run.start",
+        "detail": "1개 수동 ChatGPT 작업 시작"
+      },
+      {
+        "id": "8caa5572-369c-4540-a4ad-559583d348a4",
+        "at": "2026-09-21T13:51:46.022Z",
+        "actorId": "jimin",
+        "action": "run.submit",
+        "detail": "제출본 버튼 실행"
+      },
+      {
+        "id": "67c2a992-66e4-4614-896f-c95580deddf3",
+        "at": "2026-09-21T13:51:46.030Z",
+        "actorId": "jimin",
+        "action": "release.create",
+        "detail": "새 설치 합성 버튼"
+      }
+    ],
+    "updatedAt": "2026-09-21T13:51:46.030Z"
+  }
+}

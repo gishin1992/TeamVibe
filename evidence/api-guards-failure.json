@@ -1,0 +1,10 @@
+{
+  "at": "2026-09-21T23:30:30.579Z",
+  "report": [
+    {
+      "name": "다른 Origin에서 변경 요청 차단",
+      "status": "passed"
+    }
+  ],
+  "error": "AssertionError [ERR_ASSERTION]: {\"error\":\"Your worker restarted mid-request. Please try sending the request again. Only GET or HEAD requests are retried automatically.\"}\n\n503 !== 400\n"
+}

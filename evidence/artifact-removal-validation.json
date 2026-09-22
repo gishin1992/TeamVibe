@@ -1,0 +1,33 @@
+{
+  "at": "2026-09-21T10:29:08.362Z",
+  "checks": [
+    {
+      "name": "npm run typecheck followed by npm test",
+      "exitCode": 0,
+      "evidence": "test-artifact-removal.log"
+    },
+    {
+      "name": "Sites portable build-site.mjs",
+      "session": 93445,
+      "exitCode": 0
+    }
+  ],
+  "sourceHashes": {
+    "components/integration-review.tsx": "af245ce407565f2551f72b2483f7d15a119a311601f3d757813edc826fa121bc",
+    "components/workspace.tsx": "a14839e486ae913b3b83282b4e5e16aad8406767c0a8a64846881dae9abc7fec",
+    "lib/teamvibe/integration.ts": "24a318902ec45aa1d11000f6ede229c561edba0bd2629cd2d5a5e59caf9fb751",
+    "lib/teamvibe/domain.ts": "fd6df9f431a3e5ab079975e24ea75feff0258d13d9e0d3e6b48b7d247db0fb56",
+    "lib/teamvibe/types.ts": "50ce3e096a3c0dd1a92b514f6e56397d67a511a277f620cdabcd96a8b04e4b56",
+    "lib/teamvibe/form-conflicts.ts": "9cbd45f18ea7b0b5d67d182f1ced2ad03583faaaa4d8928af493dec37eb43eb7",
+    "tests/artifact-removal.mjs": "0803574b3d5a9782b0bc5adcc93ffba3a1e0aabb14fb49db9e743b8c2c04ba35",
+    "scripts/test.mjs": "00743d0a840150ed003f38a785bfad702e2d3652a578c09c1234656a4a3e0cd9"
+  },
+  "notes": [
+    "최종 제품 코드 변경 이후 타입 검사·전체 테스트·빌드 성공. 이후 문서·증거만 갱신",
+    "실제 UI와 최종 상태는 artifact-removal-browser-result.json 및 artifact-removal-browser-final-project.json",
+    "lint는 이번 변경 후 재실행하지 않음",
+    "이전 릴리스/작업 기록을 물리 삭제하지 않으며, 파일 제외는 새 릴리스의 코드 맵에만 반영",
+    "일반 테스트 기록 1개는 실제 합성 안내·버튼 관찰이며 스토리 기준 전체 완료를 주장하지 않음",
+    "외부 ChatGPT 전송/호출 없음"
+  ]
+}

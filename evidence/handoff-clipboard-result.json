@@ -1,0 +1,8 @@
+{
+  "at": "2026-09-21T23:41:57.962Z",
+  "projectId": "3a33d673-790f-47ea-b4d5-55e91a68e526",
+  "twoCopiedPromptsExactlyMatchStoredPrompts": true,
+  "distinctRunAndStoryContexts": true,
+  "entireProjectUnchanged": true,
+  "note": "Actual Chrome copy-button and immediate clipboard read. No external transmission and no clipboard-denial recovery test."
+}

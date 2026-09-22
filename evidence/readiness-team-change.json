@@ -1,0 +1,138 @@
+{
+  "id": "46cbbef3-0caf-4c19-abab-cccb19a1bb11",
+  "createdAt": "2026-09-21T10:39:32.395Z",
+  "name": "개발 시작 조건 · 선행 작업 시연",
+  "description": "준비 상태와 실제 선행 검증에 따라 선택 가능 여부를 안내하는 합성 시연",
+  "goal": "막힌 이유를 미리 확인하고 독립 작업을 시작한다.",
+  "inviteCode": "6c4fd148a1fd",
+  "ownerId": "jimin",
+  "members": [
+    "jimin"
+  ],
+  "version": 7,
+  "conversations": [],
+  "requirements": [],
+  "prd": {
+    "body": "# 선행 작업 합성 시연\n선행 제목 화면을 확인하고 후속 작업을 시작한다. 다른 독립 작업은 먼저 진행할 수 있다.",
+    "revision": 1,
+    "approvals": [
+      "jimin"
+    ],
+    "history": [
+      {
+        "revision": 0,
+        "body": "",
+        "at": "2026-09-21T10:39:32.404Z",
+        "authorId": "jimin"
+      }
+    ],
+    "sourceRevision": 0
+  },
+  "stories": [
+    {
+      "id": "b6bb6b2a-ad6d-4a09-8c04-e3d3114ec858",
+      "createdAt": "2026-09-21T10:39:32.417Z",
+      "title": "선행 제목 화면",
+      "description": "선행 제목 화면을 구현한다.",
+      "acceptance": [
+        "선행 화면 확인 제목을 볼 수 있다."
+      ],
+      "tests": [
+        "미리보기에서 선행 화면 확인 제목이 표시되는지 확인한다."
+      ],
+      "dependencies": [],
+      "requirementIds": [],
+      "ownerId": "jimin",
+      "status": "backlog",
+      "prdRevision": 1,
+      "revision": 2
+    },
+    {
+      "id": "27641d92-1acf-4601-9e7f-fc1895d3a063",
+      "createdAt": "2026-09-21T10:39:32.423Z",
+      "title": "선행 완료 후 상세 화면",
+      "description": "선행 완료 후 상세 화면을 구현한다.",
+      "acceptance": [
+        "선행 화면 확인 제목을 볼 수 있다."
+      ],
+      "tests": [
+        "미리보기에서 선행 화면 확인 제목이 표시되는지 확인한다."
+      ],
+      "dependencies": [
+        "b6bb6b2a-ad6d-4a09-8c04-e3d3114ec858"
+      ],
+      "requirementIds": [],
+      "ownerId": "jimin",
+      "status": "ready",
+      "prdRevision": 1,
+      "revision": 1
+    },
+    {
+      "id": "4dd0f51a-fcf5-468f-800c-308372b12e53",
+      "createdAt": "2026-09-21T10:39:32.430Z",
+      "title": "별도 안내 작업",
+      "description": "별도 안내 작업을 구현한다.",
+      "acceptance": [
+        "선행 화면 확인 제목을 볼 수 있다."
+      ],
+      "tests": [
+        "미리보기에서 선행 화면 확인 제목이 표시되는지 확인한다."
+      ],
+      "dependencies": [],
+      "requirementIds": [],
+      "ownerId": "jimin",
+      "status": "ready",
+      "prdRevision": 1,
+      "revision": 1
+    }
+  ],
+  "runs": [],
+  "releases": [],
+  "testResults": [],
+  "feedback": [],
+  "events": [
+    {
+      "id": "d0ca5373-b400-40e9-ac27-5faee68f0fc5",
+      "at": "2026-09-21T10:39:32.404Z",
+      "actorId": "jimin",
+      "action": "prd.save",
+      "detail": "v1"
+    },
+    {
+      "id": "2dea3fcb-b201-4a4a-9095-002ad4d573df",
+      "at": "2026-09-21T10:39:32.411Z",
+      "actorId": "jimin",
+      "action": "prd.approve",
+      "detail": "v1 동의"
+    },
+    {
+      "id": "c080b401-4715-415c-b444-f4335ba01a29",
+      "at": "2026-09-21T10:39:32.417Z",
+      "actorId": "jimin",
+      "action": "story.save",
+      "detail": "선행 제목 화면"
+    },
+    {
+      "id": "3c897738-8259-4b61-b8e6-5d520b70482b",
+      "at": "2026-09-21T10:39:32.423Z",
+      "actorId": "jimin",
+      "action": "story.save",
+      "detail": "선행 완료 후 상세 화면"
+    },
+    {
+      "id": "8845b7a2-e04d-4059-9f65-045f0b0a11a6",
+      "at": "2026-09-21T10:39:32.430Z",
+      "actorId": "jimin",
+      "action": "story.save",
+      "detail": "별도 안내 작업"
+    },
+    {
+      "id": "16b6026c-4f35-4680-a3c7-41631d1ad5b1",
+      "at": "2026-09-21T10:39:54.005Z",
+      "actorId": "jimin",
+      "action": "story.save",
+      "detail": "선행 제목 화면"
+    }
+  ],
+  "updatedAt": "2026-09-21T10:39:54.005Z"
+}

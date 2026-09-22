@@ -1,0 +1,71 @@
+{
+  "at": "2026-09-21T23:54:47.743Z",
+  "mode": "Standalone exported HTML on local static-only HTTP server",
+  "checks": [
+    {
+      "step": "수정 시작 원본과 수량 보존",
+      "item": "합성 키보드",
+      "quantity": "3",
+      "list": "합성 키보드 · 3개 · 승인 대기\n수정 중\n취소"
+    },
+    {
+      "step": "수정 취소 원본 유지",
+      "list": "합성 키보드 · 3개 · 승인 대기\n수정\n취소",
+      "status": "수정을 취소했습니다. 원래 신청은 그대로입니다."
+    },
+    {
+      "step": "공백 오류 원본과 입력 보존",
+      "list": "합성 키보드 · 3개 · 승인 대기\n수정 중\n취소",
+      "quantity": "9",
+      "status": "품목을 입력해 주세요. 기존 신청과 작성 중인 수량은 유지됩니다."
+    },
+    {
+      "step": "수량 오류 0",
+      "list": "합성 키보드 · 3개 · 승인 대기\n수정 중\n취소",
+      "input": "0",
+      "status": "수량은 1 이상의 정수로 입력해 주세요. 기존 신청과 입력은 유지됩니다."
+    },
+    {
+      "step": "수량 오류 1.5",
+      "list": "합성 키보드 · 3개 · 승인 대기\n수정 중\n취소",
+      "input": "1.5",
+      "status": "수량은 1 이상의 정수로 입력해 주세요. 기존 신청과 입력은 유지됩니다."
+    },
+    {
+      "step": "수정 저장",
+      "list": "합성 마우스 · 4개 · 승인 대기\n수정\n취소"
+    },
+    {
+      "step": "다른 신청 중 올바른 수정 대상",
+      "item": "합성 마우스",
+      "quantity": "4",
+      "list": "합성 펜 · 2개 · 승인 대기\n수정\n취소\n합성 마우스 · 4개 · 승인 대기\n수정 중\n취소"
+    },
+    {
+      "step": "선택 신청만 취소",
+      "list": "합성 펜 · 2개 · 승인 대기\n수정\n취소"
+    },
+    {
+      "step": "모바일 수정 취소",
+      "list": "합성 펜 · 2개 · 승인 대기\n수정\n취소"
+    },
+    {
+      "step": "마지막 신청 취소",
+      "list": "",
+      "emptyVisible": true
+    }
+  ],
+  "mobile": {
+    "outer": {
+      "scrollWidth": 390,
+      "width": 390
+    },
+    "frame": {
+      "item": "합성 펜",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    "cancelVisible": true
+  },
+  "note": "Actual CUA browser actions. No backend API on preview origin; file:// opening and persistence are not claimed."
+}

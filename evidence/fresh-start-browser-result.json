@@ -1,0 +1,31 @@
+{
+  "at": "2026-09-21T11:48:03.078Z",
+  "url": "http://127.0.0.1:63449",
+  "observations": [
+    {
+      "name": "uninitialized database recovery instruction",
+      "passed": true
+    },
+    {
+      "name": "retry after migrations shows three seed profiles",
+      "passed": true
+    },
+    {
+      "name": "project created in isolated built runtime",
+      "passed": true
+    },
+    {
+      "name": "same project available after switching to copied-source development server",
+      "passed": true
+    },
+    {
+      "name": "project and edited profile remain after built runtime restart",
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "Existing installed dependencies reused; no clean npm ci claimed.",
+    "Initial source-root duplicate dev startup was refused by the existing server lock; copied source was used.",
+    "The first copied dev run bound only ::1; the test used an explicit 127.0.0.1 hostname after checking the listener."
+  ]
+}

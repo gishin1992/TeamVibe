@@ -1,0 +1,286 @@
+{
+  "id": "f46cf16f-1c0a-4941-81e0-8c82d84e53f9",
+  "createdAt": "2026-09-21T09:33:10.621Z",
+  "name": "대화 출처와 수정 이력 검사 1789983190614",
+  "description": "수정·복원 뒤에도 요구사항의 근거를 보존하는 합성 검사",
+  "goal": "대화와 요구사항의 변경 맥락을 함께 확인한다.",
+  "inviteCode": "63362ce4ed68",
+  "ownerId": "jimin",
+  "members": [
+    "jimin",
+    "seoyeon"
+  ],
+  "version": 25,
+  "conversations": [
+    {
+      "id": "70896713-7bc8-4d58-b340-1e80c310f7d0",
+      "createdAt": "2026-09-21T09:33:10.642Z",
+      "title": "비품 신청의 대상 범위",
+      "ownerId": "jimin",
+      "messages": [
+        {
+          "id": "874f76c4-c4d4-44c0-999e-86de5fc643f9",
+          "createdAt": "2026-09-21T09:33:10.651Z",
+          "revision": 5,
+          "authorId": "jimin",
+          "kind": "user",
+          "text": "합성 키보드 신청은 팀원 누구나 할 수 있어야 합니다.",
+          "source": "최초 합성 의견",
+          "history": [
+            {
+              "revision": 1,
+              "text": "합성 키보드 신청은 팀원 누구나 할 수 있어야 합니다.",
+              "source": "최초 합성 의견",
+              "at": "2026-09-21T09:33:10.651Z",
+              "authorId": "jimin"
+            },
+            {
+              "revision": 2,
+              "text": "합성 키보드와 마우스를 팀원 누구나 신청할 수 있어야 합니다.",
+              "source": "범위 확장 합성 의견",
+              "at": "2026-09-21T09:33:10.687Z",
+              "authorId": "jimin"
+            },
+            {
+              "revision": 3,
+              "text": "합성 키보드 신청은 팀원 누구나 할 수 있어야 합니다.",
+              "source": "최초 합성 의견",
+              "at": "2026-09-21T09:33:10.731Z",
+              "authorId": "jimin"
+            },
+            {
+              "revision": 4,
+              "text": "합성 키보드 신청은 팀원 누구나 할 수 있으며 신청 목적도 입력해야 합니다.",
+              "source": "브라우저에서 추가한 합성 의견",
+              "at": "2026-09-21T09:33:46.045Z",
+              "authorId": "jimin"
+            }
+          ],
+          "updatedAt": "2026-09-21T09:34:13.357Z",
+          "updatedBy": "jimin"
+        },
+        {
+          "id": "deb43b13-60fd-42fc-975b-2e56b008bc40",
+          "createdAt": "2026-09-21T09:33:10.651Z",
+          "authorId": "guide",
+          "kind": "guide",
+          "text": "로컬 진행 도우미: 이 기능은 누가 사용하나요? 성공한 상태와 예외 상황, 수정·취소 규칙도 적어 주세요. 더 깊이 논의하려면 ChatGPT 작업 묶음을 복사하고 응답을 가져오세요."
+        }
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "id": "d568d575-64b9-4b4e-b44a-d13e253c201f",
+      "createdAt": "2026-09-21T09:33:10.660Z",
+      "title": "팀원의 비품 신청",
+      "description": "합성 키보드 신청은 팀원 누구나 할 수 있어야 합니다.",
+      "priority": "must",
+      "status": "accepted",
+      "sourceIds": [
+        "874f76c4-c4d4-44c0-999e-86de5fc643f9"
+      ],
+      "decision": "이전 내용과 새 버전 복원 기록을 검토했고 초기 신청 범위를 유지하기로 했다.",
+      "sourceRevisions": {
+        "874f76c4-c4d4-44c0-999e-86de5fc643f9": 5
+      }
+    }
+  ],
+  "prd": {
+    "body": "# 대화 출처와 수정 이력 검사 1789983190614\n\n## 해결할 문제\n수정·복원 뒤에도 요구사항의 근거를 보존하는 합성 검사\n\n## 목표\n대화와 요구사항의 변경 맥락을 함께 확인한다.\n\n## 대상 사용자\n프로젝트 팀이 검토하여 사용자와 권한을 구체화하세요.\n\n## 기능 요구사항\n### 1. 팀원의 비품 신청\n합성 키보드 신청은 팀원 누구나 할 수 있어야 합니다.\n- 우선순위: must\n- 검토 상태: accepted\n- 결정: 초기 범위를 다시 채택\n\n## 완료 및 테스트 기준\n각 요구사항의 정상 흐름, 빈 상태, 오류 상태, 수정과 취소/삭제를 확인합니다.\n\n## 범위와 제약\n로컬 테스트 환경, 합성 데이터만 사용합니다. 외부 연계는 별도 합의 후 진행합니다.\n\n## 미결정 사항\n현재 등록된 미결정 사항 없음\n",
+    "revision": 2,
+    "approvals": [],
+    "history": [
+      {
+        "revision": 0,
+        "body": "",
+        "at": "2026-09-21T09:33:10.668Z",
+        "authorId": "jimin"
+      },
+      {
+        "revision": 1,
+        "body": "# 대화 출처와 수정 이력 검사 1789983190614\n\n## 해결할 문제\n수정·복원 뒤에도 요구사항의 근거를 보존하는 합성 검사\n\n## 목표\n대화와 요구사항의 변경 맥락을 함께 확인한다.\n\n## 대상 사용자\n프로젝트 팀이 검토하여 사용자와 권한을 구체화하세요.\n\n## 기능 요구사항\n### 1. 팀원의 비품 신청\n합성 키보드 신청은 팀원 누구나 할 수 있어야 합니다.\n- 우선순위: must\n- 검토 상태: accepted\n- 결정: 모든 팀원이 신청한다.\n\n## 완료 및 테스트 기준\n각 요구사항의 정상 흐름, 빈 상태, 오류 상태, 수정과 취소/삭제를 확인합니다.\n\n## 범위와 제약\n로컬 테스트 환경, 합성 데이터만 사용합니다. 외부 연계는 별도 합의 후 진행합니다.\n\n## 미결정 사항\n현재 등록된 미결정 사항 없음\n",
+        "at": "2026-09-21T09:33:10.777Z",
+        "authorId": "jimin"
+      }
+    ],
+    "sourceRevision": 5
+  },
+  "stories": [],
+  "runs": [],
+  "releases": [],
+  "testResults": [],
+  "feedback": [],
+  "events": [
+    {
+      "id": "dfe59a51-0d68-48e0-9ba7-694d9d1dd8d4",
+      "at": "2026-09-21T09:33:10.635Z",
+      "actorId": "seoyeon",
+      "action": "member.join",
+      "detail": "이서연"
+    },
+    {
+      "id": "2aab3c63-5d82-464e-ac41-dc9f62bb9ace",
+      "at": "2026-09-21T09:33:10.642Z",
+      "actorId": "jimin",
+      "action": "conversation.save",
+      "detail": "비품 신청의 대상 범위"
+    },
+    {
+      "id": "2fa8b133-c511-4556-ba4a-ce1baf160f2a",
+      "at": "2026-09-21T09:33:10.651Z",
+      "actorId": "jimin",
+      "action": "message.save",
+      "detail": "비품 신청의 대상 범위"
+    },
+    {
+      "id": "3ec6be3a-2e93-4aef-a277-a5bc1fe3e865",
+      "at": "2026-09-21T09:33:10.660Z",
+      "actorId": "jimin",
+      "action": "requirement.save",
+      "detail": "팀원의 비품 신청"
+    },
+    {
+      "id": "93682ac8-ea31-4c74-b095-ff469b82eea5",
+      "at": "2026-09-21T09:33:10.668Z",
+      "actorId": "jimin",
+      "action": "prd.generate",
+      "detail": "요구사항 기반 규칙 초안"
+    },
+    {
+      "id": "f2c1d160-0d81-4929-b688-669dfa839d87",
+      "at": "2026-09-21T09:33:10.674Z",
+      "actorId": "jimin",
+      "action": "prd.approve",
+      "detail": "v1 동의"
+    },
+    {
+      "id": "5371e5f2-f1b2-4e0b-90af-71f8f770e2c6",
+      "at": "2026-09-21T09:33:10.681Z",
+      "actorId": "seoyeon",
+      "action": "prd.approve",
+      "detail": "v1 동의"
+    },
+    {
+      "id": "e17392c0-1c99-476d-bde9-0164a474e1bd",
+      "at": "2026-09-21T09:33:10.687Z",
+      "actorId": "jimin",
+      "action": "message.save",
+      "detail": "비품 신청의 대상 범위"
+    },
+    {
+      "id": "7350e378-facf-48f7-805f-184e691717fd",
+      "at": "2026-09-21T09:33:10.700Z",
+      "actorId": "jimin",
+      "action": "message.save",
+      "detail": "비품 신청의 대상 범위"
+    },
+    {
+      "id": "a58aa765-65c3-4160-9b50-e9f503b52779",
+      "at": "2026-09-21T09:33:10.725Z",
+      "actorId": "jimin",
+      "action": "requirement.save",
+      "detail": "팀원의 비품 신청"
+    },
+    {
+      "id": "ee3f98a6-34d6-49fb-af03-cbcea40607c8",
+      "at": "2026-09-21T09:33:10.731Z",
+      "actorId": "jimin",
+      "action": "message.revert",
+      "detail": "비품 신청의 대상 범위 · v1 내용으로 새 버전 생성"
+    },
+    {
+      "id": "20844d2e-7c00-4700-8452-8df3a4bdc16f",
+      "at": "2026-09-21T09:33:10.738Z",
+      "actorId": "jimin",
+      "action": "message.delete",
+      "detail": ""
+    },
+    {
+      "id": "71172be8-3e21-4008-bfdd-d47075b580c4",
+      "at": "2026-09-21T09:33:10.752Z",
+      "actorId": "jimin",
+      "action": "message.restore",
+      "detail": ""
+    },
+    {
+      "id": "3f4a00e9-cb10-4d78-88b0-1771cd83005c",
+      "at": "2026-09-21T09:33:10.758Z",
+      "actorId": "jimin",
+      "action": "item.delete",
+      "detail": "대화 · 비품 신청의 대상 범위"
+    },
+    {
+      "id": "6a443509-00d3-443a-adc4-53fbe4f022dd",
+      "at": "2026-09-21T09:33:10.764Z",
+      "actorId": "jimin",
+      "action": "item.restore",
+      "detail": "대화 · 비품 신청의 대상 범위"
+    },
+    {
+      "id": "60b99ce0-952a-471b-95fe-15a9ccbc5471",
+      "at": "2026-09-21T09:33:10.771Z",
+      "actorId": "jimin",
+      "action": "requirement.save",
+      "detail": "팀원의 비품 신청"
+    },
+    {
+      "id": "98bfbb7b-450f-4a3c-8f2a-b65e097809e4",
+      "at": "2026-09-21T09:33:10.777Z",
+      "actorId": "jimin",
+      "action": "prd.generate",
+      "detail": "요구사항 기반 규칙 초안"
+    },
+    {
+      "id": "85de1f89-8bd9-4ded-8870-e9e7b1ba7236",
+      "at": "2026-09-21T09:33:10.783Z",
+      "actorId": "jimin",
+      "action": "prd.approve",
+      "detail": "v2 동의"
+    },
+    {
+      "id": "478de6b0-00aa-4f4c-afd6-b0c916e15e2d",
+      "at": "2026-09-21T09:33:10.789Z",
+      "actorId": "seoyeon",
+      "action": "prd.approve",
+      "detail": "v2 동의"
+    },
+    {
+      "id": "e4333d65-667b-4160-8fca-c9a75790b328",
+      "at": "2026-09-21T09:33:46.045Z",
+      "actorId": "jimin",
+      "action": "message.save",
+      "detail": "비품 신청의 대상 범위"
+    },
+    {
+      "id": "3fbc10a2-262f-479c-9563-abded9c1d567",
+      "at": "2026-09-21T09:34:13.357Z",
+      "actorId": "jimin",
+      "action": "message.revert",
+      "detail": "비품 신청의 대상 범위 · v3 내용으로 새 버전 생성"
+    },
+    {
+      "id": "fe57d8b6-264f-4ab9-9a72-d8dde1ef269b",
+      "at": "2026-09-21T09:34:41.215Z",
+      "actorId": "jimin",
+      "action": "message.delete",
+      "detail": ""
+    },
+    {
+      "id": "7d8e8670-c563-4af6-8d73-56885e9fbe9d",
+      "at": "2026-09-21T09:35:21.373Z",
+      "actorId": "jimin",
+      "action": "message.restore",
+      "detail": ""
+    },
+    {
+      "id": "eba0606a-3403-4ebc-ad44-c5a49920703f",
+      "at": "2026-09-21T09:35:22.211Z",
+      "actorId": "jimin",
+      "action": "requirement.save",
+      "detail": "팀원의 비품 신청"
+    }
+  ],
+  "updatedAt": "2026-09-21T09:35:22.211Z",
+  "requirementsVersion": 8
+}

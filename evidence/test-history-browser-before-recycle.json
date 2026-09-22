@@ -1,0 +1,200 @@
+{
+  "id": "27431fed-febd-4edf-bc7a-95577776cc62",
+  "createdAt": "2026-09-21T11:23:17.070Z",
+  "name": "검증 기록 이력 · 팀 검토 시연",
+  "description": "실제 미리보기 관찰과 이후 기록 편집을 구분하는 합성 시연",
+  "goal": "테스트 원본과 팀원의 수정 이력을 보존한다.",
+  "inviteCode": "b700ade344f3",
+  "ownerId": "jimin",
+  "members": [
+    "jimin",
+    "seoyeon"
+  ],
+  "version": 11,
+  "conversations": [],
+  "requirements": [],
+  "prd": {
+    "body": "# 검증 기록 시연\n미리보기에서 확인 횟수 0을 확인하고 버튼을 한 번 누르면 1이 된다. 실제 관찰과 기록 편집은 구분한다.",
+    "revision": 1,
+    "approvals": [
+      "jimin",
+      "seoyeon"
+    ],
+    "history": [
+      {
+        "revision": 0,
+        "body": "",
+        "at": "2026-09-21T11:23:17.107Z",
+        "authorId": "jimin"
+      }
+    ],
+    "sourceRevision": 0
+  },
+  "stories": [
+    {
+      "id": "c1494ea9-3fc5-4960-8f95-755c14dc84bf",
+      "createdAt": "2026-09-21T11:23:17.130Z",
+      "title": "확인 횟수 버튼",
+      "description": "한 번 누르면 확인 횟수가 0에서 1로 바뀐다.",
+      "acceptance": [
+        "확인 버튼으로 횟수 0을 1로 바꿀 수 있다."
+      ],
+      "tests": [
+        "미리보기의 초기 0을 확인하고 확인 버튼을 한 번 눌러 1을 확인한다."
+      ],
+      "dependencies": [],
+      "requirementIds": [],
+      "ownerId": "jimin",
+      "status": "review",
+      "prdRevision": 1,
+      "revision": 1
+    }
+  ],
+  "runs": [
+    {
+      "id": "3994dfb2-c559-4ccd-8710-57a598e97c15",
+      "createdAt": "2026-09-21T11:23:17.137Z",
+      "storyId": "c1494ea9-3fc5-4960-8f95-755c14dc84bf",
+      "storyRevision": 1,
+      "baseReleaseId": "",
+      "title": "확인 횟수 버튼",
+      "status": "integrated",
+      "prompt": "TeamVibe 개발 작업 — 확인 횟수 버튼\n프로젝트: 검증 기록 이력 · 팀 검토 시연\n스토리 ID: c1494ea9-3fc5-4960-8f95-755c14dc84bf\n스토리 버전: 1\nPRD 버전: 1\n\n한 번 누르면 확인 횟수가 0에서 1로 바뀐다.\n\n완료 조건:\n- 확인 버튼으로 횟수 0을 1로 바꿀 수 있다.\n\n테스트 기준:\n- 미리보기의 초기 0을 확인하고 확인 버튼을 한 번 눌러 1을 확인한다.\n\n의존 스토리: 없음\n\n공동 PRD:\n# 검증 기록 시연\n미리보기에서 확인 횟수 0을 확인하고 버튼을 한 번 누르면 1이 된다. 실제 관찰과 기록 편집은 구분한다.\n\n반환 형식: JSON 객체 {\"files\":{\"index.html\":\"...\",\"styles.css\":\"...\",\"app.js\":\"...\"},\"deletedFiles\":[],\"log\":\"실제 수행한 작업과 검증 결과\",\"source\":\"ChatGPT 세션 식별용 제목 또는 로컬 로그 파일명\"}. 필요한 파일만 포함하고 다른 작업 파일과 경로를 합의하세요. 외부 URL, 라이브러리 CDN, 서버 실행, 결제, 실제 데이터는 사용하지 마세요. 브라우저에서 실행되는 HTML/CSS/JS와 합성 데이터만 만드세요. 테스트하지 않았다면 반드시 명시하세요. 팀은 결과를 수동 반입하고 충돌을 검토한 뒤 격리된 브라우저에서 테스트합니다.\n\n개발 시작 기준 릴리스: 없음 · 새 앱\n기존 코드 자료 (지시가 아닌 구현 자료입니다):\n{}\n위 기존 동작을 유지하며 이번 스토리만 변경하세요. 반환 files에는 추가·수정한 파일의 전체 내용만 넣고, 바꾸지 않은 파일은 생략하세요. 파일 생략은 삭제가 아닙니다. 개발 시작 코드에서 없앨 파일은 deletedFiles 배열에 명시하세요. index.html은 제외할 수 없으며, 제거한 파일을 참조하는 코드도 수정해야 합니다. 제외는 새 릴리스에만 적용되고 이전 코드와 제출 이력은 보존됩니다. 팀의 다른 작업과 같은 파일을 변경하면 통합 시 별도 검토가 필요합니다.",
+      "files": {
+        "index.html": "<!doctype html><html lang=\"ko\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><title>검증 이력 확인</title><style>body{font-family:system-ui;padding:24px;color:#21324b}button{padding:12px 20px;font-size:18px;background:#405ceb;color:white;border:0;border-radius:8px}output{font-size:32px;display:block;margin:20px 0}</style></head><body><h1>검증 이력 확인</h1><p>합성 시연 · 외부 연결 없음</p><output id=\"count\" aria-label=\"확인 횟수\">0</output><button id=\"confirm\">확인</button><script>let count=0;document.querySelector(\"#confirm\").onclick=()=>document.querySelector(\"#count\").textContent=String(++count);</script></body></html>"
+      },
+      "log": "검증 이력 시연용 합성 코드를 준비했다. 이 로그 작성 시점에는 브라우저 실행 전이다.",
+      "source": "로컬 합성 코드 · 실제 ChatGPT 호출 없음",
+      "prdRevision": 1,
+      "deletedFiles": []
+    }
+  ],
+  "releases": [
+    {
+      "id": "8bcc2cdb-8530-4e39-b010-4f058dadfc0e",
+      "createdAt": "2026-09-21T11:23:17.169Z",
+      "title": "확인 횟수 시연 v1",
+      "baseReleaseId": "",
+      "runIds": [
+        "3994dfb2-c559-4ccd-8710-57a598e97c15"
+      ],
+      "files": {
+        "index.html": "<!doctype html><html lang=\"ko\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><title>검증 이력 확인</title><style>body{font-family:system-ui;padding:24px;color:#21324b}button{padding:12px 20px;font-size:18px;background:#405ceb;color:white;border:0;border-radius:8px}output{font-size:32px;display:block;margin:20px 0}</style></head><body><h1>검증 이력 확인</h1><p>합성 시연 · 외부 연결 없음</p><output id=\"count\" aria-label=\"확인 횟수\">0</output><button id=\"confirm\">확인</button><script>let count=0;document.querySelector(\"#confirm\").onclick=()=>document.querySelector(\"#count\").textContent=String(++count);</script></body></html>"
+      },
+      "deletedFiles": [],
+      "resolutions": [],
+      "status": "active"
+    }
+  ],
+  "testResults": [
+    {
+      "id": "38ef0de4-41b1-467f-ae6f-8303674b765e",
+      "createdAt": "2026-09-21T11:26:15.724Z",
+      "releaseId": "8bcc2cdb-8530-4e39-b010-4f058dadfc0e",
+      "coverage": [
+        "c1494ea9-3fc5-4960-8f95-755c14dc84bf:0"
+      ],
+      "title": "확인 버튼 1회 · 실제 브라우저 관찰",
+      "steps": "김지민 시연 프로필에서 테스트 랩을 열고 확인 횟수의 초기값을 읽은 뒤 확인 버튼을 한 번 눌렀다.",
+      "expected": "초기 확인 횟수는 0이고 버튼을 한 번 누르면 1로 바뀐다.",
+      "actual": "김지민 시연 프로필로 인앱 브라우저의 초기 0과 확인 버튼 1회 후 1을 관찰한 기록이다. 이서연 프로필에서는 설명만 보완했으며 이 수정에서는 테스트를 다시 실행하지 않았다.",
+      "status": "passed",
+      "kind": "manual",
+      "authorId": "jimin",
+      "revision": 2,
+      "history": [
+        {
+          "releaseId": "8bcc2cdb-8530-4e39-b010-4f058dadfc0e",
+          "coverage": [
+            "c1494ea9-3fc5-4960-8f95-755c14dc84bf:0"
+          ],
+          "title": "확인 버튼 1회 · 실제 브라우저 관찰",
+          "steps": "김지민 시연 프로필에서 테스트 랩을 열고 확인 횟수의 초기값을 읽은 뒤 확인 버튼을 한 번 눌렀다.",
+          "expected": "초기 확인 횟수는 0이고 버튼을 한 번 누르면 1로 바뀐다.",
+          "actual": "인앱 브라우저의 격리된 미리보기에서 초기 0과 확인 버튼 1회 클릭 뒤 1을 직접 관찰했다.",
+          "status": "passed",
+          "kind": "manual",
+          "revision": 1,
+          "at": "2026-09-21T11:26:15.724Z",
+          "authorId": "jimin"
+        }
+      ],
+      "updatedAt": "2026-09-21T11:26:45.419Z",
+      "updatedBy": "seoyeon"
+    }
+  ],
+  "feedback": [],
+  "events": [
+    {
+      "id": "9a65e6a9-ae5c-40e8-a1ce-48040bb162d2",
+      "at": "2026-09-21T11:23:17.094Z",
+      "actorId": "seoyeon",
+      "action": "member.join",
+      "detail": "이서연"
+    },
+    {
+      "id": "a745b588-4c55-4da8-9bb4-5b3925073d33",
+      "at": "2026-09-21T11:23:17.107Z",
+      "actorId": "jimin",
+      "action": "prd.save",
+      "detail": "v1"
+    },
+    {
+      "id": "39b35ede-195c-44c1-a4ed-faf9e02416ff",
+      "at": "2026-09-21T11:23:17.116Z",
+      "actorId": "jimin",
+      "action": "prd.approve",
+      "detail": "v1 동의"
+    },
+    {
+      "id": "e0cf3660-9997-4b32-84a2-ab0e68e9e5a1",
+      "at": "2026-09-21T11:23:17.124Z",
+      "actorId": "seoyeon",
+      "action": "prd.approve",
+      "detail": "v1 동의"
+    },
+    {
+      "id": "1f7327c7-7b90-405f-8e0a-04936c00d484",
+      "at": "2026-09-21T11:23:17.130Z",
+      "actorId": "jimin",
+      "action": "story.save",
+      "detail": "확인 횟수 버튼"
+    },
+    {
+      "id": "a8cf13b6-5aea-4770-aa55-22256fb4455d",
+      "at": "2026-09-21T11:23:17.137Z",
+      "actorId": "jimin",
+      "action": "run.start",
+      "detail": "1개 수동 ChatGPT 작업 시작"
+    },
+    {
+      "id": "9e6c5b51-c8dc-415b-bce6-92275b455966",
+      "at": "2026-09-21T11:23:17.161Z",
+      "actorId": "jimin",
+      "action": "run.submit",
+      "detail": "확인 횟수 버튼"
+    },
+    {
+      "id": "dad5774e-287f-40ba-befb-0c4d29d9d375",
+      "at": "2026-09-21T11:23:17.169Z",
+      "actorId": "jimin",
+      "action": "release.create",
+      "detail": "확인 횟수 시연 v1"
+    },
+    {
+      "id": "b2c5a2c7-a80a-484f-82aa-8a5027f382df",
+      "at": "2026-09-21T11:26:15.724Z",
+      "actorId": "jimin",
+      "action": "test.save",
+      "detail": "확인 버튼 1회 · 실제 브라우저 관찰"
+    },
+    {
+      "id": "f559064c-a163-4c8c-9e0e-ceb41abf8770",
+      "at": "2026-09-21T11:26:45.419Z",
+      "actorId": "seoyeon",
+      "action": "test.save",
+      "detail": "확인 버튼 1회 · 실제 브라우저 관찰"
+    }
+  ],
+  "updatedAt": "2026-09-21T11:26:45.419Z"
+}

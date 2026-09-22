@@ -1,0 +1,17 @@
+{
+  "at": "2026-09-21T23:33:19.201Z",
+  "projectId": "f18c3307-84c2-4e47-93fa-8c26d3e9b4bb",
+  "checks": [
+    "server-owned current author/time/change",
+    "previous author/time/basis retained independently from archiver",
+    "unchanged save preserves original metadata",
+    "restore reads stored body by revision and clears approval",
+    "previous histories immutable",
+    "invalid/empty/stale restoration rejected atomically",
+    "explicit equal-body restoration creates a new traceable version",
+    "editing after restore clears origin marker",
+    "restored text records current basis but does not override requirement review",
+    "generated draft and project recycle preserve provenance"
+  ],
+  "note": "Synthetic API workflow only, no generated business app execution."
+}

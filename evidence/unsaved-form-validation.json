@@ -1,0 +1,62 @@
+{
+  "at": "2026-09-21T13:07:49.826Z",
+  "typecheck": {
+    "fullSuiteSession": 77249,
+    "exitCode": 0,
+    "finalAfterProfileBusyChange": {
+      "command": "npm run typecheck",
+      "execChunk": "d06c92",
+      "exitCode": 0
+    }
+  },
+  "tests": {
+    "session": 77249,
+    "exitCode": 0,
+    "log": "evidence/test-unsaved-form.log",
+    "note": "Existing regression suite; UI close behavior verified separately. Profile busy state added after this suite, then typechecked and exercised with actual UI archive/restore."
+  },
+  "build": {
+    "initial": {
+      "session": 97728,
+      "exitCode": 0
+    },
+    "final": {
+      "session": 78753,
+      "exitCode": 0
+    },
+    "command": "node /Users/takykim/.codex/plugins/cache/openai-curated-remote/sites/0.1.65/scripts/build-site.mjs"
+  },
+  "browser": {
+    "observations": 21,
+    "allPassed": true,
+    "result": "evidence/unsaved-form-browser-result.json",
+    "screenshot": "evidence/screenshots/unsaved-form-mobile-confirm-settled.png"
+  },
+  "server": {
+    "at": "2026-09-21T13:05:33.822Z",
+    "projectId": "3887234e-8f8f-45ed-92e5-aad101ab1027",
+    "PRDRevision": 3,
+    "onlyReviewedPRDSavePersisted": true,
+    "priorBodiesPreserved": true,
+    "discardedRequirementNotCreated": true,
+    "profileUnchanged": true,
+    "generatedAppsOrTestRecordsCreated": false,
+    "profileArchiveRestore": {
+      "userId": "b4d3f313-5974-43eb-afc2-d8bfaf223b09",
+      "restoredSavedRoleUnchanged": true,
+      "cleanup": "Synthetic profile archived again after actual UI restore; recoverable."
+    }
+  },
+  "sourceHashes": {
+    "components/workspace.tsx": "d2d6e76c63996eb93a83cf3023a197d12fff57cf78bd8801acf3e8baafe678e5",
+    "scripts/prepare-unsaved-form-demo.mjs": "c958fa133e979dbc9efb5794497753c00a2ca1a083add5e405b6e71e3d314fdf",
+    "README.md": "0d9a5b4b389fcfbcceef2f0958ff63f8443ca382c919c09c63bec78c8d9ba127",
+    "docs/DEMO.md": "0508600a3661dcec4c6fa952f93f9cd6467d1844e280000ced03834b380ed02e"
+  },
+  "limits": [
+    "No page reload or browser-close persistence implemented or claimed.",
+    "Shared workspace forms verified; specialized planning/integration dialogs not covered by this change.",
+    "First screenshot immediately after viewport switch captured transitional scaling; settled screenshot inspected separately.",
+    "No forced slow-network race test."
+  ]
+}

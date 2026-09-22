@@ -1,0 +1,33 @@
+{
+  "at": "2026-09-21T23:35:56.674Z",
+  "projectId": "9625ca84-086f-4a5c-b7a1-ea0be983fef8",
+  "base": "http://127.0.0.1:51491/",
+  "observedUIFlow": [
+    "profile selection",
+    "project creation",
+    "invite-code join by second profile",
+    "two owners conversations and requirements",
+    "synthetic ChatGPT response import",
+    "rule PRD draft and both profiles approval",
+    "synthetic story JSON review/import",
+    "ready state edits",
+    "two independent runs started together",
+    "two result JSON documents imported",
+    "three files integrated",
+    "actual iframe clicks and rendered CSS",
+    "test record linked to both criteria",
+    "two stories completed"
+  ],
+  "actualClicks": [
+    "대기 중",
+    "확인 완료",
+    "대기 중",
+    "확인 완료"
+  ],
+  "renderedStyle": {
+    "fontSize": "32px",
+    "text": "확인 완료"
+  },
+  "done2": true,
+  "note": "All project mutations in this end-to-end flow were made through the UI. API used only for session cookies/read-only snapshots and local synthetic payload preparation. A single browser switched between demo profiles; no separate browser concurrent user session and no actual ChatGPT service invocation."
+}

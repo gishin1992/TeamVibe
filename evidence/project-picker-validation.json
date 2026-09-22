@@ -1,0 +1,43 @@
+{
+  "at": "2026-09-21T10:57:55.363Z",
+  "typecheck": {
+    "exitCode": 0,
+    "session": 54104
+  },
+  "tests": {
+    "exitCode": 0,
+    "session": 54104,
+    "log": "evidence/test-project-picker.log"
+  },
+  "build": {
+    "exitCode": 0,
+    "session": 9122,
+    "command": "node /Users/takykim/.codex/plugins/cache/openai-curated-remote/sites/0.1.65/scripts/build-site.mjs"
+  },
+  "browser": {
+    "evidence": "evidence/project-picker-browser-result.json",
+    "immediateCountObservation": "One intermediate closing-animation observation was false; retained with successful final-state recheck.",
+    "finalDialogCount": 0
+  },
+  "server": {
+    "primaryRestored": true,
+    "originalConversationsUnchanged": true,
+    "membersUnchanged": true,
+    "duplicateArchivedProjectUnchanged": true
+  },
+  "sourceHashes": {
+    "components/project-picker.tsx": "0bd5e7a898f4d206c5650cfc2cd4d615271222d81db34466e135ff4910d167dc",
+    "components/workspace.tsx": "0c0e4663728832a7683d9f9011dd131388f03962654162261e7da1160c8c79e7",
+    "app/globals.css": "30f6dc2f33f2ba86749f693c27a64e3f8948af6c78da93b0d1b7bf10a47925e0"
+  },
+  "limitations": [
+    "Search filters projects already loaded for the current demo profile; not server pagination.",
+    "Local demo profiles are not production authentication.",
+    "No additional lint run or external publishing."
+  ],
+  "priorBuild": {
+    "exitCode": 0,
+    "session": 51830
+  },
+  "validationScopeNote": "Full typecheck and npm test passed before final explanatory copy adjustment. Final build includes that copy adjustment. Browser tests cover the final functional implementation."
+}

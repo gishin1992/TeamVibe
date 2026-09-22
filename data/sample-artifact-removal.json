@@ -1,0 +1,10 @@
+{
+  "files": {
+    "index.html": "<h1>합성 파일 정리 시연</h1><p>오래된 안내를 제외했습니다.</p><button id=\"count\">확인 횟수: 0</button><script src=\"app.js\"></script>"
+  },
+  "deletedFiles": [
+    "legacy.js"
+  ],
+  "log": "합성 결과: 이전 안내와 해당 스크립트 참조를 제거. 브라우저 검증은 아직 하지 않음.",
+  "source": "로컬 합성 파일 제외 예제"
+}

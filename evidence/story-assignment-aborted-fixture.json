@@ -1,0 +1,542 @@
+{
+  "at": "2026-09-21T13:45:15.007Z",
+  "reason": "First API test expected 404 but existing domain returns 400; preserved and moved to recoverable project trash.",
+  "before": {
+    "id": "ae8938f1-3928-4b0a-852f-11bf14eef337",
+    "createdAt": "2026-09-21T13:40:14.391Z",
+    "name": "담당 변경 API 검사 1789998014381",
+    "description": "합성 상태 계약 · 업무 앱 실행 아님",
+    "goal": "작업 내용과 담당 변경 분리",
+    "inviteCode": "c6b31f28b0de",
+    "ownerId": "jimin",
+    "members": [
+      "jimin",
+      "seoyeon",
+      "hyunwoo"
+    ],
+    "version": 14,
+    "conversations": [],
+    "requirements": [],
+    "prd": {
+      "body": "# 합성 업무\n담당자와 실제 개발 기준을 구별한다.",
+      "revision": 1,
+      "approvals": [
+        "jimin",
+        "seoyeon",
+        "hyunwoo"
+      ],
+      "history": [
+        {
+          "revision": 0,
+          "body": "",
+          "at": "2026-09-21T13:40:14.514Z",
+          "authorId": "jimin"
+        }
+      ],
+      "sourceRevision": 0,
+      "updatedAt": "2026-09-21T13:40:14.514Z",
+      "updatedBy": "jimin",
+      "change": "edited"
+    },
+    "stories": [
+      {
+        "id": "acb4ea66-c9d1-45a6-b97c-e0faa7ec8be8",
+        "createdAt": "2026-09-21T13:40:14.537Z",
+        "title": "완료 작업",
+        "description": "합성 업무",
+        "acceptance": [
+          "기준 유지"
+        ],
+        "tests": [
+          "합성 계약 검사"
+        ],
+        "dependencies": [],
+        "requirementIds": [],
+        "ownerId": "hyunwoo",
+        "status": "developing",
+        "prdRevision": 1,
+        "revision": 1,
+        "assignmentHistory": [
+          {
+            "from": "",
+            "to": "seoyeon",
+            "at": "2026-09-21T13:40:14.537Z",
+            "authorId": "jimin",
+            "reason": "assigned"
+          },
+          {
+            "from": "seoyeon",
+            "to": "hyunwoo",
+            "at": "2026-09-21T13:40:14.560Z",
+            "authorId": "jimin",
+            "reason": "assigned"
+          }
+        ]
+      },
+      {
+        "id": "e143a57c-b78e-4057-999b-457633afdcfa",
+        "createdAt": "2026-09-21T13:40:14.543Z",
+        "title": "진행 작업",
+        "description": "합성 업무",
+        "acceptance": [
+          "기준 유지"
+        ],
+        "tests": [
+          "합성 계약 검사"
+        ],
+        "dependencies": [],
+        "requirementIds": [],
+        "ownerId": "jimin",
+        "status": "developing",
+        "prdRevision": 1,
+        "revision": 1,
+        "assignmentHistory": [
+          {
+            "from": "",
+            "to": "seoyeon",
+            "at": "2026-09-21T13:40:14.543Z",
+            "authorId": "jimin",
+            "reason": "assigned"
+          },
+          {
+            "from": "seoyeon",
+            "to": "jimin",
+            "at": "2026-09-21T13:40:14.571Z",
+            "authorId": "jimin",
+            "reason": "assigned"
+          }
+        ]
+      },
+      {
+        "id": "87fca7f4-9397-4076-9673-f583bd852c4c",
+        "createdAt": "2026-09-21T13:40:14.549Z",
+        "title": "휴지통 작업",
+        "description": "합성 업무",
+        "acceptance": [
+          "기준 유지"
+        ],
+        "tests": [
+          "합성 계약 검사"
+        ],
+        "dependencies": [],
+        "requirementIds": [],
+        "ownerId": "seoyeon",
+        "status": "ready",
+        "prdRevision": 1,
+        "revision": 1,
+        "assignmentHistory": [
+          {
+            "from": "",
+            "to": "seoyeon",
+            "at": "2026-09-21T13:40:14.549Z",
+            "authorId": "jimin",
+            "reason": "assigned"
+          }
+        ],
+        "deletedAt": "2026-09-21T13:40:14.554Z"
+      }
+    ],
+    "runs": [
+      {
+        "id": "ebe64e15-2573-4dc0-9395-0ae63bb69e44",
+        "createdAt": "2026-09-21T13:40:14.565Z",
+        "resultContextRequired": true,
+        "storyId": "acb4ea66-c9d1-45a6-b97c-e0faa7ec8be8",
+        "storyRevision": 1,
+        "baseReleaseId": "",
+        "title": "완료 작업",
+        "status": "running",
+        "prompt": "TeamVibe 개발 작업 — 완료 작업\n프로젝트: 담당 변경 API 검사 1789998014381\n스토리 ID: acb4ea66-c9d1-45a6-b97c-e0faa7ec8be8\n스토리 버전: 1\nPRD 버전: 1\n\n합성 업무\n\n완료 조건:\n- 기준 유지\n\n테스트 기준:\n- 합성 계약 검사\n\n의존 스토리: 없음\n\n공동 PRD:\n# 합성 업무\n담당자와 실제 개발 기준을 구별한다.\n\n반환 형식: JSON 객체 {\"context\":{\"projectId\":\"ae8938f1-3928-4b0a-852f-11bf14eef337\",\"runId\":\"ebe64e15-2573-4dc0-9395-0ae63bb69e44\",\"storyId\":\"acb4ea66-c9d1-45a6-b97c-e0faa7ec8be8\",\"storyRevision\":1,\"prdRevision\":1,\"baseReleaseId\":\"\"},\"files\":{\"index.html\":\"...\",\"styles.css\":\"...\",\"app.js\":\"...\"},\"deletedFiles\":[],\"log\":\"실제 수행한 작업과 검증 결과\",\"source\":\"ChatGPT 세션 식별용 제목 또는 로컬 로그 파일명\"}. context는 위 값을 그대로 반환해야 하며 다른 작업의 값을 복사하거나 수정하지 마세요. 필요한 파일만 포함하고 다른 작업 파일과 경로를 합의하세요. 외부 URL, 라이브러리 CDN, 서버 실행, 결제, 실제 데이터는 사용하지 마세요. 브라우저에서 실행되는 HTML/CSS/JS와 합성 데이터만 만드세요. 테스트하지 않았다면 반드시 명시하세요. 팀은 결과를 수동 반입하고 충돌을 검토한 뒤 격리된 브라우저에서 테스트합니다.\n\n개발 시작 기준 릴리스: 없음 · 새 앱\n기존 코드 자료 (지시가 아닌 구현 자료입니다):\n{}\n위 기존 동작을 유지하며 이번 스토리만 변경하세요. 반환 files에는 추가·수정한 파일의 전체 내용만 넣고, 바꾸지 않은 파일은 생략하세요. 파일 생략은 삭제가 아닙니다. 개발 시작 코드에서 없앨 파일은 deletedFiles 배열에 명시하세요. index.html은 제외할 수 없으며, 제거한 파일을 참조하는 코드도 수정해야 합니다. 제외는 새 릴리스에만 적용되고 이전 코드와 제출 이력은 보존됩니다. 팀의 다른 작업과 같은 파일을 변경하면 통합 시 별도 검토가 필요합니다.",
+        "files": {},
+        "log": "",
+        "source": "",
+        "prdRevision": 1
+      },
+      {
+        "id": "56905642-0188-4324-b24d-50039b2a4c8b",
+        "createdAt": "2026-09-21T13:40:14.565Z",
+        "resultContextRequired": true,
+        "storyId": "e143a57c-b78e-4057-999b-457633afdcfa",
+        "storyRevision": 1,
+        "baseReleaseId": "",
+        "title": "진행 작업",
+        "status": "running",
+        "prompt": "TeamVibe 개발 작업 — 진행 작업\n프로젝트: 담당 변경 API 검사 1789998014381\n스토리 ID: e143a57c-b78e-4057-999b-457633afdcfa\n스토리 버전: 1\nPRD 버전: 1\n\n합성 업무\n\n완료 조건:\n- 기준 유지\n\n테스트 기준:\n- 합성 계약 검사\n\n의존 스토리: 없음\n\n공동 PRD:\n# 합성 업무\n담당자와 실제 개발 기준을 구별한다.\n\n반환 형식: JSON 객체 {\"context\":{\"projectId\":\"ae8938f1-3928-4b0a-852f-11bf14eef337\",\"runId\":\"56905642-0188-4324-b24d-50039b2a4c8b\",\"storyId\":\"e143a57c-b78e-4057-999b-457633afdcfa\",\"storyRevision\":1,\"prdRevision\":1,\"baseReleaseId\":\"\"},\"files\":{\"index.html\":\"...\",\"styles.css\":\"...\",\"app.js\":\"...\"},\"deletedFiles\":[],\"log\":\"실제 수행한 작업과 검증 결과\",\"source\":\"ChatGPT 세션 식별용 제목 또는 로컬 로그 파일명\"}. context는 위 값을 그대로 반환해야 하며 다른 작업의 값을 복사하거나 수정하지 마세요. 필요한 파일만 포함하고 다른 작업 파일과 경로를 합의하세요. 외부 URL, 라이브러리 CDN, 서버 실행, 결제, 실제 데이터는 사용하지 마세요. 브라우저에서 실행되는 HTML/CSS/JS와 합성 데이터만 만드세요. 테스트하지 않았다면 반드시 명시하세요. 팀은 결과를 수동 반입하고 충돌을 검토한 뒤 격리된 브라우저에서 테스트합니다.\n\n개발 시작 기준 릴리스: 없음 · 새 앱\n기존 코드 자료 (지시가 아닌 구현 자료입니다):\n{}\n위 기존 동작을 유지하며 이번 스토리만 변경하세요. 반환 files에는 추가·수정한 파일의 전체 내용만 넣고, 바꾸지 않은 파일은 생략하세요. 파일 생략은 삭제가 아닙니다. 개발 시작 코드에서 없앨 파일은 deletedFiles 배열에 명시하세요. index.html은 제외할 수 없으며, 제거한 파일을 참조하는 코드도 수정해야 합니다. 제외는 새 릴리스에만 적용되고 이전 코드와 제출 이력은 보존됩니다. 팀의 다른 작업과 같은 파일을 변경하면 통합 시 별도 검토가 필요합니다.",
+        "files": {},
+        "log": "",
+        "source": "",
+        "prdRevision": 1
+      }
+    ],
+    "releases": [],
+    "testResults": [],
+    "feedback": [],
+    "events": [
+      {
+        "id": "d6073359-65d6-4916-86ad-220639c6239d",
+        "at": "2026-09-21T13:40:14.450Z",
+        "actorId": "seoyeon",
+        "action": "member.join",
+        "detail": "이서연"
+      },
+      {
+        "id": "d0931efb-c275-4837-8385-6629ac7c3ade",
+        "at": "2026-09-21T13:40:14.507Z",
+        "actorId": "hyunwoo",
+        "action": "member.join",
+        "detail": "박현우"
+      },
+      {
+        "id": "98184cb6-40be-45d4-bb6f-38b26da6e82d",
+        "at": "2026-09-21T13:40:14.514Z",
+        "actorId": "jimin",
+        "action": "prd.save",
+        "detail": "v1"
+      },
+      {
+        "id": "6a2be40b-f141-4198-bfe5-c838839970c8",
+        "at": "2026-09-21T13:40:14.520Z",
+        "actorId": "jimin",
+        "action": "prd.approve",
+        "detail": "v1 동의"
+      },
+      {
+        "id": "48d521b5-a9ae-446f-ad0f-fb7643fc22a8",
+        "at": "2026-09-21T13:40:14.526Z",
+        "actorId": "seoyeon",
+        "action": "prd.approve",
+        "detail": "v1 동의"
+      },
+      {
+        "id": "429ba21c-780f-463c-b13c-3d38b06bc2ee",
+        "at": "2026-09-21T13:40:14.532Z",
+        "actorId": "hyunwoo",
+        "action": "prd.approve",
+        "detail": "v1 동의"
+      },
+      {
+        "id": "b840c601-1db2-45d7-937f-4c7e635c0a53",
+        "at": "2026-09-21T13:40:14.537Z",
+        "actorId": "jimin",
+        "action": "story.save",
+        "detail": "완료 작업"
+      },
+      {
+        "id": "10d09763-8f94-4620-a2fd-2b0656eb3da4",
+        "at": "2026-09-21T13:40:14.543Z",
+        "actorId": "jimin",
+        "action": "story.save",
+        "detail": "진행 작업"
+      },
+      {
+        "id": "6cf291ae-4b78-4d30-88d7-92206bd4d139",
+        "at": "2026-09-21T13:40:14.549Z",
+        "actorId": "jimin",
+        "action": "story.save",
+        "detail": "휴지통 작업"
+      },
+      {
+        "id": "8d326bf3-8ee2-45da-8b57-0810e53e5654",
+        "at": "2026-09-21T13:40:14.554Z",
+        "actorId": "jimin",
+        "action": "item.delete",
+        "detail": "사용자 스토리 · 휴지통 작업"
+      },
+      {
+        "id": "3c62d6f7-e0c0-4546-9393-d8ffa3d6e089",
+        "at": "2026-09-21T13:40:14.560Z",
+        "actorId": "jimin",
+        "action": "story.save",
+        "detail": "완료 작업"
+      },
+      {
+        "id": "8a2ac6fd-b056-47e8-aa1d-3e3277ec6733",
+        "at": "2026-09-21T13:40:14.565Z",
+        "actorId": "jimin",
+        "action": "run.start",
+        "detail": "2개 수동 ChatGPT 작업 시작"
+      },
+      {
+        "id": "aa8e3580-163b-4271-a95c-cbb5012538da",
+        "at": "2026-09-21T13:40:14.571Z",
+        "actorId": "jimin",
+        "action": "story.assign",
+        "detail": "진행 작업"
+      }
+    ],
+    "updatedAt": "2026-09-21T13:40:14.571Z"
+  },
+  "after": {
+    "id": "ae8938f1-3928-4b0a-852f-11bf14eef337",
+    "createdAt": "2026-09-21T13:40:14.391Z",
+    "name": "담당 변경 API 검사 1789998014381",
+    "description": "합성 상태 계약 · 업무 앱 실행 아님",
+    "goal": "작업 내용과 담당 변경 분리",
+    "inviteCode": "c6b31f28b0de",
+    "ownerId": "jimin",
+    "members": [
+      "jimin",
+      "seoyeon",
+      "hyunwoo"
+    ],
+    "version": 15,
+    "conversations": [],
+    "requirements": [],
+    "prd": {
+      "body": "# 합성 업무\n담당자와 실제 개발 기준을 구별한다.",
+      "revision": 1,
+      "approvals": [
+        "jimin",
+        "seoyeon",
+        "hyunwoo"
+      ],
+      "history": [
+        {
+          "revision": 0,
+          "body": "",
+          "at": "2026-09-21T13:40:14.514Z",
+          "authorId": "jimin"
+        }
+      ],
+      "sourceRevision": 0,
+      "updatedAt": "2026-09-21T13:40:14.514Z",
+      "updatedBy": "jimin",
+      "change": "edited"
+    },
+    "stories": [
+      {
+        "id": "acb4ea66-c9d1-45a6-b97c-e0faa7ec8be8",
+        "createdAt": "2026-09-21T13:40:14.537Z",
+        "title": "완료 작업",
+        "description": "합성 업무",
+        "acceptance": [
+          "기준 유지"
+        ],
+        "tests": [
+          "합성 계약 검사"
+        ],
+        "dependencies": [],
+        "requirementIds": [],
+        "ownerId": "hyunwoo",
+        "status": "developing",
+        "prdRevision": 1,
+        "revision": 1,
+        "assignmentHistory": [
+          {
+            "from": "",
+            "to": "seoyeon",
+            "at": "2026-09-21T13:40:14.537Z",
+            "authorId": "jimin",
+            "reason": "assigned"
+          },
+          {
+            "from": "seoyeon",
+            "to": "hyunwoo",
+            "at": "2026-09-21T13:40:14.560Z",
+            "authorId": "jimin",
+            "reason": "assigned"
+          }
+        ]
+      },
+      {
+        "id": "e143a57c-b78e-4057-999b-457633afdcfa",
+        "createdAt": "2026-09-21T13:40:14.543Z",
+        "title": "진행 작업",
+        "description": "합성 업무",
+        "acceptance": [
+          "기준 유지"
+        ],
+        "tests": [
+          "합성 계약 검사"
+        ],
+        "dependencies": [],
+        "requirementIds": [],
+        "ownerId": "jimin",
+        "status": "developing",
+        "prdRevision": 1,
+        "revision": 1,
+        "assignmentHistory": [
+          {
+            "from": "",
+            "to": "seoyeon",
+            "at": "2026-09-21T13:40:14.543Z",
+            "authorId": "jimin",
+            "reason": "assigned"
+          },
+          {
+            "from": "seoyeon",
+            "to": "jimin",
+            "at": "2026-09-21T13:40:14.571Z",
+            "authorId": "jimin",
+            "reason": "assigned"
+          }
+        ]
+      },
+      {
+        "id": "87fca7f4-9397-4076-9673-f583bd852c4c",
+        "createdAt": "2026-09-21T13:40:14.549Z",
+        "title": "휴지통 작업",
+        "description": "합성 업무",
+        "acceptance": [
+          "기준 유지"
+        ],
+        "tests": [
+          "합성 계약 검사"
+        ],
+        "dependencies": [],
+        "requirementIds": [],
+        "ownerId": "seoyeon",
+        "status": "ready",
+        "prdRevision": 1,
+        "revision": 1,
+        "assignmentHistory": [
+          {
+            "from": "",
+            "to": "seoyeon",
+            "at": "2026-09-21T13:40:14.549Z",
+            "authorId": "jimin",
+            "reason": "assigned"
+          }
+        ],
+        "deletedAt": "2026-09-21T13:40:14.554Z"
+      }
+    ],
+    "runs": [
+      {
+        "id": "ebe64e15-2573-4dc0-9395-0ae63bb69e44",
+        "createdAt": "2026-09-21T13:40:14.565Z",
+        "resultContextRequired": true,
+        "storyId": "acb4ea66-c9d1-45a6-b97c-e0faa7ec8be8",
+        "storyRevision": 1,
+        "baseReleaseId": "",
+        "title": "완료 작업",
+        "status": "running",
+        "prompt": "TeamVibe 개발 작업 — 완료 작업\n프로젝트: 담당 변경 API 검사 1789998014381\n스토리 ID: acb4ea66-c9d1-45a6-b97c-e0faa7ec8be8\n스토리 버전: 1\nPRD 버전: 1\n\n합성 업무\n\n완료 조건:\n- 기준 유지\n\n테스트 기준:\n- 합성 계약 검사\n\n의존 스토리: 없음\n\n공동 PRD:\n# 합성 업무\n담당자와 실제 개발 기준을 구별한다.\n\n반환 형식: JSON 객체 {\"context\":{\"projectId\":\"ae8938f1-3928-4b0a-852f-11bf14eef337\",\"runId\":\"ebe64e15-2573-4dc0-9395-0ae63bb69e44\",\"storyId\":\"acb4ea66-c9d1-45a6-b97c-e0faa7ec8be8\",\"storyRevision\":1,\"prdRevision\":1,\"baseReleaseId\":\"\"},\"files\":{\"index.html\":\"...\",\"styles.css\":\"...\",\"app.js\":\"...\"},\"deletedFiles\":[],\"log\":\"실제 수행한 작업과 검증 결과\",\"source\":\"ChatGPT 세션 식별용 제목 또는 로컬 로그 파일명\"}. context는 위 값을 그대로 반환해야 하며 다른 작업의 값을 복사하거나 수정하지 마세요. 필요한 파일만 포함하고 다른 작업 파일과 경로를 합의하세요. 외부 URL, 라이브러리 CDN, 서버 실행, 결제, 실제 데이터는 사용하지 마세요. 브라우저에서 실행되는 HTML/CSS/JS와 합성 데이터만 만드세요. 테스트하지 않았다면 반드시 명시하세요. 팀은 결과를 수동 반입하고 충돌을 검토한 뒤 격리된 브라우저에서 테스트합니다.\n\n개발 시작 기준 릴리스: 없음 · 새 앱\n기존 코드 자료 (지시가 아닌 구현 자료입니다):\n{}\n위 기존 동작을 유지하며 이번 스토리만 변경하세요. 반환 files에는 추가·수정한 파일의 전체 내용만 넣고, 바꾸지 않은 파일은 생략하세요. 파일 생략은 삭제가 아닙니다. 개발 시작 코드에서 없앨 파일은 deletedFiles 배열에 명시하세요. index.html은 제외할 수 없으며, 제거한 파일을 참조하는 코드도 수정해야 합니다. 제외는 새 릴리스에만 적용되고 이전 코드와 제출 이력은 보존됩니다. 팀의 다른 작업과 같은 파일을 변경하면 통합 시 별도 검토가 필요합니다.",
+        "files": {},
+        "log": "",
+        "source": "",
+        "prdRevision": 1
+      },
+      {
+        "id": "56905642-0188-4324-b24d-50039b2a4c8b",
+        "createdAt": "2026-09-21T13:40:14.565Z",
+        "resultContextRequired": true,
+        "storyId": "e143a57c-b78e-4057-999b-457633afdcfa",
+        "storyRevision": 1,
+        "baseReleaseId": "",
+        "title": "진행 작업",
+        "status": "running",
+        "prompt": "TeamVibe 개발 작업 — 진행 작업\n프로젝트: 담당 변경 API 검사 1789998014381\n스토리 ID: e143a57c-b78e-4057-999b-457633afdcfa\n스토리 버전: 1\nPRD 버전: 1\n\n합성 업무\n\n완료 조건:\n- 기준 유지\n\n테스트 기준:\n- 합성 계약 검사\n\n의존 스토리: 없음\n\n공동 PRD:\n# 합성 업무\n담당자와 실제 개발 기준을 구별한다.\n\n반환 형식: JSON 객체 {\"context\":{\"projectId\":\"ae8938f1-3928-4b0a-852f-11bf14eef337\",\"runId\":\"56905642-0188-4324-b24d-50039b2a4c8b\",\"storyId\":\"e143a57c-b78e-4057-999b-457633afdcfa\",\"storyRevision\":1,\"prdRevision\":1,\"baseReleaseId\":\"\"},\"files\":{\"index.html\":\"...\",\"styles.css\":\"...\",\"app.js\":\"...\"},\"deletedFiles\":[],\"log\":\"실제 수행한 작업과 검증 결과\",\"source\":\"ChatGPT 세션 식별용 제목 또는 로컬 로그 파일명\"}. context는 위 값을 그대로 반환해야 하며 다른 작업의 값을 복사하거나 수정하지 마세요. 필요한 파일만 포함하고 다른 작업 파일과 경로를 합의하세요. 외부 URL, 라이브러리 CDN, 서버 실행, 결제, 실제 데이터는 사용하지 마세요. 브라우저에서 실행되는 HTML/CSS/JS와 합성 데이터만 만드세요. 테스트하지 않았다면 반드시 명시하세요. 팀은 결과를 수동 반입하고 충돌을 검토한 뒤 격리된 브라우저에서 테스트합니다.\n\n개발 시작 기준 릴리스: 없음 · 새 앱\n기존 코드 자료 (지시가 아닌 구현 자료입니다):\n{}\n위 기존 동작을 유지하며 이번 스토리만 변경하세요. 반환 files에는 추가·수정한 파일의 전체 내용만 넣고, 바꾸지 않은 파일은 생략하세요. 파일 생략은 삭제가 아닙니다. 개발 시작 코드에서 없앨 파일은 deletedFiles 배열에 명시하세요. index.html은 제외할 수 없으며, 제거한 파일을 참조하는 코드도 수정해야 합니다. 제외는 새 릴리스에만 적용되고 이전 코드와 제출 이력은 보존됩니다. 팀의 다른 작업과 같은 파일을 변경하면 통합 시 별도 검토가 필요합니다.",
+        "files": {},
+        "log": "",
+        "source": "",
+        "prdRevision": 1
+      }
+    ],
+    "releases": [],
+    "testResults": [],
+    "feedback": [],
+    "events": [
+      {
+        "id": "d6073359-65d6-4916-86ad-220639c6239d",
+        "at": "2026-09-21T13:40:14.450Z",
+        "actorId": "seoyeon",
+        "action": "member.join",
+        "detail": "이서연"
+      },
+      {
+        "id": "d0931efb-c275-4837-8385-6629ac7c3ade",
+        "at": "2026-09-21T13:40:14.507Z",
+        "actorId": "hyunwoo",
+        "action": "member.join",
+        "detail": "박현우"
+      },
+      {
+        "id": "98184cb6-40be-45d4-bb6f-38b26da6e82d",
+        "at": "2026-09-21T13:40:14.514Z",
+        "actorId": "jimin",
+        "action": "prd.save",
+        "detail": "v1"
+      },
+      {
+        "id": "6a2be40b-f141-4198-bfe5-c838839970c8",
+        "at": "2026-09-21T13:40:14.520Z",
+        "actorId": "jimin",
+        "action": "prd.approve",
+        "detail": "v1 동의"
+      },
+      {
+        "id": "48d521b5-a9ae-446f-ad0f-fb7643fc22a8",
+        "at": "2026-09-21T13:40:14.526Z",
+        "actorId": "seoyeon",
+        "action": "prd.approve",
+        "detail": "v1 동의"
+      },
+      {
+        "id": "429ba21c-780f-463c-b13c-3d38b06bc2ee",
+        "at": "2026-09-21T13:40:14.532Z",
+        "actorId": "hyunwoo",
+        "action": "prd.approve",
+        "detail": "v1 동의"
+      },
+      {
+        "id": "b840c601-1db2-45d7-937f-4c7e635c0a53",
+        "at": "2026-09-21T13:40:14.537Z",
+        "actorId": "jimin",
+        "action": "story.save",
+        "detail": "완료 작업"
+      },
+      {
+        "id": "10d09763-8f94-4620-a2fd-2b0656eb3da4",
+        "at": "2026-09-21T13:40:14.543Z",
+        "actorId": "jimin",
+        "action": "story.save",
+        "detail": "진행 작업"
+      },
+      {
+        "id": "6cf291ae-4b78-4d30-88d7-92206bd4d139",
+        "at": "2026-09-21T13:40:14.549Z",
+        "actorId": "jimin",
+        "action": "story.save",
+        "detail": "휴지통 작업"
+      },
+      {
+        "id": "8d326bf3-8ee2-45da-8b57-0810e53e5654",
+        "at": "2026-09-21T13:40:14.554Z",
+        "actorId": "jimin",
+        "action": "item.delete",
+        "detail": "사용자 스토리 · 휴지통 작업"
+      },
+      {
+        "id": "3c62d6f7-e0c0-4546-9393-d8ffa3d6e089",
+        "at": "2026-09-21T13:40:14.560Z",
+        "actorId": "jimin",
+        "action": "story.save",
+        "detail": "완료 작업"
+      },
+      {
+        "id": "8a2ac6fd-b056-47e8-aa1d-3e3277ec6733",
+        "at": "2026-09-21T13:40:14.565Z",
+        "actorId": "jimin",
+        "action": "run.start",
+        "detail": "2개 수동 ChatGPT 작업 시작"
+      },
+      {
+        "id": "aa8e3580-163b-4271-a95c-cbb5012538da",
+        "at": "2026-09-21T13:40:14.571Z",
+        "actorId": "jimin",
+        "action": "story.assign",
+        "detail": "진행 작업"
+      },
+      {
+        "id": "6e5cc161-7f7c-4be6-a49d-44b6da5d7456",
+        "at": "2026-09-21T13:45:15.005Z",
+        "actorId": "jimin",
+        "action": "project.delete",
+        "detail": ""
+      }
+    ],
+    "updatedAt": "2026-09-21T13:45:15.005Z",
+    "deletedAt": "2026-09-21T13:45:15.005Z"
+  }
+}

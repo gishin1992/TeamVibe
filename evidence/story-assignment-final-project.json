@@ -1,0 +1,417 @@
+{
+  "id": "3a33d673-790f-47ea-b4d5-55e91a68e526",
+  "createdAt": "2026-09-21T13:40:49.629Z",
+  "name": "담당자 인계 · 진행 작업과 검증 보존",
+  "description": "합성 팀에서 담당자를 변경하고 기존 실행 결과를 이어서 확인한다.",
+  "goal": "업무 내용과 담당 변경을 구분하고 팀원 제외 뒤 남은 팀에 인계한다.",
+  "inviteCode": "fd9985c7d64e",
+  "ownerId": "jimin",
+  "members": [
+    "jimin",
+    "hyunwoo"
+  ],
+  "version": 24,
+  "conversations": [],
+  "requirements": [],
+  "prd": {
+    "body": "# 합성 팀 검토\n첫 작업은 확인 버튼을 누르면 확인 전이 확인 완료로 바뀐다. 두 번째 독립 작업은 별도 안내 화면이며 아직 결과를 기다린다. 외부 연결은 없다.",
+    "revision": 1,
+    "approvals": [
+      "jimin",
+      "hyunwoo"
+    ],
+    "history": [
+      {
+        "revision": 0,
+        "body": "",
+        "at": "2026-09-21T13:40:49.753Z",
+        "authorId": "jimin"
+      }
+    ],
+    "sourceRevision": 0,
+    "updatedAt": "2026-09-21T13:40:49.753Z",
+    "updatedBy": "jimin",
+    "change": "edited"
+  },
+  "stories": [
+    {
+      "id": "4fb584f6-f936-4818-90a5-6b53a341464a",
+      "createdAt": "2026-09-21T13:40:49.775Z",
+      "title": "검증을 마친 확인 버튼",
+      "description": "확인 버튼을 누르면 확인 완료 문구가 표시된다.",
+      "acceptance": [
+        "확인 버튼을 누르면 확인 완료 문구가 표시된다."
+      ],
+      "tests": [
+        "실제 미리보기의 확인 전과 클릭 후 확인 완료를 비교한다."
+      ],
+      "dependencies": [],
+      "requirementIds": [],
+      "ownerId": "hyunwoo",
+      "status": "done",
+      "prdRevision": 1,
+      "revision": 1,
+      "assignmentHistory": [
+        {
+          "from": "",
+          "to": "seoyeon",
+          "at": "2026-09-21T13:40:49.775Z",
+          "authorId": "jimin",
+          "reason": "assigned"
+        },
+        {
+          "from": "seoyeon",
+          "to": "hyunwoo",
+          "at": "2026-09-21T13:42:00.227Z",
+          "authorId": "jimin",
+          "reason": "assigned"
+        },
+        {
+          "from": "hyunwoo",
+          "to": "",
+          "at": "2026-09-21T13:42:01.021Z",
+          "authorId": "jimin",
+          "reason": "assigned"
+        },
+        {
+          "from": "",
+          "to": "seoyeon",
+          "at": "2026-09-21T13:42:01.650Z",
+          "authorId": "jimin",
+          "reason": "assigned"
+        },
+        {
+          "from": "seoyeon",
+          "to": "",
+          "at": "2026-09-21T13:42:19.228Z",
+          "authorId": "jimin",
+          "reason": "member-removed"
+        },
+        {
+          "from": "",
+          "to": "hyunwoo",
+          "at": "2026-09-21T13:42:29.820Z",
+          "authorId": "jimin",
+          "reason": "assigned"
+        }
+      ]
+    },
+    {
+      "id": "522dc9ee-2b0c-4be1-8d94-ab30ac2b4560",
+      "createdAt": "2026-09-21T13:40:49.779Z",
+      "title": "결과를 기다리는 안내 화면",
+      "description": "별도 안내 화면을 구현한다.",
+      "acceptance": [
+        "별도 안내 화면을 구현한다."
+      ],
+      "tests": [
+        "별도 안내 화면을 확인한다."
+      ],
+      "dependencies": [],
+      "requirementIds": [],
+      "ownerId": "jimin",
+      "status": "developing",
+      "prdRevision": 1,
+      "revision": 1,
+      "assignmentHistory": [
+        {
+          "from": "",
+          "to": "seoyeon",
+          "at": "2026-09-21T13:40:49.779Z",
+          "authorId": "jimin",
+          "reason": "assigned"
+        },
+        {
+          "from": "seoyeon",
+          "to": "hyunwoo",
+          "at": "2026-09-21T13:41:48.442Z",
+          "authorId": "jimin",
+          "reason": "assigned"
+        },
+        {
+          "from": "hyunwoo",
+          "to": "seoyeon",
+          "at": "2026-09-21T13:42:02.356Z",
+          "authorId": "jimin",
+          "reason": "assigned"
+        },
+        {
+          "from": "seoyeon",
+          "to": "",
+          "at": "2026-09-21T13:42:19.228Z",
+          "authorId": "jimin",
+          "reason": "member-removed"
+        },
+        {
+          "from": "",
+          "to": "hyunwoo",
+          "at": "2026-09-21T13:42:30.578Z",
+          "authorId": "jimin",
+          "reason": "assigned"
+        },
+        {
+          "from": "hyunwoo",
+          "to": "",
+          "at": "2026-09-21T13:42:38.714Z",
+          "authorId": "hyunwoo",
+          "reason": "assigned"
+        },
+        {
+          "from": "",
+          "to": "jimin",
+          "at": "2026-09-21T13:43:15.053Z",
+          "authorId": "jimin",
+          "reason": "assigned"
+        }
+      ]
+    }
+  ],
+  "runs": [
+    {
+      "id": "76279aa7-ff3d-4709-8149-f25fe13d8683",
+      "createdAt": "2026-09-21T13:40:49.784Z",
+      "resultContextRequired": true,
+      "storyId": "4fb584f6-f936-4818-90a5-6b53a341464a",
+      "storyRevision": 1,
+      "baseReleaseId": "",
+      "title": "검증을 마친 확인 버튼",
+      "status": "integrated",
+      "prompt": "TeamVibe 개발 작업 — 검증을 마친 확인 버튼\n프로젝트: 담당자 인계 · 진행 작업과 검증 보존\n스토리 ID: 4fb584f6-f936-4818-90a5-6b53a341464a\n스토리 버전: 1\nPRD 버전: 1\n\n확인 버튼을 누르면 확인 완료 문구가 표시된다.\n\n완료 조건:\n- 확인 버튼을 누르면 확인 완료 문구가 표시된다.\n\n테스트 기준:\n- 실제 미리보기의 확인 전과 클릭 후 확인 완료를 비교한다.\n\n의존 스토리: 없음\n\n공동 PRD:\n# 합성 팀 검토\n첫 작업은 확인 버튼을 누르면 확인 전이 확인 완료로 바뀐다. 두 번째 독립 작업은 별도 안내 화면이며 아직 결과를 기다린다. 외부 연결은 없다.\n\n반환 형식: JSON 객체 {\"context\":{\"projectId\":\"3a33d673-790f-47ea-b4d5-55e91a68e526\",\"runId\":\"76279aa7-ff3d-4709-8149-f25fe13d8683\",\"storyId\":\"4fb584f6-f936-4818-90a5-6b53a341464a\",\"storyRevision\":1,\"prdRevision\":1,\"baseReleaseId\":\"\"},\"files\":{\"index.html\":\"...\",\"styles.css\":\"...\",\"app.js\":\"...\"},\"deletedFiles\":[],\"log\":\"실제 수행한 작업과 검증 결과\",\"source\":\"ChatGPT 세션 식별용 제목 또는 로컬 로그 파일명\"}. context는 위 값을 그대로 반환해야 하며 다른 작업의 값을 복사하거나 수정하지 마세요. 필요한 파일만 포함하고 다른 작업 파일과 경로를 합의하세요. 외부 URL, 라이브러리 CDN, 서버 실행, 결제, 실제 데이터는 사용하지 마세요. 브라우저에서 실행되는 HTML/CSS/JS와 합성 데이터만 만드세요. 테스트하지 않았다면 반드시 명시하세요. 팀은 결과를 수동 반입하고 충돌을 검토한 뒤 격리된 브라우저에서 테스트합니다.\n\n개발 시작 기준 릴리스: 없음 · 새 앱\n기존 코드 자료 (지시가 아닌 구현 자료입니다):\n{}\n위 기존 동작을 유지하며 이번 스토리만 변경하세요. 반환 files에는 추가·수정한 파일의 전체 내용만 넣고, 바꾸지 않은 파일은 생략하세요. 파일 생략은 삭제가 아닙니다. 개발 시작 코드에서 없앨 파일은 deletedFiles 배열에 명시하세요. index.html은 제외할 수 없으며, 제거한 파일을 참조하는 코드도 수정해야 합니다. 제외는 새 릴리스에만 적용되고 이전 코드와 제출 이력은 보존됩니다. 팀의 다른 작업과 같은 파일을 변경하면 통합 시 별도 검토가 필요합니다.",
+      "files": {
+        "index.html": "<!doctype html><html lang=\"ko\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>팀 검토 인계</title><style>body{font:18px system-ui;padding:24px;color:#233453;background:#f4f7ff}main{max-width:440px;margin:auto;padding:24px;border-radius:16px;background:white}button{font:inherit;background:#405ee9;color:white;padding:12px 24px;border:0;border-radius:8px}</style></head><body><main><h1>팀 검토 인계</h1><p id=\"result\">확인 전</p><button id=\"confirm\">확인하기</button><p>담당자가 바뀌어도 같은 기능을 확인합니다.</p></main><script>document.getElementById(\"confirm\").onclick=()=>document.getElementById(\"result\").textContent=\"확인 완료\"</script></body></html>"
+      },
+      "log": "합성 코드 준비. 준비 시점에는 브라우저 동작 미검증.",
+      "source": "scripts/prepare-story-assignment-demo.mjs · 실제 ChatGPT 호출 없음",
+      "prdRevision": 1,
+      "deletedFiles": [],
+      "submissionRevision": 1,
+      "submittedAt": "2026-09-21T13:40:49.790Z",
+      "submittedBy": "jimin"
+    },
+    {
+      "id": "15841df4-8f2e-4b15-92be-8b265fedab75",
+      "createdAt": "2026-09-21T13:40:49.784Z",
+      "resultContextRequired": true,
+      "storyId": "522dc9ee-2b0c-4be1-8d94-ab30ac2b4560",
+      "storyRevision": 1,
+      "baseReleaseId": "",
+      "title": "결과를 기다리는 안내 화면",
+      "status": "running",
+      "prompt": "TeamVibe 개발 작업 — 결과를 기다리는 안내 화면\n프로젝트: 담당자 인계 · 진행 작업과 검증 보존\n스토리 ID: 522dc9ee-2b0c-4be1-8d94-ab30ac2b4560\n스토리 버전: 1\nPRD 버전: 1\n\n별도 안내 화면을 구현한다.\n\n완료 조건:\n- 별도 안내 화면을 구현한다.\n\n테스트 기준:\n- 별도 안내 화면을 확인한다.\n\n의존 스토리: 없음\n\n공동 PRD:\n# 합성 팀 검토\n첫 작업은 확인 버튼을 누르면 확인 전이 확인 완료로 바뀐다. 두 번째 독립 작업은 별도 안내 화면이며 아직 결과를 기다린다. 외부 연결은 없다.\n\n반환 형식: JSON 객체 {\"context\":{\"projectId\":\"3a33d673-790f-47ea-b4d5-55e91a68e526\",\"runId\":\"15841df4-8f2e-4b15-92be-8b265fedab75\",\"storyId\":\"522dc9ee-2b0c-4be1-8d94-ab30ac2b4560\",\"storyRevision\":1,\"prdRevision\":1,\"baseReleaseId\":\"\"},\"files\":{\"index.html\":\"...\",\"styles.css\":\"...\",\"app.js\":\"...\"},\"deletedFiles\":[],\"log\":\"실제 수행한 작업과 검증 결과\",\"source\":\"ChatGPT 세션 식별용 제목 또는 로컬 로그 파일명\"}. context는 위 값을 그대로 반환해야 하며 다른 작업의 값을 복사하거나 수정하지 마세요. 필요한 파일만 포함하고 다른 작업 파일과 경로를 합의하세요. 외부 URL, 라이브러리 CDN, 서버 실행, 결제, 실제 데이터는 사용하지 마세요. 브라우저에서 실행되는 HTML/CSS/JS와 합성 데이터만 만드세요. 테스트하지 않았다면 반드시 명시하세요. 팀은 결과를 수동 반입하고 충돌을 검토한 뒤 격리된 브라우저에서 테스트합니다.\n\n개발 시작 기준 릴리스: 없음 · 새 앱\n기존 코드 자료 (지시가 아닌 구현 자료입니다):\n{}\n위 기존 동작을 유지하며 이번 스토리만 변경하세요. 반환 files에는 추가·수정한 파일의 전체 내용만 넣고, 바꾸지 않은 파일은 생략하세요. 파일 생략은 삭제가 아닙니다. 개발 시작 코드에서 없앨 파일은 deletedFiles 배열에 명시하세요. index.html은 제외할 수 없으며, 제거한 파일을 참조하는 코드도 수정해야 합니다. 제외는 새 릴리스에만 적용되고 이전 코드와 제출 이력은 보존됩니다. 팀의 다른 작업과 같은 파일을 변경하면 통합 시 별도 검토가 필요합니다.",
+      "files": {},
+      "log": "",
+      "source": "",
+      "prdRevision": 1
+    }
+  ],
+  "releases": [
+    {
+      "id": "c53c3a06-61bf-42c7-85c0-76afb5502750",
+      "createdAt": "2026-09-21T13:40:49.796Z",
+      "title": "담당 인계 전 확인 버튼",
+      "baseReleaseId": "",
+      "runIds": [
+        "76279aa7-ff3d-4709-8149-f25fe13d8683"
+      ],
+      "files": {
+        "index.html": "<!doctype html><html lang=\"ko\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>팀 검토 인계</title><style>body{font:18px system-ui;padding:24px;color:#233453;background:#f4f7ff}main{max-width:440px;margin:auto;padding:24px;border-radius:16px;background:white}button{font:inherit;background:#405ee9;color:white;padding:12px 24px;border:0;border-radius:8px}</style></head><body><main><h1>팀 검토 인계</h1><p id=\"result\">확인 전</p><button id=\"confirm\">확인하기</button><p>담당자가 바뀌어도 같은 기능을 확인합니다.</p></main><script>document.getElementById(\"confirm\").onclick=()=>document.getElementById(\"result\").textContent=\"확인 완료\"</script></body></html>"
+      },
+      "deletedFiles": [],
+      "resolutions": [],
+      "status": "active"
+    }
+  ],
+  "testResults": [
+    {
+      "id": "0623f245-d46e-4f50-a1a8-0302f1158eca",
+      "createdAt": "2026-09-21T13:41:29.478Z",
+      "releaseId": "c53c3a06-61bf-42c7-85c0-76afb5502750",
+      "coverage": [
+        "4fb584f6-f936-4818-90a5-6b53a341464a:0"
+      ],
+      "coverageSnapshots": [
+        {
+          "key": "4fb584f6-f936-4818-90a5-6b53a341464a:0",
+          "storyId": "4fb584f6-f936-4818-90a5-6b53a341464a",
+          "storyRevision": 1,
+          "prdRevision": 1,
+          "storyTitle": "검증을 마친 확인 버튼",
+          "criterion": "실제 미리보기의 확인 전과 클릭 후 확인 완료를 비교한다."
+        }
+      ],
+      "title": "담당 인계 전 실제 확인 버튼",
+      "steps": "로컬 테스트 랩의 격리된 미리보기에서 확인 전을 확인하고 확인하기를 클릭했다.",
+      "expected": "확인 전이 확인 완료로 바뀐다.",
+      "actual": "CUA 실제 브라우저에서 확인 전 → 확인 완료를 관찰했다. 외부 통신과 실제 ChatGPT 호출은 없다.",
+      "status": "passed",
+      "kind": "manual",
+      "authorId": "jimin",
+      "revision": 1
+    }
+  ],
+  "feedback": [],
+  "events": [
+    {
+      "id": "b2325a9a-5406-4048-9f36-b38097ba6353",
+      "at": "2026-09-21T13:40:49.687Z",
+      "actorId": "seoyeon",
+      "action": "member.join",
+      "detail": "이서연"
+    },
+    {
+      "id": "37915b52-7846-4851-b397-7a1bbb706d3b",
+      "at": "2026-09-21T13:40:49.745Z",
+      "actorId": "hyunwoo",
+      "action": "member.join",
+      "detail": "박현우"
+    },
+    {
+      "id": "32e18f0c-2969-40af-a131-b4ba978981ae",
+      "at": "2026-09-21T13:40:49.753Z",
+      "actorId": "jimin",
+      "action": "prd.save",
+      "detail": "v1"
+    },
+    {
+      "id": "a3fc9035-8c08-4e5f-ac2e-ae38f30a58fe",
+      "at": "2026-09-21T13:40:49.759Z",
+      "actorId": "jimin",
+      "action": "prd.approve",
+      "detail": "v1 동의"
+    },
+    {
+      "id": "b2860502-b571-49b5-8ba8-865e5169cf13",
+      "at": "2026-09-21T13:40:49.764Z",
+      "actorId": "seoyeon",
+      "action": "prd.approve",
+      "detail": "v1 동의"
+    },
+    {
+      "id": "bfcb3544-cf63-47f7-95bf-8f6aa4fd3faa",
+      "at": "2026-09-21T13:40:49.770Z",
+      "actorId": "hyunwoo",
+      "action": "prd.approve",
+      "detail": "v1 동의"
+    },
+    {
+      "id": "891b393b-e46f-47c9-a157-5e4ceb369b58",
+      "at": "2026-09-21T13:40:49.775Z",
+      "actorId": "jimin",
+      "action": "story.save",
+      "detail": "검증을 마친 확인 버튼"
+    },
+    {
+      "id": "75a55df9-b32c-47d6-ad3c-c63e5bd8b3e7",
+      "at": "2026-09-21T13:40:49.779Z",
+      "actorId": "jimin",
+      "action": "story.save",
+      "detail": "결과를 기다리는 안내 화면"
+    },
+    {
+      "id": "8146e322-ba6c-4de2-b780-b47135cf280b",
+      "at": "2026-09-21T13:40:49.784Z",
+      "actorId": "jimin",
+      "action": "run.start",
+      "detail": "2개 수동 ChatGPT 작업 시작"
+    },
+    {
+      "id": "08f509bc-c424-498f-abc6-53a84bdb2044",
+      "at": "2026-09-21T13:40:49.790Z",
+      "actorId": "jimin",
+      "action": "run.submit",
+      "detail": "검증을 마친 확인 버튼"
+    },
+    {
+      "id": "21bc6d30-81ad-490f-923a-9fc8cdf8d749",
+      "at": "2026-09-21T13:40:49.796Z",
+      "actorId": "jimin",
+      "action": "release.create",
+      "detail": "담당 인계 전 확인 버튼"
+    },
+    {
+      "id": "c2c4c516-cd97-4400-a82e-b9af125f3d40",
+      "at": "2026-09-21T13:41:29.478Z",
+      "actorId": "jimin",
+      "action": "test.save",
+      "detail": "담당 인계 전 실제 확인 버튼"
+    },
+    {
+      "id": "b8422d99-aa85-4c66-a6d3-2e6fd7d392b5",
+      "at": "2026-09-21T13:41:34.447Z",
+      "actorId": "jimin",
+      "action": "story.complete",
+      "detail": "검증을 마친 확인 버튼"
+    },
+    {
+      "id": "a041be53-0de3-4ffa-864a-9b2ce1e02ae8",
+      "at": "2026-09-21T13:41:48.442Z",
+      "actorId": "jimin",
+      "action": "story.assign",
+      "detail": "결과를 기다리는 안내 화면"
+    },
+    {
+      "id": "2c1c267f-97b2-4f4d-a77d-a91ba21d7466",
+      "at": "2026-09-21T13:42:00.227Z",
+      "actorId": "jimin",
+      "action": "story.save",
+      "detail": "검증을 마친 확인 버튼"
+    },
+    {
+      "id": "a378ad59-0023-480d-998d-2c4d6d348397",
+      "at": "2026-09-21T13:42:01.021Z",
+      "actorId": "jimin",
+      "action": "story.assign",
+      "detail": "검증을 마친 확인 버튼"
+    },
+    {
+      "id": "87841885-5f4c-4629-b141-734ff7fe5f60",
+      "at": "2026-09-21T13:42:01.650Z",
+      "actorId": "jimin",
+      "action": "story.assign",
+      "detail": "검증을 마친 확인 버튼"
+    },
+    {
+      "id": "26631a53-0fe9-478d-8d69-fad0833d2846",
+      "at": "2026-09-21T13:42:02.356Z",
+      "actorId": "jimin",
+      "action": "story.assign",
+      "detail": "결과를 기다리는 안내 화면"
+    },
+    {
+      "id": "3095cb8c-135b-4933-9827-b558e87d810d",
+      "at": "2026-09-21T13:42:19.228Z",
+      "actorId": "jimin",
+      "action": "member.remove",
+      "detail": ""
+    },
+    {
+      "id": "be6b9fe8-46ef-4cc4-a268-4fa382109a7d",
+      "at": "2026-09-21T13:42:29.820Z",
+      "actorId": "jimin",
+      "action": "story.assign",
+      "detail": "검증을 마친 확인 버튼"
+    },
+    {
+      "id": "9eb633ea-9031-4bf5-b19b-7f93f56f03d0",
+      "at": "2026-09-21T13:42:30.578Z",
+      "actorId": "jimin",
+      "action": "story.assign",
+      "detail": "결과를 기다리는 안내 화면"
+    },
+    {
+      "id": "6e337fdc-9f8d-4986-a43d-f296c73e03a9",
+      "at": "2026-09-21T13:42:38.714Z",
+      "actorId": "hyunwoo",
+      "action": "story.assign",
+      "detail": "결과를 기다리는 안내 화면"
+    },
+    {
+      "id": "11d08d71-8482-4c24-9cb8-d75e1f8fcad8",
+      "at": "2026-09-21T13:43:15.053Z",
+      "actorId": "jimin",
+      "action": "story.assign",
+      "detail": "결과를 기다리는 안내 화면"
+    }
+  ],
+  "updatedAt": "2026-09-21T13:43:15.053Z"
+}

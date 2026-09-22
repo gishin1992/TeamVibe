@@ -1,0 +1,22 @@
+{
+  "projectId": "2603e013-b52d-47ba-adcb-52821c3759dd",
+  "otherProjectId": "08329e88-4959-494a-af11-360e2bdc556a",
+  "conversations": [
+    {
+      "id": "8a9e7eec-8a42-46bb-aa46-fd3cb4d49304",
+      "title": "지민의 신청 아이디어",
+      "ownerId": "jimin"
+    },
+    {
+      "id": "b185d082-173a-4cdd-aac0-d504e6cd92f2",
+      "title": "지민의 승인 아이디어",
+      "ownerId": "jimin"
+    },
+    {
+      "id": "09f429c0-1cb9-4497-976c-c7b16e1d7914",
+      "title": "서연의 조회 아이디어",
+      "ownerId": "seoyeon"
+    }
+  ],
+  "otherConversationId": "7637e992-2ad6-4ccc-938b-936b25dcc9a6"
+}

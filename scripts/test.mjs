@@ -1,0 +1,46 @@
+import { spawnSync } from "node:child_process";
+for (const test of [
+  "tests/local-runtime.mjs",
+  "tests/submission-integrity.mjs",
+  "tests/preview-diagnostics.mjs",
+  "tests/prd-review.mjs",
+  "tests/prd-history.mjs",
+  "tests/api-flow.mjs",
+  "tests/api-guards.mjs",
+  "tests/api-collaboration.mjs",
+  "tests/story-revision.mjs",
+  "tests/story-editing.mjs",
+  "tests/story-assignment.mjs",
+  "tests/run-result-context.mjs",
+  "tests/run-submissions.mjs",
+  "tests/story-planning.mjs",
+  "tests/requirement-planning.mjs",
+  "tests/requirement-sources.mjs",
+  "tests/requirement-history.mjs",
+  "tests/requirement-restore.mjs",
+  "tests/test-history.mjs",
+  "tests/test-record-lifecycle.mjs",
+  "tests/integration-baseline.mjs",
+  "tests/artifact-removal.mjs",
+  "tests/resolution-transfer.mjs",
+  "tests/feedback-lifecycle.mjs",
+  "tests/workflow-guidance.mjs",
+  "tests/form-conflicts.mjs",
+  "tests/workspace-refresh.mjs",
+  "tests/conversation-drafts.mjs",
+  "tests/planning-drafts.mjs",
+  "tests/integration-drafts.mjs",
+  "tests/json-file-import.mjs",
+  "tests/message-provenance.mjs",
+  "tests/profile-lifecycle.mjs",
+]) {
+  const result = spawnSync(
+    process.execPath,
+    ["--experimental-strip-types", test],
+    {
+      stdio: "inherit",
+      env: process.env,
+    },
+  );
+  if (result.status !== 0) process.exit(result.status || 1);
+}

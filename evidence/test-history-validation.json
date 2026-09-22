@@ -1,0 +1,46 @@
+{
+  "at": "2026-09-21T11:29:21.960Z",
+  "typecheck": {
+    "exitCode": 0,
+    "session": 54828
+  },
+  "tests": {
+    "exitCode": 0,
+    "session": 54828,
+    "log": "evidence/test-test-history.log"
+  },
+  "build": {
+    "exitCode": 0,
+    "session": 63906,
+    "command": "node /Users/takykim/.codex/plugins/cache/openai-curated-remote/sites/0.1.65/scripts/build-site.mjs"
+  },
+  "browser": {
+    "checks": 7,
+    "passed": true,
+    "evidence": "evidence/test-history-browser-result.json"
+  },
+  "server": {
+    "originalAuthor": "jimin",
+    "lastEditor": "seoyeon",
+    "revision": 2,
+    "history": 1,
+    "fullRecordEqualAfterRestore": true
+  },
+  "sourceHashes": {
+    "lib/teamvibe/types.ts": "aae17e81344c9f57a6fcb61ae108cb2571fe17da18dd3b0c09c77a675ab4c455",
+    "lib/teamvibe/domain.ts": "733abaf4848a093a8ad8b4cb3433177a00df03d1a36f240afa8fe41c2bb55565",
+    "lib/teamvibe/test-history.ts": "f8f2acec3755183a6bcf261a318384ac2a60cb2cc3e33eb0834d5bbaaaa3c690",
+    "components/test-history.tsx": "6d24076612499d82546de470c13d2a004865a5eb9399945014b29ff92d402760",
+    "components/workspace.tsx": "10b5f0d8f65752810c786183184721781c750f67e6d467e19219d5a485a5466e",
+    "tests/test-history.mjs": "e4801e5e47296409ccc564d2e82bcc781ddf6065fab9f5a0fb1b2524b3c07ebf",
+    "scripts/test.mjs": "ed836cc5b0e47b6502dee5b2be3573e3bcc8c03c821442e2f3d65b51740ee9ca",
+    "scripts/prepare-test-history-demo.mjs": "55ba9e58198b9eee58f977e783633735555b789a66161309e2dec5c2a85105be"
+  },
+  "limitations": [
+    "Test revision history is read-only and begins with edits after this implementation.",
+    "Actual iframe observation was performed once; the teammate edit only clarified text.",
+    "Failed/blocked completion behavior uses synthetic API fixtures, not browser failure claims.",
+    "Results list currently shows only active-release records; historical criterion text is not separately snapshotted.",
+    "No new lint or actual ChatGPT call."
+  ]
+}

@@ -1,0 +1,217 @@
+{
+  "id": "9625ca84-086f-4a5c-b7a1-ea0be983fef8",
+  "createdAt": "2026-09-21T23:30:49.527Z",
+  "name": "제출본 최종 협업 · 합성 확인 도구",
+  "description": "두 팀원의 아이디어를 합의하고 독립 기능을 통합한다.",
+  "goal": "확인 버튼과 안내 스타일을 병렬 작업으로 만들고 직접 실행한다.",
+  "inviteCode": "105f2743dcff",
+  "ownerId": "jimin",
+  "members": [
+    "jimin",
+    "seoyeon"
+  ],
+  "version": 12,
+  "conversations": [
+    {
+      "id": "b6bf5b3f-e5de-4de9-a486-e87de8cf9e2b",
+      "createdAt": "2026-09-21T23:31:00.712Z",
+      "title": "직접 확인하는 실행 버튼",
+      "ownerId": "jimin",
+      "messages": [
+        {
+          "id": "c504026a-20a2-4f95-a761-be508bfde535",
+          "createdAt": "2026-09-21T23:31:05.801Z",
+          "revision": 1,
+          "authorId": "jimin",
+          "kind": "user",
+          "text": "버튼을 누르면 대기 중 문구가 확인 완료로 바뀌고 초기화로 되돌릴 수 있으면 좋겠어요.",
+          "source": ""
+        },
+        {
+          "id": "827c9d07-8810-4c75-a5fb-bcb9f40ca977",
+          "createdAt": "2026-09-21T23:31:05.801Z",
+          "authorId": "guide",
+          "kind": "guide",
+          "text": "로컬 진행 도우미: 이 기능은 누가 사용하나요? 성공한 상태와 예외 상황, 수정·취소 규칙도 적어 주세요. 더 깊이 논의하려면 ChatGPT 작업 묶음을 복사하고 응답을 가져오세요."
+        }
+      ]
+    },
+    {
+      "id": "dca734a9-2ae3-41b2-bfdd-b66a83268595",
+      "createdAt": "2026-09-21T23:31:36.676Z",
+      "title": "읽기 쉬운 안내",
+      "ownerId": "seoyeon",
+      "messages": [
+        {
+          "id": "ab3c6b72-bf74-4574-bc1f-37b5e5012861",
+          "createdAt": "2026-09-21T23:31:36.972Z",
+          "revision": 1,
+          "authorId": "seoyeon",
+          "kind": "user",
+          "text": "상태를 큰 글씨로 보여주고 확인과 초기화 버튼이 구분되면 좋겠어요.",
+          "source": ""
+        },
+        {
+          "id": "d935a1c6-d24e-4eee-a7b5-e3512bac3174",
+          "createdAt": "2026-09-21T23:31:36.972Z",
+          "authorId": "guide",
+          "kind": "guide",
+          "text": "로컬 진행 도우미: 이 기능은 누가 사용하나요? 성공한 상태와 예외 상황, 수정·취소 규칙도 적어 주세요. 더 깊이 논의하려면 ChatGPT 작업 묶음을 복사하고 응답을 가져오세요."
+        },
+        {
+          "id": "297ef84c-e534-4b03-9379-4ee198c51866",
+          "createdAt": "2026-09-21T23:32:00.639Z",
+          "revision": 1,
+          "authorId": "seoyeon",
+          "kind": "chatgpt",
+          "text": "합성 응답: 상태 영역은 큰 글씨로 표시하고, 확인과 초기화는 서로 다른 버튼으로 둡니다. 기능은 index.html과 app.js, 스타일은 styles.css로 분리하면 병렬 검토할 수 있습니다.",
+          "source": "로컬 제출본 검증용 합성 응답 · 실제 ChatGPT 호출 없음"
+        }
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "id": "7e232434-5ebb-4ded-9778-26bc66a16cd8",
+      "createdAt": "2026-09-21T23:31:17.856Z",
+      "title": "확인과 초기화",
+      "description": "버튼을 누르면 대기 중 문구가 확인 완료로 바뀌고 초기화로 되돌릴 수 있으면 좋겠어요.",
+      "priority": "must",
+      "status": "accepted",
+      "sourceIds": [
+        "c504026a-20a2-4f95-a761-be508bfde535"
+      ],
+      "decision": "합성 안내 도구이며 클릭과 초기화만 검증한다. 서버 저장과 실제 업무 연결은 하지 않는다.",
+      "sourceRevisions": {
+        "c504026a-20a2-4f95-a761-be508bfde535": 1
+      },
+      "authorId": "jimin",
+      "revision": 1,
+      "change": "created"
+    },
+    {
+      "id": "c6a559fb-5252-4c5a-b19b-a74a85050c4b",
+      "createdAt": "2026-09-21T23:32:01.238Z",
+      "title": "상태 안내 스타일",
+      "description": "상태를 큰 글씨로 보여주고 확인과 초기화 버튼이 구분되면 좋겠어요.",
+      "priority": "must",
+      "status": "accepted",
+      "sourceIds": [
+        "ab3c6b72-bf74-4574-bc1f-37b5e5012861"
+      ],
+      "decision": "상태는 24px 이상, 확인/초기화 버튼을 구분한다. .panel, #status, button 스타일 계약을 공유한다.",
+      "sourceRevisions": {
+        "ab3c6b72-bf74-4574-bc1f-37b5e5012861": 1
+      },
+      "authorId": "seoyeon",
+      "revision": 1,
+      "change": "created"
+    }
+  ],
+  "prd": {
+    "body": "# 제출본 최종 협업 · 합성 확인 도구\n\n## 해결할 문제\n두 팀원의 아이디어를 합의하고 독립 기능을 통합한다.\n\n## 목표\n확인 버튼과 안내 스타일을 병렬 작업으로 만들고 직접 실행한다.\n\n## 대상 사용자\n프로젝트 팀이 검토하여 사용자와 권한을 구체화하세요.\n\n## 기능 요구사항\n### 1. 확인과 초기화\n버튼을 누르면 대기 중 문구가 확인 완료로 바뀌고 초기화로 되돌릴 수 있으면 좋겠어요.\n- 우선순위: must\n- 검토 상태: accepted\n- 결정: 합성 안내 도구이며 클릭과 초기화만 검증한다. 서버 저장과 실제 업무 연결은 하지 않는다.\n\n### 2. 상태 안내 스타일\n상태를 큰 글씨로 보여주고 확인과 초기화 버튼이 구분되면 좋겠어요.\n- 우선순위: must\n- 검토 상태: accepted\n- 결정: 상태는 24px 이상, 확인/초기화 버튼을 구분한다. .panel, #status, button 스타일 계약을 공유한다.\n\n## 완료 및 테스트 기준\n각 요구사항의 정상 흐름, 빈 상태, 오류 상태, 수정과 취소/삭제를 확인합니다.\n\n## 범위와 제약\n로컬 테스트 환경, 합성 데이터만 사용합니다. 외부 연계는 별도 합의 후 진행합니다.\n\n## 미결정 사항\n현재 등록된 미결정 사항 없음\n",
+    "revision": 1,
+    "approvals": [
+      "seoyeon",
+      "jimin"
+    ],
+    "history": [
+      {
+        "revision": 0,
+        "body": "",
+        "at": "2026-09-21T23:32:12.411Z",
+        "authorId": "seoyeon"
+      }
+    ],
+    "sourceRevision": 2,
+    "updatedAt": "2026-09-21T23:32:12.411Z",
+    "updatedBy": "seoyeon",
+    "change": "generated"
+  },
+  "stories": [],
+  "runs": [],
+  "releases": [],
+  "testResults": [],
+  "feedback": [],
+  "events": [
+    {
+      "id": "9dce430a-c23c-4166-ab01-ffffa7130aad",
+      "at": "2026-09-21T23:31:00.712Z",
+      "actorId": "jimin",
+      "action": "conversation.save",
+      "detail": "직접 확인하는 실행 버튼"
+    },
+    {
+      "id": "76b1b95e-7fe9-4b2f-8c00-2aea57fd60f6",
+      "at": "2026-09-21T23:31:05.801Z",
+      "actorId": "jimin",
+      "action": "message.save",
+      "detail": "직접 확인하는 실행 버튼"
+    },
+    {
+      "id": "d37dd1a6-5028-4c5b-beee-0f2e6eb0bc56",
+      "at": "2026-09-21T23:31:17.856Z",
+      "actorId": "jimin",
+      "action": "requirement.save",
+      "detail": "확인과 초기화"
+    },
+    {
+      "id": "6b0421b3-f79e-40b1-a246-5a35d3acd617",
+      "at": "2026-09-21T23:31:36.107Z",
+      "actorId": "seoyeon",
+      "action": "member.join",
+      "detail": "이서연"
+    },
+    {
+      "id": "14bb03a7-0930-49e0-a009-3a5ea95a2335",
+      "at": "2026-09-21T23:31:36.676Z",
+      "actorId": "seoyeon",
+      "action": "conversation.save",
+      "detail": "읽기 쉬운 안내"
+    },
+    {
+      "id": "a1bf43ee-b304-4fdb-9eaa-619b466ad59f",
+      "at": "2026-09-21T23:31:36.972Z",
+      "actorId": "seoyeon",
+      "action": "message.save",
+      "detail": "읽기 쉬운 안내"
+    },
+    {
+      "id": "af0427dc-7dc4-40b3-84e7-1654096dcdcd",
+      "at": "2026-09-21T23:32:00.640Z",
+      "actorId": "seoyeon",
+      "action": "message.save",
+      "detail": "읽기 쉬운 안내"
+    },
+    {
+      "id": "8a182f3f-e1b4-4001-9dc2-ff13799829e7",
+      "at": "2026-09-21T23:32:01.238Z",
+      "actorId": "seoyeon",
+      "action": "requirement.save",
+      "detail": "상태 안내 스타일"
+    },
+    {
+      "id": "c03280af-78d3-46b6-8222-e093afd08668",
+      "at": "2026-09-21T23:32:12.411Z",
+      "actorId": "seoyeon",
+      "action": "prd.generate",
+      "detail": "요구사항 기반 규칙 초안"
+    },
+    {
+      "id": "b75e80ff-7d65-4fe6-a033-a73ee0097c56",
+      "at": "2026-09-21T23:32:12.683Z",
+      "actorId": "seoyeon",
+      "action": "prd.approve",
+      "detail": "v1 동의"
+    },
+    {
+      "id": "42a0a14f-7049-47b7-badc-8d1fc1ef2c81",
+      "at": "2026-09-21T23:32:30.294Z",
+      "actorId": "jimin",
+      "action": "prd.approve",
+      "detail": "v1 동의"
+    }
+  ],
+  "updatedAt": "2026-09-21T23:32:30.294Z",
+  "requirementsVersion": 2
+}

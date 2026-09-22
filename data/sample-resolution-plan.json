@@ -1,0 +1,16 @@
+{
+  "projectId": "c2c59e95-aa34-459e-901a-246a3472fb7a",
+  "projectVersion": 8,
+  "activeReleaseId": "",
+  "runIds": [
+    "9e9dd2b8-6544-40d3-9861-33b043c31606",
+    "f921dd91-e84d-4103-b590-64d04966951f"
+  ],
+  "source": "TeamVibe 합성 해결안 · 실제 ChatGPT 응답 아님",
+  "resolutions": {
+    "index.html": {
+      "content": "<!doctype html><html lang=\"ko\"><meta charset=\"utf-8\"><title>합성 안내 통합</title><body><h1>합성 안내</h1><p>신청 안내 표시</p><p>취소 안내 표시</p></body></html>",
+      "reason": "신청 안내와 취소 안내를 둘 다 유지했다. 두 문장이 표시되는지 브라우저에서 확인해야 한다. 아직 실행하지 않았다."
+    }
+  }
+}

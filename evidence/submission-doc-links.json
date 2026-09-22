@@ -1,0 +1,123 @@
+{
+  "at": "2026-09-22T00:06:09.940Z",
+  "files": [
+    "README.md",
+    "docs/START_HERE.md",
+    "docs/ACCEPTANCE.md",
+    "docs/DEMO.md",
+    "evidence/VERIFICATION.md"
+  ],
+  "links": [
+    {
+      "file": "README.md",
+      "target": "docs/START_HERE.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/ACCEPTANCE.md",
+      "exists": true
+    },
+    {
+      "file": "docs/START_HERE.md",
+      "target": "../README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/START_HERE.md",
+      "target": "DEMO.md",
+      "exists": true
+    },
+    {
+      "file": "docs/START_HERE.md",
+      "target": "../evidence/screenshots/final-overview.png",
+      "exists": true
+    },
+    {
+      "file": "docs/START_HERE.md",
+      "target": "../evidence/screenshots/safe-edit-mobile.png",
+      "exists": true
+    },
+    {
+      "file": "docs/START_HERE.md",
+      "target": "../evidence/screenshots/demo-overview-final.png",
+      "exists": true
+    },
+    {
+      "file": "docs/START_HERE.md",
+      "target": "../evidence/screenshots/demo-mobile-form-list.png",
+      "exists": true
+    },
+    {
+      "file": "docs/START_HERE.md",
+      "target": "../evidence/screenshots/demo-desktop-form-list.png",
+      "exists": true
+    },
+    {
+      "file": "docs/START_HERE.md",
+      "target": "../evidence/screenshots/demo-stories-done.png",
+      "exists": true
+    },
+    {
+      "file": "docs/START_HERE.md",
+      "target": "ACCEPTANCE.md",
+      "exists": true
+    },
+    {
+      "file": "docs/START_HERE.md",
+      "target": "../evidence/VERIFICATION.md",
+      "exists": true
+    },
+    {
+      "file": "docs/ACCEPTANCE.md",
+      "target": "../evidence/submission-refresh-validation.json",
+      "exists": true
+    },
+    {
+      "file": "docs/ACCEPTANCE.md",
+      "target": "../evidence/submission-refresh-ui-browser.json",
+      "exists": true
+    },
+    {
+      "file": "docs/ACCEPTANCE.md",
+      "target": "../evidence/submission-refresh-ui-final-project.json",
+      "exists": true
+    },
+    {
+      "file": "docs/ACCEPTANCE.md",
+      "target": "../evidence/screenshots/submission-refresh-ui-preview.png",
+      "exists": true
+    },
+    {
+      "file": "docs/ACCEPTANCE.md",
+      "target": "../evidence/safe-edit-browser-result.json",
+      "exists": true
+    },
+    {
+      "file": "docs/ACCEPTANCE.md",
+      "target": "../evidence/safe-edit-platform-result.json",
+      "exists": true
+    },
+    {
+      "file": "docs/ACCEPTANCE.md",
+      "target": "../evidence/safe-edit-validation.json",
+      "exists": true
+    },
+    {
+      "file": "docs/ACCEPTANCE.md",
+      "target": "START_HERE.md",
+      "exists": true
+    },
+    {
+      "file": "docs/ACCEPTANCE.md",
+      "target": "../README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/DEMO.md",
+      "target": "START_HERE.md",
+      "exists": true
+    }
+  ],
+  "note": "Local Markdown target existence only, not content or rendering verification."
+}

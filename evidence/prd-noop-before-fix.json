@@ -1,0 +1,38 @@
+{
+  "at": "2026-09-21T11:50:58.833Z",
+  "projectId": "522cb693-67c1-4c23-853f-2a63d341748e",
+  "before": {
+    "approvals": [
+      "jimin",
+      "seoyeon"
+    ],
+    "requirementsVersion": 1,
+    "requirement": {
+      "id": "7cd150c6-90c2-4753-8f35-fe376d57e46a",
+      "createdAt": "2026-09-21T11:50:58.807Z",
+      "title": "합성 검토 기준",
+      "description": "팀이 문서를 함께 검토한다.",
+      "priority": "must",
+      "status": "accepted",
+      "sourceIds": [],
+      "decision": "합성 시연 범위에 합의했다.",
+      "sourceRevisions": {}
+    }
+  },
+  "after": {
+    "approvals": [],
+    "requirementsVersion": 2,
+    "requirement": {
+      "id": "7cd150c6-90c2-4753-8f35-fe376d57e46a",
+      "createdAt": "2026-09-21T11:50:58.807Z",
+      "title": "합성 검토 기준",
+      "description": "팀이 문서를 함께 검토한다.",
+      "priority": "must",
+      "status": "accepted",
+      "sourceIds": [],
+      "decision": "합성 시연 범위에 합의했다.",
+      "sourceRevisions": {}
+    }
+  },
+  "observation": "Identical requirement save currently clears approvals and changes requirementsVersion."
+}

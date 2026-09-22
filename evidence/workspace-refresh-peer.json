@@ -1,0 +1,51 @@
+{
+  "id": "93dba294-fcc1-48f9-99f5-8202fa80ba4d",
+  "createdAt": "2026-09-21T13:59:04.929Z",
+  "name": "늦은 갱신 · 팀 최신 이름",
+  "description": "로컬 응답 지연으로 최신 저장의 화면 보존을 확인한다.",
+  "goal": "저장보다 늦게 도착한 자동 갱신이 최신 상태를 되돌리지 않는다.",
+  "inviteCode": "49162ed10f88",
+  "ownerId": "jimin",
+  "members": [
+    "jimin"
+  ],
+  "version": 4,
+  "conversations": [],
+  "requirements": [],
+  "prd": {
+    "body": "",
+    "revision": 0,
+    "approvals": [],
+    "history": []
+  },
+  "stories": [],
+  "runs": [],
+  "releases": [],
+  "testResults": [],
+  "feedback": [],
+  "events": [
+    {
+      "id": "1eb3aa9c-c303-45ac-ac32-56f59dd84b31",
+      "at": "2026-09-21T23:16:23.611Z",
+      "actorId": "jimin",
+      "action": "project.edit",
+      "detail": "늦은 갱신 · 저장한 이름 보존 1차 수정"
+    },
+    {
+      "id": "e7f4d43e-303d-4d88-9603-d85506f14c22",
+      "at": "2026-09-21T23:23:15.689Z",
+      "actorId": "jimin",
+      "action": "project.edit",
+      "detail": "늦은 갱신 · 저장한 이름 보존 2차 수정"
+    },
+    {
+      "id": "e51a047e-f476-4f01-b7f0-578fe5c43f7f",
+      "at": "2026-09-21T23:24:18.601Z",
+      "actorId": "jimin",
+      "action": "project.edit",
+      "detail": "늦은 갱신 · 팀 최신 이름"
+    }
+  ],
+  "updatedAt": "2026-09-21T23:24:18.601Z",
+  "requirementsVersion": 3
+}

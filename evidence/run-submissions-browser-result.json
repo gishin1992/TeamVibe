@@ -1,0 +1,50 @@
+{
+  "steps": [
+    {
+      "at": "2026-09-21T12:54:42.023Z",
+      "name": "Current result v2 displays its importer",
+      "pass": true
+    },
+    {
+      "at": "2026-09-21T12:54:55.431Z",
+      "name": "Two result versions preserve both importers and original logs",
+      "pass": true,
+      "detail": "개발 결과 수정 이력\n\n확인 버튼의 결과 문구\n\n이전 코드·제외 요청·로그·출처는 읽기 전용으로 보존됩니다. 반입자는 결과를 저장한 팀원이며 코드 작성자나 실행 검증자를 뜻하지 않습니다. 이전 결과로 되돌리려면 해당 JSON을 복사해 같은 작업의 ‘제출 결과 수정’에서 다시 반입하세요. 통합·취소한 작업은 수정할 수 없습니다.\n\n현재 결과 · v2\n반입: 이서연 · 2026. 9. 21. 오후 9:54:19\n\n출처: 합성 수정 결과 · 실제 AI 호출 없음\n\n두 번째 합성 결과입니다. 버튼 문구만 바꿨으며 아직 브라우저에서 실행하지 않았습니다.\n\n추가·수정 파일: index.html, app.js\n\n제외 요청: 없음\n\nv2 결과 JSON 보기\n이전 결과 · v1\n반입: 김지민 · 2026. 9. 21. 오후 9:54:19\n\n출처: 합성 첫 결과 · 실제 AI 호출 없음\n\n첫 합성 결과입니다. 버튼 문구를 작성했으며 아직 브라우저에서 실행하지 않았습니다.\n\n추가·수정 파일: index.html, app.js\n\n제외 요청: 없음\n\nv1 결과 JSON 보기\nClose"
+    },
+    {
+      "at": "2026-09-21T12:54:55.788Z",
+      "name": "Previous JSON contains original code and immutable run context",
+      "pass": true
+    },
+    {
+      "at": "2026-09-21T12:55:02.742Z",
+      "name": "Mobile result history has no horizontal overflow",
+      "pass": true
+    },
+    {
+      "at": "2026-09-21T12:55:12.053Z",
+      "name": "Reimporting v1 creates current v3 and keeps both earlier results",
+      "pass": true
+    },
+    {
+      "at": "2026-09-21T12:55:24.061Z",
+      "name": "Integrated reimported result executes the original button code",
+      "pass": true
+    },
+    {
+      "at": "2026-09-21T12:55:49.498Z",
+      "name": "Integrated work keeps history and cannot edit its result",
+      "pass": true
+    },
+    {
+      "at": "2026-09-21T12:55:49.957Z",
+      "name": "History remains readable after integration",
+      "pass": true
+    },
+    {
+      "at": "2026-09-21T12:56:32.342Z",
+      "name": "Legacy result importer and time stay explicitly unknown",
+      "pass": true
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "at": "2026-09-21T10:56:38.252Z",
+  "checks": [
+    {
+      "label": "참여 중에서 같은 이름의 휴지통 프로젝트 제외",
+      "passed": true
+    },
+    {
+      "label": "검색 결과 없음 안내",
+      "passed": true
+    },
+    {
+      "label": "설명 검색 후 키보드 Enter 선택",
+      "passed": true
+    },
+    {
+      "label": "검색어 유지한 채 휴지통 구분",
+      "passed": true
+    },
+    {
+      "label": "검색 취소하면 현재 프로젝트 유지",
+      "passed": true
+    },
+    {
+      "label": "프로젝트 이름 수정 후 선택 버튼 갱신",
+      "passed": true
+    },
+    {
+      "label": "휴지통 화면에 프로젝트 이름 표시",
+      "passed": true
+    },
+    {
+      "label": "보관한 프로젝트에서 선택 창을 열면 휴지통 활성화",
+      "passed": true
+    },
+    {
+      "label": "휴지통 이동 후 참여 중 검색에서 제외",
+      "passed": true
+    },
+    {
+      "label": "휴지통에서 변경한 이름으로 검색 가능",
+      "passed": true
+    },
+    {
+      "label": "멤버는 휴지통 내용을 안내받지만 복원 버튼 없음",
+      "passed": true
+    },
+    {
+      "label": "모바일 390px에서 검색 창이 화면 안에 표시",
+      "passed": true
+    },
+    {
+      "label": "모바일 프로젝트 선택 후 선택 창과 사이드 메뉴 닫힘",
+      "passed": false
+    },
+    {
+      "label": "오너가 모바일에서 프로젝트 복원",
+      "passed": true
+    },
+    {
+      "label": "복원 후 프로젝트 선택 기본 목록은 참여 중",
+      "passed": true
+    },
+    {
+      "label": "복원 후 참여 중 검색에 복귀",
+      "passed": true
+    },
+    {
+      "label": "복원 후 원래 대화 메시지 보존",
+      "passed": true
+    },
+    {
+      "label": "모바일 프로필 전환 알림이 메뉴와 겹치지 않음",
+      "passed": true
+    },
+    {
+      "label": "알림 표시 중 모바일 메뉴 즉시 열기",
+      "passed": true
+    },
+    {
+      "label": "페이지 상단에서 모바일 알림과 메뉴 영역 분리",
+      "passed": true
+    },
+    {
+      "label": "알림 직접 닫기",
+      "passed": true
+    },
+    {
+      "label": "모바일 선택 후 닫힘 애니메이션 완료 시 두 창이 모두 닫힘",
+      "passed": true
+    }
+  ],
+  "mobile": {
+    "dialog": {
+      "bottom": 630.4765625,
+      "height": 416.953125,
+      "left": 16,
+      "right": 374,
+      "top": 213.5234375,
+      "width": 358,
+      "x": 16,
+      "y": 213.5234375
+    },
+    "scrollWidth": 390,
+    "width": 390
+  },
+  "notification": {
+    "menu": {
+      "bottom": 43.5,
+      "height": 28,
+      "left": 16,
+      "right": 44,
+      "top": 15.5,
+      "width": 28,
+      "x": 16,
+      "y": 15.5
+    },
+    "toasts": [
+      {
+        "bottom": 129.5,
+        "height": 53.5,
+        "left": 16,
+        "right": 374,
+        "top": 76,
+        "width": 358,
+        "x": 16,
+        "y": 76
+      }
+    ]
+  },
+  "finalPickerClosed": {
+    "dialogs": 0,
+    "selected": "TEAM PROJECT\nWORKSPACE\n프로젝트 찾기 · 파란 노트\n\n동일 이름 구별을 위한 합성 설명 · 파란 노트\n\n아이디어 추가"
+  },
+  "observationNote": "모바일 첫 선택 직후 DOM count에 닫히는 창이 포함되어 0 판정이 false였다. 복원 버튼 동작은 성공했고, 닫힘 완료 대기 후 같은 모바일 선택 흐름을 재검증하여 dialog 0을 확인했다. 실패 관찰도 보존한다."
+}

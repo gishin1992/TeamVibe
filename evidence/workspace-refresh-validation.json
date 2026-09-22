@@ -1,0 +1,54 @@
+{
+  "at": "2026-09-21T23:27:46.466Z",
+  "projectId": "93dba294-fcc1-48f9-99f5-8202fa80ba4d",
+  "beforeFix": "evidence/workspace-refresh-before-fix-browser.json",
+  "afterFix": "evidence/workspace-refresh-after-fix-browser.json",
+  "delayedResponse": {
+    "elapsedMs": 13074,
+    "beforeClientTimeout": true,
+    "projectVersion": 2,
+    "committedVersion": 3
+  },
+  "regressions": "evidence/workspace-refresh-regression-browser.json",
+  "timeout": "evidence/workspace-refresh-timeout.json",
+  "unit": "evidence/workspace-refresh-unit-result.json",
+  "typecheck": {
+    "session": 59378,
+    "exitCode": 0
+  },
+  "tests": {
+    "session": 48359,
+    "exitCode": 0,
+    "log": "evidence/test-workspace-refresh.log"
+  },
+  "build": {
+    "session": 35518,
+    "exitCode": 0,
+    "log": "evidence/build-workspace-refresh.log"
+  },
+  "server": {
+    "finalVersion": 6,
+    "onlyExpectedProjectMetadataAndEventsChanged": true,
+    "events": 5,
+    "generatedAppRuns": 0,
+    "releases": 0,
+    "testResults": 0
+  },
+  "screenshot": "evidence/screenshots/workspace-refresh-recovered.png",
+  "sourceHashes": {
+    "components/workspace.tsx": "cbac061376c3c45428a97ab729f81a7ee4c4268611eb411a3fb362415a87cb17",
+    "lib/teamvibe/workspace-refresh.ts": "ac4ff874f9acfa2ae8587aa91f0b0e67dc299c3432892edfea391be3b0373456",
+    "tests/workspace-refresh.mjs": "f26e2d2ce6d8e7453197dcc3761b614e2f4dd9da13f73b1574446f9930ce9a49",
+    "scripts/refresh-delay-proxy.mjs": "dea8273388f86ec029cc7323c480e8c6d7c66d2d497363f80a8c75fd399c99f7",
+    "scripts/test.mjs": "8e257261c98bfe44ea8d1c4869b374b8493ad4751ffde39675670a5ef37c0256"
+  },
+  "limits": [
+    "Actual Chrome browser via local response-delay proxy; peer uses another same-owner API session, not another browser or another team member.",
+    "Membership/identity boundaries checked by controlled Node helpers, not by forcing browser cookie races.",
+    "No cross-tab actor binding added; demo tabs share login cookies.",
+    "No generated business app execution in this phase.",
+    "First peer API attempt used unsupported project.update (400); entire project unchanged, corrected to inspected project.edit. One browser wait used an incorrect label, then inspected actual UI.",
+    "Initial snapshot comparison incorrectly excluded activity instead of actual events; corrected to inspect all five expected project.edit events.",
+    "Old dev/proxy handles missing after interruption and endpoints refused connections; restarted after verification."
+  ]
+}

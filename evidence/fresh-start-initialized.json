@@ -1,0 +1,13 @@
+{
+  "at": "2026-09-21T11:44:55.442Z",
+  "health": {
+    "ok": true,
+    "mode": "local",
+    "ai": "manual-chatgpt",
+    "database": "ready"
+  },
+  "users": 3,
+  "projects": 2,
+  "createdProjectId": "39528ec9-377b-4b1a-bd2e-e9a29b1bfc83",
+  "seedEditsPreserved": true
+}

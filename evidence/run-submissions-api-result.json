@@ -1,0 +1,17 @@
+{
+  "at": "2026-09-21T23:33:21.511Z",
+  "projectId": "160362bb-a276-4b8b-afa3-8846bde45a83",
+  "checks": [
+    "server-owned importer metadata",
+    "unchanged and reordered results retain identity",
+    "old code, deletions, log, source and importer preserved",
+    "reimporting prior result creates a new version",
+    "integration uses current result and keeps history",
+    "integrated and cancelled edits rejected",
+    "cancel/recycle retains all result versions",
+    "failed validation and CAS are atomic",
+    "legacy unknown importer/time retained",
+    "nested arrays/maps copied independently"
+  ],
+  "note": "Synthetic API/helper checks only; no generated business app execution."
+}

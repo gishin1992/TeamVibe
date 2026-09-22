@@ -1,0 +1,6 @@
+{
+  "address": "http://127.0.0.1:52037",
+  "upstream": "http://localhost:5174",
+  "pid": 43954,
+  "note": "Local-only delayed bootstrap response proxy for actual browser verification. HMR websocket is forwarded after the first attempt exposed a Vite overlay."
+}

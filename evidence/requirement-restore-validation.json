@@ -1,0 +1,60 @@
+{
+  "at": "2026-09-21T12:43:57.586Z",
+  "typecheck": {
+    "initialSession": 21162,
+    "initialExitCode": 0,
+    "intermediateSession": 13946,
+    "intermediateExitCode": 2,
+    "intermediateReason": "Overview acceptedCount referenced reqs before declaration; corrected declaration order.",
+    "finalSession": 42765,
+    "finalExitCode": 0
+  },
+  "tests": {
+    "session": 42765,
+    "exitCode": 0,
+    "log": "evidence/test-requirement-restore-final.log",
+    "initialLog": "evidence/test-requirement-restore.log"
+  },
+  "build": {
+    "session": 49133,
+    "exitCode": 0,
+    "initialSession": 92516,
+    "initialExitCode": 0,
+    "command": "node /Users/takykim/.codex/plugins/cache/openai-curated-remote/sites/0.1.65/scripts/build-site.mjs"
+  },
+  "beforeFix": "evidence/requirement-restore-before-fix.json",
+  "browser": {
+    "observations": 9,
+    "passed": true,
+    "result": "evidence/requirement-restore-browser-result.json",
+    "projectId": "4684b134-c0d2-4063-9262-1f217da7a482"
+  },
+  "server": {
+    "restoredStatus": "proposed",
+    "reacceptedStatus": "accepted",
+    "requirementRevision": 3,
+    "historyEntries": 2,
+    "originalMessagesPreserved": true,
+    "originalPrdPreserved": true,
+    "prdRevision": 2,
+    "approvedMembers": 1,
+    "preFixAcceptedRecordGuard": "evidence/requirement-restore-legacy-guard.json"
+  },
+  "sourceHashes": {
+    "lib/teamvibe/prd-review.ts": "0628bceae00150c861b1b0dfc8a3a6bf153d16ccddf1e0850b0ed284c47b1554",
+    "lib/teamvibe/domain.ts": "e4ce4c0370ad01f61dd688675885032e42960890669fe78da79ce14a20d39902",
+    "lib/teamvibe/types.ts": "4a682e5070e9cf785f89d0da0f6804464ff3ba5d0eeb9324bd8284790179123d",
+    "lib/teamvibe/requirement-history.ts": "c00a5fe32c0d229a2d3ccc03dd515fc93505a3360d4ba068ab5eb677376f11fd",
+    "components/provenance.tsx": "cbd5dde56cd31dbea70abf99f4b380e99a8f8e922183a784729e59a2b8f7c08a",
+    "components/workspace.tsx": "5631de6e2befd1e46d2fe6618d8985818eeb62d8874e0537e6b90149085a86db",
+    "tests/requirement-restore.mjs": "ec46565742c4f8afe663cfe1422ba812c24a8e77cf8914febda66c81e6366a99",
+    "scripts/prepare-requirement-restore-demo.mjs": "ad166eb969f9e310fcae68d62d1ae46f8cfc2469b29eb03d8acdcbea6fed895f",
+    "scripts/test.mjs": "d81a3920e4ef9de01038cc715961a5ffb2d890ec2a694fb4b5284970df1490cb"
+  },
+  "limits": [
+    "Unknown legacy source revision is not guessed",
+    "No business app implementation or browser execution in this fixture",
+    "No external AI call or publication",
+    "No physical data deletion"
+  ]
+}

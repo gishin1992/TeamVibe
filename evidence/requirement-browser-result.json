@@ -1,0 +1,88 @@
+{
+  "at": "2026-09-21T11:05:25.455Z",
+  "checks": [
+    {
+      "label": "팀 대화 두 관점과 기존 요구사항으로 요청 생성",
+      "passed": true
+    },
+    {
+      "label": "실제 JSON 파일 반입 후 검토 대기와 의견 충돌 표시",
+      "passed": true
+    },
+    {
+      "label": "검토에서 두 팀원의 원문 근거 확인",
+      "passed": true
+    },
+    {
+      "label": "검토 중 팀 원문 수정 시 등록 차단과 입력 보존",
+      "passed": true
+    },
+    {
+      "label": "예전 버전의 근거에 최신 원문을 잘못 표시하지 않음",
+      "passed": true
+    },
+    {
+      "label": "최신 요청에 수정 원문 반영",
+      "passed": true
+    },
+    {
+      "label": "모바일 390px에서 요구사항 검토 창 표시",
+      "passed": true
+    },
+    {
+      "label": "명시적 반입 후 기존 합의와 새 검토·충돌 상태 표시",
+      "passed": true
+    },
+    {
+      "label": "반입한 요구사항을 일반 편집 양식으로 수정",
+      "passed": true
+    },
+    {
+      "label": "반입한 요구사항 휴지통 이동",
+      "passed": true
+    },
+    {
+      "label": "휴지통에서 같은 요구사항 복원",
+      "passed": false
+    },
+    {
+      "label": "같은 묶음 중복 반입 차단과 입력 보존",
+      "passed": true
+    },
+    {
+      "label": "모바일 요구사항 화면 가로 넘침 없음",
+      "passed": true
+    },
+    {
+      "label": "편집·복원 뒤 합성 반입 출처와 당시 검토할 점 확인",
+      "passed": true
+    },
+    {
+      "label": "복원 후 화면 전환 완료 시 같은 요구사항 제목 표시",
+      "passed": true
+    }
+  ],
+  "reviewMobile": {
+    "dialog": {
+      "bottom": 801.796875,
+      "height": 759.59375,
+      "left": 16,
+      "right": 374,
+      "top": 42.203125,
+      "width": 358,
+      "x": 16,
+      "y": 42.203125
+    },
+    "scrollWidth": 390,
+    "width": 390
+  },
+  "finalMobile": {
+    "scrollWidth": 390,
+    "width": 390
+  },
+  "limitations": [
+    "Actual ChatGPT was not called; responses were synthetic.",
+    "Clipboard transmission was not attempted; request content was inspected directly."
+  ],
+  "observationNote": "복원 직후 모바일 메뉴에서 공동 PRD로 전환한 즉시 heading count는 0이었다. 이후 해당 카드의 출처가 실제 표시되고, 최종 visible 대기로 제목이 1개임을 확인했다. 초기 false 관찰을 유지하며 최종 API에서는 같은 ID와 원문 출처 보존을 별도로 비교한다."
+}

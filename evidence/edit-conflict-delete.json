@@ -1,0 +1,18 @@
+{
+  "at": "2026-09-21T09:25:50.038Z",
+  "mode": "delete",
+  "projectId": "66ea8ba9-ecd8-4476-adf2-ead990722d79",
+  "beforeVersion": 7,
+  "afterVersion": 8,
+  "requirement": {
+    "id": "31ce6810-93d4-4c67-9721-1b2649df8ffc",
+    "createdAt": "2026-09-21T09:24:44.837Z",
+    "title": "이서연이 제안한 공동 제목",
+    "description": "이서연이 별도 세션에서 수정한 최신 내용",
+    "priority": "must",
+    "status": "proposed",
+    "sourceIds": [],
+    "decision": "검토할 결정 근거",
+    "deletedAt": "2026-09-21T09:25:50.036Z"
+  }
+}

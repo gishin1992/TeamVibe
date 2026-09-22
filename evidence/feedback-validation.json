@@ -1,0 +1,32 @@
+{
+  "at": "2026-09-21T10:22:39.130Z",
+  "checks": [
+    {
+      "name": "npm run typecheck followed by npm test",
+      "exitCode": 0,
+      "evidence": "test-feedback-lifecycle.log"
+    },
+    {
+      "name": "Sites portable build-site.mjs",
+      "session": 67778,
+      "exitCode": 0
+    }
+  ],
+  "sourceHashes": {
+    "components/feedback-panel.tsx": "3eb9bccf4d551297fc089c7fe3fbb4f51a78308881c982d7a2d3d8750a47a4aa",
+    "components/workspace.tsx": "ad42c231c8a2c822c98a01c79ab88a00546bd213c0a1897de736a6f1a6012987",
+    "lib/teamvibe/domain.ts": "41068d7c6819ba05e3983ecf59d68b2e9b0472b1dd950677e2420ed557abee92",
+    "lib/teamvibe/types.ts": "b5761ed572bb5028649957deba4b57e14a6d0730ef6625a1a5d51bc95f18bebf",
+    "lib/teamvibe/form-conflicts.ts": "ecc1a9f68de70871b32afaf0b2cf178136ef44ffdf8f29161c776851a50c78a1",
+    "app/globals.css": "3694949ae021ca96d4bcd11ba30d0fb5038caa1263b0f107dca34e29bf4ddf3d",
+    "tests/feedback-lifecycle.mjs": "89d208c1357b3ae229938e25e7949f7483d8a5aedcc24af3aaa169e5aeeeb8ab",
+    "scripts/test.mjs": "1a21087a7fcbaa6f5ae1dcb7b44a62e45e9b31d6809d5208ac7539cafc5c0128"
+  },
+  "notes": [
+    "최종 제품 코드 변경 후 타입 검사·전체 테스트·빌드 성공. 이후 문서와 증거만 갱신",
+    "실제 브라우저 결과는 feedback-browser-result.json과 최종 프로젝트 스냅샷",
+    "lint는 이 변경 이후 재실행하지 않음",
+    "이전 릴리스의 피드백 종결은 수동 판단 기록이며 스토리 테스트 완료 증거를 자동 생성하지 않음",
+    "외부 ChatGPT 전송·호출 없음"
+  ]
+}

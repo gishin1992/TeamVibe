@@ -1,0 +1,61 @@
+{
+  "steps": [
+    {
+      "at": "2026-09-21T12:32:49.921Z",
+      "name": "Startup syntax error visible",
+      "pass": true
+    },
+    {
+      "at": "2026-09-21T12:33:12.003Z",
+      "name": "Runtime, promise, policy and resource errors shown as text",
+      "pass": true,
+      "detail": "현재 실행에서 오류 6건을 감지했습니다.\n\n실행 오류 내용 6개\n\n오류는 현재 실행 중에만 표시됩니다. 다시 실행하거나 화면을 나가면 초기화되며 테스트 통과·실패를 자동으로 기록하지 않습니다.\n\n스크립트 오류\nUncaught SyntaxError: Unexpected token ';'\n스크립트 오류\nUncaught Error: 합성 버튼 실행 오류 <strong>문자 그대로</strong>\n비동기 실행 오류\n합성 비동기 오류\n격리 정책으로 차단\nconnect-src: 이 실행 환경에서 허용되지 않는 요청입니다.\n격리 정책으로 차단\nimg-src: 이 실행 환경에서 허용되지 않는 요청입니다.\n파일 불러오기 실패\nIMG 파일을 불러오지 못했습니다. 상대 경로와 반입한 파일을 확인하세요.\n오류 내용 복사"
+    },
+    {
+      "at": "2026-09-21T12:33:12.003Z",
+      "name": "Parent DOM, cookies and localStorage remain blocked",
+      "pass": true,
+      "detail": "parent DOM: SecurityError\ncookie: SecurityError\nlocalStorage: SecurityError\nfetch: blocked"
+    },
+    {
+      "at": "2026-09-21T12:33:12.008Z",
+      "name": "App count survives project polling and error updates",
+      "pass": true
+    },
+    {
+      "at": "2026-09-21T12:33:17.700Z",
+      "name": "Actual clipboard contains release identity and six errors",
+      "pass": true
+    },
+    {
+      "at": "2026-09-21T12:33:18.074Z",
+      "name": "Error flood limited to twenty entries",
+      "pass": true
+    },
+    {
+      "at": "2026-09-21T12:33:30.111Z",
+      "name": "Mobile diagnostics fit 390px viewport",
+      "pass": true
+    },
+    {
+      "at": "2026-09-21T12:33:33.259Z",
+      "name": "Rerun clears prior errors and app state, startup error returns",
+      "pass": true
+    },
+    {
+      "at": "2026-09-21T12:33:43.714Z",
+      "name": "Fixed release starts without stale errors and button works",
+      "pass": true
+    },
+    {
+      "at": "2026-09-21T12:34:21.568Z",
+      "name": "Polled release rename keeps running app state",
+      "pass": true
+    },
+    {
+      "at": "2026-09-21T12:34:55.965Z",
+      "name": "New diagnostics clear old copy confirmation",
+      "pass": true
+    }
+  ]
+}

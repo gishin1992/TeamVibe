@@ -1,0 +1,12 @@
+{
+  "at": "2026-09-21T23:33:25.321Z",
+  "passed": true,
+  "checks": [
+    "user/project/kind separation",
+    "partial edits preserve paired request or response",
+    "late import cannot clear newer or identically retyped draft",
+    "success and explicit reset clear only selected draft",
+    "immutable prior state"
+  ],
+  "scope": "Page-state helper; actual browser behavior verified separately."
+}

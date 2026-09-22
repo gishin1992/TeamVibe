@@ -1,0 +1,26 @@
+{
+  "at": "2026-09-21T11:40:04.369Z",
+  "createdAt": "2026-09-21T11:39:49.434Z",
+  "directory": "/Users/takykim/workspace/codex/TeamVibe/.sites-runtime/fresh-start-uIT67w",
+  "statePath": "/Users/takykim/workspace/codex/TeamVibe/.sites-runtime/fresh-start-uIT67w/state",
+  "port": 63449,
+  "url": "http://127.0.0.1:63449",
+  "observations": [
+    {
+      "endpoint": "/api/health",
+      "status": 200,
+      "body": {
+        "ok": true,
+        "mode": "local",
+        "ai": "manual-chatgpt"
+      }
+    },
+    {
+      "endpoint": "/api/bootstrap",
+      "status": 500,
+      "body": {
+        "error": "저장소 처리 중 오류가 발생했습니다. 입력을 보존한 상태로 다시 시도해 주세요."
+      }
+    }
+  ]
+}

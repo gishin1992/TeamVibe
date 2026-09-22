@@ -1,0 +1,17 @@
+{
+  "at": "2026-09-21T23:33:23.316Z",
+  "projectId": "1f7a7143-0492-475a-bc8c-2cbbcacaca7e",
+  "checks": [
+    "source archive/restore preserves meaning and agreement",
+    "archived requirement unchanged during source edits",
+    "restore marks known changed sources for review with original acceptance history",
+    "restore actor does not replace original author",
+    "source snapshots unchanged until explicit reacceptance",
+    "PRD blocks pre-fix accepted records with known stale sources",
+    "stale CAS fails atomically",
+    "repeated archive/restore does not invalidate PRD or duplicate history",
+    "unchanged-source restore preserves requirement",
+    "unknown legacy source version not fabricated"
+  ],
+  "note": "Synthetic API and review-helper checks; no generated app execution."
+}

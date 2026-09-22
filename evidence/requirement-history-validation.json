@@ -1,0 +1,50 @@
+{
+  "at": "2026-09-21T12:05:23.592Z",
+  "typecheck": {
+    "session": 8802,
+    "exitCode": 0
+  },
+  "tests": {
+    "session": 8802,
+    "exitCode": 0,
+    "command": "npm test",
+    "log": "evidence/test-requirement-history.log"
+  },
+  "build": {
+    "session": 13889,
+    "exitCode": 0,
+    "command": "npm run build",
+    "log": "evidence/build-requirement-history.log"
+  },
+  "browser": {
+    "observations": 8,
+    "positive": 7,
+    "initialCloseActionFailurePreserved": true,
+    "closureConfirmedAfterRetry": true,
+    "evidence": "evidence/requirement-history-browser-result.json"
+  },
+  "server": {
+    "archiveRestoreFullRequirementsEqual": true,
+    "mergedSourcePreserved": true,
+    "revision": 5,
+    "history": 4,
+    "status": "proposed",
+    "approvals": 0
+  },
+  "sourceHashes": {
+    "lib/teamvibe/types.ts": "03e27eaec530ea0e3889622313e1a87d49a27e424d1b279e18009e125ca3f624",
+    "lib/teamvibe/domain.ts": "0e189578998234341e24cfd46cbac67e881cacf6fab9ecba0ca2684d8400a17a",
+    "lib/teamvibe/requirement-history.ts": "4e80f9f606bd630d87402ecca51ab217a6fffc8c819fead8bece07a2b21e167a",
+    "components/requirement-history.tsx": "0715139d5521195f2e7f05de60ec7e2346efc6da87193e2134ea631fd52bcc81",
+    "components/workspace.tsx": "e87fa861361ded0a2c48897123751a2fedcbc54ffa63d1af901931ce810b193b",
+    "app/globals.css": "8eff7408023d70643c5e2aabd1072d1be64a918fcda8f6991a40a0e7831b2db0",
+    "tests/requirement-history.mjs": "31d2187aa24304483af4722c0dc2ac25bb24f1ee4eb6299250a376c00aeb0bc3",
+    "scripts/test.mjs": "c8abc9eb9a18136ae3f5e057bdac38904dea54508feaf6e3e5c24ed9f9e77fe6"
+  },
+  "limitations": [
+    "Legacy history and author are not retroactively invented.",
+    "Already proposed source edits remain in message history without duplicating unchanged requirement state.",
+    "Read-only history does not restore old agreement or PRD approvals.",
+    "No new lint, external ChatGPT call or generated business app execution in this fixture."
+  ]
+}

@@ -1,0 +1,211 @@
+{
+  "id": "cb43ddd3-51aa-4647-9920-d3417eaf7171",
+  "createdAt": "2026-09-21T09:43:42.187Z",
+  "name": "ChatGPT 스토리 설계 · 합성 시연",
+  "description": "실제 ChatGPT 응답이 아닌 합성 설계로 수동 반입 화면을 검증합니다.",
+  "goal": "비품 신청 앱을 작은 작업으로 분할하고 의존성과 병렬 작업 후보를 검토한다.",
+  "inviteCode": "344833360214",
+  "ownerId": "jimin",
+  "members": [
+    "jimin"
+  ],
+  "version": 9,
+  "conversations": [
+    {
+      "id": "eec182f1-086e-44eb-935a-a7acc97c4fe2",
+      "createdAt": "2026-09-21T09:44:46.630Z",
+      "title": "설계 검토 중 팀 변경 · 합성 검사",
+      "ownerId": "jimin",
+      "messages": []
+    }
+  ],
+  "requirements": [
+    {
+      "id": "5eccc38d-2df0-4a12-95f6-0680a762d1c9",
+      "createdAt": "2026-09-21T09:43:42.193Z",
+      "title": "비품 신청 관리",
+      "description": "신청 생성·수정·취소와 모바일 조회",
+      "priority": "must",
+      "status": "accepted",
+      "sourceIds": [],
+      "decision": "합성 데이터만 사용",
+      "sourceRevisions": {}
+    }
+  ],
+  "prd": {
+    "body": "# ChatGPT 스토리 설계 · 합성 시연\n\n## 해결할 문제\n실제 ChatGPT 응답이 아닌 합성 설계로 수동 반입 화면을 검증합니다.\n\n## 목표\n비품 신청 앱을 작은 작업으로 분할하고 의존성과 병렬 작업 후보를 검토한다.\n\n## 대상 사용자\n프로젝트 팀이 검토하여 사용자와 권한을 구체화하세요.\n\n## 기능 요구사항\n### 1. 비품 신청 관리\n신청 생성·수정·취소와 모바일 조회\n- 우선순위: must\n- 검토 상태: accepted\n- 결정: 합성 데이터만 사용\n\n## 완료 및 테스트 기준\n각 요구사항의 정상 흐름, 빈 상태, 오류 상태, 수정과 취소/삭제를 확인합니다.\n\n## 범위와 제약\n로컬 테스트 환경, 합성 데이터만 사용합니다. 외부 연계는 별도 합의 후 진행합니다.\n\n## 미결정 사항\n현재 등록된 미결정 사항 없음\n",
+    "revision": 1,
+    "approvals": [
+      "jimin"
+    ],
+    "history": [
+      {
+        "revision": 0,
+        "body": "",
+        "at": "2026-09-21T09:43:42.200Z",
+        "authorId": "jimin"
+      }
+    ],
+    "sourceRevision": 1
+  },
+  "stories": [
+    {
+      "id": "52dcec71-cd38-4f66-a52e-1a87cfac7786",
+      "createdAt": "2026-09-21T09:45:17.909Z",
+      "revision": 1,
+      "title": "비품 신청 생성·수정·취소",
+      "description": "팀원으로서 신청을 작성하고 수정·취소한다. index.html과 app.js를 담당하며 .request-form과 .request-list를 제공한다.",
+      "acceptance": [
+        "품목과 1 이상의 수량으로 신청한다.",
+        "신청 수정과 취소가 화면에 반영된다.",
+        "빈 품목과 0 수량은 이유를 표시한다."
+      ],
+      "tests": [
+        "키보드 2개 신청 후 목록에서 확인한다.",
+        "수량을 3개로 수정한 뒤 신청을 취소한다.",
+        "빈 품목과 수량 0을 각각 입력해 저장 차단을 확인한다."
+      ],
+      "dependencies": [],
+      "requirementIds": [
+        "5eccc38d-2df0-4a12-95f6-0680a762d1c9"
+      ],
+      "ownerId": "",
+      "status": "backlog",
+      "prdRevision": 1,
+      "planningSource": {
+        "planId": "browser-plan-1789983822207",
+        "key": "app",
+        "source": "tests/story-planning.mjs 합성 설계 · 실제 ChatGPT 응답 아님"
+      }
+    },
+    {
+      "id": "ecfb5582-528d-4b1e-a2ff-7ba8f7f9f8bc",
+      "createdAt": "2026-09-21T09:45:17.909Z",
+      "revision": 1,
+      "title": "모바일 신청 화면",
+      "description": "모바일 팀원으로서 좁은 화면에서도 신청한다. styles.css만 담당하고 .request-form과 .request-list 클래스 계약을 사용한다.",
+      "acceptance": [
+        "390px 화면에서 입력과 버튼이 잘리지 않는다."
+      ],
+      "tests": [
+        "390px와 1440px 화면에서 입력과 목록을 확인한다."
+      ],
+      "dependencies": [],
+      "requirementIds": [
+        "5eccc38d-2df0-4a12-95f6-0680a762d1c9"
+      ],
+      "ownerId": "",
+      "status": "backlog",
+      "prdRevision": 1,
+      "planningSource": {
+        "planId": "browser-plan-1789983822207",
+        "key": "style",
+        "source": "tests/story-planning.mjs 합성 설계 · 실제 ChatGPT 응답 아님"
+      }
+    },
+    {
+      "id": "5f017494-dfa6-48e9-8e21-03819ceafb09",
+      "createdAt": "2026-09-21T09:45:17.909Z",
+      "revision": 2,
+      "title": "품목별 신청 수량 요약",
+      "description": "담당자로서 신청 변경 뒤 품목별 수량 합계를 확인한다. 완성된 신청 기능에 연결한다.",
+      "acceptance": [
+        "신청 추가·수정·취소 후 합계가 갱신된다."
+      ],
+      "tests": [
+        "키보드 2개와 3개 신청은 합계 5개이며 하나 취소하면 합계가 줄어든다."
+      ],
+      "dependencies": [
+        "52dcec71-cd38-4f66-a52e-1a87cfac7786"
+      ],
+      "requirementIds": [
+        "5eccc38d-2df0-4a12-95f6-0680a762d1c9"
+      ],
+      "ownerId": "",
+      "status": "backlog",
+      "prdRevision": 1,
+      "planningSource": {
+        "planId": "browser-plan-1789983822207",
+        "key": "summary",
+        "source": "tests/story-planning.mjs 합성 설계 · 실제 ChatGPT 응답 아님"
+      }
+    }
+  ],
+  "runs": [],
+  "releases": [],
+  "testResults": [],
+  "feedback": [],
+  "events": [
+    {
+      "id": "39453ad2-5688-4de2-af5d-84c1c5bf2fa8",
+      "at": "2026-09-21T09:43:42.193Z",
+      "actorId": "jimin",
+      "action": "requirement.save",
+      "detail": "비품 신청 관리"
+    },
+    {
+      "id": "1895dff6-fa75-496e-85ba-53b7a560eec1",
+      "at": "2026-09-21T09:43:42.200Z",
+      "actorId": "jimin",
+      "action": "prd.generate",
+      "detail": "요구사항 기반 규칙 초안"
+    },
+    {
+      "id": "30184618-9cd2-496f-b41c-c212d38c6ed3",
+      "at": "2026-09-21T09:43:42.205Z",
+      "actorId": "jimin",
+      "action": "prd.approve",
+      "detail": "v1 동의"
+    },
+    {
+      "id": "9206fbf4-498e-44e5-b0b6-032a84d18513",
+      "at": "2026-09-21T09:44:46.630Z",
+      "actorId": "jimin",
+      "action": "conversation.save",
+      "detail": "설계 검토 중 팀 변경 · 합성 검사"
+    },
+    {
+      "id": "ffb73069-9001-4ec2-a03d-36075079e769",
+      "at": "2026-09-21T09:45:17.909Z",
+      "actorId": "jimin",
+      "action": "story.import",
+      "detail": "3개 백로그 등록 · tests/story-planning.mjs 합성 설계 · 실제 ChatGPT 응답 아님"
+    },
+    {
+      "id": "24789eff-fd9c-4597-ab56-9ee78039c429",
+      "at": "2026-09-21T09:46:16.934Z",
+      "actorId": "jimin",
+      "action": "story.save",
+      "detail": "품목별 신청 수량 요약"
+    },
+    {
+      "id": "73447c28-c87f-49fc-93e7-0efadfa7a8a3",
+      "at": "2026-09-21T09:46:22.993Z",
+      "actorId": "jimin",
+      "action": "item.delete",
+      "detail": "사용자 스토리 · 품목별 신청 수량 요약"
+    },
+    {
+      "id": "26d74a40-be5c-42cd-94ba-b6c74122b0be",
+      "at": "2026-09-21T09:46:33.779Z",
+      "actorId": "jimin",
+      "action": "item.restore",
+      "detail": "사용자 스토리 · 품목별 신청 수량 요약"
+    }
+  ],
+  "updatedAt": "2026-09-21T09:46:33.779Z",
+  "requirementsVersion": 1,
+  "storyPlanImports": [
+    {
+      "id": "browser-plan-1789983822207",
+      "source": "tests/story-planning.mjs 합성 설계 · 실제 ChatGPT 응답 아님",
+      "prdRevision": 1,
+      "at": "2026-09-21T09:45:17.909Z",
+      "storyIds": [
+        "52dcec71-cd38-4f66-a52e-1a87cfac7786",
+        "ecfb5582-528d-4b1e-a2ff-7ba8f7f9f8bc",
+        "5f017494-dfa6-48e9-8e21-03819ceafb09"
+      ]
+    }
+  ]
+}

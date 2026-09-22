@@ -1,0 +1,8 @@
+{
+  "files": {
+    "index.html": "<!doctype html><html lang=\"ko\"><head><title>팀 비품 신청</title><link rel=\"stylesheet\" href=\"styles.css\"></head><body><main><h1>팀 비품 신청</h1><p>합성 테스트 시스템</p><form id=\"request-form\"><label>품목<input id=\"item\" required></label><label>수량<input id=\"quantity\" type=\"number\" min=\"1\" value=\"1\" required></label><button type=\"submit\">신청하기</button></form><p id=\"status\" role=\"status\"></p><ul id=\"requests\"></ul></main><script src=\"app.js\"></script></body></html>",
+    "app.js": "const form=document.querySelector('#request-form');const requests=document.querySelector('#requests');form.addEventListener('submit',e=>{e.preventDefault();const item=document.querySelector('#item');const qty=document.querySelector('#quantity');if(!item.value.trim()||Number(qty.value)<1)return;const li=document.createElement('li');const label=document.createElement('span');label.textContent=item.value+' · '+qty.value+'개 · 승인 대기';li.append(label);const edit=document.createElement('button');edit.textContent='수정';edit.addEventListener('click',()=>{item.value=label.textContent.split(' · ')[0];li.remove();document.querySelector('#status').textContent='수정 후 다시 신청해 주세요.'});li.append(edit);const remove=document.createElement('button');remove.textContent='취소';remove.addEventListener('click',()=>{li.remove();document.querySelector('#status').textContent='신청을 취소했습니다.'});li.append(remove);requests.prepend(li);document.querySelector('#status').textContent='신청을 등록했습니다.';form.reset()});"
+  },
+  "log": "합성 시연 코드. 실제 브라우저 검증 결과는 evidence 문서 확인.",
+  "source": "TeamVibe 합성 샘플"
+}

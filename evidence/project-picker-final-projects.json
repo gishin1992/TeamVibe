@@ -1,0 +1,137 @@
+[
+  {
+    "id": "1ce4da4c-018e-4a95-81b1-7700958e3282",
+    "createdAt": "2026-09-21T10:52:24.902Z",
+    "name": "프로젝트 찾기 · 파란 노트",
+    "description": "동일 이름 구별을 위한 합성 설명 · 파란 노트",
+    "goal": "검색으로 찾아서 보관과 복원을 확인한다.",
+    "inviteCode": "8252c38c07c5",
+    "ownerId": "jimin",
+    "members": [
+      "jimin",
+      "seoyeon"
+    ],
+    "version": 7,
+    "conversations": [
+      {
+        "id": "586e07ac-b4a5-4187-8e7c-1bf036626108",
+        "createdAt": "2026-09-21T10:52:24.933Z",
+        "title": "복원 후 유지할 합성 대화",
+        "ownerId": "jimin",
+        "messages": [
+          {
+            "id": "9621e73e-44d9-413a-9f67-aef87ce04193",
+            "createdAt": "2026-09-21T10:52:24.940Z",
+            "revision": 1,
+            "authorId": "jimin",
+            "kind": "user",
+            "text": "프로젝트 보관 후에도 이 합성 원문을 유지합니다.",
+            "source": ""
+          },
+          {
+            "id": "8f67439c-bec5-416b-8d35-f57d8702bc2e",
+            "createdAt": "2026-09-21T10:52:24.940Z",
+            "authorId": "guide",
+            "kind": "guide",
+            "text": "로컬 진행 도우미: 이 기능은 누가 사용하나요? 성공한 상태와 예외 상황, 수정·취소 규칙도 적어 주세요. 더 깊이 논의하려면 ChatGPT 작업 묶음을 복사하고 응답을 가져오세요."
+          }
+        ]
+      }
+    ],
+    "requirements": [],
+    "prd": {
+      "body": "",
+      "revision": 0,
+      "approvals": [],
+      "history": []
+    },
+    "stories": [],
+    "runs": [],
+    "releases": [],
+    "testResults": [],
+    "feedback": [],
+    "events": [
+      {
+        "id": "7171d2cf-fa9a-40d0-9aa4-28494a6aea03",
+        "at": "2026-09-21T10:52:24.924Z",
+        "actorId": "seoyeon",
+        "action": "member.join",
+        "detail": "이서연"
+      },
+      {
+        "id": "d73b21ce-edb3-43b2-8881-be69ccd3e370",
+        "at": "2026-09-21T10:52:24.933Z",
+        "actorId": "jimin",
+        "action": "conversation.save",
+        "detail": "복원 후 유지할 합성 대화"
+      },
+      {
+        "id": "80b74f6d-9880-4543-adf8-2a886779bb75",
+        "at": "2026-09-21T10:52:24.940Z",
+        "actorId": "jimin",
+        "action": "message.save",
+        "detail": "복원 후 유지할 합성 대화"
+      },
+      {
+        "id": "b74a7b62-7394-498b-99b9-35b0d9665ddc",
+        "at": "2026-09-21T10:53:20.335Z",
+        "actorId": "jimin",
+        "action": "project.edit",
+        "detail": "프로젝트 찾기 · 파란 노트"
+      },
+      {
+        "id": "a38bf9fc-b026-4b28-a51d-afc93819cba8",
+        "at": "2026-09-21T10:53:30.120Z",
+        "actorId": "jimin",
+        "action": "project.delete",
+        "detail": ""
+      },
+      {
+        "id": "cf394cd4-f7e0-42a3-8e00-c20a5d3eb4e5",
+        "at": "2026-09-21T10:54:42.200Z",
+        "actorId": "jimin",
+        "action": "project.restore",
+        "detail": ""
+      }
+    ],
+    "updatedAt": "2026-09-21T10:54:42.200Z",
+    "requirementsVersion": 1
+  },
+  {
+    "id": "d588d7ec-fbcd-4587-b69f-7d903e239e95",
+    "createdAt": "2026-09-21T10:52:24.946Z",
+    "name": "프로젝트 찾기 · 보관 복원 시연",
+    "description": "동일 이름 구별을 위한 합성 설명 · 초록 노트",
+    "goal": "설명으로 같은 이름의 프로젝트를 구분한다.",
+    "inviteCode": "31bf82494a24",
+    "ownerId": "jimin",
+    "members": [
+      "jimin"
+    ],
+    "version": 2,
+    "conversations": [],
+    "requirements": [],
+    "prd": {
+      "body": "",
+      "revision": 0,
+      "approvals": [],
+      "history": []
+    },
+    "stories": [],
+    "runs": [],
+    "releases": [],
+    "testResults": [],
+    "feedback": [],
+    "events": [
+      {
+        "id": "141d58a1-9715-491f-80e9-5fdaa3bb4f26",
+        "at": "2026-09-21T10:52:24.952Z",
+        "actorId": "jimin",
+        "action": "project.delete",
+        "detail": ""
+      }
+    ],
+    "updatedAt": "2026-09-21T10:52:24.952Z",
+    "deletedAt": "2026-09-21T10:52:24.952Z"
+  }
+]

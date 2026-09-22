@@ -1,0 +1,82 @@
+{
+  "at": "2026-09-21T13:45:38.232Z",
+  "typecheck": {
+    "session": 8269,
+    "exitCode": 0
+  },
+  "tests": {
+    "session": 8269,
+    "exitCode": 0,
+    "log": "evidence/test-story-assignment.log",
+    "api": "evidence/story-assignment-api-result.json"
+  },
+  "build": {
+    "session": 94685,
+    "exitCode": 0,
+    "command": "node /Users/takykim/.codex/plugins/cache/openai-curated-remote/sites/0.1.65/scripts/build-site.mjs"
+  },
+  "beforeFix": {
+    "file": "evidence/story-assignment-before-fix.json",
+    "scope": "Actual API synthetic story state; not generated-app browser execution."
+  },
+  "browser": {
+    "observations": 15,
+    "allPassed": true,
+    "result": "evidence/story-assignment-browser-result.json",
+    "screenshot": "evidence/screenshots/story-assignment-mobile-conflict.png"
+  },
+  "server": {
+    "at": "2026-09-21T13:43:58.058Z",
+    "projectId": "3a33d673-790f-47ea-b4d5-55e91a68e526",
+    "onlyAssignmentAndMemberChanges": true,
+    "storiesKeepRevisionAndState": true,
+    "states": [
+      {
+        "title": "검증을 마친 확인 버튼",
+        "revision": 1,
+        "status": "done",
+        "owner": "hyunwoo",
+        "assignmentRecords": 6
+      },
+      {
+        "title": "결과를 기다리는 안내 화면",
+        "revision": 1,
+        "status": "developing",
+        "owner": "jimin",
+        "assignmentRecords": 7
+      }
+    ],
+    "originalPromptsAndRunsUnchanged": true,
+    "releaseFilesAndTestEvidenceUnchanged": true,
+    "testRecords": 1,
+    "coverage": 1,
+    "prdOnlyRemovedDepartedApproval": true,
+    "versionChange": [
+      14,
+      24
+    ]
+  },
+  "sourceHashes": {
+    "components/workspace.tsx": "df6938910518814edcb92fac5a97b8f16ebb5633aeece2dce0420917048739ae",
+    "lib/teamvibe/domain.ts": "8b81c4092cd646333a394adfbeca18653b9d84679fd603f2f480596e57c5f2a2",
+    "lib/teamvibe/types.ts": "e94ede7562d2f203745c8e81468b614f0bf91bc035c77425eca803f415b18d99",
+    "lib/teamvibe/form-conflicts.ts": "d3beeeb89ab0d9dc5b9f97cf330ad7e2fa23835e6be45907c97fd23c97ec6b9c",
+    "app/globals.css": "ff37b574bdf7384f49aadd660043b3aa8cee53fb28205cb61b9a18af8099034f",
+    "tests/story-assignment.mjs": "48063e4d33db606ebfe7b1803f271240362d6825c7dc14fa78784a551995101d",
+    "scripts/prepare-story-assignment-demo.mjs": "03c923d63e72447ddcb802070525b62e45a8ff3a9f8205729949587319f1c124",
+    "scripts/test.mjs": "7835a5a89223491dc9021fcb9cc0c2a20d0db5d8e28cb6d3695e8fad3462a6a3",
+    "README.md": "ca8f791373fe23c0ac64b5ac6693026c9891da2e692dc3839b8837cbeca7cd4e",
+    "docs/DEMO.md": "6699aaa24c467d861700281deb2949449dc60f44f5ffbb75690c728e8febba9d"
+  },
+  "failuresPreserved": [
+    "Initial typecheck19548: Pencil not imported; fixed by existing Edit3.",
+    "Initial API testc4e410 expected404 for missing story; corrected to existing400 contract. Failed fixture retained in recoverable trash."
+  ],
+  "limits": [
+    "Peer change was an authenticated local API client, not a second actual browser.",
+    "No forced legacy invalid-owner restore or UI membership departure while assignment form was open.",
+    "Voluntary leave still clears PRD approval per existing policy, potentially reopening done work for review.",
+    "Second story remains running with no submitted implementation; first story actual button test has one coverage record.",
+    "No actual ChatGPT call, external transfer/deployment, physical deletion or additional lint."
+  ]
+}

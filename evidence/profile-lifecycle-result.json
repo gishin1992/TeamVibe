@@ -1,0 +1,14 @@
+{
+  "at": "2026-09-21T23:33:25.763Z",
+  "userId": "c374bacc-16ff-4375-aa32-80e3d31eb5db",
+  "result": "passed",
+  "checks": [
+    "create",
+    "edit",
+    "soft-delete",
+    "session-rejected-after-delete",
+    "restore",
+    "login-after-restore"
+  ],
+  "cleanup": "합성 검증 프로필을 휴지통 보관"
+}

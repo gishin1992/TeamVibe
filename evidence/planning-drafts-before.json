@@ -1,0 +1,141 @@
+{
+  "a": {
+    "id": "27d457aa-b234-4fbc-82dd-1ed660221ba1",
+    "createdAt": "2026-09-21T13:09:15.355Z",
+    "name": "설계 자료 보존 · 신청 프로젝트",
+    "description": "탭·프로젝트·프로필 전환 중 수동 설계 자료를 보존하는 합성 시연",
+    "goal": "팀이 검토 중인 요청과 응답을 잃지 않는다.",
+    "inviteCode": "21eb27592c2e",
+    "ownerId": "jimin",
+    "members": [
+      "jimin",
+      "seoyeon"
+    ],
+    "version": 7,
+    "conversations": [
+      {
+        "id": "d32f6862-3b5a-4f8e-bd7d-abb268e8bbfd",
+        "createdAt": "2026-09-21T13:09:15.417Z",
+        "title": "취소 조건 검토",
+        "ownerId": "jimin",
+        "messages": [
+          {
+            "id": "f4b0f963-a6d8-4ee6-be42-5af5e38b78c6",
+            "createdAt": "2026-09-21T13:09:15.423Z",
+            "revision": 1,
+            "authorId": "jimin",
+            "kind": "user",
+            "text": "직원이 신청 내역을 확인하고 승인 전 신청을 취소할 수 있으면 좋겠어요.",
+            "source": ""
+          },
+          {
+            "id": "85af4477-73f8-4d0b-9d33-35e8cd607c8d",
+            "createdAt": "2026-09-21T13:09:15.423Z",
+            "authorId": "guide",
+            "kind": "guide",
+            "text": "로컬 진행 도우미: 이 기능은 누가 사용하나요? 성공한 상태와 예외 상황, 수정·취소 규칙도 적어 주세요. 더 깊이 논의하려면 ChatGPT 작업 묶음을 복사하고 응답을 가져오세요."
+          }
+        ]
+      }
+    ],
+    "requirements": [],
+    "prd": {
+      "body": "# 신청 내역 검토\n\n직원은 합성 신청 목록을 보고 승인 전 취소한다.\n목록과 취소를 별도 스토리로 검토한다.",
+      "revision": 1,
+      "approvals": [
+        "jimin",
+        "seoyeon"
+      ],
+      "history": [
+        {
+          "revision": 0,
+          "body": "",
+          "at": "2026-09-21T13:09:15.433Z",
+          "authorId": "jimin"
+        }
+      ],
+      "sourceRevision": 0,
+      "updatedAt": "2026-09-21T13:09:15.433Z",
+      "updatedBy": "jimin",
+      "change": "edited"
+    },
+    "stories": [],
+    "runs": [],
+    "releases": [],
+    "testResults": [],
+    "feedback": [],
+    "events": [
+      {
+        "id": "e7fc9235-5296-4aca-adf8-4c8f1c443ba5",
+        "at": "2026-09-21T13:09:15.409Z",
+        "actorId": "seoyeon",
+        "action": "member.join",
+        "detail": "이서연"
+      },
+      {
+        "id": "8b241361-a5ba-456c-9e0e-2a8c8f6e6f2b",
+        "at": "2026-09-21T13:09:15.417Z",
+        "actorId": "jimin",
+        "action": "conversation.save",
+        "detail": "취소 조건 검토"
+      },
+      {
+        "id": "4997926d-dc2c-41b2-a169-c47746fc2eed",
+        "at": "2026-09-21T13:09:15.423Z",
+        "actorId": "jimin",
+        "action": "message.save",
+        "detail": "취소 조건 검토"
+      },
+      {
+        "id": "b98eb6a2-a7d6-43e5-bc1f-4f1e97f61b9f",
+        "at": "2026-09-21T13:09:15.433Z",
+        "actorId": "jimin",
+        "action": "prd.save",
+        "detail": "v1"
+      },
+      {
+        "id": "ec23db58-a1b3-4aae-9219-9f4e1001915f",
+        "at": "2026-09-21T13:09:15.441Z",
+        "actorId": "jimin",
+        "action": "prd.approve",
+        "detail": "v1 동의"
+      },
+      {
+        "id": "83295b2d-ea1a-412a-9d52-0d2fe5cfa78f",
+        "at": "2026-09-21T13:09:15.448Z",
+        "actorId": "seoyeon",
+        "action": "prd.approve",
+        "detail": "v1 동의"
+      }
+    ],
+    "updatedAt": "2026-09-21T13:09:15.448Z"
+  },
+  "b": {
+    "id": "535cf708-b137-4ec6-aa48-2687b2c1a587",
+    "createdAt": "2026-09-21T13:09:15.455Z",
+    "name": "설계 자료 보존 · 별도 프로젝트",
+    "description": "프로젝트별 설계 자료 분리 확인용 합성 프로젝트",
+    "goal": "다른 프로젝트의 설계 자료가 섞이지 않는다.",
+    "inviteCode": "2dd4001727e7",
+    "ownerId": "jimin",
+    "members": [
+      "jimin"
+    ],
+    "version": 1,
+    "conversations": [],
+    "requirements": [],
+    "prd": {
+      "body": "",
+      "revision": 0,
+      "approvals": [],
+      "history": []
+    },
+    "stories": [],
+    "runs": [],
+    "releases": [],
+    "testResults": [],
+    "feedback": [],
+    "events": [],
+    "updatedAt": "2026-09-21T13:09:15.455Z"
+  }
+}

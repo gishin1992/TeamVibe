@@ -1,0 +1,7 @@
+{
+  "files": {
+    "styles.css": "*{box-sizing:border-box}body{margin:0;background:#f4f7fc;color:#25334e;font:16px/1.7 Arial,sans-serif}main{max-width:760px;margin:55px auto;padding:30px}h1{font-size:30px}p{color:#7d8ca4}form{display:flex;gap:15px;flex-wrap:wrap;padding:25px;background:white;border:1px solid #e0e7f2;border-radius:12px}label{display:flex;flex-direction:column;font-size:14px;gap:7px;flex:1}input{font:inherit;padding:10px;border:1px solid #dce3ee;border-radius:7px;min-width:120px;width:100%}button{font:inherit;padding:9px 15px;border:0;border-radius:7px;background:#365cec;color:white;cursor:pointer;align-self:end}li{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding:18px;background:white;border-radius:8px;margin:12px 0}li span{flex:1}ul{list-style:none;padding:0}li button{font-size:13px;background:#edf2ff;color:#506ec6}"
+  },
+  "log": "합성 시연 스타일. 실제 브라우저 검증 결과는 evidence 문서 확인.",
+  "source": "TeamVibe 합성 샘플"
+}

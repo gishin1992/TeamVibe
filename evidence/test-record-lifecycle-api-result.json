@@ -1,0 +1,14 @@
+{
+  "at": "2026-09-21T23:33:23.883Z",
+  "projectId": "81f441e4-6643-4787-b52e-f2d67bbfa440",
+  "checks": [
+    "server-authored immutable criterion snapshots",
+    "old version and archived release records editable with retained links",
+    "new invalid links and release reassignment rejected atomically",
+    "old records cannot complete new stories or invalidate current release",
+    "removed links preserved in history and cannot be reattached without eligibility",
+    "legacy text never fabricated; stale selections remain visible",
+    "recycle preserves full history"
+  ],
+  "note": "Synthetic API fixtures. No browser execution claimed."
+}

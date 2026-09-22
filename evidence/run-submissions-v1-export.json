@@ -1,0 +1,17 @@
+{
+  "context": {
+    "projectId": "7c1ee587-d38f-430d-ae7a-9aa55b118b49",
+    "runId": "2202118a-7e4e-4536-bd3a-0cb7d80e5958",
+    "storyId": "192bed3f-3e2c-45e7-a32f-78f5cf2a5136",
+    "storyRevision": 1,
+    "prdRevision": 1,
+    "baseReleaseId": ""
+  },
+  "files": {
+    "index.html": "<!doctype html><html lang=\"ko\"><head><meta charset=\"utf-8\"><style>body{font:16px system-ui;padding:24px;color:#24304a}button{font:inherit;padding:12px 18px;background:#475ce8;color:white;border:0;border-radius:8px}</style></head><body><h1>이전 결과 실행</h1><button id=\"confirm\">결과 확인하기</button><p id=\"result\">확인 전</p><script src=\"app.js\"></script></body></html>",
+    "app.js": "document.getElementById('confirm').onclick=()=>{document.getElementById('result').textContent='첫 결과 실행 확인'};"
+  },
+  "deletedFiles": [],
+  "log": "첫 합성 결과입니다. 버튼 문구를 작성했으며 아직 브라우저에서 실행하지 않았습니다.",
+  "source": "합성 첫 결과 · 실제 AI 호출 없음"
+}

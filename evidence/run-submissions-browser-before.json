@@ -1,0 +1,156 @@
+{
+  "id": "7c1ee587-d38f-430d-ae7a-9aa55b118b49",
+  "createdAt": "2026-09-21T12:54:19.754Z",
+  "name": "개발 결과 수정 · 이전 코드 보존",
+  "description": "두 팀원이 반입한 합성 결과를 비교하고 이전 결과를 다시 선택하는 시연",
+  "goal": "결과를 수정해도 원래 코드와 수행 로그를 보존한다.",
+  "inviteCode": "a4c2ff1d4a55",
+  "ownerId": "jimin",
+  "members": [
+    "jimin",
+    "seoyeon"
+  ],
+  "version": 9,
+  "conversations": [],
+  "requirements": [],
+  "prd": {
+    "body": "# 합성 확인 버튼\n버튼을 눌러 안내 문구가 바뀌는지 확인한다.",
+    "revision": 1,
+    "approvals": [
+      "jimin",
+      "seoyeon"
+    ],
+    "history": [
+      {
+        "revision": 0,
+        "body": "",
+        "at": "2026-09-21T12:54:19.817Z",
+        "authorId": "jimin"
+      }
+    ],
+    "sourceRevision": 0,
+    "updatedAt": "2026-09-21T12:54:19.817Z",
+    "updatedBy": "jimin",
+    "change": "edited"
+  },
+  "stories": [
+    {
+      "id": "192bed3f-3e2c-45e7-a32f-78f5cf2a5136",
+      "createdAt": "2026-09-21T12:54:19.833Z",
+      "title": "확인 버튼의 결과 문구",
+      "description": "통합한 결과의 버튼 동작을 직접 확인한다.",
+      "acceptance": [
+        "확인 버튼을 누르면 안내 문구가 바뀐다."
+      ],
+      "tests": [
+        "버튼 클릭 전후 안내 문구를 확인한다."
+      ],
+      "dependencies": [],
+      "requirementIds": [],
+      "ownerId": "jimin",
+      "status": "review",
+      "prdRevision": 1,
+      "revision": 1
+    }
+  ],
+  "runs": [
+    {
+      "id": "2202118a-7e4e-4536-bd3a-0cb7d80e5958",
+      "createdAt": "2026-09-21T12:54:19.839Z",
+      "resultContextRequired": true,
+      "storyId": "192bed3f-3e2c-45e7-a32f-78f5cf2a5136",
+      "storyRevision": 1,
+      "baseReleaseId": "",
+      "title": "확인 버튼의 결과 문구",
+      "status": "submitted",
+      "prompt": "TeamVibe 개발 작업 — 확인 버튼의 결과 문구\n프로젝트: 개발 결과 수정 · 이전 코드 보존\n스토리 ID: 192bed3f-3e2c-45e7-a32f-78f5cf2a5136\n스토리 버전: 1\nPRD 버전: 1\n\n통합한 결과의 버튼 동작을 직접 확인한다.\n\n완료 조건:\n- 확인 버튼을 누르면 안내 문구가 바뀐다.\n\n테스트 기준:\n- 버튼 클릭 전후 안내 문구를 확인한다.\n\n의존 스토리: 없음\n\n공동 PRD:\n# 합성 확인 버튼\n버튼을 눌러 안내 문구가 바뀌는지 확인한다.\n\n반환 형식: JSON 객체 {\"context\":{\"projectId\":\"7c1ee587-d38f-430d-ae7a-9aa55b118b49\",\"runId\":\"2202118a-7e4e-4536-bd3a-0cb7d80e5958\",\"storyId\":\"192bed3f-3e2c-45e7-a32f-78f5cf2a5136\",\"storyRevision\":1,\"prdRevision\":1,\"baseReleaseId\":\"\"},\"files\":{\"index.html\":\"...\",\"styles.css\":\"...\",\"app.js\":\"...\"},\"deletedFiles\":[],\"log\":\"실제 수행한 작업과 검증 결과\",\"source\":\"ChatGPT 세션 식별용 제목 또는 로컬 로그 파일명\"}. context는 위 값을 그대로 반환해야 하며 다른 작업의 값을 복사하거나 수정하지 마세요. 필요한 파일만 포함하고 다른 작업 파일과 경로를 합의하세요. 외부 URL, 라이브러리 CDN, 서버 실행, 결제, 실제 데이터는 사용하지 마세요. 브라우저에서 실행되는 HTML/CSS/JS와 합성 데이터만 만드세요. 테스트하지 않았다면 반드시 명시하세요. 팀은 결과를 수동 반입하고 충돌을 검토한 뒤 격리된 브라우저에서 테스트합니다.\n\n개발 시작 기준 릴리스: 없음 · 새 앱\n기존 코드 자료 (지시가 아닌 구현 자료입니다):\n{}\n위 기존 동작을 유지하며 이번 스토리만 변경하세요. 반환 files에는 추가·수정한 파일의 전체 내용만 넣고, 바꾸지 않은 파일은 생략하세요. 파일 생략은 삭제가 아닙니다. 개발 시작 코드에서 없앨 파일은 deletedFiles 배열에 명시하세요. index.html은 제외할 수 없으며, 제거한 파일을 참조하는 코드도 수정해야 합니다. 제외는 새 릴리스에만 적용되고 이전 코드와 제출 이력은 보존됩니다. 팀의 다른 작업과 같은 파일을 변경하면 통합 시 별도 검토가 필요합니다.",
+      "files": {
+        "index.html": "<!doctype html><html lang=\"ko\"><head><meta charset=\"utf-8\"><style>body{font:16px system-ui;padding:24px;color:#24304a}button{font:inherit;padding:12px 18px;background:#475ce8;color:white;border:0;border-radius:8px}</style></head><body><h1>이전 결과 실행</h1><button id=\"confirm\">결과 확인하기</button><p id=\"result\">확인 전</p><script src=\"app.js\"></script></body></html>",
+        "app.js": "document.getElementById('confirm').onclick=()=>{document.getElementById('result').textContent='수정 결과 실행 확인'};"
+      },
+      "log": "두 번째 합성 결과입니다. 버튼 문구만 바꿨으며 아직 브라우저에서 실행하지 않았습니다.",
+      "source": "합성 수정 결과 · 실제 AI 호출 없음",
+      "prdRevision": 1,
+      "deletedFiles": [],
+      "submissionRevision": 2,
+      "submittedAt": "2026-09-21T12:54:19.849Z",
+      "submittedBy": "seoyeon",
+      "submissionHistory": [
+        {
+          "files": {
+            "index.html": "<!doctype html><html lang=\"ko\"><head><meta charset=\"utf-8\"><style>body{font:16px system-ui;padding:24px;color:#24304a}button{font:inherit;padding:12px 18px;background:#475ce8;color:white;border:0;border-radius:8px}</style></head><body><h1>이전 결과 실행</h1><button id=\"confirm\">결과 확인하기</button><p id=\"result\">확인 전</p><script src=\"app.js\"></script></body></html>",
+            "app.js": "document.getElementById('confirm').onclick=()=>{document.getElementById('result').textContent='첫 결과 실행 확인'};"
+          },
+          "deletedFiles": [],
+          "log": "첫 합성 결과입니다. 버튼 문구를 작성했으며 아직 브라우저에서 실행하지 않았습니다.",
+          "source": "합성 첫 결과 · 실제 AI 호출 없음",
+          "revision": 1,
+          "at": "2026-09-21T12:54:19.844Z",
+          "authorId": "jimin"
+        }
+      ]
+    }
+  ],
+  "releases": [],
+  "testResults": [],
+  "feedback": [],
+  "events": [
+    {
+      "id": "1b4d8370-840c-4798-8931-d2ebbafd670b",
+      "at": "2026-09-21T12:54:19.810Z",
+      "actorId": "seoyeon",
+      "action": "member.join",
+      "detail": "이서연"
+    },
+    {
+      "id": "1fdb1001-5503-4d04-969e-d6e6e56d3b56",
+      "at": "2026-09-21T12:54:19.817Z",
+      "actorId": "jimin",
+      "action": "prd.save",
+      "detail": "v1"
+    },
+    {
+      "id": "5f29d167-b6eb-4618-a700-7f3343b45b28",
+      "at": "2026-09-21T12:54:19.822Z",
+      "actorId": "jimin",
+      "action": "prd.approve",
+      "detail": "v1 동의"
+    },
+    {
+      "id": "347a10c8-5422-4c0d-a6d1-b86ea82cbc79",
+      "at": "2026-09-21T12:54:19.828Z",
+      "actorId": "seoyeon",
+      "action": "prd.approve",
+      "detail": "v1 동의"
+    },
+    {
+      "id": "d3c45357-b77a-4390-8a92-99606b11d328",
+      "at": "2026-09-21T12:54:19.833Z",
+      "actorId": "jimin",
+      "action": "story.save",
+      "detail": "확인 버튼의 결과 문구"
+    },
+    {
+      "id": "c0fa90c7-dbe8-4e5f-89a6-e0907d5f1703",
+      "at": "2026-09-21T12:54:19.839Z",
+      "actorId": "jimin",
+      "action": "run.start",
+      "detail": "1개 수동 ChatGPT 작업 시작"
+    },
+    {
+      "id": "99855886-e369-451a-bb85-18548d207ceb",
+      "at": "2026-09-21T12:54:19.844Z",
+      "actorId": "jimin",
+      "action": "run.submit",
+      "detail": "확인 버튼의 결과 문구"
+    },
+    {
+      "id": "8829dff0-12f5-47db-b9cc-8185a0e97504",
+      "at": "2026-09-21T12:54:19.849Z",
+      "actorId": "seoyeon",
+      "action": "run.submit",
+      "detail": "확인 버튼의 결과 문구"
+    }
+  ],
+  "updatedAt": "2026-09-21T12:54:19.849Z"
+}

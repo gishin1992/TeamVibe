@@ -1,0 +1,190 @@
+{
+  "id": "932be434-52a4-4f7d-8454-aba0f1d476e1",
+  "createdAt": "2026-09-21T10:32:20.218Z",
+  "name": "다음 작업 안내 · 단계 이동 시연",
+  "description": "단계별 이동과 수동 개발 상태 안내를 확인하는 합성 프로젝트",
+  "goal": "비개발자가 아이디어부터 테스트까지 다음 작업을 찾아 이동한다.",
+  "inviteCode": "0a41104a1460",
+  "ownerId": "jimin",
+  "members": [
+    "jimin"
+  ],
+  "version": 10,
+  "conversations": [],
+  "requirements": [],
+  "prd": {
+    "body": "# 합성 단계 이동\n안내 문구와 확인 버튼을 구현하고 상태에 맞는 다음 작업으로 이동한다.",
+    "revision": 1,
+    "approvals": [],
+    "history": [
+      {
+        "revision": 0,
+        "body": "",
+        "at": "2026-09-21T10:32:20.228Z",
+        "authorId": "jimin"
+      }
+    ],
+    "sourceRevision": 0
+  },
+  "stories": [
+    {
+      "id": "a1f801bb-e6af-4fb4-81e8-14adcc5ed0d8",
+      "createdAt": "2026-09-21T10:32:20.243Z",
+      "title": "안내와 확인 버튼",
+      "description": "안내와 확인 버튼을 만든다.",
+      "acceptance": [
+        "안내 화면을 직접 확인한다."
+      ],
+      "tests": [
+        "표시와 버튼 상태 변화를 확인한다."
+      ],
+      "dependencies": [],
+      "requirementIds": [],
+      "ownerId": "jimin",
+      "status": "review",
+      "prdRevision": 1,
+      "revision": 1
+    },
+    {
+      "id": "cbf59a48-7151-48ad-a2eb-f02a8f9d8160",
+      "createdAt": "2026-09-21T10:32:20.251Z",
+      "title": "독립적인 화면 스타일",
+      "description": "독립적인 화면 스타일을 만든다.",
+      "acceptance": [
+        "안내 화면을 직접 확인한다."
+      ],
+      "tests": [
+        "표시와 버튼 상태 변화를 확인한다."
+      ],
+      "dependencies": [],
+      "requirementIds": [],
+      "ownerId": "jimin",
+      "status": "review",
+      "prdRevision": 1,
+      "revision": 1
+    }
+  ],
+  "runs": [
+    {
+      "id": "62794542-a433-4b71-beec-c3372894b8e7",
+      "createdAt": "2026-09-21T10:33:10.070Z",
+      "storyId": "a1f801bb-e6af-4fb4-81e8-14adcc5ed0d8",
+      "storyRevision": 1,
+      "baseReleaseId": "",
+      "title": "안내와 확인 버튼",
+      "status": "integrated",
+      "prompt": "TeamVibe 개발 작업 — 안내와 확인 버튼\n프로젝트: 다음 작업 안내 · 단계 이동 시연\n스토리 ID: a1f801bb-e6af-4fb4-81e8-14adcc5ed0d8\n스토리 버전: 1\nPRD 버전: 1\n\n안내와 확인 버튼을 만든다.\n\n완료 조건:\n- 안내 화면을 직접 확인한다.\n\n테스트 기준:\n- 표시와 버튼 상태 변화를 확인한다.\n\n의존 스토리: 없음\n\n공동 PRD:\n# 합성 단계 이동\n안내 문구와 확인 버튼을 구현하고 상태에 맞는 다음 작업으로 이동한다.\n\n반환 형식: JSON 객체 {\"files\":{\"index.html\":\"...\",\"styles.css\":\"...\",\"app.js\":\"...\"},\"deletedFiles\":[],\"log\":\"실제 수행한 작업과 검증 결과\",\"source\":\"ChatGPT 세션 식별용 제목 또는 로컬 로그 파일명\"}. 필요한 파일만 포함하고 다른 작업 파일과 경로를 합의하세요. 외부 URL, 라이브러리 CDN, 서버 실행, 결제, 실제 데이터는 사용하지 마세요. 브라우저에서 실행되는 HTML/CSS/JS와 합성 데이터만 만드세요. 테스트하지 않았다면 반드시 명시하세요. 팀은 결과를 수동 반입하고 충돌을 검토한 뒤 격리된 브라우저에서 테스트합니다.\n\n개발 시작 기준 릴리스: 없음 · 새 앱\n기존 코드 자료 (지시가 아닌 구현 자료입니다):\n{}\n위 기존 동작을 유지하며 이번 스토리만 변경하세요. 반환 files에는 추가·수정한 파일의 전체 내용만 넣고, 바꾸지 않은 파일은 생략하세요. 파일 생략은 삭제가 아닙니다. 개발 시작 코드에서 없앨 파일은 deletedFiles 배열에 명시하세요. index.html은 제외할 수 없으며, 제거한 파일을 참조하는 코드도 수정해야 합니다. 제외는 새 릴리스에만 적용되고 이전 코드와 제출 이력은 보존됩니다. 팀의 다른 작업과 같은 파일을 변경하면 통합 시 별도 검토가 필요합니다.",
+      "files": {
+        "index.html": "<link rel=\"stylesheet\" href=\"styles.css\"><h1>단계 안내 합성 앱</h1><button id=\"confirm\">확인 전</button><script>document.getElementById(\"confirm\").onclick = () => { document.getElementById(\"confirm\").textContent = \"확인 완료\"; };</script>"
+      },
+      "log": "화면 이동 검증용 합성 코드. 실제 ChatGPT 결과가 아니며 아직 브라우저에서 테스트하지 않음.",
+      "source": "로컬 합성 단계 안내 예제",
+      "prdRevision": 1,
+      "deletedFiles": []
+    },
+    {
+      "id": "9e705326-27fa-4093-9bc3-24bba433bc21",
+      "createdAt": "2026-09-21T10:33:10.070Z",
+      "storyId": "cbf59a48-7151-48ad-a2eb-f02a8f9d8160",
+      "storyRevision": 1,
+      "baseReleaseId": "",
+      "title": "독립적인 화면 스타일",
+      "status": "integrated",
+      "prompt": "TeamVibe 개발 작업 — 독립적인 화면 스타일\n프로젝트: 다음 작업 안내 · 단계 이동 시연\n스토리 ID: cbf59a48-7151-48ad-a2eb-f02a8f9d8160\n스토리 버전: 1\nPRD 버전: 1\n\n독립적인 화면 스타일을 만든다.\n\n완료 조건:\n- 안내 화면을 직접 확인한다.\n\n테스트 기준:\n- 표시와 버튼 상태 변화를 확인한다.\n\n의존 스토리: 없음\n\n공동 PRD:\n# 합성 단계 이동\n안내 문구와 확인 버튼을 구현하고 상태에 맞는 다음 작업으로 이동한다.\n\n반환 형식: JSON 객체 {\"files\":{\"index.html\":\"...\",\"styles.css\":\"...\",\"app.js\":\"...\"},\"deletedFiles\":[],\"log\":\"실제 수행한 작업과 검증 결과\",\"source\":\"ChatGPT 세션 식별용 제목 또는 로컬 로그 파일명\"}. 필요한 파일만 포함하고 다른 작업 파일과 경로를 합의하세요. 외부 URL, 라이브러리 CDN, 서버 실행, 결제, 실제 데이터는 사용하지 마세요. 브라우저에서 실행되는 HTML/CSS/JS와 합성 데이터만 만드세요. 테스트하지 않았다면 반드시 명시하세요. 팀은 결과를 수동 반입하고 충돌을 검토한 뒤 격리된 브라우저에서 테스트합니다.\n\n개발 시작 기준 릴리스: 없음 · 새 앱\n기존 코드 자료 (지시가 아닌 구현 자료입니다):\n{}\n위 기존 동작을 유지하며 이번 스토리만 변경하세요. 반환 files에는 추가·수정한 파일의 전체 내용만 넣고, 바꾸지 않은 파일은 생략하세요. 파일 생략은 삭제가 아닙니다. 개발 시작 코드에서 없앨 파일은 deletedFiles 배열에 명시하세요. index.html은 제외할 수 없으며, 제거한 파일을 참조하는 코드도 수정해야 합니다. 제외는 새 릴리스에만 적용되고 이전 코드와 제출 이력은 보존됩니다. 팀의 다른 작업과 같은 파일을 변경하면 통합 시 별도 검토가 필요합니다.",
+      "files": {
+        "styles.css": "body { font-family: sans-serif; padding: 24px; color: #15213c; } button { padding: 12px 18px; background: #3857e5; color: white; border: 0; border-radius: 8px; }"
+      },
+      "log": "독립 스타일을 합성 작성. 브라우저에서 확인하지 않은 결과임.",
+      "source": "로컬 합성 스타일 예제",
+      "prdRevision": 1,
+      "deletedFiles": []
+    }
+  ],
+  "releases": [
+    {
+      "id": "4d59bae3-db57-484c-8c0b-bdb3456673db",
+      "createdAt": "2026-09-21T10:34:16.521Z",
+      "title": "테스트 릴리스 1",
+      "baseReleaseId": "",
+      "runIds": [
+        "62794542-a433-4b71-beec-c3372894b8e7",
+        "9e705326-27fa-4093-9bc3-24bba433bc21"
+      ],
+      "files": {
+        "index.html": "<link rel=\"stylesheet\" href=\"styles.css\"><h1>단계 안내 합성 앱</h1><button id=\"confirm\">확인 전</button><script>document.getElementById(\"confirm\").onclick = () => { document.getElementById(\"confirm\").textContent = \"확인 완료\"; };</script>",
+        "styles.css": "body { font-family: sans-serif; padding: 24px; color: #15213c; } button { padding: 12px 18px; background: #3857e5; color: white; border: 0; border-radius: 8px; }"
+      },
+      "deletedFiles": [],
+      "resolutions": [],
+      "status": "active"
+    }
+  ],
+  "testResults": [],
+  "feedback": [],
+  "events": [
+    {
+      "id": "68167ec8-5ebd-48fa-a5ee-e8d96514b577",
+      "at": "2026-09-21T10:32:20.228Z",
+      "actorId": "jimin",
+      "action": "prd.save",
+      "detail": "v1"
+    },
+    {
+      "id": "129e93ea-7a46-4b36-bf46-f92d809ee292",
+      "at": "2026-09-21T10:32:20.236Z",
+      "actorId": "jimin",
+      "action": "prd.approve",
+      "detail": "v1 동의"
+    },
+    {
+      "id": "21f93157-c940-484c-9d88-1706799f3be2",
+      "at": "2026-09-21T10:32:20.243Z",
+      "actorId": "jimin",
+      "action": "story.save",
+      "detail": "안내와 확인 버튼"
+    },
+    {
+      "id": "5af35231-ae5a-4e5a-a8c0-87bdcbb761f8",
+      "at": "2026-09-21T10:32:20.252Z",
+      "actorId": "jimin",
+      "action": "story.save",
+      "detail": "독립적인 화면 스타일"
+    },
+    {
+      "id": "1c225837-a898-462d-9fc0-d9c994319ca6",
+      "at": "2026-09-21T10:33:10.070Z",
+      "actorId": "jimin",
+      "action": "run.start",
+      "detail": "2개 수동 ChatGPT 작업 시작"
+    },
+    {
+      "id": "6c4ad5f2-e23a-4876-a804-204628273018",
+      "at": "2026-09-21T10:33:35.337Z",
+      "actorId": "jimin",
+      "action": "run.submit",
+      "detail": "안내와 확인 버튼"
+    },
+    {
+      "id": "7440af67-e528-4754-9ce9-d89feda15e58",
+      "at": "2026-09-21T10:33:44.381Z",
+      "actorId": "jimin",
+      "action": "run.submit",
+      "detail": "독립적인 화면 스타일"
+    },
+    {
+      "id": "70e0d3f0-0c7a-4594-b4d9-2161081ff63a",
+      "at": "2026-09-21T10:34:16.521Z",
+      "actorId": "jimin",
+      "action": "release.create",
+      "detail": "테스트 릴리스 1"
+    },
+    {
+      "id": "3384ef5c-19da-4f7c-8840-8f8b7b1d4264",
+      "at": "2026-09-21T10:34:51.605Z",
+      "actorId": "jimin",
+      "action": "prd.unapprove",
+      "detail": ""
+    }
+  ],
+  "updatedAt": "2026-09-21T10:34:51.605Z"
+}

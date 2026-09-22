@@ -1,0 +1,9 @@
+{
+  "createdAt": "2026-09-21T11:39:49.434Z",
+  "directory": "/Users/takykim/workspace/codex/TeamVibe/.sites-runtime/fresh-start-uIT67w",
+  "statePath": "/Users/takykim/workspace/codex/TeamVibe/.sites-runtime/fresh-start-uIT67w/state",
+  "port": 63449,
+  "url": "http://127.0.0.1:63449",
+  "checkout": "/Users/takykim/workspace/codex/TeamVibe/.sites-runtime/fresh-start-uIT67w/checkout",
+  "dependencyMode": "symlink to existing installed dependencies; no clean npm ci"
+}

@@ -1,0 +1,82 @@
+{
+  "at": "2026-09-21T13:43:41.964Z",
+  "projectId": "3a33d673-790f-47ea-b4d5-55e91a68e526",
+  "observations": [
+    {
+      "at": "2026-09-21T13:41:20.830Z",
+      "name": "initial preview",
+      "passed": true
+    },
+    {
+      "at": "2026-09-21T13:41:21.201Z",
+      "name": "actual initial button execution",
+      "passed": true
+    },
+    {
+      "at": "2026-09-21T13:41:34.807Z",
+      "name": "actual test supports completed state",
+      "passed": true
+    },
+    {
+      "at": "2026-09-21T13:41:48.767Z",
+      "name": "running job reassigned without cancellation",
+      "passed": true
+    },
+    {
+      "at": "2026-09-21T13:42:00.548Z",
+      "name": "full editor owner-only save keeps done v1",
+      "passed": true
+    },
+    {
+      "at": "2026-09-21T13:42:01.290Z",
+      "name": "assignment can be cleared",
+      "passed": true
+    },
+    {
+      "at": "2026-09-21T13:42:19.923Z",
+      "name": "member removal clears both owners and preserves states",
+      "passed": true
+    },
+    {
+      "at": "2026-09-21T13:42:29.440Z",
+      "name": "assignment history includes departed member and actor",
+      "passed": true
+    },
+    {
+      "at": "2026-09-21T13:42:29.758Z",
+      "name": "departed member unavailable in new assignment form",
+      "passed": true
+    },
+    {
+      "at": "2026-09-21T13:42:57.345Z",
+      "name": "simultaneous assignment requires explicit choice",
+      "passed": true
+    },
+    {
+      "at": "2026-09-21T13:43:14.263Z",
+      "name": "mobile conflict fits 390px",
+      "passed": true
+    },
+    {
+      "at": "2026-09-21T13:43:15.352Z",
+      "name": "reviewed assignment saved without cancelling running job",
+      "passed": true
+    },
+    {
+      "at": "2026-09-21T13:43:38.228Z",
+      "name": "both actors retained in running history",
+      "passed": true
+    },
+    {
+      "at": "2026-09-21T13:43:41.505Z",
+      "name": "same release starts from original initial state after handoff",
+      "passed": true
+    },
+    {
+      "at": "2026-09-21T13:43:41.964Z",
+      "name": "actual button still works after handoff",
+      "passed": true
+    }
+  ],
+  "note": "Actual local UI and iframe execution. The peer change used a separate authenticated local API client; no second browser was used."
+}

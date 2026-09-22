@@ -1,0 +1,12 @@
+{
+  "at": "2026-09-21T12:10:43.554Z",
+  "projectId": "2d95bda9-de47-438c-80ff-245a8ff3ab80",
+  "observations": [
+    {
+      "check": "actual sandbox button changes confirmation text",
+      "passed": true,
+      "before": "확인 전",
+      "after": "확인 완료"
+    }
+  ]
+}

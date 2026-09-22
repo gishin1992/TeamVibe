@@ -1,0 +1,51 @@
+{
+  "at": "2026-09-21T11:07:34.516Z",
+  "typecheck": {
+    "exitCode": 0,
+    "session": 82931
+  },
+  "tests": {
+    "exitCode": 0,
+    "session": 45426,
+    "log": "evidence/test-requirement-planning.log",
+    "scope": "Full suite after feature implementation; final UI-only source-kind label added afterward and included in final typecheck/build."
+  },
+  "build": {
+    "exitCode": 0,
+    "session": 13227,
+    "command": "node /Users/takykim/.codex/plugins/cache/openai-curated-remote/sites/0.1.65/scripts/build-site.mjs"
+  },
+  "browser": {
+    "evidence": "evidence/requirement-browser-result.json",
+    "observationNote": "복원 직후 모바일 메뉴에서 공동 PRD로 전환한 즉시 heading count는 0이었다. 이후 해당 카드의 출처가 실제 표시되고, 최종 visible 대기로 제목이 1개임을 확인했다. 초기 false 관찰을 유지하며 최종 API에서는 같은 ID와 원문 출처 보존을 별도로 비교한다."
+  },
+  "server": {
+    "requirements": 3,
+    "statuses": [
+      "accepted",
+      "proposed",
+      "conflict"
+    ],
+    "batches": 1,
+    "prdApprovals": 0,
+    "existingRequirementUnchanged": true,
+    "prdBodyUnchanged": true,
+    "restoredRequirementIdAndProvenanceUnchanged": true
+  },
+  "sourceHashes": {
+    "lib/teamvibe/requirement-plan.ts": "8c134cd5005ef92de3f39484460599c76f25bb3be4f3a5f901aa9ccf8c27a6f4",
+    "lib/teamvibe/domain.ts": "36455e61aa67ef75e06324b89c5ea722889a49ada9cc183fdce2aba30fddc423",
+    "lib/teamvibe/types.ts": "75211d0760f335bb8e128ca7359b0307d0093aa5678285f3589ed9b25316f37e",
+    "components/requirement-planning.tsx": "9b10df62774df92b8165bde4c2d3aad389a3a65810814ded643da3500f20d81f",
+    "components/workspace.tsx": "f46ecb791db54664add21e96239db0387a729097216ca75f40e9afbe386442ee",
+    "app/globals.css": "4b2edb45c70ba8fa28e3cc87a63f41c0a748224a0c9cf87c6614d8cae8373ae3",
+    "tests/requirement-planning.mjs": "e2acaf99d2d7ace4c8b5837aeab694472059fe0b8625d3ee388fdad2681081a7",
+    "scripts/test.mjs": "f933b58807626ab43f9442de516a40464cffb2233a43143f8117ca832179a496",
+    "scripts/prepare-requirement-demo.mjs": "de690bc960d1d2460ce07d5039f08abde29245606871240873d713cb800665de"
+  },
+  "limitations": [
+    "Synthetic manual responses; no actual ChatGPT call or external transmission.",
+    "No new lint run.",
+    "Semantic quality and resolution of conflicting proposals require team review."
+  ]
+}

@@ -1,0 +1,17 @@
+import assert from 'node:assert/strict';
+import {writeFileSync} from 'node:fs';
+const base=process.env.TEAMVIBE_URL||'http://localhost:5174';
+async function client(userId){const session=await fetch(base+'/api/session',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({userId})});assert.equal(session.status,200);const cookie=session.headers.get('set-cookie').split(';')[0];return async(path,body,status=200)=>{const r=await fetch(base+'/api/'+path,{headers:{Cookie:cookie,...(body?{'Content-Type':'application/json'}:{})},...(body?{method:'POST',body:JSON.stringify(body)}:{})});const result=await r.json();assert.equal(r.status,status,JSON.stringify(result));return result}}
+const owner=await client('jimin'),support=await client('seoyeon'),developer=await client('hyunwoo');
+let p=await owner('projects',{name:'비품 신청 · 팀 협업 시연',description:'세 팀원의 아이디어로 만드는 합성 비품 신청 웹 앱',goal:'하나의 브라우저 실행 세션에서 품목·수량을 신청하고 수정·취소할 수 있는 화면을 팀이 합의·분할·통합·검증한다. 실제 업무 데이터와 외부 전송은 사용하지 않는다.'},201);
+p=await support('join',{code:p.inviteCode});p=await developer('join',{code:p.inviteCode});
+const op=async(type,data={},who=owner)=>p=await who('projects/'+p.id,{type,version:p.version,...data});
+for(const [who,title,content] of [[owner,'팀의 범위 정하기','이번 시연은 합성 데이터로 신청부터 수정과 취소까지 한 번의 실행 세션에서 확인해요. 서버 저장은 다음 단계로 두겠습니다.'],[support,'신청자의 관점','품목과 수량을 입력하고 목록에서 바로 확인하고 싶어요. 잘못 입력했으면 수정하고 필요 없어지면 취소할 수 있으면 좋겠어요.'],[developer,'독립 작업으로 나누기','화면 동작은 index.html과 app.js에서 만들고, 반응형 스타일은 styles.css에서 별도 작업하면 충돌 없이 병렬로 진행할 수 있어요.']]){await op('conversation.save',{title},who);const cid=p.conversations.at(-1).id;await op('message.save',{conversationId:cid,kind:'user',text:content},who)}
+await op('requirement.save',{title:'합성 비품 신청·수정·취소',description:'사용자는 품목과 1 이상의 수량을 입력한다. 현재 실행 중인 목록에서 신청을 수정하거나 취소할 수 있다.',priority:'must',status:'accepted',decision:'서버 저장은 이번 시연 범위에서 제외한다. 빈 품목과 0 이하 수량은 거절하고, 사용자 입력을 텍스트로 표시한다.',sourceIds:[p.conversations[1].messages[0].id]});
+await op('requirement.save',{title:'읽기 쉬운 반응형 화면',description:'데스크톱과 390px 모바일 폭에서 신청 폼과 목록을 읽고 사용할 수 있다.',priority:'must',status:'accepted',decision:'CSS는 styles.css에서 독립 개발하고 마크업 파일을 수정하지 않는다.',sourceIds:[p.conversations[2].messages[0].id]});
+await op('prd.generate');for(const who of [owner,support,developer])await op('prd.approve',{},who);
+await op('story.save',{title:'신청 폼과 목록 동작',description:'직원은 품목·수량으로 신청하고, 목록에서 수정·취소한다. index.html과 app.js만 작성한다.',acceptance:['정상 품목과 수량이 목록에 표시된다.','신청 수정과 취소가 같은 실행 세션에서 반영된다.','빈 품목과 0 수량 신청은 등록되지 않는다.'],tests:['합성 키보드 2개 등록 후 목록 표시 확인','합성 마우스 3개로 수정한 결과 확인','취소 후 해당 신청이 목록에서 제거됨 확인','품목 공백 또는 수량 0의 등록 차단 확인'],dependencies:[],requirementIds:[p.requirements[0].id],ownerId:'hyunwoo',status:'ready'});
+await op('story.save',{title:'신청 화면 반응형 스타일',description:'styles.css만 작성한다. 마크업과 동작 변경 없이 폼·버튼·목록의 배치를 다듬는다.',acceptance:['모바일에서도 폼과 목록에 가로 넘침이 없다.','데스크톱에서 제목과 신청 버튼이 읽기 쉽게 표시된다.'],tests:['390px 모바일에서 폼과 목록 표시 및 가로 넘침 확인','1440px 데스크톱에서 실제 스타일 적용과 텍스트 표시 확인'],dependencies:[],requirementIds:[p.requirements[1].id],ownerId:'jimin',status:'ready'});
+await op('run.start',{storyIds:p.stories.map(s=>s.id)});
+writeFileSync('evidence/demo-preparation.json',JSON.stringify({at:new Date().toISOString(),projectId:p.id,runIds:p.runs.map(r=>r.id),storyIds:p.stories.map(s=>s.id),note:'합성 대화/요구사항으로 실제 API를 사용하여 팀 협업 시연을 준비. 아직 결과 반입/브라우저 검증 전이며 AI 자동 개발을 수행한 것이 아님.'},null,2));
+console.log(JSON.stringify({projectId:p.id,stories:p.stories.map(s=>({id:s.id,title:s.title})),runs:p.runs.map(r=>({id:r.id,title:r.title}))},null,2));

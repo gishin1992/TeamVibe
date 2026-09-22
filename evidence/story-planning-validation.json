@@ -1,0 +1,36 @@
+{
+  "at": "2026-09-21T09:54:17.676Z",
+  "checks": [
+    {
+      "name": "npm test",
+      "session": 35979,
+      "exitCode": 0,
+      "evidence": "test-story-planning.log"
+    },
+    {
+      "name": "npm run typecheck",
+      "session": 6931,
+      "exitCode": 0
+    },
+    {
+      "name": "Sites 0.1.65 build-site.mjs",
+      "session": 55374,
+      "exitCode": 0
+    }
+  ],
+  "sourceHashes": {
+    "components/story-planning.tsx": "4d54dc1ba3986c7fb16ef2d1490c08ba38a9b9de214eaaca42a3bf063b0a0f2d",
+    "components/workspace.tsx": "3a7e8f481367d0b23f80dba07a3d7e59d775a9acdf5e914fb5724c62c6470018",
+    "lib/teamvibe/story-plan.ts": "cc6613c3366f79cf8e26aafdfd05fb048a584442ce5467aa7002ec44bfdefc77",
+    "lib/teamvibe/domain.ts": "241b5583666674a5cfc86eaa91757903873aae4d02ac6d181affeb6443897d3a",
+    "lib/teamvibe/types.ts": "0e2ee678de5eaa809df1332c1a238d059edd3c2b283eec0b90992ed86db47d58",
+    "app/globals.css": "5331620a644bbe5f2b03b4badf6546715bb9b7e43ad4cefe4e2183759cb10dc2",
+    "tests/story-planning.mjs": "d453b22638b25f4bc9829d899ddc983adb3a995cebb215f9b401996e62b6122c"
+  },
+  "notes": [
+    "실제 실행 원문은 현재 작업의 agent-sessions JSONL에 보존",
+    "이 변경 이후 lint 재실행하지 않음",
+    "빌드 성공 후 코드 변경 없음. 문서·증거만 추가",
+    "검증 결과를 설명하는 manifest이며 검사 실행의 대체물이 아님"
+  ]
+}

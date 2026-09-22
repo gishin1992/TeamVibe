@@ -1,0 +1,175 @@
+{
+  "at": "2026-09-21T12:38:21.686Z",
+  "observation": "Archived requirement restored accepted with source v1 while message v2; fresh PRD approval was allowed.",
+  "project": {
+    "id": "5e4cbc00-0af8-478d-a4fd-ab209ed0f224",
+    "createdAt": "2026-09-21T12:38:21.595Z",
+    "name": "복원 출처 재검토 · 수정 전 재현",
+    "description": "요구사항이 휴지통에 있는 동안 원문이 수정된 합성 예제",
+    "goal": "복원한 요구사항의 이전 합의와 변경된 원문을 비교한다.",
+    "inviteCode": "59eb75128c5a",
+    "ownerId": "jimin",
+    "members": [
+      "jimin"
+    ],
+    "version": 11,
+    "conversations": [
+      {
+        "id": "fd85ae44-f89f-4671-b87a-88c665ec5bed",
+        "createdAt": "2026-09-21T12:38:21.606Z",
+        "title": "신청 취소 기한",
+        "ownerId": "jimin",
+        "messages": [
+          {
+            "id": "f05300ee-16f1-49bc-871b-b47ab22587e7",
+            "createdAt": "2026-09-21T12:38:21.616Z",
+            "revision": 2,
+            "authorId": "jimin",
+            "kind": "user",
+            "text": "신청 후 3일 동안 취소할 수 있어야 합니다.",
+            "source": "기한을 확장한 합성 의견",
+            "history": [
+              {
+                "revision": 1,
+                "text": "신청 당일에만 취소할 수 있어야 합니다.",
+                "source": "합성 팀원 의견",
+                "at": "2026-09-21T12:38:21.616Z",
+                "authorId": "jimin"
+              }
+            ],
+            "updatedAt": "2026-09-21T12:38:21.658Z",
+            "updatedBy": "jimin"
+          },
+          {
+            "id": "bcfe1bfe-bc6a-49b5-b995-c07d07db4dbf",
+            "createdAt": "2026-09-21T12:38:21.616Z",
+            "authorId": "guide",
+            "kind": "guide",
+            "text": "로컬 진행 도우미: 이 기능은 누가 사용하나요? 성공한 상태와 예외 상황, 수정·취소 규칙도 적어 주세요. 더 깊이 논의하려면 ChatGPT 작업 묶음을 복사하고 응답을 가져오세요."
+          }
+        ]
+      }
+    ],
+    "requirements": [
+      {
+        "id": "e1cf9da7-ad93-417d-a5ba-725576692402",
+        "createdAt": "2026-09-21T12:38:21.624Z",
+        "title": "신청 취소 기한",
+        "description": "신청 당일에만 취소한다.",
+        "priority": "must",
+        "status": "accepted",
+        "sourceIds": [
+          "f05300ee-16f1-49bc-871b-b47ab22587e7"
+        ],
+        "decision": "초기 당일 취소 범위에 합의",
+        "sourceRevisions": {
+          "f05300ee-16f1-49bc-871b-b47ab22587e7": 1
+        },
+        "authorId": "jimin",
+        "revision": 1,
+        "change": "created"
+      }
+    ],
+    "prd": {
+      "body": "# 복원 출처 재검토 · 수정 전 재현\n\n## 해결할 문제\n요구사항이 휴지통에 있는 동안 원문이 수정된 합성 예제\n\n## 목표\n복원한 요구사항의 이전 합의와 변경된 원문을 비교한다.\n\n## 대상 사용자\n프로젝트 팀이 검토하여 사용자와 권한을 구체화하세요.\n\n## 기능 요구사항\n### 1. 신청 취소 기한\n신청 당일에만 취소한다.\n- 우선순위: must\n- 검토 상태: accepted\n- 결정: 초기 당일 취소 범위에 합의\n\n## 완료 및 테스트 기준\n각 요구사항의 정상 흐름, 빈 상태, 오류 상태, 수정과 취소/삭제를 확인합니다.\n\n## 범위와 제약\n로컬 테스트 환경, 합성 데이터만 사용합니다. 외부 연계는 별도 합의 후 진행합니다.\n\n## 미결정 사항\n현재 등록된 미결정 사항 없음\n",
+      "revision": 2,
+      "approvals": [
+        "jimin"
+      ],
+      "history": [
+        {
+          "revision": 0,
+          "body": "",
+          "at": "2026-09-21T12:38:21.632Z",
+          "authorId": "jimin"
+        },
+        {
+          "revision": 1,
+          "body": "# 복원 출처 재검토 · 수정 전 재현\n\n## 해결할 문제\n요구사항이 휴지통에 있는 동안 원문이 수정된 합성 예제\n\n## 목표\n복원한 요구사항의 이전 합의와 변경된 원문을 비교한다.\n\n## 대상 사용자\n프로젝트 팀이 검토하여 사용자와 권한을 구체화하세요.\n\n## 기능 요구사항\n### 1. 신청 취소 기한\n신청 당일에만 취소한다.\n- 우선순위: must\n- 검토 상태: accepted\n- 결정: 초기 당일 취소 범위에 합의\n\n## 완료 및 테스트 기준\n각 요구사항의 정상 흐름, 빈 상태, 오류 상태, 수정과 취소/삭제를 확인합니다.\n\n## 범위와 제약\n로컬 테스트 환경, 합성 데이터만 사용합니다. 외부 연계는 별도 합의 후 진행합니다.\n\n## 미결정 사항\n현재 등록된 미결정 사항 없음\n",
+          "at": "2026-09-21T12:38:21.678Z",
+          "authorId": "jimin"
+        }
+      ],
+      "sourceRevision": 3
+    },
+    "stories": [],
+    "runs": [],
+    "releases": [],
+    "testResults": [],
+    "feedback": [],
+    "events": [
+      {
+        "id": "e3113d9f-fe0b-49e8-a906-f03d669f4b7d",
+        "at": "2026-09-21T12:38:21.606Z",
+        "actorId": "jimin",
+        "action": "conversation.save",
+        "detail": "신청 취소 기한"
+      },
+      {
+        "id": "3fc53ace-9ef2-4a2a-b95e-000f817c9592",
+        "at": "2026-09-21T12:38:21.616Z",
+        "actorId": "jimin",
+        "action": "message.save",
+        "detail": "신청 취소 기한"
+      },
+      {
+        "id": "2a6ca697-c323-4ff1-bcd8-90528c3c9333",
+        "at": "2026-09-21T12:38:21.624Z",
+        "actorId": "jimin",
+        "action": "requirement.save",
+        "detail": "신청 취소 기한"
+      },
+      {
+        "id": "244c1bcc-e4c1-439d-bac4-9fbb323e60bc",
+        "at": "2026-09-21T12:38:21.632Z",
+        "actorId": "jimin",
+        "action": "prd.generate",
+        "detail": "요구사항 기반 규칙 초안"
+      },
+      {
+        "id": "b038a521-db8f-4b07-b07d-4f713de66ee4",
+        "at": "2026-09-21T12:38:21.642Z",
+        "actorId": "jimin",
+        "action": "prd.approve",
+        "detail": "v1 동의"
+      },
+      {
+        "id": "202942db-924e-43ad-b4f3-cea455758138",
+        "at": "2026-09-21T12:38:21.650Z",
+        "actorId": "jimin",
+        "action": "item.delete",
+        "detail": "요구사항 · 신청 취소 기한"
+      },
+      {
+        "id": "5625dad6-d0fa-414f-a0c1-c5c642ae52b7",
+        "at": "2026-09-21T12:38:21.658Z",
+        "actorId": "jimin",
+        "action": "message.save",
+        "detail": "신청 취소 기한"
+      },
+      {
+        "id": "6c82201e-6cf0-46a6-985c-cf42198ea14d",
+        "at": "2026-09-21T12:38:21.670Z",
+        "actorId": "jimin",
+        "action": "item.restore",
+        "detail": "요구사항 · 신청 취소 기한"
+      },
+      {
+        "id": "2064a42b-e8fe-4609-87e9-3273bfab31b6",
+        "at": "2026-09-21T12:38:21.678Z",
+        "actorId": "jimin",
+        "action": "prd.generate",
+        "detail": "요구사항 기반 규칙 초안"
+      },
+      {
+        "id": "a5b6cb0d-b43f-4fd5-b271-974e3333c195",
+        "at": "2026-09-21T12:38:21.685Z",
+        "actorId": "jimin",
+        "action": "prd.approve",
+        "detail": "v2 동의"
+      }
+    ],
+    "updatedAt": "2026-09-21T12:38:21.685Z",
+    "requirementsVersion": 3
+  }
+}

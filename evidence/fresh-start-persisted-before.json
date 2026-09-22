@@ -1,0 +1,208 @@
+{
+  "users": [
+    {
+      "id": "jimin",
+      "name": "김지민",
+      "role": "새 환경 검증 담당",
+      "color": "blue",
+      "archived": 0
+    },
+    {
+      "id": "seoyeon",
+      "name": "이서연",
+      "role": "경영지원",
+      "color": "orange",
+      "archived": 0
+    },
+    {
+      "id": "hyunwoo",
+      "name": "박현우",
+      "role": "개발",
+      "color": "purple",
+      "archived": 0
+    }
+  ],
+  "projects": [
+    {
+      "id": "demo-supplies",
+      "createdAt": "2026-09-21T00:00:00.000Z",
+      "name": "초기화 후 수정한 합성 기본 프로젝트",
+      "description": "사내 비품 신청과 승인 과정을 더 간단하게 만드는 프로젝트",
+      "goal": "신청 누락과 반복 문의를 줄이고, 직원이 비품 신청부터 처리 결과까지 직접 확인한다.",
+      "inviteCode": "TEAMVIBE2026",
+      "ownerId": "jimin",
+      "members": [
+        "jimin",
+        "seoyeon",
+        "hyunwoo"
+      ],
+      "version": 2,
+      "conversations": [
+        {
+          "id": "conversation-1",
+          "createdAt": "2026-09-21T00:00:00.000Z",
+          "title": "흩어진 비품 신청을 한곳에",
+          "ownerId": "seoyeon",
+          "messages": [
+            {
+              "id": "message-1",
+              "createdAt": "2026-09-21T00:00:00.000Z",
+              "authorId": "seoyeon",
+              "kind": "user",
+              "text": "비품 신청이 메신저에 흩어져서 누가 뭘 요청했는지 놓쳐요. 신청 현황을 한눈에 보고 싶어요."
+            }
+          ]
+        },
+        {
+          "id": "conversation-2",
+          "createdAt": "2026-09-21T00:00:00.000Z",
+          "title": "담당자의 승인 흐름",
+          "ownerId": "hyunwoo",
+          "messages": [
+            {
+              "id": "message-2",
+              "createdAt": "2026-09-21T00:00:00.000Z",
+              "authorId": "hyunwoo",
+              "kind": "user",
+              "text": "승인 대기 건만 따로 볼 수 있으면 좋겠어요. 승인과 반려 사유도 남길 수 있게요."
+            }
+          ]
+        },
+        {
+          "id": "conversation-3",
+          "createdAt": "2026-09-21T00:00:00.000Z",
+          "title": "직원이 직접 확인하는 진행 상태",
+          "ownerId": "jimin",
+          "messages": [
+            {
+              "id": "message-3",
+              "createdAt": "2026-09-21T00:00:00.000Z",
+              "authorId": "jimin",
+              "kind": "user",
+              "text": "직원들이 신청한 뒤 진행 상태를 직접 확인하면 반복 문의가 줄어들 것 같아요."
+            }
+          ]
+        }
+      ],
+      "requirements": [
+        {
+          "id": "req-1",
+          "createdAt": "2026-09-21T00:00:00.000Z",
+          "title": "비품 신청 등록",
+          "description": "직원은 품목, 수량, 사용 목적을 입력하여 비품을 신청한다.",
+          "status": "accepted",
+          "decision": "수량은 1 이상이며 품목과 목적은 필수다.",
+          "priority": "must",
+          "sourceIds": [
+            "message-1"
+          ]
+        },
+        {
+          "id": "req-2",
+          "createdAt": "2026-09-21T00:00:00.000Z",
+          "title": "내 신청 목록과 상태 확인",
+          "description": "신청자는 자신의 신청 목록과 대기·승인·반려 상태를 확인한다.",
+          "status": "accepted",
+          "decision": "신청 목록은 최근 신청 순서로 표시한다.",
+          "priority": "must",
+          "sourceIds": [
+            "message-2"
+          ]
+        },
+        {
+          "id": "req-3",
+          "createdAt": "2026-09-21T00:00:00.000Z",
+          "title": "담당자의 승인과 반려",
+          "description": "담당자는 대기 신청을 승인하거나 사유와 함께 반려한다.",
+          "status": "conflict",
+          "decision": "담당자 전체가 승인할지, 팀별 담당자만 승인할지 결정 필요.",
+          "priority": "must",
+          "sourceIds": [
+            "message-3"
+          ]
+        },
+        {
+          "id": "req-4",
+          "createdAt": "2026-09-21T00:00:00.000Z",
+          "title": "신청 수정과 취소",
+          "description": "직원은 아직 처리되지 않은 신청을 수정하거나 취소한다.",
+          "status": "proposed",
+          "decision": "승인 후 취소 가능 여부를 검토한다.",
+          "priority": "must",
+          "sourceIds": [
+            "message-1"
+          ]
+        },
+        {
+          "id": "req-5",
+          "createdAt": "2026-09-21T00:00:00.000Z",
+          "title": "처리 이력 보관",
+          "description": "신청과 승인·반려·취소 이력을 시간순으로 확인한다.",
+          "status": "accepted",
+          "decision": "누가 언제 무엇을 변경했는지 합성 사용자 이름으로 남긴다.",
+          "priority": "must",
+          "sourceIds": [
+            "message-2"
+          ]
+        }
+      ],
+      "prd": {
+        "body": "# 우리 팀의 비품 요청, 한곳에서.\n\n## 해결할 문제\n사내 비품 신청과 승인 과정을 더 간단하게 만드는 프로젝트\n\n## 목표\n신청 누락과 반복 문의를 줄이고, 직원이 비품 신청부터 처리 결과까지 직접 확인한다.\n\n## 대상 사용자\n프로젝트 팀이 검토하여 사용자와 권한을 구체화하세요.\n\n## 기능 요구사항\n### 1. 비품 신청 등록\n직원은 품목, 수량, 사용 목적을 입력하여 비품을 신청한다.\n- 우선순위: must\n- 검토 상태: accepted\n- 결정: 수량은 1 이상이며 품목과 목적은 필수다.\n\n### 2. 내 신청 목록과 상태 확인\n신청자는 자신의 신청 목록과 대기·승인·반려 상태를 확인한다.\n- 우선순위: must\n- 검토 상태: accepted\n- 결정: 신청 목록은 최근 신청 순서로 표시한다.\n\n### 3. 담당자의 승인과 반려\n담당자는 대기 신청을 승인하거나 사유와 함께 반려한다.\n- 우선순위: must\n- 검토 상태: conflict\n- 결정: 담당자 전체가 승인할지, 팀별 담당자만 승인할지 결정 필요.\n\n### 4. 신청 수정과 취소\n직원은 아직 처리되지 않은 신청을 수정하거나 취소한다.\n- 우선순위: must\n- 검토 상태: proposed\n- 결정: 승인 후 취소 가능 여부를 검토한다.\n\n### 5. 처리 이력 보관\n신청과 승인·반려·취소 이력을 시간순으로 확인한다.\n- 우선순위: must\n- 검토 상태: accepted\n- 결정: 누가 언제 무엇을 변경했는지 합성 사용자 이름으로 남긴다.\n\n## 완료 및 테스트 기준\n각 요구사항의 정상 흐름, 빈 상태, 오류 상태, 수정과 취소/삭제를 확인합니다.\n\n## 범위와 제약\n로컬 테스트 환경, 합성 데이터만 사용합니다. 외부 연계는 별도 합의 후 진행합니다.\n\n## 미결정 사항\n- 담당자의 승인과 반려: 담당자 전체가 승인할지, 팀별 담당자만 승인할지 결정 필요.\n- 신청 수정과 취소: 승인 후 취소 가능 여부를 검토한다.\n",
+        "revision": 1,
+        "approvals": [],
+        "history": []
+      },
+      "stories": [],
+      "runs": [],
+      "releases": [],
+      "testResults": [],
+      "feedback": [],
+      "events": [
+        {
+          "id": "event-seed",
+          "at": "2026-09-21T00:00:00.000Z",
+          "actorId": "jimin",
+          "action": "sample.created",
+          "detail": "합성 예시 프로젝트 · 실제 AI 수행/검증 이력 없음"
+        },
+        {
+          "id": "d249eba9-6474-4c83-8fbf-5971f7a8f9c7",
+          "at": "2026-09-21T11:44:55.421Z",
+          "actorId": "jimin",
+          "action": "project.edit",
+          "detail": "초기화 후 수정한 합성 기본 프로젝트"
+        }
+      ],
+      "updatedAt": "2026-09-21T11:44:55.421Z",
+      "requirementsVersion": 1
+    },
+    {
+      "id": "39528ec9-377b-4b1a-bd2e-e9a29b1bfc83",
+      "createdAt": "2026-09-21T11:44:29.865Z",
+      "name": "초기 실행 보존 · 합성 점검",
+      "description": "별도 데이터 경로에서 만든 프로젝트가 재시작 후에도 남는지 확인합니다.",
+      "goal": "초기화 재실행과 개발·빌드 전환 뒤에도 팀 데이터를 보존한다.",
+      "inviteCode": "858642714a19",
+      "ownerId": "jimin",
+      "members": [
+        "jimin"
+      ],
+      "version": 1,
+      "conversations": [],
+      "requirements": [],
+      "prd": {
+        "body": "",
+        "revision": 0,
+        "approvals": [],
+        "history": []
+      },
+      "stories": [],
+      "runs": [],
+      "releases": [],
+      "testResults": [],
+      "feedback": [],
+      "events": [],
+      "updatedAt": "2026-09-21T11:44:29.865Z"
+    }
+  ]
+}

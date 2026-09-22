@@ -1,0 +1,9 @@
+{
+  "at": "2026-09-21T08:51:57.636Z",
+  "url": "http://127.0.0.1:8787",
+  "projectId": "ec3786ee-75f9-4fd5-bd5c-88355fbe6aef",
+  "version": 28,
+  "testRecords": 1,
+  "result": "passed",
+  "method": "npm start process stopped and restarted; complete project data deepEqual checked against before snapshot"
+}

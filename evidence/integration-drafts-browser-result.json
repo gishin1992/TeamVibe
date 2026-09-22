@@ -1,0 +1,77 @@
+{
+  "at": "2026-09-21T13:23:16.010Z",
+  "projectId": "9ef5b0c9-730b-42b4-a3e3-4dccfe4d9957",
+  "observations": [
+    {
+      "name": "Actual resolution file import fills both code and reason for review",
+      "passed": true
+    },
+    {
+      "name": "Navigation preserves release title, final code, reason and transfer material",
+      "passed": true
+    },
+    {
+      "name": "Different run group starts with independent draft",
+      "passed": true
+    },
+    {
+      "name": "Same run set selected in reverse order restores same merged code and title",
+      "passed": true
+    },
+    {
+      "name": "Cancel reset retains final code and reason",
+      "passed": true
+    },
+    {
+      "name": "Confirmed reset clears code, reason, title, transfer request and response; integration blocked",
+      "passed": true
+    },
+    {
+      "name": "Resetting pair draft does not change single-run draft",
+      "passed": true
+    },
+    {
+      "name": "Another profile sees its own empty integration draft",
+      "passed": true
+    },
+    {
+      "name": "Returning original profile restores draft but old review version blocks integration",
+      "passed": true
+    },
+    {
+      "name": "Old retained response rejected without replacing reviewed code",
+      "passed": true
+    },
+    {
+      "name": "Mobile preserved reason and stale-review controls fit 390px viewport",
+      "passed": true,
+      "dimensions": {
+        "document": 390,
+        "viewport": 390
+      }
+    },
+    {
+      "name": "Explicit latest review enables integration of retained code",
+      "passed": true
+    },
+    {
+      "name": "Actual integrated iframe changes message and counter 0 to 1 to 2",
+      "passed": true,
+      "before": "함께 검토한 결과\n확인하기\n\n확인 전\n\n0",
+      "afterFirst": "함께 검토한 결과\n확인하기\n\n확인 완료\n\n1",
+      "afterSecond": "함께 검토한 결과\n확인하기\n\n확인 완료\n\n2"
+    },
+    {
+      "name": "Actual observed results recorded through UI",
+      "passed": true
+    }
+  ],
+  "notes": [
+    "Two synthetic results and synthetic resolution JSON, no ChatGPT calls or external transmission.",
+    "Actual file chooser, workspace navigation, alternate run selections/order, two profiles and mobile review exercised.",
+    "Independent seoyeon API added only a conversation; original code did not change. Stale draft and response blocked until explicit manual re-review.",
+    "Actual sandbox iframe button exercised twice and UI test record links both story criteria.",
+    "No forced slow network/file read race in browser; late-completion state behavior tested separately.",
+    "Request copy used for prompt generation; clipboard data not independently verified."
+  ]
+}

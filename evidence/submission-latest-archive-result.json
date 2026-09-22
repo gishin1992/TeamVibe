@@ -1,0 +1,34 @@
+{
+  "at": "2026-09-22T00:08:03.222Z",
+  "archive": {
+    "at": "2026-09-22T00:07:12.630Z",
+    "archive": "/Users/takykim/workspace/codex/TeamVibe/outputs/submissions/2026-09-22T00-07-12-630Z-gMuNhX/TeamVibe.tar.gz",
+    "staged": "/Users/takykim/workspace/codex/TeamVibe/outputs/submissions/2026-09-22T00-07-12-630Z-gMuNhX/TeamVibe",
+    "fileCount": 668,
+    "bytes": 72403599,
+    "sha256": "26aaec90bc33165dc65f34f7810fa9248cf9a8b565a8ab524af57ee16274b1d4",
+    "sessionCapturedAt": "2026-09-22T00:07:05.255Z",
+    "localOnly": true
+  },
+  "extracted": "/Users/takykim/workspace/codex/TeamVibe/.sites-runtime/verified-complete-archive-m3xAR7/TeamVibe",
+  "integrity": {
+    "ok": true,
+    "files": 668,
+    "capturedAt": "2026-09-22T00:07:12.630Z",
+    "note": "목록에 있는 파일의 무결성 검사입니다. 앱 실행·기능 통과를 뜻하지 않으며 추가 파일은 검사하지 않습니다."
+  },
+  "verifiedRuntimeSourceFiles": 163,
+  "verifiedExistingSourceAndTestFiles": 195,
+  "verifiedNewSampleSourceAndPreviewFiles": 5,
+  "runtimeMatchesFreshInstallAndBrowserVerifiedCandidate": true,
+  "privateRuntimePathsExcluded": true,
+  "noUnlistedPayloadFiles": true,
+  "actualSessionMatchesParsedJsonlSnapshot": true,
+  "sessionSnapshot": {
+    "capturedAt": "2026-09-22T00:07:05.255Z",
+    "bytes": 141753817,
+    "validJsonLines": 9870
+  },
+  "requirementsVerified": 10,
+  "note": "Reopened actual final archive and verified its full payload, unchanged previously installed/tested/built platform source and newly browser-tested safe-edit sample. File integrity does not substitute for functional evidence. Archive contains session snapshot up to stated cutoff only."
+}

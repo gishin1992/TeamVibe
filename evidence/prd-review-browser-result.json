@@ -1,0 +1,38 @@
+{
+  "at": "2026-09-21T11:55:19.392Z",
+  "projectId": "522cb693-67c1-4c23-853f-2a63d341748e",
+  "observations": [
+    {
+      "name": "unchanged requirement retains current approval in UI",
+      "passed": true
+    },
+    {
+      "name": "unchanged PRD retains approval in UI",
+      "passed": true
+    },
+    {
+      "name": "real teammate conflict disables approval",
+      "passed": true
+    },
+    {
+      "name": "mobile blocker names unresolved requirement",
+      "passed": true
+    },
+    {
+      "name": "resolving requirement still requires document context review",
+      "passed": true
+    },
+    {
+      "name": "explicit document review enables approval",
+      "passed": true
+    },
+    {
+      "name": "reviewed document accepts current user approval",
+      "passed": true
+    }
+  ],
+  "limits": [
+    "This was a document agreement workflow; no generated business app was executed in this browser slice.",
+    "Teammate conflict and final teammate approval used a separate authenticated local API session."
+  ]
+}

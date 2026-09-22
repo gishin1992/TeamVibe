@@ -1,0 +1,10 @@
+{
+  "at": "2026-09-21T11:47:54.587Z",
+  "phase": "after-built-restart",
+  "url": "http://127.0.0.1:63449",
+  "users": 3,
+  "projects": 2,
+  "fullDataEqual": true,
+  "originalDemoUnchanged": true,
+  "note": "Both migrated profile edits and UI-created project are retained. No database files were deleted."
+}

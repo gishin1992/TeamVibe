@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>팀 비품 신청 · 수정 내용 보존</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">TEAMVIBE · 합성 시연</p>
+      <h1>팀 비품 신청</h1>
+      <p>신청을 수정해도 저장하기 전까지 원래 내용이 유지됩니다.</p>
+      <form id="request-form" novalidate>
+        <label>품목<input id="item" required maxlength="100" autocomplete="off"></label>
+        <label>수량<input id="quantity" type="number" min="1" step="1" value="1" required></label>
+        <div class="actions"><button id="save" type="submit">신청하기</button><button id="cancel-edit" type="button" hidden>수정 취소</button></div>
+      </form>
+      <p id="status" role="status" aria-live="polite"></p>
+      <ul id="requests" aria-label="신청 목록"></ul>
+      <p id="empty">아직 신청이 없습니다.</p>
+      <p class="note">현재 실행 세션의 합성 데이터입니다. 새로고침하면 초기화됩니다.</p>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

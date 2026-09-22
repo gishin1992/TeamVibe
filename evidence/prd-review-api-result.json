@@ -1,0 +1,13 @@
+{
+  "at": "2026-09-21T23:33:18.899Z",
+  "projectId": "bb4a4284-e608-4616-bb81-adc8897d5263",
+  "checks": [
+    "shared blockers name unreviewed requirements",
+    "empty/stale/conflict approval rejected atomically",
+    "identical requirement/PRD and source reordering preserve approvals and completed story",
+    "real decision change invalidates agreement and completion",
+    "same body with changed requirement context creates a new PRD revision",
+    "message edits and source-version reacceptance still require review"
+  ],
+  "note": "Synthetic API fixtures; no actual browser execution of the generated app claimed."
+}

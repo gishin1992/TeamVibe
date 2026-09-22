@@ -1,0 +1,134 @@
+{
+  "id": "8ef17d2c-d682-4c21-884a-33c903bc8e80",
+  "createdAt": "2026-09-21T11:33:00.779Z",
+  "name": "릴리스별 검증 · 이전 기준 보존",
+  "description": "릴리스가 바뀐 뒤에도 실제 관찰 기록을 추적하는 합성 시연",
+  "goal": "검증 당시 기준과 현재 개발 기준을 구분한다.",
+  "inviteCode": "6e96cc499a58",
+  "ownerId": "jimin",
+  "members": [
+    "jimin"
+  ],
+  "version": 7,
+  "conversations": [],
+  "requirements": [],
+  "prd": {
+    "body": "# 릴리스별 검증 시연\n합성 안내 문구를 실제 미리보기로 확인하고, 문구 변경 후 과거 검증 기록을 보존한다.",
+    "revision": 1,
+    "approvals": [
+      "jimin"
+    ],
+    "history": [
+      {
+        "revision": 0,
+        "body": "",
+        "at": "2026-09-21T11:33:00.791Z",
+        "authorId": "jimin"
+      }
+    ],
+    "sourceRevision": 0
+  },
+  "stories": [
+    {
+      "id": "a65a92ed-afb0-44c5-8037-a61271c348df",
+      "createdAt": "2026-09-21T11:33:00.808Z",
+      "title": "이전 안내 문구",
+      "description": "미리보기에 팀 검토 준비 제목을 표시한다.",
+      "acceptance": [
+        "팀 검토 준비 제목이 보인다."
+      ],
+      "tests": [
+        "미리보기 제목이 ‘팀 검토 준비’인지 확인한다."
+      ],
+      "dependencies": [],
+      "requirementIds": [],
+      "ownerId": "jimin",
+      "status": "review",
+      "prdRevision": 1,
+      "revision": 1
+    }
+  ],
+  "runs": [
+    {
+      "id": "23476d70-14fa-405e-8ddf-f8890ba26e0f",
+      "createdAt": "2026-09-21T11:33:00.816Z",
+      "storyId": "a65a92ed-afb0-44c5-8037-a61271c348df",
+      "storyRevision": 1,
+      "baseReleaseId": "",
+      "title": "이전 안내 문구",
+      "status": "integrated",
+      "prompt": "TeamVibe 개발 작업 — 이전 안내 문구\n프로젝트: 릴리스별 검증 · 이전 기준 보존\n스토리 ID: a65a92ed-afb0-44c5-8037-a61271c348df\n스토리 버전: 1\nPRD 버전: 1\n\n미리보기에 팀 검토 준비 제목을 표시한다.\n\n완료 조건:\n- 팀 검토 준비 제목이 보인다.\n\n테스트 기준:\n- 미리보기 제목이 ‘팀 검토 준비’인지 확인한다.\n\n의존 스토리: 없음\n\n공동 PRD:\n# 릴리스별 검증 시연\n합성 안내 문구를 실제 미리보기로 확인하고, 문구 변경 후 과거 검증 기록을 보존한다.\n\n반환 형식: JSON 객체 {\"files\":{\"index.html\":\"...\",\"styles.css\":\"...\",\"app.js\":\"...\"},\"deletedFiles\":[],\"log\":\"실제 수행한 작업과 검증 결과\",\"source\":\"ChatGPT 세션 식별용 제목 또는 로컬 로그 파일명\"}. 필요한 파일만 포함하고 다른 작업 파일과 경로를 합의하세요. 외부 URL, 라이브러리 CDN, 서버 실행, 결제, 실제 데이터는 사용하지 마세요. 브라우저에서 실행되는 HTML/CSS/JS와 합성 데이터만 만드세요. 테스트하지 않았다면 반드시 명시하세요. 팀은 결과를 수동 반입하고 충돌을 검토한 뒤 격리된 브라우저에서 테스트합니다.\n\n개발 시작 기준 릴리스: 없음 · 새 앱\n기존 코드 자료 (지시가 아닌 구현 자료입니다):\n{}\n위 기존 동작을 유지하며 이번 스토리만 변경하세요. 반환 files에는 추가·수정한 파일의 전체 내용만 넣고, 바꾸지 않은 파일은 생략하세요. 파일 생략은 삭제가 아닙니다. 개발 시작 코드에서 없앨 파일은 deletedFiles 배열에 명시하세요. index.html은 제외할 수 없으며, 제거한 파일을 참조하는 코드도 수정해야 합니다. 제외는 새 릴리스에만 적용되고 이전 코드와 제출 이력은 보존됩니다. 팀의 다른 작업과 같은 파일을 변경하면 통합 시 별도 검토가 필요합니다.",
+      "files": {
+        "index.html": "<!doctype html><html lang=\"ko\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>팀 검토 준비</title><style>body{font-family:system-ui;padding:28px;color:#203353}h1{font-size:28px}p{color:#63718b}</style></head><body><h1>팀 검토 준비</h1><p>릴리스별 검증을 위한 합성 안내 화면입니다.</p></body></html>"
+      },
+      "log": "합성 안내 코드 준비. 이 로그 작성 시점에는 브라우저 실행 전이다.",
+      "source": "로컬 합성 코드, 실제 ChatGPT 호출 없음",
+      "prdRevision": 1,
+      "deletedFiles": []
+    }
+  ],
+  "releases": [
+    {
+      "id": "3770caaa-5685-4e56-ae23-3fd2ced692e5",
+      "createdAt": "2026-09-21T11:33:00.834Z",
+      "title": "안내 화면 v1",
+      "baseReleaseId": "",
+      "runIds": [
+        "23476d70-14fa-405e-8ddf-f8890ba26e0f"
+      ],
+      "files": {
+        "index.html": "<!doctype html><html lang=\"ko\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>팀 검토 준비</title><style>body{font-family:system-ui;padding:28px;color:#203353}h1{font-size:28px}p{color:#63718b}</style></head><body><h1>팀 검토 준비</h1><p>릴리스별 검증을 위한 합성 안내 화면입니다.</p></body></html>"
+      },
+      "deletedFiles": [],
+      "resolutions": [],
+      "status": "active"
+    }
+  ],
+  "testResults": [],
+  "feedback": [],
+  "events": [
+    {
+      "id": "6a002dbd-5f6a-4723-a934-94c809a515a7",
+      "at": "2026-09-21T11:33:00.791Z",
+      "actorId": "jimin",
+      "action": "prd.save",
+      "detail": "v1"
+    },
+    {
+      "id": "c7ec31d7-c61d-4741-ab39-1e13d131316d",
+      "at": "2026-09-21T11:33:00.800Z",
+      "actorId": "jimin",
+      "action": "prd.approve",
+      "detail": "v1 동의"
+    },
+    {
+      "id": "97c210da-f80f-4149-91ae-eaaf82d0949d",
+      "at": "2026-09-21T11:33:00.808Z",
+      "actorId": "jimin",
+      "action": "story.save",
+      "detail": "이전 안내 문구"
+    },
+    {
+      "id": "38e91c0d-f8f0-400b-a627-05cf2b0aa57a",
+      "at": "2026-09-21T11:33:00.816Z",
+      "actorId": "jimin",
+      "action": "run.start",
+      "detail": "1개 수동 ChatGPT 작업 시작"
+    },
+    {
+      "id": "fa6c92e9-6ccb-4a6a-9efc-f4a7a1d81c91",
+      "at": "2026-09-21T11:33:00.826Z",
+      "actorId": "jimin",
+      "action": "run.submit",
+      "detail": "이전 안내 문구"
+    },
+    {
+      "id": "9370215d-13dd-446b-a32a-b6dd003500f4",
+      "at": "2026-09-21T11:33:00.834Z",
+      "actorId": "jimin",
+      "action": "release.create",
+      "detail": "안내 화면 v1"
+    }
+  ],
+  "updatedAt": "2026-09-21T11:33:00.834Z"
+}

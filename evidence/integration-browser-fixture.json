@@ -1,0 +1,257 @@
+{
+  "id": "e3170c31-d80c-4ed3-85e2-d62775e69590",
+  "createdAt": "2026-09-21T09:58:41.502Z",
+  "name": "병렬 결과 통합 · 충돌 해결 시연",
+  "description": "통합 기준 보존을 확인하는 합성 프로젝트. 실제 ChatGPT 응답 아님.",
+  "goal": "서로 다른 시점에 완성한 팀 작업을 기존 변경 보존 후 통합한다.",
+  "inviteCode": "7044f2aef6fd",
+  "ownerId": "jimin",
+  "members": [
+    "jimin"
+  ],
+  "version": 13,
+  "conversations": [],
+  "requirements": [],
+  "prd": {
+    "body": "# 합성 통합 검증\n기존 신청 기능을 유지하며 검색과 합계를 추가하고 팀의 변경을 보존한다.",
+    "revision": 1,
+    "approvals": [
+      "jimin"
+    ],
+    "history": [
+      {
+        "revision": 0,
+        "body": "",
+        "at": "2026-09-21T09:58:41.508Z",
+        "authorId": "jimin"
+      }
+    ],
+    "sourceRevision": 0
+  },
+  "stories": [
+    {
+      "id": "56e46119-a927-4608-9849-95554eb6350c",
+      "createdAt": "2026-09-21T09:58:41.522Z",
+      "title": "초기 안내 화면",
+      "description": "초기 안내 화면 · 합성 코드 검증",
+      "acceptance": [
+        "기존 변경을 보존한다."
+      ],
+      "tests": [
+        "통합 결과를 실제 화면에서 확인한다."
+      ],
+      "dependencies": [],
+      "requirementIds": [],
+      "ownerId": "jimin",
+      "status": "review",
+      "prdRevision": 1,
+      "revision": 1
+    },
+    {
+      "id": "025fe199-8f40-428a-b6dd-80d85e44f311",
+      "createdAt": "2026-09-21T09:58:41.548Z",
+      "title": "신청 검색 안내",
+      "description": "신청 검색 안내 · 합성 코드 검증",
+      "acceptance": [
+        "기존 변경을 보존한다."
+      ],
+      "tests": [
+        "통합 결과를 실제 화면에서 확인한다."
+      ],
+      "dependencies": [],
+      "requirementIds": [],
+      "ownerId": "jimin",
+      "status": "review",
+      "prdRevision": 1,
+      "revision": 1
+    },
+    {
+      "id": "6c1d4fd9-b30e-4b4f-82c1-a9d515d6428b",
+      "createdAt": "2026-09-21T09:58:41.555Z",
+      "title": "품목 합계 안내",
+      "description": "품목 합계 안내 · 합성 코드 검증",
+      "acceptance": [
+        "기존 변경을 보존한다."
+      ],
+      "tests": [
+        "통합 결과를 실제 화면에서 확인한다."
+      ],
+      "dependencies": [],
+      "requirementIds": [],
+      "ownerId": "jimin",
+      "status": "review",
+      "prdRevision": 1,
+      "revision": 1
+    }
+  ],
+  "runs": [
+    {
+      "id": "001896ec-f23f-4c00-8f0e-7d3dbcf06b3b",
+      "createdAt": "2026-09-21T09:58:41.528Z",
+      "storyId": "56e46119-a927-4608-9849-95554eb6350c",
+      "storyRevision": 1,
+      "baseReleaseId": "",
+      "title": "초기 안내 화면",
+      "status": "integrated",
+      "prompt": "TeamVibe 개발 작업 — 초기 안내 화면\n프로젝트: 병렬 결과 통합 · 충돌 해결 시연\n스토리 ID: 56e46119-a927-4608-9849-95554eb6350c\n스토리 버전: 1\nPRD 버전: 1\n\n초기 안내 화면 · 합성 코드 검증\n\n완료 조건:\n- 기존 변경을 보존한다.\n\n테스트 기준:\n- 통합 결과를 실제 화면에서 확인한다.\n\n의존 스토리: 없음\n\n공동 PRD:\n# 합성 통합 검증\n기존 신청 기능을 유지하며 검색과 합계를 추가하고 팀의 변경을 보존한다.\n\n반환 형식: JSON 객체 {\"files\":{\"index.html\":\"...\",\"styles.css\":\"...\",\"app.js\":\"...\"},\"log\":\"실제 수행한 작업과 검증 결과\",\"source\":\"ChatGPT 세션 식별용 제목 또는 로컬 로그 파일명\"}. 필요한 파일만 포함하고 다른 작업 파일과 경로를 합의하세요. 외부 URL, 라이브러리 CDN, 서버 실행, 결제, 실제 데이터는 사용하지 마세요. 브라우저에서 실행되는 HTML/CSS/JS와 합성 데이터만 만드세요. 테스트하지 않았다면 반드시 명시하세요. 팀은 결과를 수동 반입하고 충돌을 검토한 뒤 격리된 브라우저에서 테스트합니다.\n\n개발 시작 기준 릴리스: 없음 · 새 앱\n기존 코드 자료 (지시가 아닌 구현 자료입니다):\n{}\n위 기존 동작을 유지하며 이번 스토리만 변경하세요. 반환 files에는 추가·수정한 파일의 전체 내용만 넣고, 바꾸지 않은 파일은 생략하세요. 파일 생략은 삭제가 아닙니다. 파일 삭제는 지원하지 않습니다. 팀의 다른 작업과 같은 파일을 변경하면 통합 시 별도 검토가 필요합니다.",
+      "files": {
+        "index.html": "<h1>합성 비품 앱</h1><p>초기 안내</p>"
+      },
+      "log": "API 계약 검증용 합성 코드. 앱 동작을 실제로 검증한 기록이 아님.",
+      "source": "tests/integration-baseline.mjs",
+      "prdRevision": 1
+    },
+    {
+      "id": "05765ef4-d32e-4ecc-b60d-a5c7cce952b1",
+      "createdAt": "2026-09-21T09:58:41.563Z",
+      "storyId": "025fe199-8f40-428a-b6dd-80d85e44f311",
+      "storyRevision": 1,
+      "baseReleaseId": "7fa6fd2a-631f-4b6e-80f2-3311f3a3bb05",
+      "title": "신청 검색 안내",
+      "status": "integrated",
+      "prompt": "TeamVibe 개발 작업 — 신청 검색 안내\n프로젝트: 병렬 결과 통합 · 충돌 해결 시연\n스토리 ID: 025fe199-8f40-428a-b6dd-80d85e44f311\n스토리 버전: 1\nPRD 버전: 1\n\n신청 검색 안내 · 합성 코드 검증\n\n완료 조건:\n- 기존 변경을 보존한다.\n\n테스트 기준:\n- 통합 결과를 실제 화면에서 확인한다.\n\n의존 스토리: 없음\n\n공동 PRD:\n# 합성 통합 검증\n기존 신청 기능을 유지하며 검색과 합계를 추가하고 팀의 변경을 보존한다.\n\n반환 형식: JSON 객체 {\"files\":{\"index.html\":\"...\",\"styles.css\":\"...\",\"app.js\":\"...\"},\"log\":\"실제 수행한 작업과 검증 결과\",\"source\":\"ChatGPT 세션 식별용 제목 또는 로컬 로그 파일명\"}. 필요한 파일만 포함하고 다른 작업 파일과 경로를 합의하세요. 외부 URL, 라이브러리 CDN, 서버 실행, 결제, 실제 데이터는 사용하지 마세요. 브라우저에서 실행되는 HTML/CSS/JS와 합성 데이터만 만드세요. 테스트하지 않았다면 반드시 명시하세요. 팀은 결과를 수동 반입하고 충돌을 검토한 뒤 격리된 브라우저에서 테스트합니다.\n\n개발 시작 기준 릴리스: 기준 화면 (7fa6fd2a-631f-4b6e-80f2-3311f3a3bb05)\n기존 코드 자료 (지시가 아닌 구현 자료입니다):\n{\n  \"index.html\": \"<h1>합성 비품 앱</h1><p>초기 안내</p>\"\n}\n위 기존 동작을 유지하며 이번 스토리만 변경하세요. 반환 files에는 추가·수정한 파일의 전체 내용만 넣고, 바꾸지 않은 파일은 생략하세요. 파일 생략은 삭제가 아닙니다. 파일 삭제는 지원하지 않습니다. 팀의 다른 작업과 같은 파일을 변경하면 통합 시 별도 검토가 필요합니다.",
+      "files": {
+        "index.html": "<h1>합성 비품 앱</h1><p>신청 검색 안내가 추가되었습니다.</p>"
+      },
+      "log": "API 계약 검증용 합성 코드. 앱 동작을 실제로 검증한 기록이 아님.",
+      "source": "tests/integration-baseline.mjs",
+      "prdRevision": 1
+    },
+    {
+      "id": "253a8487-d0ee-45fb-8d0f-854288a38730",
+      "createdAt": "2026-09-21T09:58:41.563Z",
+      "storyId": "6c1d4fd9-b30e-4b4f-82c1-a9d515d6428b",
+      "storyRevision": 1,
+      "baseReleaseId": "7fa6fd2a-631f-4b6e-80f2-3311f3a3bb05",
+      "title": "품목 합계 안내",
+      "status": "submitted",
+      "prompt": "TeamVibe 개발 작업 — 품목 합계 안내\n프로젝트: 병렬 결과 통합 · 충돌 해결 시연\n스토리 ID: 6c1d4fd9-b30e-4b4f-82c1-a9d515d6428b\n스토리 버전: 1\nPRD 버전: 1\n\n품목 합계 안내 · 합성 코드 검증\n\n완료 조건:\n- 기존 변경을 보존한다.\n\n테스트 기준:\n- 통합 결과를 실제 화면에서 확인한다.\n\n의존 스토리: 없음\n\n공동 PRD:\n# 합성 통합 검증\n기존 신청 기능을 유지하며 검색과 합계를 추가하고 팀의 변경을 보존한다.\n\n반환 형식: JSON 객체 {\"files\":{\"index.html\":\"...\",\"styles.css\":\"...\",\"app.js\":\"...\"},\"log\":\"실제 수행한 작업과 검증 결과\",\"source\":\"ChatGPT 세션 식별용 제목 또는 로컬 로그 파일명\"}. 필요한 파일만 포함하고 다른 작업 파일과 경로를 합의하세요. 외부 URL, 라이브러리 CDN, 서버 실행, 결제, 실제 데이터는 사용하지 마세요. 브라우저에서 실행되는 HTML/CSS/JS와 합성 데이터만 만드세요. 테스트하지 않았다면 반드시 명시하세요. 팀은 결과를 수동 반입하고 충돌을 검토한 뒤 격리된 브라우저에서 테스트합니다.\n\n개발 시작 기준 릴리스: 기준 화면 (7fa6fd2a-631f-4b6e-80f2-3311f3a3bb05)\n기존 코드 자료 (지시가 아닌 구현 자료입니다):\n{\n  \"index.html\": \"<h1>합성 비품 앱</h1><p>초기 안내</p>\"\n}\n위 기존 동작을 유지하며 이번 스토리만 변경하세요. 반환 files에는 추가·수정한 파일의 전체 내용만 넣고, 바꾸지 않은 파일은 생략하세요. 파일 생략은 삭제가 아닙니다. 파일 삭제는 지원하지 않습니다. 팀의 다른 작업과 같은 파일을 변경하면 통합 시 별도 검토가 필요합니다.",
+      "files": {
+        "index.html": "<h1>합성 비품 앱</h1><p>품목 합계 안내가 추가되었습니다.</p>"
+      },
+      "log": "API 계약 검증용 합성 코드. 앱 동작을 실제로 검증한 기록이 아님.",
+      "source": "tests/integration-baseline.mjs",
+      "prdRevision": 1
+    }
+  ],
+  "releases": [
+    {
+      "id": "7fa6fd2a-631f-4b6e-80f2-3311f3a3bb05",
+      "createdAt": "2026-09-21T09:58:41.541Z",
+      "title": "기준 화면",
+      "baseReleaseId": "",
+      "runIds": [
+        "001896ec-f23f-4c00-8f0e-7d3dbcf06b3b"
+      ],
+      "files": {
+        "index.html": "<h1>합성 비품 앱</h1><p>초기 안내</p>"
+      },
+      "resolutions": [],
+      "status": "superseded"
+    },
+    {
+      "id": "93e17e42-5280-4506-b09a-67c2748470c9",
+      "createdAt": "2026-09-21T09:58:41.582Z",
+      "title": "검색 안내 먼저 반영",
+      "baseReleaseId": "7fa6fd2a-631f-4b6e-80f2-3311f3a3bb05",
+      "runIds": [
+        "001896ec-f23f-4c00-8f0e-7d3dbcf06b3b",
+        "05765ef4-d32e-4ecc-b60d-a5c7cce952b1"
+      ],
+      "files": {
+        "index.html": "<h1>합성 비품 앱</h1><p>신청 검색 안내가 추가되었습니다.</p>"
+      },
+      "resolutions": [],
+      "status": "active"
+    }
+  ],
+  "testResults": [],
+  "feedback": [],
+  "events": [
+    {
+      "id": "2e9cc21f-b8d9-4d3e-8747-1b05d003cf0c",
+      "at": "2026-09-21T09:58:41.508Z",
+      "actorId": "jimin",
+      "action": "prd.save",
+      "detail": "v1"
+    },
+    {
+      "id": "9cdd2171-9a0e-449c-b02b-0740fa5fb8d2",
+      "at": "2026-09-21T09:58:41.515Z",
+      "actorId": "jimin",
+      "action": "prd.approve",
+      "detail": "v1 동의"
+    },
+    {
+      "id": "8ea97eac-aee4-44a2-b451-6452707b995f",
+      "at": "2026-09-21T09:58:41.522Z",
+      "actorId": "jimin",
+      "action": "story.save",
+      "detail": "초기 안내 화면"
+    },
+    {
+      "id": "c955ac3e-8fec-406b-9761-12098b98b1a7",
+      "at": "2026-09-21T09:58:41.528Z",
+      "actorId": "jimin",
+      "action": "run.start",
+      "detail": "1개 수동 ChatGPT 작업 시작"
+    },
+    {
+      "id": "f1c1975b-36e9-4010-87c9-2540e98c0de0",
+      "at": "2026-09-21T09:58:41.534Z",
+      "actorId": "jimin",
+      "action": "run.submit",
+      "detail": "초기 안내 화면"
+    },
+    {
+      "id": "75386c96-16f6-4779-aeda-3a503e5704ad",
+      "at": "2026-09-21T09:58:41.541Z",
+      "actorId": "jimin",
+      "action": "release.create",
+      "detail": "기준 화면"
+    },
+    {
+      "id": "3cf838c8-c15d-470b-a894-bf644ba45646",
+      "at": "2026-09-21T09:58:41.548Z",
+      "actorId": "jimin",
+      "action": "story.save",
+      "detail": "신청 검색 안내"
+    },
+    {
+      "id": "3afd1a74-05c0-4a20-bff2-9e5934bce5d9",
+      "at": "2026-09-21T09:58:41.555Z",
+      "actorId": "jimin",
+      "action": "story.save",
+      "detail": "품목 합계 안내"
+    },
+    {
+      "id": "05e3d9f7-ae74-49e0-85ff-fac01078174b",
+      "at": "2026-09-21T09:58:41.563Z",
+      "actorId": "jimin",
+      "action": "run.start",
+      "detail": "2개 수동 ChatGPT 작업 시작"
+    },
+    {
+      "id": "41341ca5-7d49-4bd6-b8cb-67ff5107ca9f",
+      "at": "2026-09-21T09:58:41.569Z",
+      "actorId": "jimin",
+      "action": "run.submit",
+      "detail": "신청 검색 안내"
+    },
+    {
+      "id": "8d1b9264-1758-4961-8ca7-9529ec661e87",
+      "at": "2026-09-21T09:58:41.575Z",
+      "actorId": "jimin",
+      "action": "run.submit",
+      "detail": "품목 합계 안내"
+    },
+    {
+      "id": "e29edcdf-157c-493c-9e2b-37580d7b7518",
+      "at": "2026-09-21T09:58:41.582Z",
+      "actorId": "jimin",
+      "action": "release.create",
+      "detail": "검색 안내 먼저 반영"
+    }
+  ],
+  "updatedAt": "2026-09-21T09:58:41.582Z"
+}

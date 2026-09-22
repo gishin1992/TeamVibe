@@ -1,0 +1,29 @@
+{
+  "at": "2026-09-21T10:37:18.072Z",
+  "checks": [
+    {
+      "name": "npm run typecheck followed by npm test",
+      "exitCode": 0,
+      "evidence": "test-workflow-guidance.log"
+    },
+    {
+      "name": "Sites portable build-site.mjs",
+      "session": 52994,
+      "exitCode": 0
+    }
+  ],
+  "sourceHashes": {
+    "components/workspace.tsx": "5e97ae7ff9d31a392c706ee7d1452a797e351b5840bae2f7eca93ae41db039f5",
+    "lib/teamvibe/workflow.ts": "31c5329c91e257bfc3719c723bf317554c79b51ae49a6ba8631efd25e5508cb2",
+    "tests/workflow-guidance.mjs": "1fb9604e7c22ffdee9e6eff2c62c17e70f16e1f5a7ed0bc667f74ee83d7c5d45",
+    "scripts/test.mjs": "19bf5bc4175030295c054e49d424a4c87da7c1397aa662778ffae148c46b5da5"
+  },
+  "notes": [
+    "최종 제품 코드 뒤 전체 테스트·타입 검사·빌드 통과. 이후 문서와 증거만 갱신",
+    "실제 UI 결과: workflow-browser-result.json 및 최종 서버 스냅샷",
+    "lint 미재실행",
+    "워크플로 안내는 서버 권한/동의/완료 검증을 대체하지 않는 읽기 기반 정보",
+    "기본 시연 완료 상태의 개요가 검증 결과 보기로 안내함도 UI 확인",
+    "외부 ChatGPT 호출/공개 없음"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "batchId": "synthetic-requirements-ea4cd038-b936-4bc4-8ffc-edb66ad8e2e6",
+  "projectId": "92ca2f8b-6f8c-40be-b5c1-67b4ae415e2a",
+  "projectVersion": 10,
+  "source": "Codex 로컬 합성 응답 · 실제 ChatGPT 호출 없음",
+  "requirements": [
+    {
+      "key": "edit-request",
+      "title": "신청 수정과 취소",
+      "description": "신청자는 자신의 신청을 수정하거나 취소하고 변경된 상태를 확인한다.",
+      "priority": "must",
+      "status": "proposed",
+      "reviewNote": "수정 가능 시점과 항목을 검토한다.",
+      "sourceRefs": [
+        {
+          "messageId": "4e049043-1f13-4548-9c34-40f2611e5869",
+          "revision": 1
+        }
+      ]
+    },
+    {
+      "key": "cancel-conflict",
+      "title": "승인 후 취소 가능 범위",
+      "description": "승인 이후 취소 허용 여부와 담당자 확인 절차를 결정한다.",
+      "priority": "should",
+      "status": "conflict",
+      "reviewNote": "승인 전까지만 취소할지, 승인 후에도 담당자 확인으로 허용할지 결정해야 한다. 취소 이유 기록 범위도 확인한다.",
+      "sourceRefs": [
+        {
+          "messageId": "4e049043-1f13-4548-9c34-40f2611e5869",
+          "revision": 1
+        },
+        {
+          "messageId": "29e8f04c-8972-4713-b4ea-f43b7126a869",
+          "revision": 1
+        }
+      ]
+    }
+  ]
+}

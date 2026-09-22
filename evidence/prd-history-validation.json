@@ -1,0 +1,54 @@
+{
+  "at": "2026-09-21T12:50:34.259Z",
+  "typecheck": {
+    "session": 6880,
+    "exitCode": 0
+  },
+  "tests": {
+    "session": 6880,
+    "exitCode": 0,
+    "log": "evidence/test-prd-history.log"
+  },
+  "build": {
+    "session": 26137,
+    "exitCode": 0,
+    "command": "node /Users/takykim/.codex/plugins/cache/openai-curated-remote/sites/0.1.65/scripts/build-site.mjs"
+  },
+  "browser": {
+    "observations": 9,
+    "positive": 8,
+    "initialAssertionFailures": 1,
+    "resolved": true,
+    "note": "Names and review states were rendered on separate lines. Original false observation retained; same captured DOM normalized and reassessed, and server approvals independently verified empty.",
+    "evidence": "evidence/prd-history-browser-result.json"
+  },
+  "server": {
+    "at": "2026-09-21T12:48:42.863Z",
+    "projectId": "1889c9df-10b4-4462-a931-8fc2643485fd",
+    "restoredRevision": 3,
+    "sourceRevision": 1,
+    "restoredBy": "jimin",
+    "currentApprovals": 0,
+    "previousBodyAndWriterPreserved": true,
+    "olderHistoryEntriesUnchanged": true,
+    "requirementsUnchanged": true,
+    "noStoriesOrTestsCreated": true
+  },
+  "sourceHashes": {
+    "lib/teamvibe/types.ts": "5ca86199b06b098b17890c5f4d1fc251199adb8943eeee166b1e503f5365935a",
+    "lib/teamvibe/domain.ts": "c1e3bc218e7f585904c614ee2876067151938e8d33de0b82846b7386fdb436e4",
+    "components/prd-history.tsx": "566992747877667d6a84cdb99444f55f31121602d059d0c4127d9cf7e1a70797",
+    "components/workspace.tsx": "222c6460a170dbc409cbeebbb8825cc0e2c00d1bd72c42917e7f7d7a644a5416",
+    "app/globals.css": "dd6bb048c0713c616b375633079c21881042ce5bbd25518d3da532ae2b13e704",
+    "tests/prd-history.mjs": "746b8f6e5971cf171ed7e5b36501933d927f81b960a4b0fd7591993a00e3d13c",
+    "scripts/prepare-prd-history-demo.mjs": "aa1de7dbaec037b88780b45968d14f6ab207740c91e513267ce298080b2dbf28",
+    "scripts/test.mjs": "f68a570b2ecbebe930a16be0588fd9c16a66fbadd1ae8b552480234980fd853d"
+  },
+  "limits": [
+    "Only version-saving and archival authors, not sentence-level coauthorship",
+    "Historical author/time unknown when absent, no retroactive reconstruction",
+    "Restoration copies text to current requirements basis and requires manual review and renewed approval",
+    "No actual generated business app execution in this fixture",
+    "No external AI call, publish, or physical deletion"
+  ]
+}

@@ -1,0 +1,455 @@
+{
+  "id": "d8195b22-80fd-43b6-8fe9-1c4e4c1deb83",
+  "createdAt": "2026-09-21T09:02:50.176Z",
+  "name": "비품 신청 · 팀 협업 시연",
+  "description": "세 팀원의 아이디어로 만드는 합성 비품 신청 웹 앱",
+  "goal": "하나의 브라우저 실행 세션에서 품목·수량을 신청하고 수정·취소할 수 있는 화면을 팀이 합의·분할·통합·검증한다. 실제 업무 데이터와 외부 전송은 사용하지 않는다.",
+  "inviteCode": "11bda62b8cd9",
+  "ownerId": "jimin",
+  "members": [
+    "jimin",
+    "seoyeon",
+    "hyunwoo"
+  ],
+  "version": 28,
+  "conversations": [
+    {
+      "id": "50e878df-1b93-457c-8fb1-f4a99fffedf9",
+      "createdAt": "2026-09-21T09:02:50.200Z",
+      "title": "팀의 범위 정하기",
+      "ownerId": "jimin",
+      "messages": [
+        {
+          "id": "cf228534-1729-4629-90a2-40d9fb815558",
+          "createdAt": "2026-09-21T09:02:50.208Z",
+          "authorId": "jimin",
+          "kind": "user",
+          "text": "이번 시연은 합성 데이터로 신청부터 수정과 취소까지 한 번의 실행 세션에서 확인해요. 서버 저장은 다음 단계로 두겠습니다.",
+          "source": ""
+        },
+        {
+          "id": "2a81f83b-febe-470c-82f3-020a437e26c0",
+          "createdAt": "2026-09-21T09:02:50.208Z",
+          "authorId": "guide",
+          "kind": "guide",
+          "text": "로컬 진행 도우미: 이 기능은 누가 사용하나요? 성공한 상태와 예외 상황, 수정·취소 규칙도 적어 주세요. 더 깊이 논의하려면 ChatGPT 작업 묶음을 복사하고 응답을 가져오세요."
+        }
+      ]
+    },
+    {
+      "id": "b743b2a2-4b4e-43c0-b3ea-506e110785c5",
+      "createdAt": "2026-09-21T09:02:50.214Z",
+      "title": "신청자의 관점",
+      "ownerId": "seoyeon",
+      "messages": [
+        {
+          "id": "60e0563d-4447-4f25-9097-8b698b6a2eb4",
+          "createdAt": "2026-09-21T09:02:50.222Z",
+          "authorId": "seoyeon",
+          "kind": "user",
+          "text": "품목과 수량을 입력하고 목록에서 바로 확인하고 싶어요. 잘못 입력했으면 수정하고 필요 없어지면 취소할 수 있으면 좋겠어요.",
+          "source": ""
+        },
+        {
+          "id": "9d08e87d-1edb-413a-8d27-cdcf6e2cc807",
+          "createdAt": "2026-09-21T09:02:50.222Z",
+          "authorId": "guide",
+          "kind": "guide",
+          "text": "로컬 진행 도우미: 이 기능은 누가 사용하나요? 성공한 상태와 예외 상황, 수정·취소 규칙도 적어 주세요. 더 깊이 논의하려면 ChatGPT 작업 묶음을 복사하고 응답을 가져오세요."
+        }
+      ]
+    },
+    {
+      "id": "84e4c8b6-936a-4212-95ef-895d8045fc0f",
+      "createdAt": "2026-09-21T09:02:50.229Z",
+      "title": "독립 작업으로 나누기",
+      "ownerId": "hyunwoo",
+      "messages": [
+        {
+          "id": "3a785de7-7f42-4f02-8216-3d2a6ff63726",
+          "createdAt": "2026-09-21T09:02:50.237Z",
+          "authorId": "hyunwoo",
+          "kind": "user",
+          "text": "화면 동작은 index.html과 app.js에서 만들고, 반응형 스타일은 styles.css에서 별도 작업하면 충돌 없이 병렬로 진행할 수 있어요.",
+          "source": ""
+        },
+        {
+          "id": "bf87c204-d53c-4dfd-ae82-b320451e9833",
+          "createdAt": "2026-09-21T09:02:50.237Z",
+          "authorId": "guide",
+          "kind": "guide",
+          "text": "로컬 진행 도우미: 이 기능은 누가 사용하나요? 성공한 상태와 예외 상황, 수정·취소 규칙도 적어 주세요. 더 깊이 논의하려면 ChatGPT 작업 묶음을 복사하고 응답을 가져오세요."
+        }
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "id": "49615595-69d0-4282-a527-50323a39c638",
+      "createdAt": "2026-09-21T09:02:50.244Z",
+      "title": "합성 비품 신청·수정·취소",
+      "description": "사용자는 품목과 1 이상의 수량을 입력한다. 현재 실행 중인 목록에서 신청을 수정하거나 취소할 수 있다.",
+      "priority": "must",
+      "status": "accepted",
+      "sourceIds": [
+        "60e0563d-4447-4f25-9097-8b698b6a2eb4"
+      ],
+      "decision": "서버 저장은 이번 시연 범위에서 제외한다. 빈 품목과 0 이하 수량은 거절하고, 사용자 입력을 텍스트로 표시한다."
+    },
+    {
+      "id": "6f0ebf7d-e02b-4527-a127-bec1bba070a8",
+      "createdAt": "2026-09-21T09:02:50.251Z",
+      "title": "읽기 쉬운 반응형 화면",
+      "description": "데스크톱과 390px 모바일 폭에서 신청 폼과 목록을 읽고 사용할 수 있다.",
+      "priority": "must",
+      "status": "accepted",
+      "sourceIds": [
+        "3a785de7-7f42-4f02-8216-3d2a6ff63726"
+      ],
+      "decision": "CSS는 styles.css에서 독립 개발하고 마크업 파일을 수정하지 않는다."
+    }
+  ],
+  "prd": {
+    "body": "# 비품 신청 · 팀 협업 시연\n\n## 해결할 문제\n세 팀원의 아이디어로 만드는 합성 비품 신청 웹 앱\n\n## 목표\n하나의 브라우저 실행 세션에서 품목·수량을 신청하고 수정·취소할 수 있는 화면을 팀이 합의·분할·통합·검증한다. 실제 업무 데이터와 외부 전송은 사용하지 않는다.\n\n## 대상 사용자\n프로젝트 팀이 검토하여 사용자와 권한을 구체화하세요.\n\n## 기능 요구사항\n### 1. 합성 비품 신청·수정·취소\n사용자는 품목과 1 이상의 수량을 입력한다. 현재 실행 중인 목록에서 신청을 수정하거나 취소할 수 있다.\n- 우선순위: must\n- 검토 상태: accepted\n- 결정: 서버 저장은 이번 시연 범위에서 제외한다. 빈 품목과 0 이하 수량은 거절하고, 사용자 입력을 텍스트로 표시한다.\n\n### 2. 읽기 쉬운 반응형 화면\n데스크톱과 390px 모바일 폭에서 신청 폼과 목록을 읽고 사용할 수 있다.\n- 우선순위: must\n- 검토 상태: accepted\n- 결정: CSS는 styles.css에서 독립 개발하고 마크업 파일을 수정하지 않는다.\n\n## 완료 및 테스트 기준\n각 요구사항의 정상 흐름, 빈 상태, 오류 상태, 수정과 취소/삭제를 확인합니다.\n\n## 범위와 제약\n로컬 테스트 환경, 합성 데이터만 사용합니다. 외부 연계는 별도 합의 후 진행합니다.\n\n## 미결정 사항\n현재 등록된 미결정 사항 없음\n",
+    "revision": 1,
+    "approvals": [
+      "jimin",
+      "seoyeon",
+      "hyunwoo"
+    ],
+    "history": [
+      {
+        "revision": 0,
+        "body": "",
+        "at": "2026-09-21T09:02:50.259Z",
+        "authorId": "jimin"
+      }
+    ],
+    "sourceRevision": 2
+  },
+  "stories": [
+    {
+      "id": "5047f835-05e9-4deb-9f39-c834407c44d9",
+      "createdAt": "2026-09-21T09:02:50.286Z",
+      "title": "신청 폼과 목록 동작",
+      "description": "직원은 품목·수량으로 신청하고, 목록에서 수정·취소한다. index.html과 app.js만 작성한다.",
+      "acceptance": [
+        "정상 품목과 수량이 목록에 표시된다.",
+        "신청 수정과 취소가 같은 실행 세션에서 반영된다.",
+        "빈 품목과 0 수량 신청은 등록되지 않는다."
+      ],
+      "tests": [
+        "합성 키보드 2개 등록 후 목록 표시 확인",
+        "합성 마우스 3개로 수정한 결과 확인",
+        "취소 후 해당 신청이 목록에서 제거됨 확인",
+        "품목 공백 또는 수량 0의 등록 차단 확인"
+      ],
+      "dependencies": [],
+      "requirementIds": [
+        "49615595-69d0-4282-a527-50323a39c638"
+      ],
+      "ownerId": "hyunwoo",
+      "status": "done",
+      "prdRevision": 1
+    },
+    {
+      "id": "a523e397-0cdf-4a8a-a9b4-843bc9738270",
+      "createdAt": "2026-09-21T09:02:50.293Z",
+      "title": "신청 화면 반응형 스타일",
+      "description": "styles.css만 작성한다. 마크업과 동작 변경 없이 폼·버튼·목록의 배치를 다듬는다.",
+      "acceptance": [
+        "모바일에서도 폼과 목록에 가로 넘침이 없다.",
+        "데스크톱에서 제목과 신청 버튼이 읽기 쉽게 표시된다."
+      ],
+      "tests": [
+        "390px 모바일에서 폼과 목록 표시 및 가로 넘침 확인",
+        "1440px 데스크톱에서 실제 스타일 적용과 텍스트 표시 확인"
+      ],
+      "dependencies": [],
+      "requirementIds": [
+        "6f0ebf7d-e02b-4527-a127-bec1bba070a8"
+      ],
+      "ownerId": "jimin",
+      "status": "done",
+      "prdRevision": 1
+    }
+  ],
+  "runs": [
+    {
+      "id": "3a28ae8b-8005-4ed3-aed2-22e358ef7c4a",
+      "createdAt": "2026-09-21T09:02:50.301Z",
+      "storyId": "5047f835-05e9-4deb-9f39-c834407c44d9",
+      "title": "신청 폼과 목록 동작",
+      "status": "integrated",
+      "prompt": "TeamVibe 개발 작업 — 신청 폼과 목록 동작\n프로젝트: 비품 신청 · 팀 협업 시연\n스토리 ID: 5047f835-05e9-4deb-9f39-c834407c44d9\nPRD 버전: 1\n\n직원은 품목·수량으로 신청하고, 목록에서 수정·취소한다. index.html과 app.js만 작성한다.\n\n완료 조건:\n- 정상 품목과 수량이 목록에 표시된다.\n- 신청 수정과 취소가 같은 실행 세션에서 반영된다.\n- 빈 품목과 0 수량 신청은 등록되지 않는다.\n\n테스트 기준:\n- 합성 키보드 2개 등록 후 목록 표시 확인\n- 합성 마우스 3개로 수정한 결과 확인\n- 취소 후 해당 신청이 목록에서 제거됨 확인\n- 품목 공백 또는 수량 0의 등록 차단 확인\n\n의존 스토리: 없음\n\n공동 PRD:\n# 비품 신청 · 팀 협업 시연\n\n## 해결할 문제\n세 팀원의 아이디어로 만드는 합성 비품 신청 웹 앱\n\n## 목표\n하나의 브라우저 실행 세션에서 품목·수량을 신청하고 수정·취소할 수 있는 화면을 팀이 합의·분할·통합·검증한다. 실제 업무 데이터와 외부 전송은 사용하지 않는다.\n\n## 대상 사용자\n프로젝트 팀이 검토하여 사용자와 권한을 구체화하세요.\n\n## 기능 요구사항\n### 1. 합성 비품 신청·수정·취소\n사용자는 품목과 1 이상의 수량을 입력한다. 현재 실행 중인 목록에서 신청을 수정하거나 취소할 수 있다.\n- 우선순위: must\n- 검토 상태: accepted\n- 결정: 서버 저장은 이번 시연 범위에서 제외한다. 빈 품목과 0 이하 수량은 거절하고, 사용자 입력을 텍스트로 표시한다.\n\n### 2. 읽기 쉬운 반응형 화면\n데스크톱과 390px 모바일 폭에서 신청 폼과 목록을 읽고 사용할 수 있다.\n- 우선순위: must\n- 검토 상태: accepted\n- 결정: CSS는 styles.css에서 독립 개발하고 마크업 파일을 수정하지 않는다.\n\n## 완료 및 테스트 기준\n각 요구사항의 정상 흐름, 빈 상태, 오류 상태, 수정과 취소/삭제를 확인합니다.\n\n## 범위와 제약\n로컬 테스트 환경, 합성 데이터만 사용합니다. 외부 연계는 별도 합의 후 진행합니다.\n\n## 미결정 사항\n현재 등록된 미결정 사항 없음\n\n\n반환 형식: JSON 객체 {\"files\":{\"index.html\":\"...\",\"styles.css\":\"...\",\"app.js\":\"...\"},\"log\":\"실제 수행한 작업과 검증 결과\",\"source\":\"ChatGPT 세션 식별용 제목 또는 로컬 로그 파일명\"}. 필요한 파일만 포함하고 다른 작업 파일과 경로를 합의하세요. 외부 URL, 라이브러리 CDN, 서버 실행, 결제, 실제 데이터는 사용하지 마세요. 브라우저에서 실행되는 HTML/CSS/JS와 합성 데이터만 만드세요. 테스트하지 않았다면 반드시 명시하세요. 팀은 결과를 수동 반입하고 충돌을 검토한 뒤 격리된 브라우저에서 테스트합니다.",
+      "files": {
+        "index.html": "<!doctype html><html lang=\"ko\"><head><title>팀 비품 신청</title><link rel=\"stylesheet\" href=\"styles.css\"></head><body><main><h1>팀 비품 신청</h1><p>합성 테스트 시스템</p><form id=\"request-form\"><label>품목<input id=\"item\" required></label><label>수량<input id=\"quantity\" type=\"number\" min=\"1\" value=\"1\" required></label><button type=\"submit\">신청하기</button></form><p id=\"status\" role=\"status\"></p><ul id=\"requests\"></ul></main><script src=\"app.js\"></script></body></html>",
+        "app.js": "const form=document.querySelector('#request-form');const requests=document.querySelector('#requests');form.addEventListener('submit',e=>{e.preventDefault();const item=document.querySelector('#item');const qty=document.querySelector('#quantity');if(!item.value.trim()||Number(qty.value)<1)return;const li=document.createElement('li');const label=document.createElement('span');label.textContent=item.value+' · '+qty.value+'개 · 승인 대기';li.append(label);const edit=document.createElement('button');edit.textContent='수정';edit.addEventListener('click',()=>{item.value=label.textContent.split(' · ')[0];li.remove();document.querySelector('#status').textContent='수정 후 다시 신청해 주세요.'});li.append(edit);const remove=document.createElement('button');remove.textContent='취소';remove.addEventListener('click',()=>{li.remove();document.querySelector('#status').textContent='신청을 취소했습니다.'});li.append(remove);requests.prepend(li);document.querySelector('#status').textContent='신청을 등록했습니다.';form.reset()});"
+      },
+      "log": "합성 시연 코드. 실제 브라우저 검증 결과는 evidence 문서 확인.",
+      "source": "TeamVibe 합성 샘플",
+      "prdRevision": 1
+    },
+    {
+      "id": "48e707e6-c9df-470a-bec1-4f2650b82a9c",
+      "createdAt": "2026-09-21T09:02:50.301Z",
+      "storyId": "a523e397-0cdf-4a8a-a9b4-843bc9738270",
+      "title": "신청 화면 반응형 스타일",
+      "status": "integrated",
+      "prompt": "TeamVibe 개발 작업 — 신청 화면 반응형 스타일\n프로젝트: 비품 신청 · 팀 협업 시연\n스토리 ID: a523e397-0cdf-4a8a-a9b4-843bc9738270\nPRD 버전: 1\n\nstyles.css만 작성한다. 마크업과 동작 변경 없이 폼·버튼·목록의 배치를 다듬는다.\n\n완료 조건:\n- 모바일에서도 폼과 목록에 가로 넘침이 없다.\n- 데스크톱에서 제목과 신청 버튼이 읽기 쉽게 표시된다.\n\n테스트 기준:\n- 390px 모바일에서 폼과 목록 표시 및 가로 넘침 확인\n- 1440px 데스크톱에서 실제 스타일 적용과 텍스트 표시 확인\n\n의존 스토리: 없음\n\n공동 PRD:\n# 비품 신청 · 팀 협업 시연\n\n## 해결할 문제\n세 팀원의 아이디어로 만드는 합성 비품 신청 웹 앱\n\n## 목표\n하나의 브라우저 실행 세션에서 품목·수량을 신청하고 수정·취소할 수 있는 화면을 팀이 합의·분할·통합·검증한다. 실제 업무 데이터와 외부 전송은 사용하지 않는다.\n\n## 대상 사용자\n프로젝트 팀이 검토하여 사용자와 권한을 구체화하세요.\n\n## 기능 요구사항\n### 1. 합성 비품 신청·수정·취소\n사용자는 품목과 1 이상의 수량을 입력한다. 현재 실행 중인 목록에서 신청을 수정하거나 취소할 수 있다.\n- 우선순위: must\n- 검토 상태: accepted\n- 결정: 서버 저장은 이번 시연 범위에서 제외한다. 빈 품목과 0 이하 수량은 거절하고, 사용자 입력을 텍스트로 표시한다.\n\n### 2. 읽기 쉬운 반응형 화면\n데스크톱과 390px 모바일 폭에서 신청 폼과 목록을 읽고 사용할 수 있다.\n- 우선순위: must\n- 검토 상태: accepted\n- 결정: CSS는 styles.css에서 독립 개발하고 마크업 파일을 수정하지 않는다.\n\n## 완료 및 테스트 기준\n각 요구사항의 정상 흐름, 빈 상태, 오류 상태, 수정과 취소/삭제를 확인합니다.\n\n## 범위와 제약\n로컬 테스트 환경, 합성 데이터만 사용합니다. 외부 연계는 별도 합의 후 진행합니다.\n\n## 미결정 사항\n현재 등록된 미결정 사항 없음\n\n\n반환 형식: JSON 객체 {\"files\":{\"index.html\":\"...\",\"styles.css\":\"...\",\"app.js\":\"...\"},\"log\":\"실제 수행한 작업과 검증 결과\",\"source\":\"ChatGPT 세션 식별용 제목 또는 로컬 로그 파일명\"}. 필요한 파일만 포함하고 다른 작업 파일과 경로를 합의하세요. 외부 URL, 라이브러리 CDN, 서버 실행, 결제, 실제 데이터는 사용하지 마세요. 브라우저에서 실행되는 HTML/CSS/JS와 합성 데이터만 만드세요. 테스트하지 않았다면 반드시 명시하세요. 팀은 결과를 수동 반입하고 충돌을 검토한 뒤 격리된 브라우저에서 테스트합니다.",
+      "files": {
+        "styles.css": "*{box-sizing:border-box}body{margin:0;background:#f4f7fc;color:#25334e;font:16px/1.7 Arial,sans-serif}main{max-width:760px;margin:55px auto;padding:30px}h1{font-size:30px}p{color:#7d8ca4}form{display:flex;gap:15px;flex-wrap:wrap;padding:25px;background:white;border:1px solid #e0e7f2;border-radius:12px}label{display:flex;flex-direction:column;font-size:14px;gap:7px;flex:1}input{font:inherit;padding:10px;border:1px solid #dce3ee;border-radius:7px;min-width:120px;width:100%}button{font:inherit;padding:9px 15px;border:0;border-radius:7px;background:#365cec;color:white;cursor:pointer;align-self:end}li{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding:18px;background:white;border-radius:8px;margin:12px 0}li span{flex:1}ul{list-style:none;padding:0}li button{font-size:13px;background:#edf2ff;color:#506ec6}"
+      },
+      "log": "합성 시연 스타일. 실제 브라우저 검증 결과는 evidence 문서 확인.",
+      "source": "TeamVibe 합성 샘플",
+      "prdRevision": 1
+    }
+  ],
+  "releases": [
+    {
+      "id": "355ed837-683e-41be-8baa-1d9717efb9b6",
+      "createdAt": "2026-09-21T09:03:34.310Z",
+      "title": "비품 신청 시연 v1",
+      "runIds": [
+        "3a28ae8b-8005-4ed3-aed2-22e358ef7c4a",
+        "48e707e6-c9df-470a-bec1-4f2650b82a9c"
+      ],
+      "files": {
+        "index.html": "<!doctype html><html lang=\"ko\"><head><title>팀 비품 신청</title><link rel=\"stylesheet\" href=\"styles.css\"></head><body><main><h1>팀 비품 신청</h1><p>합성 테스트 시스템</p><form id=\"request-form\"><label>품목<input id=\"item\" required></label><label>수량<input id=\"quantity\" type=\"number\" min=\"1\" value=\"1\" required></label><button type=\"submit\">신청하기</button></form><p id=\"status\" role=\"status\"></p><ul id=\"requests\"></ul></main><script src=\"app.js\"></script></body></html>",
+        "app.js": "const form=document.querySelector('#request-form');const requests=document.querySelector('#requests');form.addEventListener('submit',e=>{e.preventDefault();const item=document.querySelector('#item');const qty=document.querySelector('#quantity');if(!item.value.trim()||Number(qty.value)<1)return;const li=document.createElement('li');const label=document.createElement('span');label.textContent=item.value+' · '+qty.value+'개 · 승인 대기';li.append(label);const edit=document.createElement('button');edit.textContent='수정';edit.addEventListener('click',()=>{item.value=label.textContent.split(' · ')[0];li.remove();document.querySelector('#status').textContent='수정 후 다시 신청해 주세요.'});li.append(edit);const remove=document.createElement('button');remove.textContent='취소';remove.addEventListener('click',()=>{li.remove();document.querySelector('#status').textContent='신청을 취소했습니다.'});li.append(remove);requests.prepend(li);document.querySelector('#status').textContent='신청을 등록했습니다.';form.reset()});",
+        "styles.css": "*{box-sizing:border-box}body{margin:0;background:#f4f7fc;color:#25334e;font:16px/1.7 Arial,sans-serif}main{max-width:760px;margin:55px auto;padding:30px}h1{font-size:30px}p{color:#7d8ca4}form{display:flex;gap:15px;flex-wrap:wrap;padding:25px;background:white;border:1px solid #e0e7f2;border-radius:12px}label{display:flex;flex-direction:column;font-size:14px;gap:7px;flex:1}input{font:inherit;padding:10px;border:1px solid #dce3ee;border-radius:7px;min-width:120px;width:100%}button{font:inherit;padding:9px 15px;border:0;border-radius:7px;background:#365cec;color:white;cursor:pointer;align-self:end}li{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding:18px;background:white;border-radius:8px;margin:12px 0}li span{flex:1}ul{list-style:none;padding:0}li button{font-size:13px;background:#edf2ff;color:#506ec6}"
+      },
+      "status": "active"
+    }
+  ],
+  "testResults": [
+    {
+      "id": "4284b74e-2d73-4e69-b81a-6fec9960f198",
+      "createdAt": "2026-09-21T09:04:02.068Z",
+      "releaseId": "355ed837-683e-41be-8baa-1d9717efb9b6",
+      "coverage": [
+        "5047f835-05e9-4deb-9f39-c834407c44d9:0",
+        "5047f835-05e9-4deb-9f39-c834407c44d9:1",
+        "5047f835-05e9-4deb-9f39-c834407c44d9:2",
+        "5047f835-05e9-4deb-9f39-c834407c44d9:3"
+      ],
+      "title": "신청 폼과 목록 동작 실검증",
+      "steps": "키보드 2개 등록 → 수정 버튼으로 마우스 3개 재등록 → 취소 → 공백 품목 제출 → 수량 0 제출",
+      "expected": "등록·수정한 품목/수량이 표시되고 취소 시 제거된다. 잘못된 입력으로 항목이 추가되지 않는다.",
+      "actual": "[\n  {\n    \"step\": \"등록\",\n    \"observed\": \"합성 키보드 · 2개 · 승인 대기\\n수정\\n취소\"\n  },\n  {\n    \"step\": \"수정\",\n    \"observed\": \"합성 마우스 · 3개 · 승인 대기\\n수정\\n취소\"\n  },\n  {\n    \"step\": \"취소\",\n    \"observed\": \"\",\n    \"message\": \"신청을 취소했습니다.\"\n  },\n  {\n    \"step\": \"공백 품목 차단\",\n    \"observed\": \"\"\n  },\n  {\n    \"step\": \"0 수량 차단\",\n    \"observed\": \"\"\n  }\n]\n실제 인앱 브라우저 iframe에서 수행. evidence/demo-browser-steps.json에 관찰 결과 보존.",
+      "status": "passed",
+      "authorId": "jimin",
+      "kind": "manual"
+    },
+    {
+      "id": "3942db32-f75f-4596-954c-39a237aa58d9",
+      "createdAt": "2026-09-21T09:06:55.298Z",
+      "releaseId": "355ed837-683e-41be-8baa-1d9717efb9b6",
+      "coverage": [
+        "a523e397-0cdf-4a8a-a9b4-843bc9738270:0",
+        "a523e397-0cdf-4a8a-a9b4-843bc9738270:1"
+      ],
+      "title": "모바일·데스크톱 반응형 실검증",
+      "steps": "인앱 브라우저 뷰포트를 390×844로 설정하고 합성 모니터 1개를 실제 신청했다. 폼·목록 표시 및 문서 너비를 확인한 뒤 1440×1000으로 바꿔 스타일과 텍스트 표시를 확인했다.",
+      "expected": "모바일에서는 폼과 신청 목록을 읽고 사용할 수 있고 가로 넘침이 없다. 데스크톱에는 통합한 CSS 스타일이 적용된다.",
+      "actual": "모바일 폼 제출 후 합성 모니터 · 1개 · 승인 대기 목록이 표시됨. 페이지 너비 390/390px, iframe 문서 너비 356/356px로 가로 넘침 없음. 데스크톱 폼은 가로 배열과 보라색 신청 버튼으로 표시됨. evidence/screenshots/demo-mobile-form-list.png, demo-desktop-form-list.png 및 실제 CUA 세션 로그 보존.",
+      "status": "passed",
+      "authorId": "jimin",
+      "kind": "manual"
+    }
+  ],
+  "feedback": [],
+  "events": [
+    {
+      "id": "85c8eb54-c7dc-4507-9b3d-d4fe4ffbbd8c",
+      "at": "2026-09-21T09:02:50.184Z",
+      "actorId": "seoyeon",
+      "action": "member.join",
+      "detail": "이서연"
+    },
+    {
+      "id": "86def400-2fde-4e67-96ee-c5982c49beba",
+      "at": "2026-09-21T09:02:50.194Z",
+      "actorId": "hyunwoo",
+      "action": "member.join",
+      "detail": "박현우"
+    },
+    {
+      "id": "d7875f64-58eb-498f-8245-784319d05171",
+      "at": "2026-09-21T09:02:50.200Z",
+      "actorId": "jimin",
+      "action": "conversation.save",
+      "detail": "팀의 범위 정하기"
+    },
+    {
+      "id": "756bb09d-96bc-4bc2-b6a6-2f3be1675d8a",
+      "at": "2026-09-21T09:02:50.208Z",
+      "actorId": "jimin",
+      "action": "message.save",
+      "detail": "팀의 범위 정하기"
+    },
+    {
+      "id": "a23da0ba-ff1a-4c53-9a14-843a49505bd0",
+      "at": "2026-09-21T09:02:50.214Z",
+      "actorId": "seoyeon",
+      "action": "conversation.save",
+      "detail": "신청자의 관점"
+    },
+    {
+      "id": "88385eba-70e9-4dd9-9d1f-1df790695d1b",
+      "at": "2026-09-21T09:02:50.222Z",
+      "actorId": "seoyeon",
+      "action": "message.save",
+      "detail": "신청자의 관점"
+    },
+    {
+      "id": "98367afd-23ce-4dba-9943-c7903b4b5d14",
+      "at": "2026-09-21T09:02:50.229Z",
+      "actorId": "hyunwoo",
+      "action": "conversation.save",
+      "detail": "독립 작업으로 나누기"
+    },
+    {
+      "id": "9fbed3d9-27f7-43ce-a063-39c9faab6af3",
+      "at": "2026-09-21T09:02:50.237Z",
+      "actorId": "hyunwoo",
+      "action": "message.save",
+      "detail": "독립 작업으로 나누기"
+    },
+    {
+      "id": "4d60bbb6-6f73-4592-b2ac-16641ba6e254",
+      "at": "2026-09-21T09:02:50.244Z",
+      "actorId": "jimin",
+      "action": "requirement.save",
+      "detail": "합성 비품 신청·수정·취소"
+    },
+    {
+      "id": "4c2fee7f-6558-47f5-b299-d2ab3710c003",
+      "at": "2026-09-21T09:02:50.251Z",
+      "actorId": "jimin",
+      "action": "requirement.save",
+      "detail": "읽기 쉬운 반응형 화면"
+    },
+    {
+      "id": "753e9184-e99c-4710-8321-0a9d6dbe0bcd",
+      "at": "2026-09-21T09:02:50.259Z",
+      "actorId": "jimin",
+      "action": "prd.generate",
+      "detail": "요구사항 기반 규칙 초안"
+    },
+    {
+      "id": "833b9b49-9760-4acb-ab65-479af50952b2",
+      "at": "2026-09-21T09:02:50.266Z",
+      "actorId": "jimin",
+      "action": "prd.approve",
+      "detail": "v1 동의"
+    },
+    {
+      "id": "269bebc7-081f-4f80-9099-93eae7479445",
+      "at": "2026-09-21T09:02:50.272Z",
+      "actorId": "seoyeon",
+      "action": "prd.approve",
+      "detail": "v1 동의"
+    },
+    {
+      "id": "2373f13c-828f-4b9c-a357-facd67ea3f0f",
+      "at": "2026-09-21T09:02:50.279Z",
+      "actorId": "hyunwoo",
+      "action": "prd.approve",
+      "detail": "v1 동의"
+    },
+    {
+      "id": "7cbdde04-cd07-4eb8-911b-94012f35aa5f",
+      "at": "2026-09-21T09:02:50.286Z",
+      "actorId": "jimin",
+      "action": "story.save",
+      "detail": "신청 폼과 목록 동작"
+    },
+    {
+      "id": "6ce22d5c-419f-4cf5-96a6-87a709fc540a",
+      "at": "2026-09-21T09:02:50.293Z",
+      "actorId": "jimin",
+      "action": "story.save",
+      "detail": "신청 화면 반응형 스타일"
+    },
+    {
+      "id": "41dec8ae-e84b-4c5b-9631-31a2e96c13d7",
+      "at": "2026-09-21T09:02:50.301Z",
+      "actorId": "jimin",
+      "action": "run.start",
+      "detail": "2개 수동 ChatGPT 작업 시작"
+    },
+    {
+      "id": "0190e1f6-8cbc-4279-b199-32b92622b3d7",
+      "at": "2026-09-21T09:03:27.138Z",
+      "actorId": "jimin",
+      "action": "run.submit",
+      "detail": "신청 폼과 목록 동작"
+    },
+    {
+      "id": "671d7c79-9fef-47ba-a9dc-baa0f2c86304",
+      "at": "2026-09-21T09:03:28.344Z",
+      "actorId": "jimin",
+      "action": "run.submit",
+      "detail": "신청 화면 반응형 스타일"
+    },
+    {
+      "id": "86e30c60-93d4-48d6-bdc5-3f7ad83702df",
+      "at": "2026-09-21T09:03:34.310Z",
+      "actorId": "jimin",
+      "action": "release.create",
+      "detail": "비품 신청 시연 v1"
+    },
+    {
+      "id": "77ba0d8d-ba56-4889-956f-805b563ba3a9",
+      "at": "2026-09-21T09:04:02.068Z",
+      "actorId": "jimin",
+      "action": "test.save",
+      "detail": "신청 폼과 목록 동작 실검증"
+    },
+    {
+      "id": "387f6426-7c69-4094-a1f5-31ec7445f98b",
+      "at": "2026-09-21T09:06:55.298Z",
+      "actorId": "jimin",
+      "action": "test.save",
+      "detail": "모바일·데스크톱 반응형 실검증"
+    },
+    {
+      "id": "360be1e0-d8e1-4ada-811a-b392264414f6",
+      "at": "2026-09-21T09:07:12.366Z",
+      "actorId": "jimin",
+      "action": "story.complete",
+      "detail": "신청 폼과 목록 동작"
+    },
+    {
+      "id": "75094b03-bd6c-426e-a265-ec64be7dda27",
+      "at": "2026-09-21T09:07:12.717Z",
+      "actorId": "jimin",
+      "action": "story.complete",
+      "detail": "신청 화면 반응형 스타일"
+    },
+    {
+      "id": "439639e2-bbd8-419d-8234-47553a42877e",
+      "at": "2026-09-21T09:07:27.687Z",
+      "actorId": "jimin",
+      "action": "item.delete",
+      "detail": ""
+    },
+    {
+      "id": "f3489bb8-ed94-4423-8289-61364b5368d3",
+      "at": "2026-09-21T09:07:45.088Z",
+      "actorId": "jimin",
+      "action": "item.restore",
+      "detail": ""
+    },
+    {
+      "id": "2d1595dc-07e7-411c-b1cb-db7fd4c1429f",
+      "at": "2026-09-21T09:07:45.788Z",
+      "actorId": "jimin",
+      "action": "story.complete",
+      "detail": "신청 폼과 목록 동작"
+    }
+  ],
+  "updatedAt": "2026-09-21T09:07:45.788Z",
+  "requirementsVersion": 2
+}

@@ -1,0 +1,88 @@
+{
+  "hold": true,
+  "held": [],
+  "events": [
+    {
+      "action": "hold",
+      "id": 1,
+      "at": "2026-09-21T23:16:17.552Z",
+      "userId": "jimin",
+      "projectVersions": {
+        "93dba294-fcc1-48f9-99f5-8202fa80ba4d": 1
+      }
+    },
+    {
+      "action": "hold",
+      "id": 2,
+      "at": "2026-09-21T23:16:42.563Z",
+      "userId": "jimin",
+      "projectVersions": {
+        "93dba294-fcc1-48f9-99f5-8202fa80ba4d": 2
+      }
+    },
+    {
+      "action": "release",
+      "id": 1,
+      "at": "2026-09-21T23:16:43.017Z"
+    },
+    {
+      "action": "hold",
+      "id": 3,
+      "at": "2026-09-21T23:16:43.165Z",
+      "userId": "jimin",
+      "projectVersions": {
+        "93dba294-fcc1-48f9-99f5-8202fa80ba4d": 2
+      }
+    },
+    {
+      "action": "hold",
+      "id": 4,
+      "at": "2026-09-21T23:17:03.441Z",
+      "userId": "jimin",
+      "projectVersions": {
+        "93dba294-fcc1-48f9-99f5-8202fa80ba4d": 2
+      }
+    },
+    {
+      "action": "hold",
+      "id": 5,
+      "at": "2026-09-21T23:17:03.458Z",
+      "userId": "jimin",
+      "projectVersions": {
+        "93dba294-fcc1-48f9-99f5-8202fa80ba4d": 2
+      }
+    },
+    {
+      "action": "hold",
+      "id": 6,
+      "at": "2026-09-21T23:17:03.475Z",
+      "userId": "jimin",
+      "projectVersions": {
+        "93dba294-fcc1-48f9-99f5-8202fa80ba4d": 2
+      }
+    },
+    {
+      "action": "hold",
+      "id": 7,
+      "at": "2026-09-21T23:17:07.539Z",
+      "userId": "jimin",
+      "projectVersions": {
+        "93dba294-fcc1-48f9-99f5-8202fa80ba4d": 2
+      }
+    },
+    {
+      "action": "hold",
+      "id": 8,
+      "at": "2026-09-21T23:23:08.476Z",
+      "userId": "jimin",
+      "projectVersions": {
+        "93dba294-fcc1-48f9-99f5-8202fa80ba4d": 2
+      }
+    },
+    {
+      "action": "release",
+      "id": 8,
+      "at": "2026-09-21T23:23:21.550Z"
+    }
+  ]
+}

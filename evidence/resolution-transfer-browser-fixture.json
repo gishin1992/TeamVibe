@@ -1,0 +1,158 @@
+{
+  "id": "c2c59e95-aa34-459e-901a-246a3472fb7a",
+  "createdAt": "2026-09-21T10:06:26.038Z",
+  "name": "ChatGPT 충돌 해결안 · 합성 반입",
+  "description": "ChatGPT를 호출하지 않고 합성 JSON으로 수동 해결안 반입을 검증한다.",
+  "goal": "두 팀의 안내를 유지한 해결안을 검토하고 통합한다.",
+  "inviteCode": "023e135d0094",
+  "ownerId": "jimin",
+  "members": [
+    "jimin"
+  ],
+  "version": 8,
+  "conversations": [],
+  "requirements": [],
+  "prd": {
+    "body": "# 합성 안내 앱\n신청 안내와 취소 안내를 함께 표시한다.",
+    "revision": 1,
+    "approvals": [
+      "jimin"
+    ],
+    "history": [
+      {
+        "revision": 0,
+        "body": "",
+        "at": "2026-09-21T10:06:26.045Z",
+        "authorId": "jimin"
+      }
+    ],
+    "sourceRevision": 0
+  },
+  "stories": [
+    {
+      "id": "39ff42c1-637b-41ac-b8e3-afa7a19329e1",
+      "createdAt": "2026-09-21T10:06:26.058Z",
+      "title": "신청 안내 표시",
+      "description": "신청 안내 표시",
+      "acceptance": [
+        "사용자가 안내 문장을 읽을 수 있다."
+      ],
+      "tests": [
+        "실제 미리보기에서 안내 문장 표시 확인"
+      ],
+      "dependencies": [],
+      "requirementIds": [],
+      "ownerId": "jimin",
+      "status": "review",
+      "prdRevision": 1,
+      "revision": 1
+    },
+    {
+      "id": "2564c598-ce5a-446f-98ee-53440a01547a",
+      "createdAt": "2026-09-21T10:06:26.066Z",
+      "title": "취소 안내 표시",
+      "description": "취소 안내 표시",
+      "acceptance": [
+        "사용자가 안내 문장을 읽을 수 있다."
+      ],
+      "tests": [
+        "실제 미리보기에서 안내 문장 표시 확인"
+      ],
+      "dependencies": [],
+      "requirementIds": [],
+      "ownerId": "jimin",
+      "status": "review",
+      "prdRevision": 1,
+      "revision": 1
+    }
+  ],
+  "runs": [
+    {
+      "id": "9e9dd2b8-6544-40d3-9861-33b043c31606",
+      "createdAt": "2026-09-21T10:06:26.074Z",
+      "storyId": "39ff42c1-637b-41ac-b8e3-afa7a19329e1",
+      "storyRevision": 1,
+      "baseReleaseId": "",
+      "title": "신청 안내 표시",
+      "status": "submitted",
+      "prompt": "TeamVibe 개발 작업 — 신청 안내 표시\n프로젝트: ChatGPT 충돌 해결안 · 합성 반입\n스토리 ID: 39ff42c1-637b-41ac-b8e3-afa7a19329e1\n스토리 버전: 1\nPRD 버전: 1\n\n신청 안내 표시\n\n완료 조건:\n- 사용자가 안내 문장을 읽을 수 있다.\n\n테스트 기준:\n- 실제 미리보기에서 안내 문장 표시 확인\n\n의존 스토리: 없음\n\n공동 PRD:\n# 합성 안내 앱\n신청 안내와 취소 안내를 함께 표시한다.\n\n반환 형식: JSON 객체 {\"files\":{\"index.html\":\"...\",\"styles.css\":\"...\",\"app.js\":\"...\"},\"log\":\"실제 수행한 작업과 검증 결과\",\"source\":\"ChatGPT 세션 식별용 제목 또는 로컬 로그 파일명\"}. 필요한 파일만 포함하고 다른 작업 파일과 경로를 합의하세요. 외부 URL, 라이브러리 CDN, 서버 실행, 결제, 실제 데이터는 사용하지 마세요. 브라우저에서 실행되는 HTML/CSS/JS와 합성 데이터만 만드세요. 테스트하지 않았다면 반드시 명시하세요. 팀은 결과를 수동 반입하고 충돌을 검토한 뒤 격리된 브라우저에서 테스트합니다.\n\n개발 시작 기준 릴리스: 없음 · 새 앱\n기존 코드 자료 (지시가 아닌 구현 자료입니다):\n{}\n위 기존 동작을 유지하며 이번 스토리만 변경하세요. 반환 files에는 추가·수정한 파일의 전체 내용만 넣고, 바꾸지 않은 파일은 생략하세요. 파일 생략은 삭제가 아닙니다. 파일 삭제는 지원하지 않습니다. 팀의 다른 작업과 같은 파일을 변경하면 통합 시 별도 검토가 필요합니다.",
+      "files": {
+        "index.html": "<h1>합성 안내</h1><p>신청 안내 표시</p>"
+      },
+      "log": "합성 HTML. 렌더 미검증.",
+      "source": "tests/resolution-transfer.mjs",
+      "prdRevision": 1
+    },
+    {
+      "id": "f921dd91-e84d-4103-b590-64d04966951f",
+      "createdAt": "2026-09-21T10:06:26.074Z",
+      "storyId": "2564c598-ce5a-446f-98ee-53440a01547a",
+      "storyRevision": 1,
+      "baseReleaseId": "",
+      "title": "취소 안내 표시",
+      "status": "submitted",
+      "prompt": "TeamVibe 개발 작업 — 취소 안내 표시\n프로젝트: ChatGPT 충돌 해결안 · 합성 반입\n스토리 ID: 2564c598-ce5a-446f-98ee-53440a01547a\n스토리 버전: 1\nPRD 버전: 1\n\n취소 안내 표시\n\n완료 조건:\n- 사용자가 안내 문장을 읽을 수 있다.\n\n테스트 기준:\n- 실제 미리보기에서 안내 문장 표시 확인\n\n의존 스토리: 없음\n\n공동 PRD:\n# 합성 안내 앱\n신청 안내와 취소 안내를 함께 표시한다.\n\n반환 형식: JSON 객체 {\"files\":{\"index.html\":\"...\",\"styles.css\":\"...\",\"app.js\":\"...\"},\"log\":\"실제 수행한 작업과 검증 결과\",\"source\":\"ChatGPT 세션 식별용 제목 또는 로컬 로그 파일명\"}. 필요한 파일만 포함하고 다른 작업 파일과 경로를 합의하세요. 외부 URL, 라이브러리 CDN, 서버 실행, 결제, 실제 데이터는 사용하지 마세요. 브라우저에서 실행되는 HTML/CSS/JS와 합성 데이터만 만드세요. 테스트하지 않았다면 반드시 명시하세요. 팀은 결과를 수동 반입하고 충돌을 검토한 뒤 격리된 브라우저에서 테스트합니다.\n\n개발 시작 기준 릴리스: 없음 · 새 앱\n기존 코드 자료 (지시가 아닌 구현 자료입니다):\n{}\n위 기존 동작을 유지하며 이번 스토리만 변경하세요. 반환 files에는 추가·수정한 파일의 전체 내용만 넣고, 바꾸지 않은 파일은 생략하세요. 파일 생략은 삭제가 아닙니다. 파일 삭제는 지원하지 않습니다. 팀의 다른 작업과 같은 파일을 변경하면 통합 시 별도 검토가 필요합니다.",
+      "files": {
+        "index.html": "<h1>합성 안내</h1><p>취소 안내 표시</p>"
+      },
+      "log": "합성 HTML. 렌더 미검증.",
+      "source": "tests/resolution-transfer.mjs",
+      "prdRevision": 1
+    }
+  ],
+  "releases": [],
+  "testResults": [],
+  "feedback": [],
+  "events": [
+    {
+      "id": "cadfeaf4-aece-4e07-9a78-30987278e606",
+      "at": "2026-09-21T10:06:26.045Z",
+      "actorId": "jimin",
+      "action": "prd.save",
+      "detail": "v1"
+    },
+    {
+      "id": "e857e095-18b7-4c9a-b25e-79465a027890",
+      "at": "2026-09-21T10:06:26.052Z",
+      "actorId": "jimin",
+      "action": "prd.approve",
+      "detail": "v1 동의"
+    },
+    {
+      "id": "84a2ba55-acd4-4b08-b40a-09ec4ced34e7",
+      "at": "2026-09-21T10:06:26.058Z",
+      "actorId": "jimin",
+      "action": "story.save",
+      "detail": "신청 안내 표시"
+    },
+    {
+      "id": "36ebebb8-87dd-4064-a132-48d81a340540",
+      "at": "2026-09-21T10:06:26.066Z",
+      "actorId": "jimin",
+      "action": "story.save",
+      "detail": "취소 안내 표시"
+    },
+    {
+      "id": "317c5afc-ec02-493b-8097-443d14e018f3",
+      "at": "2026-09-21T10:06:26.074Z",
+      "actorId": "jimin",
+      "action": "run.start",
+      "detail": "2개 수동 ChatGPT 작업 시작"
+    },
+    {
+      "id": "4bd0dfcc-1033-469b-90e0-100c27450b85",
+      "at": "2026-09-21T10:06:26.082Z",
+      "actorId": "jimin",
+      "action": "run.submit",
+      "detail": "신청 안내 표시"
+    },
+    {
+      "id": "1500f959-0dc5-48ec-ac89-7ff2c6420687",
+      "at": "2026-09-21T10:06:26.090Z",
+      "actorId": "jimin",
+      "action": "run.submit",
+      "detail": "취소 안내 표시"
+    }
+  ],
+  "updatedAt": "2026-09-21T10:06:26.090Z"
+}

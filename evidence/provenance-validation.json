@@ -1,0 +1,32 @@
+{
+  "recordedAt": "2026-09-21T09:37:25.759Z",
+  "checks": [
+    {
+      "name": "npm test",
+      "exitCode": 0,
+      "evidence": "test-latest.log"
+    },
+    {
+      "name": "npm run typecheck",
+      "exitCode": 0,
+      "session": 71324
+    },
+    {
+      "name": "Sites 0.1.65 build-site.mjs",
+      "exitCode": 0,
+      "session": 34624
+    }
+  ],
+  "sourceHashes": {
+    "components/provenance.tsx": "513a2b592f5cf08eb08bec7b602727484b6934210a6680880b9c56654f25c5c4",
+    "components/workspace.tsx": "6b85ea09a9cf5da35dc80b361088c4afce4cb62088ff7f862e3a6f48c70b8f62",
+    "lib/teamvibe/domain.ts": "1cc1ff581cee1af03064fe238124276137357d78cf2583d36fe580133a4dfa32",
+    "lib/teamvibe/types.ts": "c86e644bc1b5f0b76b809644620609f70e523bde42200b742abf680c510e9aec",
+    "app/globals.css": "730c23321d2c5f3ab8c63e196ab194aef0cd9fef7cad67284b41fb2a27938991"
+  },
+  "notes": [
+    "실제 실행 결과를 기록한 manifest이며 테스트 실행의 대체물이 아님. 원문은 agent-sessions에 보존.",
+    "이 변경 후 lint 재실행하지 않음.",
+    "외부 등록·배포·전송 없음."
+  ]
+}

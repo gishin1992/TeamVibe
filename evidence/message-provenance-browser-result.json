@@ -1,0 +1,26 @@
+{
+  "at": "2026-09-21T09:35:50.732Z",
+  "projectId": "f46cf16f-1c0a-4941-81e0-8c82d84e53f9",
+  "observed": [
+    "요구사항 출처에서 원문 대화로 이동",
+    "UI 메시지 편집 후 v3 근거와 v4 현재 내용 비교",
+    "연결 요구사항 검토 대기 및 PRD 재검토 안내",
+    "v3 내용 복원 후 새 v5 및 과거 이력 4건 보존",
+    "메시지 휴지통 상태에서도 출처 원문 조회",
+    "메시지 복원과 요구사항 재합의 후 출처 v5 갱신",
+    "390px 모바일 출처 패널 화면 확인"
+  ],
+  "serverConfirmation": {
+    "messageRevision": 5,
+    "historyRevisions": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "sourceRevision": 5,
+    "requirementStatus": "accepted",
+    "prdApprovals": 0
+  },
+  "scope": "실제 CUA 조작 후 서버 저장 내용을 다시 조회하여 확인. 원문 메시지는 합성 데이터."
+}

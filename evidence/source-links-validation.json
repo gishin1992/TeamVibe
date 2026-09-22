@@ -1,0 +1,45 @@
+{
+  "at": "2026-09-21T11:17:42.842Z",
+  "typecheck": {
+    "exitCode": 0,
+    "session": 35033
+  },
+  "tests": {
+    "exitCode": 0,
+    "session": 35033,
+    "log": "evidence/test-requirement-sources.log"
+  },
+  "build": {
+    "exitCode": 0,
+    "session": 8748,
+    "command": "node /Users/takykim/.codex/plugins/cache/openai-curated-remote/sites/0.1.65/scripts/build-site.mjs"
+  },
+  "browser": {
+    "checks": 9,
+    "passed": true,
+    "evidence": "evidence/source-links-browser-result.json"
+  },
+  "server": {
+    "sourceHistory": 5,
+    "currentSources": 2,
+    "unchangedRequirementAfterMessageArchiveRestore": true,
+    "prdApprovals": 0
+  },
+  "sourceHashes": {
+    "lib/teamvibe/source-options.ts": "d45512c4621fd0270d792ce05b8e8e444f51be545c7141c50b9726c26fe988e9",
+    "lib/teamvibe/domain.ts": "b7b5b4188f7084e07e95a38ab13278cd5634001004ef78166d075c067737b30b",
+    "lib/teamvibe/types.ts": "39ccf0d8a4ae8b3b376e3e232e5174a4b8a1a94ee5faa58c8360ba389677450b",
+    "components/workspace.tsx": "7cac7bf10c71b816371c95ce92e86b559cc4f5596c84e4f723df150636df2e65",
+    "components/provenance.tsx": "5c046095ab423d3b61646ecd431899c90259548368cee373af812acca8bfd33e",
+    "components/form-conflict.tsx": "21c08c9633b9e4667a9ee914daeca3c8727ef4fc22e5b37a140d53e7dcd735c9",
+    "app/globals.css": "2bd871413ef50c8b626766f0e79c1f1d8881d5073800169de226e2ff96a67c16",
+    "tests/requirement-sources.mjs": "ae3a9204f104974e14ed2755f987461277f1d8711117ee6290ddab04190dac4b",
+    "scripts/test.mjs": "37170f65f8ba2753a80d0adffb0446af156fd994a5890ee9b66a14137f1d85d9",
+    "scripts/prepare-source-links-demo.mjs": "d9c93633933df37ff55c66d0c9d719920b2448b0f1d272cfaf86177f679d885c"
+  },
+  "limitations": [
+    "Source-link history starts with changes after this implementation; no invented historical snapshots.",
+    "History is read-only; reconnect through requirement editing after restoring any archived source.",
+    "No new lint run or actual ChatGPT call."
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "at": "2026-09-21T09:18:04.082Z",
+  "projectId": "d8195b22-80fd-43b6-8fe9-1c4e4c1deb83",
+  "releaseId": "355ed837-683e-41be-8baa-1d9717efb9b6",
+  "files": [
+    "index.html",
+    "app.js",
+    "styles.css"
+  ],
+  "tests": [
+    {
+      "id": "4284b74e-2d73-4e69-b81a-6fec9960f198",
+      "title": "신청 폼과 목록 동작 실검증",
+      "status": "passed",
+      "coverage": [
+        "5047f835-05e9-4deb-9f39-c834407c44d9:0",
+        "5047f835-05e9-4deb-9f39-c834407c44d9:1",
+        "5047f835-05e9-4deb-9f39-c834407c44d9:2",
+        "5047f835-05e9-4deb-9f39-c834407c44d9:3"
+      ]
+    },
+    {
+      "id": "3942db32-f75f-4596-954c-39a237aa58d9",
+      "title": "모바일·데스크톱 반응형 실검증",
+      "status": "passed",
+      "coverage": [
+        "a523e397-0cdf-4a8a-a9b4-843bc9738270:0",
+        "a523e397-0cdf-4a8a-a9b4-843bc9738270:1"
+      ]
+    }
+  ],
+  "stories": [
+    {
+      "id": "5047f835-05e9-4deb-9f39-c834407c44d9",
+      "title": "신청 폼과 목록 동작",
+      "status": "done"
+    },
+    {
+      "id": "a523e397-0cdf-4a8a-a9b4-843bc9738270",
+      "title": "신청 화면 반응형 스타일",
+      "status": "done"
+    }
+  ],
+  "note": "기존 프로젝트의 읽기 전용 내보내기. 실행 HTML은 동일한 격리 iframe을 포함한다."
+}

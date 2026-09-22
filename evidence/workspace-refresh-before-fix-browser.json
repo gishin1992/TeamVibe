@@ -1,0 +1,8 @@
+{
+  "at": "2026-09-21T23:16:52.966Z",
+  "immediateSaveObservation": false,
+  "settledNewNameObserved": true,
+  "oldNameReappearedAfterDelayedResponse": true,
+  "newNameVisibleAfterDelayedResponse": false,
+  "note": "Actual Chrome browser through local response-delay proxy. Initial immediate save probe ran before completion; settled probe confirmed the saved name before releasing the old v1 response."
+}

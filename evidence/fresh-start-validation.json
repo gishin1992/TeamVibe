@@ -1,0 +1,65 @@
+{
+  "at": "2026-09-21T11:49:27.348Z",
+  "typecheck": {
+    "session": 82636,
+    "exitCode": 0
+  },
+  "tests": {
+    "session": 82636,
+    "exitCode": 0,
+    "log": "evidence/test-local-startup.log"
+  },
+  "build": {
+    "session": 2211,
+    "exitCode": 0,
+    "command": "node /Users/takykim/.codex/plugins/cache/openai-curated-remote/sites/0.1.65/scripts/build-site.mjs"
+  },
+  "browser": {
+    "observations": 5,
+    "passed": true,
+    "evidence": "evidence/fresh-start-browser-result.json"
+  },
+  "initialization": {
+    "initialMigrationsLog": "evidence/fresh-start-db-init.log",
+    "repeatedMigrationsLog": "evidence/fresh-start-db-reinit.log",
+    "freshState": "/Users/takykim/workspace/codex/TeamVibe/.sites-runtime/fresh-start-uIT67w/state",
+    "users": 3,
+    "projects": 2,
+    "fullDataPreservedAcrossReinitDevAndBuiltRestart": true,
+    "mainDemoUnchanged": true
+  },
+  "runtime": {
+    "mainHealth": {
+      "ok": true,
+      "mode": "local",
+      "ai": "manual-chatgpt",
+      "database": "ready"
+    },
+    "temporaryPortReleased": true,
+    "temporarySessionsStopped": [
+      9473,
+      11104,
+      82593,
+      12915,
+      59875
+    ],
+    "copiedRuntimeSourcesMatch": true
+  },
+  "sourceHashes": {
+    "scripts/local-state.mjs": "67ba34d63ba40becbcfe4e62b61b136d8505bcabb1f6f833223d5a4d7cfa846e",
+    "scripts/local-runtime.mjs": "155ecc488d0ac701e14a015fe6ca309ee6ec504c8a6916c5e0eb8277845ce1ad",
+    "scripts/sites-env.mjs": "d3f0402c1a817508ab07b16647801c7d217b3b9b61d739d77b1a736713df5780",
+    "scripts/test.mjs": "84f0b05515347dbcf540a52a243197f8467378c322bec2089c19a5f0d66f7949",
+    "package.json": "136be64b9c88bd5c6eebab0919f349e15a54636992bb5f7d8a75dde17a169374",
+    "vite.config.ts": "71cdee90c908cf930557bb2a62fe56dba6167c36ccf2700863290ed59cd7ba27",
+    "app/api/[...path]/route.ts": "6fc637d5357f2740774f0b4a34f5dc8668a086ceac108ca3d987226c54f05e52",
+    "tests/local-runtime.mjs": "70beb981bdbe50a48ccde668273a0c78ec782bd64b8c60c13417394907990ad1",
+    "tests/fresh-state-preservation.mjs": "860148ce358041711f0156f65e2e367a459d9502d2ff46056180882da084805e"
+  },
+  "limitations": [
+    "Dependencies reused from the installed node_modules; no clean npm ci performed.",
+    "macOS/Node 24 only; Linux and Windows were not executed.",
+    "Same-root second dev was refused by a live lock. Copied default localhost was IPv6-only; explicit 127.0.0.1 binding verified.",
+    "No additional lint, actual ChatGPT call, or external publishing."
+  ]
+}

@@ -1,0 +1,21 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: #f4f7fc; color: #25334e; font: 16px/1.6 system-ui, sans-serif; }
+main { max-width: 800px; margin: 32px auto; padding: 24px; }
+h1 { font-size: 30px; margin: 8px 0; }
+p { color: #53617a; }
+.eyebrow { font-size: 13px; font-weight: 700; letter-spacing: .08em; color: #365cec; }
+form { display: flex; gap: 16px; flex-wrap: wrap; padding: 24px; background: white; border: 1px solid #dfe6f1; border-radius: 16px; }
+label { display: flex; flex-direction: column; font-size: 14px; gap: 8px; flex: 1 1 170px; min-width: 0; }
+input { font: inherit; padding: 11px; border: 1px solid #aebbd0; border-radius: 8px; min-width: 0; width: 100%; }
+button { font: inherit; padding: 10px 16px; border: 1px solid #365cec; border-radius: 8px; background: #365cec; color: white; cursor: pointer; }
+button:focus-visible, input:focus-visible { outline: 3px solid #7998ff; outline-offset: 3px; }
+button:disabled { opacity: .55; cursor: default; }
+[hidden] { display: none !important; }
+.actions { align-self: end; display: flex; flex-wrap: wrap; gap: 8px; }
+#cancel-edit, li button { background: white; color: #2d4cb8; }
+#status { min-height: 26px; color: #334575; }
+ul { list-style: none; padding: 0; }
+li { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; padding: 18px; background: white; border: 1px solid #dfe6f1; border-radius: 12px; margin: 12px 0; }
+li span { flex: 1 1 220px; overflow-wrap: anywhere; }
+.note { font-size: 14px; }
+@media (max-width: 480px) { main { margin: 12px auto; padding: 16px; } form { padding: 16px; } h1 { font-size: 26px; } }

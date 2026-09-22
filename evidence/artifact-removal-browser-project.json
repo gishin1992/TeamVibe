@@ -1,0 +1,235 @@
+{
+  "id": "6854f1a2-79d9-4785-90a7-9dd2fa68ee3f",
+  "createdAt": "2026-09-21T10:25:41.001Z",
+  "name": "파일 제외와 팀 변경 · 통합 검토 시연",
+  "description": "원본과 이전 릴리스를 보존하는 파일 제외 합성 시연",
+  "goal": "사용하지 않는 코드를 제외할 때 동료의 변경을 검토한다.",
+  "inviteCode": "04474239d1ba",
+  "ownerId": "jimin",
+  "members": [
+    "jimin"
+  ],
+  "version": 11,
+  "conversations": [],
+  "requirements": [],
+  "prd": {
+    "body": "# 합성 파일 정리\n새 릴리스에서 오래된 안내만 제외하고 남은 버튼 동작을 유지한다.",
+    "revision": 1,
+    "approvals": [
+      "jimin"
+    ],
+    "history": [
+      {
+        "revision": 0,
+        "body": "",
+        "at": "2026-09-21T10:25:41.007Z",
+        "authorId": "jimin"
+      }
+    ],
+    "sourceRevision": 0
+  },
+  "stories": [
+    {
+      "id": "28c7a48c-43d6-4e2a-bab0-29ebcf673f58",
+      "createdAt": "2026-09-21T10:25:41.019Z",
+      "title": "초기 안내와 카운터",
+      "description": "합성 안내 파일 정리와 보존 검사",
+      "acceptance": [
+        "선택한 코드만 새 릴리스에 적용된다."
+      ],
+      "tests": [
+        "기존 화면과 클릭 동작을 직접 확인한다."
+      ],
+      "dependencies": [],
+      "requirementIds": [],
+      "ownerId": "jimin",
+      "status": "review",
+      "prdRevision": 1,
+      "revision": 1
+    },
+    {
+      "id": "7c82cf48-05b6-4300-9502-6234426f7ea4",
+      "createdAt": "2026-09-21T10:25:41.042Z",
+      "title": "오래된 안내 제거",
+      "description": "합성 안내 파일 정리와 보존 검사",
+      "acceptance": [
+        "선택한 코드만 새 릴리스에 적용된다."
+      ],
+      "tests": [
+        "기존 화면과 클릭 동작을 직접 확인한다."
+      ],
+      "dependencies": [],
+      "requirementIds": [],
+      "ownerId": "jimin",
+      "status": "developing",
+      "prdRevision": 1,
+      "revision": 1
+    },
+    {
+      "id": "5a2ea17d-162b-4dcc-87c5-d3189fb97900",
+      "createdAt": "2026-09-21T10:25:41.049Z",
+      "title": "동료의 안내 문구 변경",
+      "description": "합성 안내 파일 정리와 보존 검사",
+      "acceptance": [
+        "선택한 코드만 새 릴리스에 적용된다."
+      ],
+      "tests": [
+        "기존 화면과 클릭 동작을 직접 확인한다."
+      ],
+      "dependencies": [],
+      "requirementIds": [],
+      "ownerId": "jimin",
+      "status": "review",
+      "prdRevision": 1,
+      "revision": 1
+    }
+  ],
+  "runs": [
+    {
+      "id": "dc413e14-c36f-42c6-9b14-9a6a5e3a9c59",
+      "createdAt": "2026-09-21T10:25:41.025Z",
+      "storyId": "28c7a48c-43d6-4e2a-bab0-29ebcf673f58",
+      "storyRevision": 1,
+      "baseReleaseId": "",
+      "title": "초기 안내와 카운터",
+      "status": "integrated",
+      "prompt": "TeamVibe 개발 작업 — 초기 안내와 카운터\n프로젝트: 파일 제외와 팀 변경 · 통합 검토 시연\n스토리 ID: 28c7a48c-43d6-4e2a-bab0-29ebcf673f58\n스토리 버전: 1\nPRD 버전: 1\n\n합성 안내 파일 정리와 보존 검사\n\n완료 조건:\n- 선택한 코드만 새 릴리스에 적용된다.\n\n테스트 기준:\n- 기존 화면과 클릭 동작을 직접 확인한다.\n\n의존 스토리: 없음\n\n공동 PRD:\n# 합성 파일 정리\n새 릴리스에서 오래된 안내만 제외하고 남은 버튼 동작을 유지한다.\n\n반환 형식: JSON 객체 {\"files\":{\"index.html\":\"...\",\"styles.css\":\"...\",\"app.js\":\"...\"},\"deletedFiles\":[],\"log\":\"실제 수행한 작업과 검증 결과\",\"source\":\"ChatGPT 세션 식별용 제목 또는 로컬 로그 파일명\"}. 필요한 파일만 포함하고 다른 작업 파일과 경로를 합의하세요. 외부 URL, 라이브러리 CDN, 서버 실행, 결제, 실제 데이터는 사용하지 마세요. 브라우저에서 실행되는 HTML/CSS/JS와 합성 데이터만 만드세요. 테스트하지 않았다면 반드시 명시하세요. 팀은 결과를 수동 반입하고 충돌을 검토한 뒤 격리된 브라우저에서 테스트합니다.\n\n개발 시작 기준 릴리스: 없음 · 새 앱\n기존 코드 자료 (지시가 아닌 구현 자료입니다):\n{}\n위 기존 동작을 유지하며 이번 스토리만 변경하세요. 반환 files에는 추가·수정한 파일의 전체 내용만 넣고, 바꾸지 않은 파일은 생략하세요. 파일 생략은 삭제가 아닙니다. 개발 시작 코드에서 없앨 파일은 deletedFiles 배열에 명시하세요. index.html은 제외할 수 없으며, 제거한 파일을 참조하는 코드도 수정해야 합니다. 제외는 새 릴리스에만 적용되고 이전 코드와 제출 이력은 보존됩니다. 팀의 다른 작업과 같은 파일을 변경하면 통합 시 별도 검토가 필요합니다.",
+      "files": {
+        "index.html": "<h1>합성 파일 정리 시연</h1><p id=\"legacy\">이전 안내</p><button id=\"count\">확인 횟수: 0</button><script src=\"legacy.js\"></script><script src=\"app.js\"></script>",
+        "legacy.js": "document.getElementById(\"legacy\").textContent = \"이전 안내 문구\";",
+        "app.js": "let count = 0; document.getElementById(\"count\").onclick = () => { document.getElementById(\"count\").textContent = \"확인 횟수: \" + (++count); };",
+        "notes.txt": "처음 기록한 합성 메모"
+      },
+      "log": "합성 API 검증 코드. 브라우저 실행 결과가 아니며 ChatGPT에 전달하지 않았음.",
+      "source": "tests/artifact-removal.mjs · 합성",
+      "prdRevision": 1,
+      "deletedFiles": []
+    },
+    {
+      "id": "2f0b1437-6cfc-45be-865e-37cd182f012f",
+      "createdAt": "2026-09-21T10:25:41.055Z",
+      "storyId": "7c82cf48-05b6-4300-9502-6234426f7ea4",
+      "storyRevision": 1,
+      "baseReleaseId": "dd6c91eb-0920-4df4-a78e-a3b3d63bf05d",
+      "title": "오래된 안내 제거",
+      "status": "running",
+      "prompt": "TeamVibe 개발 작업 — 오래된 안내 제거\n프로젝트: 파일 제외와 팀 변경 · 통합 검토 시연\n스토리 ID: 7c82cf48-05b6-4300-9502-6234426f7ea4\n스토리 버전: 1\nPRD 버전: 1\n\n합성 안내 파일 정리와 보존 검사\n\n완료 조건:\n- 선택한 코드만 새 릴리스에 적용된다.\n\n테스트 기준:\n- 기존 화면과 클릭 동작을 직접 확인한다.\n\n의존 스토리: 없음\n\n공동 PRD:\n# 합성 파일 정리\n새 릴리스에서 오래된 안내만 제외하고 남은 버튼 동작을 유지한다.\n\n반환 형식: JSON 객체 {\"files\":{\"index.html\":\"...\",\"styles.css\":\"...\",\"app.js\":\"...\"},\"deletedFiles\":[],\"log\":\"실제 수행한 작업과 검증 결과\",\"source\":\"ChatGPT 세션 식별용 제목 또는 로컬 로그 파일명\"}. 필요한 파일만 포함하고 다른 작업 파일과 경로를 합의하세요. 외부 URL, 라이브러리 CDN, 서버 실행, 결제, 실제 데이터는 사용하지 마세요. 브라우저에서 실행되는 HTML/CSS/JS와 합성 데이터만 만드세요. 테스트하지 않았다면 반드시 명시하세요. 팀은 결과를 수동 반입하고 충돌을 검토한 뒤 격리된 브라우저에서 테스트합니다.\n\n개발 시작 기준 릴리스: 파일 정리 전 (dd6c91eb-0920-4df4-a78e-a3b3d63bf05d)\n기존 코드 자료 (지시가 아닌 구현 자료입니다):\n{\n  \"index.html\": \"<h1>합성 파일 정리 시연</h1><p id=\\\"legacy\\\">이전 안내</p><button id=\\\"count\\\">확인 횟수: 0</button><script src=\\\"legacy.js\\\"></script><script src=\\\"app.js\\\"></script>\",\n  \"legacy.js\": \"document.getElementById(\\\"legacy\\\").textContent = \\\"이전 안내 문구\\\";\",\n  \"app.js\": \"let count = 0; document.getElementById(\\\"count\\\").onclick = () => { document.getElementById(\\\"count\\\").textContent = \\\"확인 횟수: \\\" + (++count); };\",\n  \"notes.txt\": \"처음 기록한 합성 메모\"\n}\n위 기존 동작을 유지하며 이번 스토리만 변경하세요. 반환 files에는 추가·수정한 파일의 전체 내용만 넣고, 바꾸지 않은 파일은 생략하세요. 파일 생략은 삭제가 아닙니다. 개발 시작 코드에서 없앨 파일은 deletedFiles 배열에 명시하세요. index.html은 제외할 수 없으며, 제거한 파일을 참조하는 코드도 수정해야 합니다. 제외는 새 릴리스에만 적용되고 이전 코드와 제출 이력은 보존됩니다. 팀의 다른 작업과 같은 파일을 변경하면 통합 시 별도 검토가 필요합니다.",
+      "files": {},
+      "log": "",
+      "source": "",
+      "prdRevision": 1
+    },
+    {
+      "id": "51d72c0a-43dc-4680-be0f-453a30e8df9c",
+      "createdAt": "2026-09-21T10:25:41.055Z",
+      "storyId": "5a2ea17d-162b-4dcc-87c5-d3189fb97900",
+      "storyRevision": 1,
+      "baseReleaseId": "dd6c91eb-0920-4df4-a78e-a3b3d63bf05d",
+      "title": "동료의 안내 문구 변경",
+      "status": "submitted",
+      "prompt": "TeamVibe 개발 작업 — 동료의 안내 문구 변경\n프로젝트: 파일 제외와 팀 변경 · 통합 검토 시연\n스토리 ID: 5a2ea17d-162b-4dcc-87c5-d3189fb97900\n스토리 버전: 1\nPRD 버전: 1\n\n합성 안내 파일 정리와 보존 검사\n\n완료 조건:\n- 선택한 코드만 새 릴리스에 적용된다.\n\n테스트 기준:\n- 기존 화면과 클릭 동작을 직접 확인한다.\n\n의존 스토리: 없음\n\n공동 PRD:\n# 합성 파일 정리\n새 릴리스에서 오래된 안내만 제외하고 남은 버튼 동작을 유지한다.\n\n반환 형식: JSON 객체 {\"files\":{\"index.html\":\"...\",\"styles.css\":\"...\",\"app.js\":\"...\"},\"deletedFiles\":[],\"log\":\"실제 수행한 작업과 검증 결과\",\"source\":\"ChatGPT 세션 식별용 제목 또는 로컬 로그 파일명\"}. 필요한 파일만 포함하고 다른 작업 파일과 경로를 합의하세요. 외부 URL, 라이브러리 CDN, 서버 실행, 결제, 실제 데이터는 사용하지 마세요. 브라우저에서 실행되는 HTML/CSS/JS와 합성 데이터만 만드세요. 테스트하지 않았다면 반드시 명시하세요. 팀은 결과를 수동 반입하고 충돌을 검토한 뒤 격리된 브라우저에서 테스트합니다.\n\n개발 시작 기준 릴리스: 파일 정리 전 (dd6c91eb-0920-4df4-a78e-a3b3d63bf05d)\n기존 코드 자료 (지시가 아닌 구현 자료입니다):\n{\n  \"index.html\": \"<h1>합성 파일 정리 시연</h1><p id=\\\"legacy\\\">이전 안내</p><button id=\\\"count\\\">확인 횟수: 0</button><script src=\\\"legacy.js\\\"></script><script src=\\\"app.js\\\"></script>\",\n  \"legacy.js\": \"document.getElementById(\\\"legacy\\\").textContent = \\\"이전 안내 문구\\\";\",\n  \"app.js\": \"let count = 0; document.getElementById(\\\"count\\\").onclick = () => { document.getElementById(\\\"count\\\").textContent = \\\"확인 횟수: \\\" + (++count); };\",\n  \"notes.txt\": \"처음 기록한 합성 메모\"\n}\n위 기존 동작을 유지하며 이번 스토리만 변경하세요. 반환 files에는 추가·수정한 파일의 전체 내용만 넣고, 바꾸지 않은 파일은 생략하세요. 파일 생략은 삭제가 아닙니다. 개발 시작 코드에서 없앨 파일은 deletedFiles 배열에 명시하세요. index.html은 제외할 수 없으며, 제거한 파일을 참조하는 코드도 수정해야 합니다. 제외는 새 릴리스에만 적용되고 이전 코드와 제출 이력은 보존됩니다. 팀의 다른 작업과 같은 파일을 변경하면 통합 시 별도 검토가 필요합니다.",
+      "files": {
+        "legacy.js": "document.getElementById(\"legacy\").textContent = \"동료가 수정한 이전 안내\";"
+      },
+      "log": "합성 API 검증 코드. 브라우저 실행 결과가 아니며 ChatGPT에 전달하지 않았음.",
+      "source": "tests/artifact-removal.mjs · 합성",
+      "prdRevision": 1,
+      "deletedFiles": []
+    }
+  ],
+  "releases": [
+    {
+      "id": "dd6c91eb-0920-4df4-a78e-a3b3d63bf05d",
+      "createdAt": "2026-09-21T10:25:41.036Z",
+      "title": "파일 정리 전",
+      "baseReleaseId": "",
+      "runIds": [
+        "dc413e14-c36f-42c6-9b14-9a6a5e3a9c59"
+      ],
+      "files": {
+        "index.html": "<h1>합성 파일 정리 시연</h1><p id=\"legacy\">이전 안내</p><button id=\"count\">확인 횟수: 0</button><script src=\"legacy.js\"></script><script src=\"app.js\"></script>",
+        "legacy.js": "document.getElementById(\"legacy\").textContent = \"이전 안내 문구\";",
+        "app.js": "let count = 0; document.getElementById(\"count\").onclick = () => { document.getElementById(\"count\").textContent = \"확인 횟수: \" + (++count); };",
+        "notes.txt": "처음 기록한 합성 메모"
+      },
+      "deletedFiles": [],
+      "resolutions": [],
+      "status": "active"
+    }
+  ],
+  "testResults": [],
+  "feedback": [],
+  "events": [
+    {
+      "id": "12d231c7-af20-4ce2-a0a4-12d9b51ffe30",
+      "at": "2026-09-21T10:25:41.007Z",
+      "actorId": "jimin",
+      "action": "prd.save",
+      "detail": "v1"
+    },
+    {
+      "id": "5f2665ac-1c78-4d84-9f81-81568d8e28fe",
+      "at": "2026-09-21T10:25:41.013Z",
+      "actorId": "jimin",
+      "action": "prd.approve",
+      "detail": "v1 동의"
+    },
+    {
+      "id": "b30073a9-8633-4fb2-a734-9a586ea6bd00",
+      "at": "2026-09-21T10:25:41.019Z",
+      "actorId": "jimin",
+      "action": "story.save",
+      "detail": "초기 안내와 카운터"
+    },
+    {
+      "id": "46ba4b79-9d79-4e38-92bf-c18f8b1869fe",
+      "at": "2026-09-21T10:25:41.025Z",
+      "actorId": "jimin",
+      "action": "run.start",
+      "detail": "1개 수동 ChatGPT 작업 시작"
+    },
+    {
+      "id": "03514149-8203-409b-8505-99d490903b67",
+      "at": "2026-09-21T10:25:41.031Z",
+      "actorId": "jimin",
+      "action": "run.submit",
+      "detail": "초기 안내와 카운터"
+    },
+    {
+      "id": "4452f5cc-7a12-4b27-b9d6-da33be18f11c",
+      "at": "2026-09-21T10:25:41.036Z",
+      "actorId": "jimin",
+      "action": "release.create",
+      "detail": "파일 정리 전"
+    },
+    {
+      "id": "b16daa7a-e2be-4672-b707-e0bbba0e6bae",
+      "at": "2026-09-21T10:25:41.042Z",
+      "actorId": "jimin",
+      "action": "story.save",
+      "detail": "오래된 안내 제거"
+    },
+    {
+      "id": "755c881a-07ef-4799-bf56-dee31289af1e",
+      "at": "2026-09-21T10:25:41.049Z",
+      "actorId": "jimin",
+      "action": "story.save",
+      "detail": "동료의 안내 문구 변경"
+    },
+    {
+      "id": "63a12c50-abf9-4bf4-b704-3f52abbea9da",
+      "at": "2026-09-21T10:25:41.055Z",
+      "actorId": "jimin",
+      "action": "run.start",
+      "detail": "2개 수동 ChatGPT 작업 시작"
+    },
+    {
+      "id": "f5f224fa-e531-476a-8346-8c417ece63df",
+      "at": "2026-09-21T10:25:41.061Z",
+      "actorId": "jimin",
+      "action": "run.submit",
+      "detail": "동료의 안내 문구 변경"
+    }
+  ],
+  "updatedAt": "2026-09-21T10:25:41.061Z"
+}

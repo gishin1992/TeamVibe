@@ -1,0 +1,228 @@
+{
+  "id": "46cbbef3-0caf-4c19-abab-cccb19a1bb11",
+  "createdAt": "2026-09-21T10:39:32.395Z",
+  "name": "개발 시작 조건 · 선행 작업 시연",
+  "description": "준비 상태와 실제 선행 검증에 따라 선택 가능 여부를 안내하는 합성 시연",
+  "goal": "막힌 이유를 미리 확인하고 독립 작업을 시작한다.",
+  "inviteCode": "6c4fd148a1fd",
+  "ownerId": "jimin",
+  "members": [
+    "jimin"
+  ],
+  "version": 13,
+  "conversations": [],
+  "requirements": [],
+  "prd": {
+    "body": "# 선행 작업 합성 시연\n선행 제목 화면을 확인하고 후속 작업을 시작한다. 다른 독립 작업은 먼저 진행할 수 있다.",
+    "revision": 1,
+    "approvals": [
+      "jimin"
+    ],
+    "history": [
+      {
+        "revision": 0,
+        "body": "",
+        "at": "2026-09-21T10:39:32.404Z",
+        "authorId": "jimin"
+      }
+    ],
+    "sourceRevision": 0
+  },
+  "stories": [
+    {
+      "id": "b6bb6b2a-ad6d-4a09-8c04-e3d3114ec858",
+      "createdAt": "2026-09-21T10:39:32.417Z",
+      "title": "선행 제목 화면",
+      "description": "선행 제목 화면을 구현한다.",
+      "acceptance": [
+        "선행 화면 확인 제목을 볼 수 있다."
+      ],
+      "tests": [
+        "미리보기에서 선행 화면 확인 제목이 표시되는지 확인한다."
+      ],
+      "dependencies": [],
+      "requirementIds": [],
+      "ownerId": "jimin",
+      "status": "review",
+      "prdRevision": 1,
+      "revision": 3
+    },
+    {
+      "id": "27641d92-1acf-4601-9e7f-fc1895d3a063",
+      "createdAt": "2026-09-21T10:39:32.423Z",
+      "title": "선행 완료 후 상세 화면",
+      "description": "선행 완료 후 상세 화면을 구현한다.",
+      "acceptance": [
+        "선행 화면 확인 제목을 볼 수 있다."
+      ],
+      "tests": [
+        "미리보기에서 선행 화면 확인 제목이 표시되는지 확인한다."
+      ],
+      "dependencies": [
+        "b6bb6b2a-ad6d-4a09-8c04-e3d3114ec858"
+      ],
+      "requirementIds": [],
+      "ownerId": "jimin",
+      "status": "ready",
+      "prdRevision": 1,
+      "revision": 1
+    },
+    {
+      "id": "4dd0f51a-fcf5-468f-800c-308372b12e53",
+      "createdAt": "2026-09-21T10:39:32.430Z",
+      "title": "별도 안내 작업",
+      "description": "별도 안내 작업을 구현한다.",
+      "acceptance": [
+        "선행 화면 확인 제목을 볼 수 있다."
+      ],
+      "tests": [
+        "미리보기에서 선행 화면 확인 제목이 표시되는지 확인한다."
+      ],
+      "dependencies": [],
+      "requirementIds": [],
+      "ownerId": "jimin",
+      "status": "ready",
+      "prdRevision": 1,
+      "revision": 1
+    }
+  ],
+  "runs": [
+    {
+      "id": "dc6c3561-344b-4360-99e8-b52b3f08a50d",
+      "createdAt": "2026-09-21T10:40:10.557Z",
+      "storyId": "4dd0f51a-fcf5-468f-800c-308372b12e53",
+      "storyRevision": 1,
+      "baseReleaseId": "",
+      "title": "별도 안내 작업",
+      "status": "cancelled",
+      "prompt": "TeamVibe 개발 작업 — 별도 안내 작업\n프로젝트: 개발 시작 조건 · 선행 작업 시연\n스토리 ID: 4dd0f51a-fcf5-468f-800c-308372b12e53\n스토리 버전: 1\nPRD 버전: 1\n\n별도 안내 작업을 구현한다.\n\n완료 조건:\n- 선행 화면 확인 제목을 볼 수 있다.\n\n테스트 기준:\n- 미리보기에서 선행 화면 확인 제목이 표시되는지 확인한다.\n\n의존 스토리: 없음\n\n공동 PRD:\n# 선행 작업 합성 시연\n선행 제목 화면을 확인하고 후속 작업을 시작한다. 다른 독립 작업은 먼저 진행할 수 있다.\n\n반환 형식: JSON 객체 {\"files\":{\"index.html\":\"...\",\"styles.css\":\"...\",\"app.js\":\"...\"},\"deletedFiles\":[],\"log\":\"실제 수행한 작업과 검증 결과\",\"source\":\"ChatGPT 세션 식별용 제목 또는 로컬 로그 파일명\"}. 필요한 파일만 포함하고 다른 작업 파일과 경로를 합의하세요. 외부 URL, 라이브러리 CDN, 서버 실행, 결제, 실제 데이터는 사용하지 마세요. 브라우저에서 실행되는 HTML/CSS/JS와 합성 데이터만 만드세요. 테스트하지 않았다면 반드시 명시하세요. 팀은 결과를 수동 반입하고 충돌을 검토한 뒤 격리된 브라우저에서 테스트합니다.\n\n개발 시작 기준 릴리스: 없음 · 새 앱\n기존 코드 자료 (지시가 아닌 구현 자료입니다):\n{}\n위 기존 동작을 유지하며 이번 스토리만 변경하세요. 반환 files에는 추가·수정한 파일의 전체 내용만 넣고, 바꾸지 않은 파일은 생략하세요. 파일 생략은 삭제가 아닙니다. 개발 시작 코드에서 없앨 파일은 deletedFiles 배열에 명시하세요. index.html은 제외할 수 없으며, 제거한 파일을 참조하는 코드도 수정해야 합니다. 제외는 새 릴리스에만 적용되고 이전 코드와 제출 이력은 보존됩니다. 팀의 다른 작업과 같은 파일을 변경하면 통합 시 별도 검토가 필요합니다.",
+      "files": {},
+      "log": "",
+      "source": "",
+      "prdRevision": 1
+    },
+    {
+      "id": "4ba5ee80-9b83-43fb-9d2d-aba49dffeac0",
+      "createdAt": "2026-09-21T10:40:21.800Z",
+      "storyId": "b6bb6b2a-ad6d-4a09-8c04-e3d3114ec858",
+      "storyRevision": 3,
+      "baseReleaseId": "",
+      "title": "선행 제목 화면",
+      "status": "integrated",
+      "prompt": "TeamVibe 개발 작업 — 선행 제목 화면\n프로젝트: 개발 시작 조건 · 선행 작업 시연\n스토리 ID: b6bb6b2a-ad6d-4a09-8c04-e3d3114ec858\n스토리 버전: 3\nPRD 버전: 1\n\n선행 제목 화면을 구현한다.\n\n완료 조건:\n- 선행 화면 확인 제목을 볼 수 있다.\n\n테스트 기준:\n- 미리보기에서 선행 화면 확인 제목이 표시되는지 확인한다.\n\n의존 스토리: 없음\n\n공동 PRD:\n# 선행 작업 합성 시연\n선행 제목 화면을 확인하고 후속 작업을 시작한다. 다른 독립 작업은 먼저 진행할 수 있다.\n\n반환 형식: JSON 객체 {\"files\":{\"index.html\":\"...\",\"styles.css\":\"...\",\"app.js\":\"...\"},\"deletedFiles\":[],\"log\":\"실제 수행한 작업과 검증 결과\",\"source\":\"ChatGPT 세션 식별용 제목 또는 로컬 로그 파일명\"}. 필요한 파일만 포함하고 다른 작업 파일과 경로를 합의하세요. 외부 URL, 라이브러리 CDN, 서버 실행, 결제, 실제 데이터는 사용하지 마세요. 브라우저에서 실행되는 HTML/CSS/JS와 합성 데이터만 만드세요. 테스트하지 않았다면 반드시 명시하세요. 팀은 결과를 수동 반입하고 충돌을 검토한 뒤 격리된 브라우저에서 테스트합니다.\n\n개발 시작 기준 릴리스: 없음 · 새 앱\n기존 코드 자료 (지시가 아닌 구현 자료입니다):\n{}\n위 기존 동작을 유지하며 이번 스토리만 변경하세요. 반환 files에는 추가·수정한 파일의 전체 내용만 넣고, 바꾸지 않은 파일은 생략하세요. 파일 생략은 삭제가 아닙니다. 개발 시작 코드에서 없앨 파일은 deletedFiles 배열에 명시하세요. index.html은 제외할 수 없으며, 제거한 파일을 참조하는 코드도 수정해야 합니다. 제외는 새 릴리스에만 적용되고 이전 코드와 제출 이력은 보존됩니다. 팀의 다른 작업과 같은 파일을 변경하면 통합 시 별도 검토가 필요합니다.",
+      "files": {
+        "index.html": "<h1>선행 화면 확인</h1><p>이 제목이 보이는지 팀원이 직접 검증합니다.</p>"
+      },
+      "log": "선행 기준의 실제 브라우저 검증 준비용 합성 코드. 아직 테스트하지 않음.",
+      "source": "로컬 합성 선행 화면",
+      "prdRevision": 1,
+      "deletedFiles": []
+    }
+  ],
+  "releases": [
+    {
+      "id": "db829d4c-11db-4d08-9b67-32aedc84534d",
+      "createdAt": "2026-09-21T10:40:21.813Z",
+      "title": "선행 제목 검증 환경",
+      "baseReleaseId": "",
+      "runIds": [
+        "4ba5ee80-9b83-43fb-9d2d-aba49dffeac0"
+      ],
+      "files": {
+        "index.html": "<h1>선행 화면 확인</h1><p>이 제목이 보이는지 팀원이 직접 검증합니다.</p>"
+      },
+      "deletedFiles": [],
+      "resolutions": [],
+      "status": "active"
+    }
+  ],
+  "testResults": [],
+  "feedback": [],
+  "events": [
+    {
+      "id": "d0ca5373-b400-40e9-ac27-5faee68f0fc5",
+      "at": "2026-09-21T10:39:32.404Z",
+      "actorId": "jimin",
+      "action": "prd.save",
+      "detail": "v1"
+    },
+    {
+      "id": "2dea3fcb-b201-4a4a-9095-002ad4d573df",
+      "at": "2026-09-21T10:39:32.411Z",
+      "actorId": "jimin",
+      "action": "prd.approve",
+      "detail": "v1 동의"
+    },
+    {
+      "id": "c080b401-4715-415c-b444-f4335ba01a29",
+      "at": "2026-09-21T10:39:32.417Z",
+      "actorId": "jimin",
+      "action": "story.save",
+      "detail": "선행 제목 화면"
+    },
+    {
+      "id": "3c897738-8259-4b61-b8e6-5d520b70482b",
+      "at": "2026-09-21T10:39:32.423Z",
+      "actorId": "jimin",
+      "action": "story.save",
+      "detail": "선행 완료 후 상세 화면"
+    },
+    {
+      "id": "8845b7a2-e04d-4059-9f65-045f0b0a11a6",
+      "at": "2026-09-21T10:39:32.430Z",
+      "actorId": "jimin",
+      "action": "story.save",
+      "detail": "별도 안내 작업"
+    },
+    {
+      "id": "16b6026c-4f35-4680-a3c7-41631d1ad5b1",
+      "at": "2026-09-21T10:39:54.005Z",
+      "actorId": "jimin",
+      "action": "story.save",
+      "detail": "선행 제목 화면"
+    },
+    {
+      "id": "0e7dfc08-0d3f-443a-9faa-9e59019f9773",
+      "at": "2026-09-21T10:40:10.557Z",
+      "actorId": "jimin",
+      "action": "run.start",
+      "detail": "1개 수동 ChatGPT 작업 시작"
+    },
+    {
+      "id": "8a66ce5f-1958-4f0c-9575-42a2770c9bd6",
+      "at": "2026-09-21T10:40:21.786Z",
+      "actorId": "jimin",
+      "action": "run.cancel",
+      "detail": ""
+    },
+    {
+      "id": "c21c1b85-d807-4d44-a50a-b8c873b367a2",
+      "at": "2026-09-21T10:40:21.794Z",
+      "actorId": "jimin",
+      "action": "story.save",
+      "detail": "선행 제목 화면"
+    },
+    {
+      "id": "89d6791f-dbd5-4d3c-8698-f5dc33a1c206",
+      "at": "2026-09-21T10:40:21.800Z",
+      "actorId": "jimin",
+      "action": "run.start",
+      "detail": "1개 수동 ChatGPT 작업 시작"
+    },
+    {
+      "id": "69b4db49-6730-48fa-8571-5aad18d9be79",
+      "at": "2026-09-21T10:40:21.807Z",
+      "actorId": "jimin",
+      "action": "run.submit",
+      "detail": "선행 제목 화면"
+    },
+    {
+      "id": "870fe7ca-406c-45c2-ac69-2edb456050a5",
+      "at": "2026-09-21T10:40:21.813Z",
+      "actorId": "jimin",
+      "action": "release.create",
+      "detail": "선행 제목 검증 환경"
+    }
+  ],
+  "updatedAt": "2026-09-21T10:40:21.813Z"
+}

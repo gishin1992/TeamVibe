@@ -1,0 +1,58 @@
+{
+  "at": "2026-09-21T13:16:04.124Z",
+  "typecheck": {
+    "session": 39102,
+    "exitCode": 0,
+    "priorFailure": "e24d2c TS18047 fixed with user guard before final run"
+  },
+  "tests": {
+    "session": 39102,
+    "exitCode": 0,
+    "log": "evidence/test-planning-drafts.log",
+    "helper": "evidence/planning-drafts-unit-result.json"
+  },
+  "build": {
+    "session": 76040,
+    "exitCode": 0,
+    "command": "node /Users/takykim/.codex/plugins/cache/openai-curated-remote/sites/0.1.65/scripts/build-site.mjs"
+  },
+  "browser": {
+    "observations": 18,
+    "allPassed": true,
+    "result": "evidence/planning-drafts-browser-result.json",
+    "screenshot": "evidence/screenshots/planning-drafts-mobile-reset.png"
+  },
+  "server": {
+    "at": "2026-09-21T13:15:13.829Z",
+    "projectId": "27d457aa-b234-4fbc-82dd-1ed660221ba1",
+    "otherProjectUnchanged": true,
+    "onlyTwoReviewedImportsPersisted": true,
+    "requirements": 1,
+    "requirementStatus": "proposed",
+    "stories": 1,
+    "storyStatus": "backlog",
+    "originalPRDAndConversationsPreserved": true,
+    "codeRuns": 0,
+    "releases": 0,
+    "testRecords": 0
+  },
+  "sourceHashes": {
+    "components/workspace.tsx": "34e141526d1813fee2494a351a58340d47865be69c3a6bb48d2dc5130c1b8be6",
+    "components/story-planning.tsx": "48ad99bfac53b968381d82a09abe90eef566bd83fe7546ced14ce253cc39ccc5",
+    "components/requirement-planning.tsx": "9de38033e06183b88088f5f3142a07923b28c9ccb81189681a768951e49bb7e6",
+    "components/planning-draft-controls.tsx": "a98f078a619c37fc2fbdcc98a40eeb519cd1a1d91ff0228760e0dba3d95b5915",
+    "lib/teamvibe/planning-drafts.ts": "8744658e57f8cd00bccc735639cb0202fc97b8ee559cddfd26762676136f3490",
+    "tests/planning-drafts.mjs": "81b2943eb6e6f38a6ff9003d736ad05bb6dab7f67c63fa9f0f827d9fb0d07697",
+    "scripts/test.mjs": "ea179927f36ae577f4db02a340d8301da152f9cfab52f8ac033d3effb36e2df9",
+    "scripts/prepare-planning-drafts-demo.mjs": "cc9bb8698da3a4f0e48093dc7d15feb87ba5a679c4ed0ac78bf5e069fd47f9ff",
+    "README.md": "333049115027e282205310f480f6a3c774c070a2e407e6c6d760994b68e50431",
+    "docs/DEMO.md": "d8b2986077e9a372c9221aea1ad4b6327a5b0ec3633342f66350b72421011590"
+  },
+  "limits": [
+    "Drafts live only in page memory; no reload or tab-close recovery.",
+    "Integration review drafts not covered.",
+    "No forced delayed file-read/import browser race; late completion helper tested separately.",
+    "Synthetic plans imported; no AI calls, generated code execution, external publication or physical deletion.",
+    "No independent clipboard-content verification."
+  ]
+}

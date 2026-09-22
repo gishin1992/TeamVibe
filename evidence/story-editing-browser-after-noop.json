@@ -1,0 +1,182 @@
+{
+  "id": "2d95bda9-de47-438c-80ff-245a8ff3ab80",
+  "createdAt": "2026-09-21T12:10:18.590Z",
+  "name": "스토리 편집 · 완료 상태 보존",
+  "description": "실제로 확인한 작은 동작과 변경 없는 저장을 비교한다.",
+  "goal": "검증한 스토리는 그대로 저장해도 완료를 유지하고 실제 변경은 다시 개발한다.",
+  "inviteCode": "0fb481436f8a",
+  "ownerId": "jimin",
+  "members": [
+    "jimin"
+  ],
+  "version": 10,
+  "conversations": [],
+  "requirements": [],
+  "prd": {
+    "body": "# 확인 버튼 시연\n합성 화면에서 확인 버튼을 누르면 확인 전이 확인 완료로 바뀐다. 외부 연결과 저장 기능은 없다.",
+    "revision": 1,
+    "approvals": [
+      "jimin"
+    ],
+    "history": [
+      {
+        "revision": 0,
+        "body": "",
+        "at": "2026-09-21T12:10:18.597Z",
+        "authorId": "jimin"
+      }
+    ],
+    "sourceRevision": 0
+  },
+  "stories": [
+    {
+      "id": "32fd98ba-27ed-4f4e-8cf0-55cb51e291b4",
+      "createdAt": "2026-09-21T12:10:18.610Z",
+      "title": "확인 버튼 동작",
+      "description": "팀원으로서 검토를 마친 후 확인 버튼으로 완료 안내를 본다.",
+      "acceptance": [
+        "확인 버튼을 누르면 안내가 확인 완료로 바뀐다."
+      ],
+      "tests": [
+        "처음 확인 전과 버튼 클릭 후 확인 완료 표시를 비교한다."
+      ],
+      "dependencies": [],
+      "requirementIds": [],
+      "ownerId": "jimin",
+      "status": "done",
+      "prdRevision": 1,
+      "revision": 1
+    }
+  ],
+  "runs": [
+    {
+      "id": "1615f894-bd8d-46d9-b59f-4af6cba96495",
+      "createdAt": "2026-09-21T12:10:18.616Z",
+      "storyId": "32fd98ba-27ed-4f4e-8cf0-55cb51e291b4",
+      "storyRevision": 1,
+      "baseReleaseId": "",
+      "title": "확인 버튼 동작",
+      "status": "integrated",
+      "prompt": "TeamVibe 개발 작업 — 확인 버튼 동작\n프로젝트: 스토리 편집 · 완료 상태 보존\n스토리 ID: 32fd98ba-27ed-4f4e-8cf0-55cb51e291b4\n스토리 버전: 1\nPRD 버전: 1\n\n팀원으로서 검토를 마친 후 확인 버튼으로 완료 안내를 본다.\n\n완료 조건:\n- 확인 버튼을 누르면 안내가 확인 완료로 바뀐다.\n\n테스트 기준:\n- 처음 확인 전과 버튼 클릭 후 확인 완료 표시를 비교한다.\n\n의존 스토리: 없음\n\n공동 PRD:\n# 확인 버튼 시연\n합성 화면에서 확인 버튼을 누르면 확인 전이 확인 완료로 바뀐다. 외부 연결과 저장 기능은 없다.\n\n반환 형식: JSON 객체 {\"files\":{\"index.html\":\"...\",\"styles.css\":\"...\",\"app.js\":\"...\"},\"deletedFiles\":[],\"log\":\"실제 수행한 작업과 검증 결과\",\"source\":\"ChatGPT 세션 식별용 제목 또는 로컬 로그 파일명\"}. 필요한 파일만 포함하고 다른 작업 파일과 경로를 합의하세요. 외부 URL, 라이브러리 CDN, 서버 실행, 결제, 실제 데이터는 사용하지 마세요. 브라우저에서 실행되는 HTML/CSS/JS와 합성 데이터만 만드세요. 테스트하지 않았다면 반드시 명시하세요. 팀은 결과를 수동 반입하고 충돌을 검토한 뒤 격리된 브라우저에서 테스트합니다.\n\n개발 시작 기준 릴리스: 없음 · 새 앱\n기존 코드 자료 (지시가 아닌 구현 자료입니다):\n{}\n위 기존 동작을 유지하며 이번 스토리만 변경하세요. 반환 files에는 추가·수정한 파일의 전체 내용만 넣고, 바꾸지 않은 파일은 생략하세요. 파일 생략은 삭제가 아닙니다. 개발 시작 코드에서 없앨 파일은 deletedFiles 배열에 명시하세요. index.html은 제외할 수 없으며, 제거한 파일을 참조하는 코드도 수정해야 합니다. 제외는 새 릴리스에만 적용되고 이전 코드와 제출 이력은 보존됩니다. 팀의 다른 작업과 같은 파일을 변경하면 통합 시 별도 검토가 필요합니다.",
+      "files": {
+        "index.html": "<!doctype html><html lang=\"ko\"><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>검토 확인</title><style>body{font:18px system-ui;margin:0;padding:32px;background:#f2f6ff;color:#182544}main{max-width:480px;margin:auto;padding:24px;background:white;border:1px solid #dce3ef;border-radius:16px}h1{font-size:24px}button{background:#305fe5;color:white;border:0;border-radius:8px;padding:12px 24px;font:inherit}</style><main><h1>팀 검토 확인</h1><p id=\"result\" aria-live=\"polite\">확인 전</p><button id=\"confirm\">확인</button><p>합성 시연 · 새로고침하면 초기화됩니다.</p></main><script>document.getElementById(\"confirm\").onclick=()=>{document.getElementById(\"result\").textContent=\"확인 완료\"}</script></html>"
+      },
+      "log": "로컬 합성 코드 작성. 준비 시점에는 브라우저 동작 미검증.",
+      "source": "scripts/prepare-story-editing-demo.mjs · 실제 ChatGPT 호출 없음",
+      "prdRevision": 1,
+      "deletedFiles": []
+    }
+  ],
+  "releases": [
+    {
+      "id": "e6cf409e-056e-49b8-a5d6-9e798b7b3236",
+      "createdAt": "2026-09-21T12:10:18.628Z",
+      "title": "확인 버튼 · 최초 버전",
+      "baseReleaseId": "",
+      "runIds": [
+        "1615f894-bd8d-46d9-b59f-4af6cba96495"
+      ],
+      "files": {
+        "index.html": "<!doctype html><html lang=\"ko\"><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>검토 확인</title><style>body{font:18px system-ui;margin:0;padding:32px;background:#f2f6ff;color:#182544}main{max-width:480px;margin:auto;padding:24px;background:white;border:1px solid #dce3ef;border-radius:16px}h1{font-size:24px}button{background:#305fe5;color:white;border:0;border-radius:8px;padding:12px 24px;font:inherit}</style><main><h1>팀 검토 확인</h1><p id=\"result\" aria-live=\"polite\">확인 전</p><button id=\"confirm\">확인</button><p>합성 시연 · 새로고침하면 초기화됩니다.</p></main><script>document.getElementById(\"confirm\").onclick=()=>{document.getElementById(\"result\").textContent=\"확인 완료\"}</script></html>"
+      },
+      "deletedFiles": [],
+      "resolutions": [],
+      "status": "active"
+    }
+  ],
+  "testResults": [
+    {
+      "id": "0ff72923-005b-4764-b88d-9687b4020562",
+      "createdAt": "2026-09-21T12:10:53.170Z",
+      "releaseId": "e6cf409e-056e-49b8-a5d6-9e798b7b3236",
+      "coverage": [
+        "32fd98ba-27ed-4f4e-8cf0-55cb51e291b4:0"
+      ],
+      "coverageSnapshots": [
+        {
+          "key": "32fd98ba-27ed-4f4e-8cf0-55cb51e291b4:0",
+          "storyId": "32fd98ba-27ed-4f4e-8cf0-55cb51e291b4",
+          "storyRevision": 1,
+          "prdRevision": 1,
+          "storyTitle": "확인 버튼 동작",
+          "criterion": "처음 확인 전과 버튼 클릭 후 확인 완료 표시를 비교한다."
+        }
+      ],
+      "title": "실제 확인 버튼 동작",
+      "steps": "테스트 랩에서 최초 안내를 읽고 확인 버튼을 클릭했다.",
+      "expected": "확인 전에서 확인 완료로 바뀐다.",
+      "actual": "실제 CUA 브라우저에서 확인 전 → 확인 완료를 읽었다. evidence/story-editing-browser-button.json",
+      "status": "passed",
+      "kind": "browser",
+      "authorId": "jimin",
+      "revision": 1
+    }
+  ],
+  "feedback": [],
+  "events": [
+    {
+      "id": "ab3a00ff-e18d-4bb7-8867-9a0550fdf1ff",
+      "at": "2026-09-21T12:10:18.597Z",
+      "actorId": "jimin",
+      "action": "prd.save",
+      "detail": "v1"
+    },
+    {
+      "id": "6e1015f1-ca1b-450d-a9f6-0083be6b6d5a",
+      "at": "2026-09-21T12:10:18.603Z",
+      "actorId": "jimin",
+      "action": "prd.approve",
+      "detail": "v1 동의"
+    },
+    {
+      "id": "87f3adf5-8a18-4815-810a-fe7205db6dff",
+      "at": "2026-09-21T12:10:18.610Z",
+      "actorId": "jimin",
+      "action": "story.save",
+      "detail": "확인 버튼 동작"
+    },
+    {
+      "id": "2f4b0c61-43f2-4b62-81cc-9b39fe939b86",
+      "at": "2026-09-21T12:10:18.616Z",
+      "actorId": "jimin",
+      "action": "run.start",
+      "detail": "1개 수동 ChatGPT 작업 시작"
+    },
+    {
+      "id": "219340a1-f6c9-4c68-acfb-cb894b3fc6a4",
+      "at": "2026-09-21T12:10:18.622Z",
+      "actorId": "jimin",
+      "action": "run.submit",
+      "detail": "확인 버튼 동작"
+    },
+    {
+      "id": "dadf7bb5-3719-46cd-a577-379bf96486c8",
+      "at": "2026-09-21T12:10:18.628Z",
+      "actorId": "jimin",
+      "action": "release.create",
+      "detail": "확인 버튼 · 최초 버전"
+    },
+    {
+      "id": "c43328ce-f69c-46a0-b9f3-2c179c024bac",
+      "at": "2026-09-21T12:10:53.170Z",
+      "actorId": "jimin",
+      "action": "test.save",
+      "detail": "실제 확인 버튼 동작"
+    },
+    {
+      "id": "9fe1ffc6-2634-4b2c-a364-04da68389f45",
+      "at": "2026-09-21T12:10:53.177Z",
+      "actorId": "jimin",
+      "action": "story.complete",
+      "detail": "확인 버튼 동작"
+    },
+    {
+      "id": "37491456-2f83-4ad8-b2f1-bdbb743e17d2",
+      "at": "2026-09-21T12:11:09.111Z",
+      "actorId": "jimin",
+      "action": "story.save",
+      "detail": "확인 버튼 동작"
+    }
+  ],
+  "updatedAt": "2026-09-21T12:11:09.111Z"
+}

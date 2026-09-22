@@ -1,0 +1,8 @@
+{
+  "at": "2026-09-21T23:25:45.152Z",
+  "mergedName": "늦은 갱신 · 팀 최신 이름",
+  "mergedDescription": "작성 중인 설명은 팀의 최신 변경을 받아도 유지한다.",
+  "timeoutRecoveredWithoutReload": true,
+  "descriptionStillPresent": true,
+  "note": "Peer is a separate same-owner API session. Browser conflict UI observed and combined both changes. One wait targeted the wrong button label, then actual UI label was inspected."
+}

@@ -1,0 +1,15 @@
+{
+  "at": "2026-09-21T13:05:33.822Z",
+  "projectId": "3887234e-8f8f-45ed-92e5-aad101ab1027",
+  "PRDRevision": 3,
+  "onlyReviewedPRDSavePersisted": true,
+  "priorBodiesPreserved": true,
+  "discardedRequirementNotCreated": true,
+  "profileUnchanged": true,
+  "generatedAppsOrTestRecordsCreated": false,
+  "profileArchiveRestore": {
+    "userId": "b4d3f313-5974-43eb-afc2-d8bfaf223b09",
+    "restoredSavedRoleUnchanged": true,
+    "cleanup": "Synthetic profile archived again after actual UI restore; recoverable."
+  }
+}

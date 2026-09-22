@@ -1,0 +1,10 @@
+{
+  "at": "2026-09-21T10:07:26.337Z",
+  "projectId": "c2c59e95-aa34-459e-901a-246a3472fb7a",
+  "releases": 0,
+  "runStatuses": [
+    "submitted",
+    "submitted"
+  ],
+  "meaning": "브라우저에서 해결안을 검토 양식에 채운 뒤에도 명시적 통합 전 서버에는 릴리스가 생성되지 않음"
+}

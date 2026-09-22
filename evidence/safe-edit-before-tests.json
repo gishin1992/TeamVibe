@@ -1,0 +1,425 @@
+{
+  "id": "944c2652-b7f5-49a5-8e9a-b9d737c3ffb1",
+  "createdAt": "2026-09-21T23:52:41.272Z",
+  "name": "비품 신청 · 수정과 취소를 보존하는 시연",
+  "description": "세 팀원의 합성 비품 신청 앱. 저장 전에는 원래 신청이 유지됩니다.",
+  "goal": "신청 등록, 기존 수량을 보존한 수정, 수정 취소, 오류 시 원본 유지, 신청 취소를 한 실행 세션에서 확인한다. 외부 연결과 서버 저장은 없다.",
+  "inviteCode": "18c43e1220a2",
+  "ownerId": "jimin",
+  "members": [
+    "jimin",
+    "seoyeon",
+    "hyunwoo"
+  ],
+  "version": 21,
+  "conversations": [
+    {
+      "id": "274a70e8-ec45-4cc4-a2c3-3b917fa2f89c",
+      "createdAt": "2026-09-21T23:52:41.430Z",
+      "title": "수정 전후의 보존",
+      "ownerId": "jimin",
+      "messages": [
+        {
+          "id": "a955946a-132e-4d98-ace2-7a35a8c4d390",
+          "createdAt": "2026-09-21T23:52:41.438Z",
+          "revision": 1,
+          "authorId": "jimin",
+          "kind": "user",
+          "text": "수정 버튼을 눌러도 저장 전까지 원래 신청을 유지하고 수정 취소로 돌아갈 수 있어야 해요.",
+          "source": ""
+        },
+        {
+          "id": "46548ebb-a6bd-4621-9cf9-c49c0a20b07b",
+          "createdAt": "2026-09-21T23:52:41.438Z",
+          "authorId": "guide",
+          "kind": "guide",
+          "text": "로컬 진행 도우미: 이 기능은 누가 사용하나요? 성공한 상태와 예외 상황, 수정·취소 규칙도 적어 주세요. 더 깊이 논의하려면 ChatGPT 작업 묶음을 복사하고 응답을 가져오세요."
+        }
+      ]
+    },
+    {
+      "id": "e96ac315-732e-43d9-a867-e0b4624c4643",
+      "createdAt": "2026-09-21T23:52:41.446Z",
+      "title": "기존 수량과 오류 입력",
+      "ownerId": "seoyeon",
+      "messages": [
+        {
+          "id": "7042416b-5bbf-4b13-8c1b-e1e4310a75a0",
+          "createdAt": "2026-09-21T23:52:41.455Z",
+          "revision": 1,
+          "authorId": "seoyeon",
+          "kind": "user",
+          "text": "기존 수량이 수정 양식에 그대로 들어오고 잘못된 입력으로 원래 신청이 사라지지 않아야 해요.",
+          "source": ""
+        },
+        {
+          "id": "f69baf29-f10b-446c-a2cf-611d6a27e12b",
+          "createdAt": "2026-09-21T23:52:41.455Z",
+          "authorId": "guide",
+          "kind": "guide",
+          "text": "로컬 진행 도우미: 이 기능은 누가 사용하나요? 성공한 상태와 예외 상황, 수정·취소 규칙도 적어 주세요. 더 깊이 논의하려면 ChatGPT 작업 묶음을 복사하고 응답을 가져오세요."
+        }
+      ]
+    },
+    {
+      "id": "5a3c9be9-f136-450f-a6bb-f7d163d9c614",
+      "createdAt": "2026-09-21T23:52:41.463Z",
+      "title": "독립 작업 경계",
+      "ownerId": "hyunwoo",
+      "messages": [
+        {
+          "id": "c742d4e0-f2a5-4796-abd1-6817ff346909",
+          "createdAt": "2026-09-21T23:52:41.471Z",
+          "revision": 1,
+          "authorId": "hyunwoo",
+          "kind": "user",
+          "text": "HTML과 JS는 기능 작업, CSS는 별도 스타일 작업으로 나누고 같은 ID와 클래스 계약을 사용해요.",
+          "source": ""
+        },
+        {
+          "id": "39d00357-6a95-4ea3-93e6-40e10707affd",
+          "createdAt": "2026-09-21T23:52:41.471Z",
+          "authorId": "guide",
+          "kind": "guide",
+          "text": "로컬 진행 도우미: 이 기능은 누가 사용하나요? 성공한 상태와 예외 상황, 수정·취소 규칙도 적어 주세요. 더 깊이 논의하려면 ChatGPT 작업 묶음을 복사하고 응답을 가져오세요."
+        }
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "id": "c0c3b1a7-2440-4158-b5c8-c7115a2b711d",
+      "createdAt": "2026-09-21T23:52:41.479Z",
+      "title": "원본을 보존하는 신청 수정",
+      "description": "품목과 양의 정수 수량을 등록·수정·취소한다. 수정 시작은 기존 신청을 변경하지 않는다.",
+      "priority": "must",
+      "status": "accepted",
+      "sourceIds": [
+        "7042416b-5bbf-4b13-8c1b-e1e4310a75a0"
+      ],
+      "decision": "기존 값 유지, 수정 취소, 오류 중 원본 유지, 여러 신청 중 대상 구분을 검증한다.",
+      "sourceRevisions": {
+        "7042416b-5bbf-4b13-8c1b-e1e4310a75a0": 1
+      },
+      "authorId": "jimin",
+      "revision": 1,
+      "change": "created"
+    },
+    {
+      "id": "723e6e0f-d1c6-468b-85e2-4161a62d6e8b",
+      "createdAt": "2026-09-21T23:52:41.488Z",
+      "title": "읽기 쉬운 신청 화면",
+      "description": "모바일과 데스크톱에서 수정 중 상태와 버튼을 구분한다.",
+      "priority": "must",
+      "status": "accepted",
+      "sourceIds": [
+        "c742d4e0-f2a5-4796-abd1-6817ff346909"
+      ],
+      "decision": "styles.css를 독립 구현한다. 새로고침 시 합성 실행 상태는 초기화된다.",
+      "sourceRevisions": {
+        "c742d4e0-f2a5-4796-abd1-6817ff346909": 1
+      },
+      "authorId": "jimin",
+      "revision": 1,
+      "change": "created"
+    }
+  ],
+  "prd": {
+    "body": "# 비품 신청 · 수정과 취소를 보존하는 시연\n\n## 해결할 문제\n세 팀원의 합성 비품 신청 앱. 저장 전에는 원래 신청이 유지됩니다.\n\n## 목표\n신청 등록, 기존 수량을 보존한 수정, 수정 취소, 오류 시 원본 유지, 신청 취소를 한 실행 세션에서 확인한다. 외부 연결과 서버 저장은 없다.\n\n## 대상 사용자\n프로젝트 팀이 검토하여 사용자와 권한을 구체화하세요.\n\n## 기능 요구사항\n### 1. 원본을 보존하는 신청 수정\n품목과 양의 정수 수량을 등록·수정·취소한다. 수정 시작은 기존 신청을 변경하지 않는다.\n- 우선순위: must\n- 검토 상태: accepted\n- 결정: 기존 값 유지, 수정 취소, 오류 중 원본 유지, 여러 신청 중 대상 구분을 검증한다.\n\n### 2. 읽기 쉬운 신청 화면\n모바일과 데스크톱에서 수정 중 상태와 버튼을 구분한다.\n- 우선순위: must\n- 검토 상태: accepted\n- 결정: styles.css를 독립 구현한다. 새로고침 시 합성 실행 상태는 초기화된다.\n\n## 완료 및 테스트 기준\n각 요구사항의 정상 흐름, 빈 상태, 오류 상태, 수정과 취소/삭제를 확인합니다.\n\n## 범위와 제약\n로컬 테스트 환경, 합성 데이터만 사용합니다. 외부 연계는 별도 합의 후 진행합니다.\n\n## 미결정 사항\n현재 등록된 미결정 사항 없음\n",
+    "revision": 1,
+    "approvals": [
+      "jimin",
+      "seoyeon",
+      "hyunwoo"
+    ],
+    "history": [
+      {
+        "revision": 0,
+        "body": "",
+        "at": "2026-09-21T23:52:41.495Z",
+        "authorId": "jimin"
+      }
+    ],
+    "sourceRevision": 2,
+    "updatedAt": "2026-09-21T23:52:41.495Z",
+    "updatedBy": "jimin",
+    "change": "generated"
+  },
+  "stories": [
+    {
+      "id": "91fcbfdd-94bc-4831-85b2-c6571025ee84",
+      "createdAt": "2026-09-21T23:52:41.528Z",
+      "title": "수정 중 원본과 수량 보존",
+      "description": "index.html과 app.js를 구현한다. 신청은 메모리에 저장하고 입력을 텍스트로 표시한다.",
+      "acceptance": [
+        "저장 전 원본 보존",
+        "명시적 수정 취소",
+        "양의 정수 수량",
+        "신청별 독립 수정·취소"
+      ],
+      "tests": [
+        "3개 신청의 수정 시작에서 품목·수량3과 원래 목록이 유지되는지 확인한다.",
+        "품목과 수량을 바꾼 뒤 수정 취소하면 원래 신청이 유지되는지 확인한다.",
+        "공백 품목·0·소수 수량 저장 거절 후 원래 신청과 입력 보존을 확인한다.",
+        "수정 저장과 새 신청 추가 후 각각의 수정·신청 취소가 올바른 대상에 적용되는지 확인한다."
+      ],
+      "dependencies": [],
+      "requirementIds": [
+        "c0c3b1a7-2440-4158-b5c8-c7115a2b711d"
+      ],
+      "ownerId": "hyunwoo",
+      "status": "review",
+      "prdRevision": 1,
+      "revision": 1,
+      "assignmentHistory": [
+        {
+          "from": "",
+          "to": "hyunwoo",
+          "at": "2026-09-21T23:52:41.528Z",
+          "authorId": "jimin",
+          "reason": "assigned"
+        }
+      ]
+    },
+    {
+      "id": "36907451-f6a5-431d-ab57-991af1edb41e",
+      "createdAt": "2026-09-21T23:52:41.536Z",
+      "title": "모바일 수정 화면",
+      "description": "styles.css만 구현한다. 폼과 목록이390px에서도 잘리지 않는다.",
+      "acceptance": [
+        "모바일에서 입력·수정 취소·목록을 읽고 조작할 수 있다."
+      ],
+      "tests": [
+        "390px 화면에서 수정 입력·취소 버튼·목록 표시와 가로 넘침을 확인한다."
+      ],
+      "dependencies": [],
+      "requirementIds": [
+        "723e6e0f-d1c6-468b-85e2-4161a62d6e8b"
+      ],
+      "ownerId": "jimin",
+      "status": "review",
+      "prdRevision": 1,
+      "revision": 1,
+      "assignmentHistory": [
+        {
+          "from": "",
+          "to": "jimin",
+          "at": "2026-09-21T23:52:41.536Z",
+          "authorId": "jimin",
+          "reason": "assigned"
+        }
+      ]
+    }
+  ],
+  "runs": [
+    {
+      "id": "fcb73f8a-945b-45d0-85ae-e4171ec0d644",
+      "createdAt": "2026-09-21T23:52:41.544Z",
+      "resultContextRequired": true,
+      "storyId": "91fcbfdd-94bc-4831-85b2-c6571025ee84",
+      "storyRevision": 1,
+      "baseReleaseId": "",
+      "title": "수정 중 원본과 수량 보존",
+      "status": "integrated",
+      "prompt": "TeamVibe 개발 작업 — 수정 중 원본과 수량 보존\n프로젝트: 비품 신청 · 수정과 취소를 보존하는 시연\n스토리 ID: 91fcbfdd-94bc-4831-85b2-c6571025ee84\n스토리 버전: 1\nPRD 버전: 1\n\nindex.html과 app.js를 구현한다. 신청은 메모리에 저장하고 입력을 텍스트로 표시한다.\n\n완료 조건:\n- 저장 전 원본 보존\n- 명시적 수정 취소\n- 양의 정수 수량\n- 신청별 독립 수정·취소\n\n테스트 기준:\n- 3개 신청의 수정 시작에서 품목·수량3과 원래 목록이 유지되는지 확인한다.\n- 품목과 수량을 바꾼 뒤 수정 취소하면 원래 신청이 유지되는지 확인한다.\n- 공백 품목·0·소수 수량 저장 거절 후 원래 신청과 입력 보존을 확인한다.\n- 수정 저장과 새 신청 추가 후 각각의 수정·신청 취소가 올바른 대상에 적용되는지 확인한다.\n\n의존 스토리: 없음\n\n공동 PRD:\n# 비품 신청 · 수정과 취소를 보존하는 시연\n\n## 해결할 문제\n세 팀원의 합성 비품 신청 앱. 저장 전에는 원래 신청이 유지됩니다.\n\n## 목표\n신청 등록, 기존 수량을 보존한 수정, 수정 취소, 오류 시 원본 유지, 신청 취소를 한 실행 세션에서 확인한다. 외부 연결과 서버 저장은 없다.\n\n## 대상 사용자\n프로젝트 팀이 검토하여 사용자와 권한을 구체화하세요.\n\n## 기능 요구사항\n### 1. 원본을 보존하는 신청 수정\n품목과 양의 정수 수량을 등록·수정·취소한다. 수정 시작은 기존 신청을 변경하지 않는다.\n- 우선순위: must\n- 검토 상태: accepted\n- 결정: 기존 값 유지, 수정 취소, 오류 중 원본 유지, 여러 신청 중 대상 구분을 검증한다.\n\n### 2. 읽기 쉬운 신청 화면\n모바일과 데스크톱에서 수정 중 상태와 버튼을 구분한다.\n- 우선순위: must\n- 검토 상태: accepted\n- 결정: styles.css를 독립 구현한다. 새로고침 시 합성 실행 상태는 초기화된다.\n\n## 완료 및 테스트 기준\n각 요구사항의 정상 흐름, 빈 상태, 오류 상태, 수정과 취소/삭제를 확인합니다.\n\n## 범위와 제약\n로컬 테스트 환경, 합성 데이터만 사용합니다. 외부 연계는 별도 합의 후 진행합니다.\n\n## 미결정 사항\n현재 등록된 미결정 사항 없음\n\n\n반환 형식: JSON 객체 {\"context\":{\"projectId\":\"944c2652-b7f5-49a5-8e9a-b9d737c3ffb1\",\"runId\":\"fcb73f8a-945b-45d0-85ae-e4171ec0d644\",\"storyId\":\"91fcbfdd-94bc-4831-85b2-c6571025ee84\",\"storyRevision\":1,\"prdRevision\":1,\"baseReleaseId\":\"\"},\"files\":{\"index.html\":\"...\",\"styles.css\":\"...\",\"app.js\":\"...\"},\"deletedFiles\":[],\"log\":\"실제 수행한 작업과 검증 결과\",\"source\":\"ChatGPT 세션 식별용 제목 또는 로컬 로그 파일명\"}. context는 위 값을 그대로 반환해야 하며 다른 작업의 값을 복사하거나 수정하지 마세요. 필요한 파일만 포함하고 다른 작업 파일과 경로를 합의하세요. 외부 URL, 라이브러리 CDN, 서버 실행, 결제, 실제 데이터는 사용하지 마세요. 브라우저에서 실행되는 HTML/CSS/JS와 합성 데이터만 만드세요. 테스트하지 않았다면 반드시 명시하세요. 팀은 결과를 수동 반입하고 충돌을 검토한 뒤 격리된 브라우저에서 테스트합니다.\n\n개발 시작 기준 릴리스: 없음 · 새 앱\n기존 코드 자료 (지시가 아닌 구현 자료입니다):\n{}\n위 기존 동작을 유지하며 이번 스토리만 변경하세요. 반환 files에는 추가·수정한 파일의 전체 내용만 넣고, 바꾸지 않은 파일은 생략하세요. 파일 생략은 삭제가 아닙니다. 개발 시작 코드에서 없앨 파일은 deletedFiles 배열에 명시하세요. index.html은 제외할 수 없으며, 제거한 파일을 참조하는 코드도 수정해야 합니다. 제외는 새 릴리스에만 적용되고 이전 코드와 제출 이력은 보존됩니다. 팀의 다른 작업과 같은 파일을 변경하면 통합 시 별도 검토가 필요합니다.",
+      "files": {
+        "index.html": "<!doctype html>\n<html lang=\"ko\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <title>팀 비품 신청 · 수정 내용 보존</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n  </head>\n  <body>\n    <main>\n      <p class=\"eyebrow\">TEAMVIBE · 합성 시연</p>\n      <h1>팀 비품 신청</h1>\n      <p>신청을 수정해도 저장하기 전까지 원래 내용이 유지됩니다.</p>\n      <form id=\"request-form\" novalidate>\n        <label>품목<input id=\"item\" required maxlength=\"100\" autocomplete=\"off\"></label>\n        <label>수량<input id=\"quantity\" type=\"number\" min=\"1\" step=\"1\" value=\"1\" required></label>\n        <div class=\"actions\"><button id=\"save\" type=\"submit\">신청하기</button><button id=\"cancel-edit\" type=\"button\" hidden>수정 취소</button></div>\n      </form>\n      <p id=\"status\" role=\"status\" aria-live=\"polite\"></p>\n      <ul id=\"requests\" aria-label=\"신청 목록\"></ul>\n      <p id=\"empty\">아직 신청이 없습니다.</p>\n      <p class=\"note\">현재 실행 세션의 합성 데이터입니다. 새로고침하면 초기화됩니다.</p>\n    </main>\n    <script src=\"app.js\"></script>\n  </body>\n</html>",
+        "app.js": "const form = document.querySelector(\"#request-form\");\nconst item = document.querySelector(\"#item\");\nconst quantity = document.querySelector(\"#quantity\");\nconst list = document.querySelector(\"#requests\");\nconst status = document.querySelector(\"#status\");\nconst save = document.querySelector(\"#save\");\nconst cancelEdit = document.querySelector(\"#cancel-edit\");\nlet entries = [];\nlet editing = null;\nlet sequence = 0;\n\nfunction finishEditing() {\n  editing = null;\n  form.reset();\n  save.textContent = \"신청하기\";\n  cancelEdit.hidden = true;\n}\n\nfunction render() {\n  list.replaceChildren();\n  document.querySelector(\"#empty\").hidden = entries.length > 0;\n  for (const entry of entries) {\n    const row = document.createElement(\"li\");\n    const text = document.createElement(\"span\");\n    text.textContent = `${entry.item} · ${entry.quantity}개 · 승인 대기`;\n    const edit = document.createElement(\"button\");\n    edit.type = \"button\";\n    edit.textContent = editing === entry.id ? \"수정 중\" : \"수정\";\n    edit.disabled = editing !== null;\n    edit.addEventListener(\"click\", () => {\n      editing = entry.id;\n      item.value = entry.item;\n      quantity.value = String(entry.quantity);\n      save.textContent = \"수정 저장\";\n      cancelEdit.hidden = false;\n      status.textContent = \"저장 전까지 원래 신청이 유지됩니다. 수정 취소로 돌아갈 수 있습니다.\";\n      render();\n      item.focus();\n    });\n    const remove = document.createElement(\"button\");\n    remove.type = \"button\";\n    remove.textContent = \"취소\";\n    remove.addEventListener(\"click\", () => {\n      entries = entries.filter((value) => value.id !== entry.id);\n      if (editing === entry.id) finishEditing();\n      render();\n      status.textContent = \"신청을 취소했습니다.\";\n    });\n    row.append(text, edit, remove);\n    list.append(row);\n  }\n}\n\nform.addEventListener(\"submit\", (event) => {\n  event.preventDefault();\n  const name = item.value.trim();\n  const count = Number(quantity.value);\n  if (!name) {\n    status.textContent = \"품목을 입력해 주세요. 기존 신청과 작성 중인 수량은 유지됩니다.\";\n    item.focus();\n    return;\n  }\n  if (!Number.isSafeInteger(count) || count < 1) {\n    status.textContent = \"수량은 1 이상의 정수로 입력해 주세요. 기존 신청과 입력은 유지됩니다.\";\n    quantity.focus();\n    return;\n  }\n  const wasEditing = editing !== null;\n  if (wasEditing) {\n    entries = entries.map((entry) => entry.id === editing ? { ...entry, item: name, quantity: count } : entry);\n  } else {\n    entries.unshift({ id: ++sequence, item: name, quantity: count });\n  }\n  finishEditing();\n  render();\n  status.textContent = wasEditing ? \"신청을 수정했습니다.\" : \"신청을 등록했습니다.\";\n});\n\ncancelEdit.addEventListener(\"click\", () => {\n  finishEditing();\n  render();\n  status.textContent = \"수정을 취소했습니다. 원래 신청은 그대로입니다.\";\n});\nrender();"
+      },
+      "log": "합성 샘플의 수정 시 원본 손실을 보완했다. 반입 시점 실제 브라우저 검증 전.",
+      "source": "data/demo-safe-edit · Codex 로컬 합성 코드, 외부 AI 호출 없음",
+      "prdRevision": 1,
+      "deletedFiles": [],
+      "submissionRevision": 1,
+      "submittedAt": "2026-09-21T23:52:41.553Z",
+      "submittedBy": "jimin"
+    },
+    {
+      "id": "799d104b-33f5-4329-b95c-9eabdaf11442",
+      "createdAt": "2026-09-21T23:52:41.545Z",
+      "resultContextRequired": true,
+      "storyId": "36907451-f6a5-431d-ab57-991af1edb41e",
+      "storyRevision": 1,
+      "baseReleaseId": "",
+      "title": "모바일 수정 화면",
+      "status": "integrated",
+      "prompt": "TeamVibe 개발 작업 — 모바일 수정 화면\n프로젝트: 비품 신청 · 수정과 취소를 보존하는 시연\n스토리 ID: 36907451-f6a5-431d-ab57-991af1edb41e\n스토리 버전: 1\nPRD 버전: 1\n\nstyles.css만 구현한다. 폼과 목록이390px에서도 잘리지 않는다.\n\n완료 조건:\n- 모바일에서 입력·수정 취소·목록을 읽고 조작할 수 있다.\n\n테스트 기준:\n- 390px 화면에서 수정 입력·취소 버튼·목록 표시와 가로 넘침을 확인한다.\n\n의존 스토리: 없음\n\n공동 PRD:\n# 비품 신청 · 수정과 취소를 보존하는 시연\n\n## 해결할 문제\n세 팀원의 합성 비품 신청 앱. 저장 전에는 원래 신청이 유지됩니다.\n\n## 목표\n신청 등록, 기존 수량을 보존한 수정, 수정 취소, 오류 시 원본 유지, 신청 취소를 한 실행 세션에서 확인한다. 외부 연결과 서버 저장은 없다.\n\n## 대상 사용자\n프로젝트 팀이 검토하여 사용자와 권한을 구체화하세요.\n\n## 기능 요구사항\n### 1. 원본을 보존하는 신청 수정\n품목과 양의 정수 수량을 등록·수정·취소한다. 수정 시작은 기존 신청을 변경하지 않는다.\n- 우선순위: must\n- 검토 상태: accepted\n- 결정: 기존 값 유지, 수정 취소, 오류 중 원본 유지, 여러 신청 중 대상 구분을 검증한다.\n\n### 2. 읽기 쉬운 신청 화면\n모바일과 데스크톱에서 수정 중 상태와 버튼을 구분한다.\n- 우선순위: must\n- 검토 상태: accepted\n- 결정: styles.css를 독립 구현한다. 새로고침 시 합성 실행 상태는 초기화된다.\n\n## 완료 및 테스트 기준\n각 요구사항의 정상 흐름, 빈 상태, 오류 상태, 수정과 취소/삭제를 확인합니다.\n\n## 범위와 제약\n로컬 테스트 환경, 합성 데이터만 사용합니다. 외부 연계는 별도 합의 후 진행합니다.\n\n## 미결정 사항\n현재 등록된 미결정 사항 없음\n\n\n반환 형식: JSON 객체 {\"context\":{\"projectId\":\"944c2652-b7f5-49a5-8e9a-b9d737c3ffb1\",\"runId\":\"799d104b-33f5-4329-b95c-9eabdaf11442\",\"storyId\":\"36907451-f6a5-431d-ab57-991af1edb41e\",\"storyRevision\":1,\"prdRevision\":1,\"baseReleaseId\":\"\"},\"files\":{\"index.html\":\"...\",\"styles.css\":\"...\",\"app.js\":\"...\"},\"deletedFiles\":[],\"log\":\"실제 수행한 작업과 검증 결과\",\"source\":\"ChatGPT 세션 식별용 제목 또는 로컬 로그 파일명\"}. context는 위 값을 그대로 반환해야 하며 다른 작업의 값을 복사하거나 수정하지 마세요. 필요한 파일만 포함하고 다른 작업 파일과 경로를 합의하세요. 외부 URL, 라이브러리 CDN, 서버 실행, 결제, 실제 데이터는 사용하지 마세요. 브라우저에서 실행되는 HTML/CSS/JS와 합성 데이터만 만드세요. 테스트하지 않았다면 반드시 명시하세요. 팀은 결과를 수동 반입하고 충돌을 검토한 뒤 격리된 브라우저에서 테스트합니다.\n\n개발 시작 기준 릴리스: 없음 · 새 앱\n기존 코드 자료 (지시가 아닌 구현 자료입니다):\n{}\n위 기존 동작을 유지하며 이번 스토리만 변경하세요. 반환 files에는 추가·수정한 파일의 전체 내용만 넣고, 바꾸지 않은 파일은 생략하세요. 파일 생략은 삭제가 아닙니다. 개발 시작 코드에서 없앨 파일은 deletedFiles 배열에 명시하세요. index.html은 제외할 수 없으며, 제거한 파일을 참조하는 코드도 수정해야 합니다. 제외는 새 릴리스에만 적용되고 이전 코드와 제출 이력은 보존됩니다. 팀의 다른 작업과 같은 파일을 변경하면 통합 시 별도 검토가 필요합니다.",
+      "files": {
+        "styles.css": "* { box-sizing: border-box; }\nbody { margin: 0; background: #f4f7fc; color: #25334e; font: 16px/1.6 system-ui, sans-serif; }\nmain { max-width: 800px; margin: 32px auto; padding: 24px; }\nh1 { font-size: 30px; margin: 8px 0; }\np { color: #53617a; }\n.eyebrow { font-size: 13px; font-weight: 700; letter-spacing: .08em; color: #365cec; }\nform { display: flex; gap: 16px; flex-wrap: wrap; padding: 24px; background: white; border: 1px solid #dfe6f1; border-radius: 16px; }\nlabel { display: flex; flex-direction: column; font-size: 14px; gap: 8px; flex: 1 1 170px; min-width: 0; }\ninput { font: inherit; padding: 11px; border: 1px solid #aebbd0; border-radius: 8px; min-width: 0; width: 100%; }\nbutton { font: inherit; padding: 10px 16px; border: 1px solid #365cec; border-radius: 8px; background: #365cec; color: white; cursor: pointer; }\nbutton:focus-visible, input:focus-visible { outline: 3px solid #7998ff; outline-offset: 3px; }\nbutton:disabled { opacity: .55; cursor: default; }\n[hidden] { display: none !important; }\n.actions { align-self: end; display: flex; flex-wrap: wrap; gap: 8px; }\n#cancel-edit, li button { background: white; color: #2d4cb8; }\n#status { min-height: 26px; color: #334575; }\nul { list-style: none; padding: 0; }\nli { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; padding: 18px; background: white; border: 1px solid #dfe6f1; border-radius: 12px; margin: 12px 0; }\nli span { flex: 1 1 220px; overflow-wrap: anywhere; }\n.note { font-size: 14px; }\n@media (max-width: 480px) { main { margin: 12px auto; padding: 16px; } form { padding: 16px; } h1 { font-size: 26px; } }"
+      },
+      "log": "합성 반응형 CSS 작성. 반입 시점 실제 화면 검증 전.",
+      "source": "data/demo-safe-edit · Codex 로컬 합성 CSS",
+      "prdRevision": 1,
+      "deletedFiles": [],
+      "submissionRevision": 1,
+      "submittedAt": "2026-09-21T23:52:41.561Z",
+      "submittedBy": "jimin"
+    }
+  ],
+  "releases": [
+    {
+      "id": "04c4ec1b-ecbb-4027-9f07-7c35d98a6be2",
+      "createdAt": "2026-09-21T23:52:41.570Z",
+      "title": "수정 전 원본 보존 · 합성 시연 v2",
+      "baseReleaseId": "",
+      "runIds": [
+        "fcb73f8a-945b-45d0-85ae-e4171ec0d644",
+        "799d104b-33f5-4329-b95c-9eabdaf11442"
+      ],
+      "files": {
+        "index.html": "<!doctype html>\n<html lang=\"ko\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <title>팀 비품 신청 · 수정 내용 보존</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n  </head>\n  <body>\n    <main>\n      <p class=\"eyebrow\">TEAMVIBE · 합성 시연</p>\n      <h1>팀 비품 신청</h1>\n      <p>신청을 수정해도 저장하기 전까지 원래 내용이 유지됩니다.</p>\n      <form id=\"request-form\" novalidate>\n        <label>품목<input id=\"item\" required maxlength=\"100\" autocomplete=\"off\"></label>\n        <label>수량<input id=\"quantity\" type=\"number\" min=\"1\" step=\"1\" value=\"1\" required></label>\n        <div class=\"actions\"><button id=\"save\" type=\"submit\">신청하기</button><button id=\"cancel-edit\" type=\"button\" hidden>수정 취소</button></div>\n      </form>\n      <p id=\"status\" role=\"status\" aria-live=\"polite\"></p>\n      <ul id=\"requests\" aria-label=\"신청 목록\"></ul>\n      <p id=\"empty\">아직 신청이 없습니다.</p>\n      <p class=\"note\">현재 실행 세션의 합성 데이터입니다. 새로고침하면 초기화됩니다.</p>\n    </main>\n    <script src=\"app.js\"></script>\n  </body>\n</html>",
+        "app.js": "const form = document.querySelector(\"#request-form\");\nconst item = document.querySelector(\"#item\");\nconst quantity = document.querySelector(\"#quantity\");\nconst list = document.querySelector(\"#requests\");\nconst status = document.querySelector(\"#status\");\nconst save = document.querySelector(\"#save\");\nconst cancelEdit = document.querySelector(\"#cancel-edit\");\nlet entries = [];\nlet editing = null;\nlet sequence = 0;\n\nfunction finishEditing() {\n  editing = null;\n  form.reset();\n  save.textContent = \"신청하기\";\n  cancelEdit.hidden = true;\n}\n\nfunction render() {\n  list.replaceChildren();\n  document.querySelector(\"#empty\").hidden = entries.length > 0;\n  for (const entry of entries) {\n    const row = document.createElement(\"li\");\n    const text = document.createElement(\"span\");\n    text.textContent = `${entry.item} · ${entry.quantity}개 · 승인 대기`;\n    const edit = document.createElement(\"button\");\n    edit.type = \"button\";\n    edit.textContent = editing === entry.id ? \"수정 중\" : \"수정\";\n    edit.disabled = editing !== null;\n    edit.addEventListener(\"click\", () => {\n      editing = entry.id;\n      item.value = entry.item;\n      quantity.value = String(entry.quantity);\n      save.textContent = \"수정 저장\";\n      cancelEdit.hidden = false;\n      status.textContent = \"저장 전까지 원래 신청이 유지됩니다. 수정 취소로 돌아갈 수 있습니다.\";\n      render();\n      item.focus();\n    });\n    const remove = document.createElement(\"button\");\n    remove.type = \"button\";\n    remove.textContent = \"취소\";\n    remove.addEventListener(\"click\", () => {\n      entries = entries.filter((value) => value.id !== entry.id);\n      if (editing === entry.id) finishEditing();\n      render();\n      status.textContent = \"신청을 취소했습니다.\";\n    });\n    row.append(text, edit, remove);\n    list.append(row);\n  }\n}\n\nform.addEventListener(\"submit\", (event) => {\n  event.preventDefault();\n  const name = item.value.trim();\n  const count = Number(quantity.value);\n  if (!name) {\n    status.textContent = \"품목을 입력해 주세요. 기존 신청과 작성 중인 수량은 유지됩니다.\";\n    item.focus();\n    return;\n  }\n  if (!Number.isSafeInteger(count) || count < 1) {\n    status.textContent = \"수량은 1 이상의 정수로 입력해 주세요. 기존 신청과 입력은 유지됩니다.\";\n    quantity.focus();\n    return;\n  }\n  const wasEditing = editing !== null;\n  if (wasEditing) {\n    entries = entries.map((entry) => entry.id === editing ? { ...entry, item: name, quantity: count } : entry);\n  } else {\n    entries.unshift({ id: ++sequence, item: name, quantity: count });\n  }\n  finishEditing();\n  render();\n  status.textContent = wasEditing ? \"신청을 수정했습니다.\" : \"신청을 등록했습니다.\";\n});\n\ncancelEdit.addEventListener(\"click\", () => {\n  finishEditing();\n  render();\n  status.textContent = \"수정을 취소했습니다. 원래 신청은 그대로입니다.\";\n});\nrender();",
+        "styles.css": "* { box-sizing: border-box; }\nbody { margin: 0; background: #f4f7fc; color: #25334e; font: 16px/1.6 system-ui, sans-serif; }\nmain { max-width: 800px; margin: 32px auto; padding: 24px; }\nh1 { font-size: 30px; margin: 8px 0; }\np { color: #53617a; }\n.eyebrow { font-size: 13px; font-weight: 700; letter-spacing: .08em; color: #365cec; }\nform { display: flex; gap: 16px; flex-wrap: wrap; padding: 24px; background: white; border: 1px solid #dfe6f1; border-radius: 16px; }\nlabel { display: flex; flex-direction: column; font-size: 14px; gap: 8px; flex: 1 1 170px; min-width: 0; }\ninput { font: inherit; padding: 11px; border: 1px solid #aebbd0; border-radius: 8px; min-width: 0; width: 100%; }\nbutton { font: inherit; padding: 10px 16px; border: 1px solid #365cec; border-radius: 8px; background: #365cec; color: white; cursor: pointer; }\nbutton:focus-visible, input:focus-visible { outline: 3px solid #7998ff; outline-offset: 3px; }\nbutton:disabled { opacity: .55; cursor: default; }\n[hidden] { display: none !important; }\n.actions { align-self: end; display: flex; flex-wrap: wrap; gap: 8px; }\n#cancel-edit, li button { background: white; color: #2d4cb8; }\n#status { min-height: 26px; color: #334575; }\nul { list-style: none; padding: 0; }\nli { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; padding: 18px; background: white; border: 1px solid #dfe6f1; border-radius: 12px; margin: 12px 0; }\nli span { flex: 1 1 220px; overflow-wrap: anywhere; }\n.note { font-size: 14px; }\n@media (max-width: 480px) { main { margin: 12px auto; padding: 16px; } form { padding: 16px; } h1 { font-size: 26px; } }"
+      },
+      "deletedFiles": [],
+      "resolutions": [],
+      "status": "active"
+    }
+  ],
+  "testResults": [],
+  "feedback": [],
+  "events": [
+    {
+      "id": "bb82a59d-4cf5-4ebe-a645-0e421874f4b3",
+      "at": "2026-09-21T23:52:41.352Z",
+      "actorId": "seoyeon",
+      "action": "member.join",
+      "detail": "이서연"
+    },
+    {
+      "id": "5086dc85-a7b8-4fa5-a707-60704391f15c",
+      "at": "2026-09-21T23:52:41.421Z",
+      "actorId": "hyunwoo",
+      "action": "member.join",
+      "detail": "박현우"
+    },
+    {
+      "id": "666dc9ed-9391-4291-bf5a-24ff41ab34e7",
+      "at": "2026-09-21T23:52:41.430Z",
+      "actorId": "jimin",
+      "action": "conversation.save",
+      "detail": "수정 전후의 보존"
+    },
+    {
+      "id": "97e8672a-b8e6-4cba-9d53-904ab6727eee",
+      "at": "2026-09-21T23:52:41.438Z",
+      "actorId": "jimin",
+      "action": "message.save",
+      "detail": "수정 전후의 보존"
+    },
+    {
+      "id": "3e2b7816-31cd-46a8-a004-2be1f242299e",
+      "at": "2026-09-21T23:52:41.446Z",
+      "actorId": "seoyeon",
+      "action": "conversation.save",
+      "detail": "기존 수량과 오류 입력"
+    },
+    {
+      "id": "1210b4a2-d82c-47c9-8b9a-6a15250b9453",
+      "at": "2026-09-21T23:52:41.455Z",
+      "actorId": "seoyeon",
+      "action": "message.save",
+      "detail": "기존 수량과 오류 입력"
+    },
+    {
+      "id": "365e973f-b511-4e7a-baf8-0523eebb30aa",
+      "at": "2026-09-21T23:52:41.463Z",
+      "actorId": "hyunwoo",
+      "action": "conversation.save",
+      "detail": "독립 작업 경계"
+    },
+    {
+      "id": "93ada600-111c-4b5c-8df3-4c92f344d018",
+      "at": "2026-09-21T23:52:41.471Z",
+      "actorId": "hyunwoo",
+      "action": "message.save",
+      "detail": "독립 작업 경계"
+    },
+    {
+      "id": "de45098c-6c6e-4c81-90f4-35ae550e6331",
+      "at": "2026-09-21T23:52:41.479Z",
+      "actorId": "jimin",
+      "action": "requirement.save",
+      "detail": "원본을 보존하는 신청 수정"
+    },
+    {
+      "id": "43cd9952-8f59-4b45-850e-39e936a14c47",
+      "at": "2026-09-21T23:52:41.488Z",
+      "actorId": "jimin",
+      "action": "requirement.save",
+      "detail": "읽기 쉬운 신청 화면"
+    },
+    {
+      "id": "401f874f-60ed-4dc1-aba7-dc890559ef86",
+      "at": "2026-09-21T23:52:41.495Z",
+      "actorId": "jimin",
+      "action": "prd.generate",
+      "detail": "요구사항 기반 규칙 초안"
+    },
+    {
+      "id": "dfe525d1-891a-45ca-91f4-b0234e9ab49c",
+      "at": "2026-09-21T23:52:41.503Z",
+      "actorId": "jimin",
+      "action": "prd.approve",
+      "detail": "v1 동의"
+    },
+    {
+      "id": "48d41a8b-4093-4154-88dc-d97356f13e6c",
+      "at": "2026-09-21T23:52:41.510Z",
+      "actorId": "seoyeon",
+      "action": "prd.approve",
+      "detail": "v1 동의"
+    },
+    {
+      "id": "fff1fd73-fc55-4646-ac79-beec2b1eee1f",
+      "at": "2026-09-21T23:52:41.519Z",
+      "actorId": "hyunwoo",
+      "action": "prd.approve",
+      "detail": "v1 동의"
+    },
+    {
+      "id": "d31304cb-640a-4eda-8ca0-f4d69a070af9",
+      "at": "2026-09-21T23:52:41.528Z",
+      "actorId": "jimin",
+      "action": "story.save",
+      "detail": "수정 중 원본과 수량 보존"
+    },
+    {
+      "id": "ffdfedc3-f05b-445c-8681-db5a5769c909",
+      "at": "2026-09-21T23:52:41.536Z",
+      "actorId": "jimin",
+      "action": "story.save",
+      "detail": "모바일 수정 화면"
+    },
+    {
+      "id": "89910839-548b-4aa8-9d5e-c4a1e778f184",
+      "at": "2026-09-21T23:52:41.545Z",
+      "actorId": "jimin",
+      "action": "run.start",
+      "detail": "2개 수동 ChatGPT 작업 시작"
+    },
+    {
+      "id": "93e415dd-dc06-4304-8beb-912b29499c5a",
+      "at": "2026-09-21T23:52:41.553Z",
+      "actorId": "jimin",
+      "action": "run.submit",
+      "detail": "수정 중 원본과 수량 보존"
+    },
+    {
+      "id": "121230d4-e2c7-40fb-9420-58de3ce1cf18",
+      "at": "2026-09-21T23:52:41.561Z",
+      "actorId": "jimin",
+      "action": "run.submit",
+      "detail": "모바일 수정 화면"
+    },
+    {
+      "id": "4dc35577-6e42-47bd-9d1b-e2eaa09660c4",
+      "at": "2026-09-21T23:52:41.570Z",
+      "actorId": "jimin",
+      "action": "release.create",
+      "detail": "수정 전 원본 보존 · 합성 시연 v2"
+    }
+  ],
+  "updatedAt": "2026-09-21T23:52:41.570Z",
+  "requirementsVersion": 2
+}

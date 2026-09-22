@@ -1,0 +1,100 @@
+{
+  "at": "2026-09-21T23:28:27.525Z",
+  "entireDemoMatchesPreservedSnapshot": true,
+  "health": {
+    "ok": true,
+    "mode": "local",
+    "ai": "manual-chatgpt",
+    "database": "ready"
+  },
+  "projectId": "d8195b22-80fd-43b6-8fe9-1c4e4c1deb83",
+  "version": 28,
+  "members": [
+    "jimin",
+    "seoyeon",
+    "hyunwoo"
+  ],
+  "conversations": 3,
+  "requirements": 2,
+  "prdApprovals": [
+    "jimin",
+    "seoyeon",
+    "hyunwoo"
+  ],
+  "stories": [
+    {
+      "id": "5047f835-05e9-4deb-9f39-c834407c44d9",
+      "status": "done",
+      "tests": [
+        "합성 키보드 2개 등록 후 목록 표시 확인",
+        "합성 마우스 3개로 수정한 결과 확인",
+        "취소 후 해당 신청이 목록에서 제거됨 확인",
+        "품목 공백 또는 수량 0의 등록 차단 확인"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "a523e397-0cdf-4a8a-a9b4-843bc9738270",
+      "status": "done",
+      "tests": [
+        "390px 모바일에서 폼과 목록 표시 및 가로 넘침 확인",
+        "1440px 데스크톱에서 실제 스타일 적용과 텍스트 표시 확인"
+      ],
+      "revision": 1
+    }
+  ],
+  "runs": [
+    {
+      "id": "3a28ae8b-8005-4ed3-aed2-22e358ef7c4a",
+      "status": "integrated",
+      "files": [
+        "index.html",
+        "app.js"
+      ]
+    },
+    {
+      "id": "48e707e6-c9df-470a-bec1-4f2650b82a9c",
+      "status": "integrated",
+      "files": [
+        "styles.css"
+      ]
+    }
+  ],
+  "testResults": [
+    {
+      "id": "4284b74e-2d73-4e69-b81a-6fec9960f198",
+      "createdAt": "2026-09-21T09:04:02.068Z",
+      "releaseId": "355ed837-683e-41be-8baa-1d9717efb9b6",
+      "coverage": [
+        "5047f835-05e9-4deb-9f39-c834407c44d9:0",
+        "5047f835-05e9-4deb-9f39-c834407c44d9:1",
+        "5047f835-05e9-4deb-9f39-c834407c44d9:2",
+        "5047f835-05e9-4deb-9f39-c834407c44d9:3"
+      ],
+      "title": "신청 폼과 목록 동작 실검증",
+      "steps": "키보드 2개 등록 → 수정 버튼으로 마우스 3개 재등록 → 취소 → 공백 품목 제출 → 수량 0 제출",
+      "expected": "등록·수정한 품목/수량이 표시되고 취소 시 제거된다. 잘못된 입력으로 항목이 추가되지 않는다.",
+      "actual": "[\n  {\n    \"step\": \"등록\",\n    \"observed\": \"합성 키보드 · 2개 · 승인 대기\\n수정\\n취소\"\n  },\n  {\n    \"step\": \"수정\",\n    \"observed\": \"합성 마우스 · 3개 · 승인 대기\\n수정\\n취소\"\n  },\n  {\n    \"step\": \"취소\",\n    \"observed\": \"\",\n    \"message\": \"신청을 취소했습니다.\"\n  },\n  {\n    \"step\": \"공백 품목 차단\",\n    \"observed\": \"\"\n  },\n  {\n    \"step\": \"0 수량 차단\",\n    \"observed\": \"\"\n  }\n]\n실제 인앱 브라우저 iframe에서 수행. evidence/demo-browser-steps.json에 관찰 결과 보존.",
+      "status": "passed",
+      "authorId": "jimin",
+      "kind": "manual"
+    },
+    {
+      "id": "3942db32-f75f-4596-954c-39a237aa58d9",
+      "createdAt": "2026-09-21T09:06:55.298Z",
+      "releaseId": "355ed837-683e-41be-8baa-1d9717efb9b6",
+      "coverage": [
+        "a523e397-0cdf-4a8a-a9b4-843bc9738270:0",
+        "a523e397-0cdf-4a8a-a9b4-843bc9738270:1"
+      ],
+      "title": "모바일·데스크톱 반응형 실검증",
+      "steps": "인앱 브라우저 뷰포트를 390×844로 설정하고 합성 모니터 1개를 실제 신청했다. 폼·목록 표시 및 문서 너비를 확인한 뒤 1440×1000으로 바꿔 스타일과 텍스트 표시를 확인했다.",
+      "expected": "모바일에서는 폼과 신청 목록을 읽고 사용할 수 있고 가로 넘침이 없다. 데스크톱에는 통합한 CSS 스타일이 적용된다.",
+      "actual": "모바일 폼 제출 후 합성 모니터 · 1개 · 승인 대기 목록이 표시됨. 페이지 너비 390/390px, iframe 문서 너비 356/356px로 가로 넘침 없음. 데스크톱 폼은 가로 배열과 보라색 신청 버튼으로 표시됨. evidence/screenshots/demo-mobile-form-list.png, demo-desktop-form-list.png 및 실제 CUA 세션 로그 보존.",
+      "status": "passed",
+      "authorId": "jimin",
+      "kind": "manual"
+    }
+  ],
+  "note": "Read-only comparison of the entire current server project with the preserved snapshot passed. Initial output formatting incorrectly referenced testCriteria; corrected to the inspected tests field. This is not a new app execution."
+}

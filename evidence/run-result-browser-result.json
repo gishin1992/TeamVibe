@@ -1,0 +1,55 @@
+{
+  "at": "2026-09-21T12:23:57.448Z",
+  "projectId": "f1b36021-f87e-4abb-853c-e134b61328f1",
+  "observations": [
+    {
+      "check": "wrong parallel result rejected and input preserved",
+      "passed": true
+    },
+    {
+      "check": "top-level id cannot override selected target",
+      "passed": true
+    },
+    {
+      "check": "mobile mismatched result error fits viewport",
+      "passed": true,
+      "geometry": {
+        "document": 390,
+        "viewport": 390
+      }
+    },
+    {
+      "check": "file chooser loads matching app context before save",
+      "passed": true
+    },
+    {
+      "check": "submitted-result editor reconstructs the original context",
+      "passed": true
+    },
+    {
+      "check": "both matching results submitted to their own tasks",
+      "passed": true
+    },
+    {
+      "check": "integrated app runs the submitted button behavior",
+      "passed": true,
+      "before": "반입한 두 작업을 확인하세요.",
+      "after": "통합 결과 확인 완료"
+    },
+    {
+      "check": "independently submitted style is applied in sandbox",
+      "passed": true,
+      "observed": "rgb(49, 94, 217)"
+    },
+    {
+      "check": "actual observed behavior recorded through UI",
+      "passed": true
+    },
+    {
+      "check": "legacy run editor explicitly explains missing-context limitation",
+      "passed": true,
+      "note": "Read-only form inspection; no legacy result was submitted or existing project mutated."
+    }
+  ],
+  "note": "Local synthetic data; no external ChatGPT call. Button and CSS observed and recorded through UI, stories not marked complete. Legacy editor was read only."
+}

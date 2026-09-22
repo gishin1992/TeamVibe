@@ -1,0 +1,108 @@
+{
+  "at": "2026-09-21T13:06:29.642Z",
+  "projectId": "3887234e-8f8f-45ed-92e5-aad101ab1027",
+  "observations": [
+    {
+      "name": "Escape opens discard confirmation and defaults focus to continue",
+      "passed": true,
+      "focused": "계속 작성"
+    },
+    {
+      "name": "Continue retains edited PRD",
+      "passed": true
+    },
+    {
+      "name": "X opens discard confirmation",
+      "passed": true
+    },
+    {
+      "name": "Escape in confirmation returns to intact editor",
+      "passed": true
+    },
+    {
+      "name": "Outside click opens discard confirmation",
+      "passed": true
+    },
+    {
+      "name": "Cancel opens discard confirmation",
+      "passed": true
+    },
+    {
+      "name": "Explicit discard leaves saved PRD intact",
+      "passed": true
+    },
+    {
+      "name": "Unchanged editor closes without confirmation",
+      "passed": true
+    },
+    {
+      "name": "Editing back to original closes without warning",
+      "passed": true
+    },
+    {
+      "name": "Server validation failure preserves input and error",
+      "passed": true
+    },
+    {
+      "name": "Failed save still requires explicit discard",
+      "passed": true
+    },
+    {
+      "name": "CAS conflict preserves mine and displays peer version",
+      "passed": true
+    },
+    {
+      "name": "Conflict editor asks before discard",
+      "passed": true
+    },
+    {
+      "name": "Rebased local content still asks before discard",
+      "passed": true
+    },
+    {
+      "name": "Reviewed combined PRD saves and closes without discard prompt",
+      "passed": true
+    },
+    {
+      "name": "Cancelling profile archive returns to unsaved role input",
+      "passed": true
+    },
+    {
+      "name": "Untouched creation form with defaults closes directly",
+      "passed": true
+    },
+    {
+      "name": "390px discard confirmation has no horizontal overflow",
+      "passed": true,
+      "dimensions": {
+        "dialog": [
+          {
+            "text": "저장하지 않은 변경 내용을 버릴까요?\n\n이 창에서 바꾼 내용은 저장되지 않았습니다. 계속 작성하거나 변경 내용을 버리고 닫을 수 있습니다.\n\n계속 작성\n변경 내용 버리기",
+            "width": 362.140625
+          }
+        ],
+        "document": 390,
+        "viewport": 390
+      }
+    },
+    {
+      "name": "New requirement title, body and select preserved on mobile continue",
+      "passed": true
+    },
+    {
+      "name": "Confirmed profile archive closes editor and returns to profile selection",
+      "passed": true
+    },
+    {
+      "name": "Restored profile retains saved role, not discarded edits",
+      "passed": true
+    }
+  ],
+  "mergedPRD": "# 비품 신청 검토\n\n직원은 품목과 수량을 입력한다.\n팀은 신청 내역을 함께 확인한다.\n합성 데이터만 사용한다.\n\n## 팀의 추가 검토\n처리 상태별 조회 조건을 정한다.\n\n## 추가 검토\n반려 사유를 팀이 함께 확인할 수 있어야 한다.",
+  "limits": [
+    "No page reload or browser-close persistence implemented or claimed.",
+    "Shared workspace forms verified; specialized planning/integration dialogs not covered by this change.",
+    "First screenshot immediately after viewport switch captured transitional scaling; settled screenshot inspected separately.",
+    "No forced slow-network race test."
+  ]
+}

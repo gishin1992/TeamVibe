@@ -1,0 +1,13 @@
+{
+  "at": "2026-09-21T12:56:04.316Z",
+  "projectId": "7c1ee587-d38f-430d-ae7a-9aa55b118b49",
+  "runRevision": 3,
+  "previousVersions": 2,
+  "originalPromptPreserved": true,
+  "priorVersionFilesLogsSourcesAndImportersPreserved": true,
+  "integratedFilesMatchExportedV1": true,
+  "testRecords": 1,
+  "coveredCriteria": 1,
+  "storyStatus": "review",
+  "note": "Actual UI test record covers only observed confirmation-button behavior."
+}

@@ -1,0 +1,56 @@
+{
+  "at": "2026-09-21T11:16:38.104Z",
+  "checks": [
+    {
+      "label": "대화명·작성자·원문·유형으로 출처 선택, 로컬 안내 제외",
+      "passed": true
+    },
+    {
+      "label": "출처 교체 후 이전 연결과 원문 v1 확인",
+      "passed": true
+    },
+    {
+      "label": "모든 연결 해제 뒤에도 이전 두 원문의 이력 조회",
+      "passed": true
+    },
+    {
+      "label": "해제 후 원문이 수정돼도 과거 연결은 당시 v1 원문 유지",
+      "passed": true
+    },
+    {
+      "label": "같은 출처 동시 변경을 이름·원문으로 비교하며 명시적 선택 요구",
+      "passed": true
+    },
+    {
+      "label": "내 출처 선택과 팀의 제목 변경을 함께 보존",
+      "passed": true
+    },
+    {
+      "label": "원문이 휴지통에 있어도 현재 연결과 과거 이력 조회",
+      "passed": true
+    },
+    {
+      "label": "편집 화면에서 휴지통의 기존 출처를 확인하고 유지·해제 가능",
+      "passed": true
+    },
+    {
+      "label": "모바일 출처 이력 가로 넘침 없음",
+      "passed": true
+    }
+  ],
+  "mobile": {
+    "dialog": {
+      "bottom": 844,
+      "height": 844,
+      "left": 0,
+      "right": 390,
+      "top": 0,
+      "width": 390,
+      "x": 0,
+      "y": 0
+    },
+    "scrollWidth": 390,
+    "width": 390
+  },
+  "scope": "Synthetic local data; source replacement/unlink/history, current revision relinking, concurrent field choice, archived source visibility. No external AI calls."
+}

@@ -1,0 +1,11 @@
+{
+  "at": "2026-09-21T09:10:22.340Z",
+  "observed": "parent DOM: SecurityError\ncookie: SecurityError\nlocalStorage: SecurityError\nfetch: blocked\n검사: 요청 완료\nCSP: connect-src\nCSP: img-src\nimage: blocked\nCSP: frame-src\nCSP: frame-src",
+  "form": "전송 버튼 클릭 후 프레임에 This content is blocked 표시. 로컬 수신 로그 0건 확인.",
+  "navigation": "프레임 탐색 버튼 클릭 후 브라우저 차단 화면 표시",
+  "receiver": {
+    "startedAt": "2026-09-21T09:09:47.416Z",
+    "requests": []
+  },
+  "note": "CUA로 실행한 로컬 합성 검사 결과. 전체 악성 코드 보안을 보증하지 않는다."
+}

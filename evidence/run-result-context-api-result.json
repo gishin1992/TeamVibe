@@ -1,0 +1,15 @@
+{
+  "at": "2026-09-21T23:33:21.183Z",
+  "projectId": "fbae0e33-0746-4698-a301-7958ed438bd4",
+  "checks": [
+    "new requests carry immutable project/run/story/revision/baseline context",
+    "missing or mismatched context rejected atomically by API",
+    "result parser rejects command and target overrides",
+    "parallel unrelated changes preserve captured run context",
+    "resubmission and stale CAS preserve previous result on failure",
+    "cancel/restart rejects prior run result even for same story",
+    "legacy missing context allowed, supplied mismatch still rejected",
+    "concurrent editor reconstruction retains the same context"
+  ],
+  "note": "Synthetic API/helper checks, no external ChatGPT call or generated app execution."
+}

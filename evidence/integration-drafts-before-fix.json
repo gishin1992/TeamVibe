@@ -1,0 +1,15 @@
+{
+  "at": "2026-09-21T13:18:24.088Z",
+  "action": "Enter merged code, reason and release title; close, visit overview, return and reopen",
+  "expected": {
+    "title": "검토 중인 공동 결과",
+    "content": "<!doctype html><html lang=\"ko\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><style>body{font:18px system-ui;padding:24px;color:#24304a}button{font:inherit;padding:12px 18px;background:#475ce8;color:white;border:0;border-radius:8px}</style></head><body><h1>함께 검토한 결과</h1><button id=\"confirm\">확인하기</button><p id=\"message\">확인 전</p><p id=\"count\">0</p><script>let n=0;document.getElementById(\"confirm\").onclick=()=>{document.getElementById(\"message\").textContent=\"확인 완료\";document.getElementById(\"count\").textContent=String(++n)}</script></body></html>",
+    "reason": "확인 문구와 횟수를 한 버튼에 연결했다. 통합 후 문구와 0→1→2 증가를 실제로 확인해야 한다."
+  },
+  "actual": {
+    "content": "",
+    "reason": "",
+    "title": "테스트 릴리스 1"
+  },
+  "lost": true
+}

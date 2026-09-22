@@ -1,0 +1,73 @@
+{
+  "id": "cb43ddd3-51aa-4647-9920-d3417eaf7171",
+  "createdAt": "2026-09-21T09:43:42.187Z",
+  "name": "ChatGPT 스토리 설계 · 합성 시연",
+  "description": "실제 ChatGPT 응답이 아닌 합성 설계로 수동 반입 화면을 검증합니다.",
+  "goal": "비품 신청 앱을 작은 작업으로 분할하고 의존성과 병렬 작업 후보를 검토한다.",
+  "inviteCode": "344833360214",
+  "ownerId": "jimin",
+  "members": [
+    "jimin"
+  ],
+  "version": 4,
+  "conversations": [],
+  "requirements": [
+    {
+      "id": "5eccc38d-2df0-4a12-95f6-0680a762d1c9",
+      "createdAt": "2026-09-21T09:43:42.193Z",
+      "title": "비품 신청 관리",
+      "description": "신청 생성·수정·취소와 모바일 조회",
+      "priority": "must",
+      "status": "accepted",
+      "sourceIds": [],
+      "decision": "합성 데이터만 사용",
+      "sourceRevisions": {}
+    }
+  ],
+  "prd": {
+    "body": "# ChatGPT 스토리 설계 · 합성 시연\n\n## 해결할 문제\n실제 ChatGPT 응답이 아닌 합성 설계로 수동 반입 화면을 검증합니다.\n\n## 목표\n비품 신청 앱을 작은 작업으로 분할하고 의존성과 병렬 작업 후보를 검토한다.\n\n## 대상 사용자\n프로젝트 팀이 검토하여 사용자와 권한을 구체화하세요.\n\n## 기능 요구사항\n### 1. 비품 신청 관리\n신청 생성·수정·취소와 모바일 조회\n- 우선순위: must\n- 검토 상태: accepted\n- 결정: 합성 데이터만 사용\n\n## 완료 및 테스트 기준\n각 요구사항의 정상 흐름, 빈 상태, 오류 상태, 수정과 취소/삭제를 확인합니다.\n\n## 범위와 제약\n로컬 테스트 환경, 합성 데이터만 사용합니다. 외부 연계는 별도 합의 후 진행합니다.\n\n## 미결정 사항\n현재 등록된 미결정 사항 없음\n",
+    "revision": 1,
+    "approvals": [
+      "jimin"
+    ],
+    "history": [
+      {
+        "revision": 0,
+        "body": "",
+        "at": "2026-09-21T09:43:42.200Z",
+        "authorId": "jimin"
+      }
+    ],
+    "sourceRevision": 1
+  },
+  "stories": [],
+  "runs": [],
+  "releases": [],
+  "testResults": [],
+  "feedback": [],
+  "events": [
+    {
+      "id": "39453ad2-5688-4de2-af5d-84c1c5bf2fa8",
+      "at": "2026-09-21T09:43:42.193Z",
+      "actorId": "jimin",
+      "action": "requirement.save",
+      "detail": "비품 신청 관리"
+    },
+    {
+      "id": "1895dff6-fa75-496e-85ba-53b7a560eec1",
+      "at": "2026-09-21T09:43:42.200Z",
+      "actorId": "jimin",
+      "action": "prd.generate",
+      "detail": "요구사항 기반 규칙 초안"
+    },
+    {
+      "id": "30184618-9cd2-496f-b41c-c212d38c6ed3",
+      "at": "2026-09-21T09:43:42.205Z",
+      "actorId": "jimin",
+      "action": "prd.approve",
+      "detail": "v1 동의"
+    }
+  ],
+  "updatedAt": "2026-09-21T09:43:42.205Z",
+  "requirementsVersion": 1
+}

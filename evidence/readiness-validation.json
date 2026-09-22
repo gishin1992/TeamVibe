@@ -1,0 +1,30 @@
+{
+  "at": "2026-09-21T10:43:40.705Z",
+  "checks": [
+    {
+      "name": "npm run typecheck followed by npm test",
+      "exitCode": 0,
+      "evidence": "test-story-readiness.log"
+    },
+    {
+      "name": "Sites portable build-site.mjs",
+      "session": 68473,
+      "exitCode": 0
+    }
+  ],
+  "sourceHashes": {
+    "components/workspace.tsx": "2424b6dfc486f970e4fed17a88141e895012f218062bc2bfd93eb4ed37a8d113",
+    "lib/teamvibe/domain.ts": "1daa26fa526c5a6ce640ba51cc56ba12105adb8bdea5ab2fa72af718455a1abe",
+    "app/globals.css": "fd63fbad1ec3554c53a5f51bb17fb2fbcc979f01e548cd61b380d491ac1451be",
+    "tests/api-guards.mjs": "d440536d10f6bc3c9a813b1f6bbc7ccf459ada253428a185dd9ad4fc3f9bdea0",
+    "scripts/prepare-readiness-demo.mjs": "63eb1e0297870e7c1e3e3e1cc125857949c598e6e7b60507d1d40086a3c4fe8a"
+  },
+  "notes": [
+    "최종 제품 코드 뒤 타입 검사·전체 테스트·빌드 성공. 이후 문서와 증거만 갱신",
+    "UI 최종 상태는 readiness-browser-final-project.json, 관찰은 readiness-browser-result.json",
+    "기존 API 경계 테스트에 차단 대상과 선행 스토리 이름이 모두 포함되는 오류 안내 검증 추가",
+    "실제 테스트 기준은 합성 제목 표시이며, 후속 작업은 수동 결과 대기 상태",
+    "lint 미재실행",
+    "기존 기록 물리 삭제·외부 AI 호출·공개 배포 없음"
+  ]
+}

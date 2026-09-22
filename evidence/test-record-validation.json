@@ -1,0 +1,60 @@
+{
+  "at": "2026-09-21T11:38:26.796Z",
+  "typecheck": {
+    "exitCode": 0,
+    "session": 23035,
+    "note": "Final filter layout and stable release options included."
+  },
+  "tests": {
+    "exitCode": 0,
+    "session": 10518,
+    "log": "evidence/test-test-record-lifecycle.log",
+    "note": "All domain/snapshot changes covered; later changes were UI filter grouping/options and separately inspected in browser."
+  },
+  "build": {
+    "exitCode": 0,
+    "session": 62994,
+    "command": "node /Users/takykim/.codex/plugins/cache/openai-curated-remote/sites/0.1.65/scripts/build-site.mjs"
+  },
+  "browser": {
+    "observations": 16,
+    "positiveObservations": 14,
+    "falseVisibilityProbes": [
+      12,
+      13
+    ],
+    "resolvedByObservation": 15,
+    "resolutionMethod": "Expanded details DOM, rendered text, and direct screenshot inspection; original false results retained.",
+    "evidence": "evidence/test-record-browser-result.json"
+  },
+  "server": {
+    "records": 2,
+    "fullRecordsEqualAfterRecycle": true,
+    "criterionVersions": [
+      1,
+      2
+    ],
+    "oldCriterionAndHistoryUnchanged": true,
+    "oldReleaseCodeUnchanged": true,
+    "oldReleaseArchived": true,
+    "activeRelease": "feb13819-6dff-4b57-84b9-aa42166ee55a"
+  },
+  "sourceHashes": {
+    "lib/teamvibe/types.ts": "9c655fbdb1814068bba5d64535cf788eef93dbde2595cae98b1bde9b2544deb3",
+    "lib/teamvibe/domain.ts": "0323416902609300661db943c42a6723e5d3fe3016f3e55260f241a65ec6321a",
+    "lib/teamvibe/test-history.ts": "bd06293780b2d2d190fe0b0ec5f07f6a8f221d0973719ae7db791e6d0dbda1df",
+    "lib/teamvibe/test-coverage.ts": "85c27e0a3f8fae75f7ba6ee25a31bf87fee654148e2fcbd1e181058670b00e99",
+    "components/test-history.tsx": "e0adc1ca97f0582acc258cc4b22a59ebfaee88b56f7cc2f04879220c64ec347f",
+    "components/test-results-panel.tsx": "3e9414e8c79c4b44b8de84898c3cb32adf466f3f3185d87f59daf9bca1795d62",
+    "components/workspace.tsx": "f68fc3c2feec1ca4da74794901acde1ec0aa43102f1f097693f0c4b9934e5d25",
+    "app/globals.css": "f81e1e4f96b9db9536a4a7a4dcd069846264b7dc74761ce0fd9ad90d18835b66",
+    "tests/test-record-lifecycle.mjs": "2b9381c92245e655adc419f709d34fb72e31871c23a6e7e446789b7e291f964d",
+    "scripts/test.mjs": "e7136ee87dbc5824d115f627a61a0c5797db797e740b484d0f4f765ef8e6e485",
+    "scripts/prepare-test-record-demo.mjs": "e34547a10955c912e8e6732715e6c94da96fc6b3ceff07de72a1cbcb97470b60"
+  },
+  "limitations": [
+    "Historical criterion text is captured only for new links; legacy text is explicitly unrecorded.",
+    "Browser demo checked two static headings, not business functionality.",
+    "No actual ChatGPT call, external publish, or additional lint run."
+  ]
+}

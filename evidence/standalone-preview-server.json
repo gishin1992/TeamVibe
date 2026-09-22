@@ -1,0 +1,8 @@
+{
+  "at": "2026-09-21T23:49:09.629Z",
+  "url": "http://127.0.0.1:55322/",
+  "pid": 49994,
+  "bytes": 4217,
+  "file": "evidence/demo-preview.html",
+  "note": "Only the exported HTML is served. No platform API routes or database."
+}

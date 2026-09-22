@@ -1,0 +1,17 @@
+{
+  "files": {
+    "index.html": "<!doctype html><html lang=\"ko\"><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>작업 일치 확인</title><link rel=\"stylesheet\" href=\"styles.css\"><main><h1>작업 일치 확인</h1><p id=\"result\">반입한 두 작업을 확인하세요.</p><button id=\"confirm\">확인</button></main><script>document.getElementById(\"confirm\").onclick=()=>document.getElementById(\"result\").textContent=\"통합 결과 확인 완료\"</script></html>"
+  },
+  "deletedFiles": [],
+  "log": "로컬 합성 파일 작성. 준비 시점 브라우저 미실행.",
+  "source": "scripts/prepare-run-result-demo.mjs · 실제 ChatGPT 호출 없음",
+  "context": {
+    "projectId": "f1b36021-f87e-4abb-853c-e134b61328f1",
+    "runId": "4d382d55-ed0f-429c-bcae-dadaa5b0b34d",
+    "storyId": "804fa35b-36b4-4c55-85ad-6dd41d43c894",
+    "storyRevision": 1,
+    "prdRevision": 1,
+    "baseReleaseId": ""
+  },
+  "id": "53770641-2ea2-4928-8ba3-b034ed4e2e4d"
+}

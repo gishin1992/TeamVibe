@@ -1,0 +1,140 @@
+{
+  "at": "2026-09-22T00:07:05.045Z",
+  "status": "requirements-verified-in-local-manual-chatgpt-scope",
+  "requirements": [
+    {
+      "requirement": "팀 프로젝트 생성 및 여러 사용자 참여",
+      "status": "verified",
+      "evidence": [
+        "evidence/submission-refresh-ui-browser.json",
+        "evidence/submission-refresh-ui-final-project.json",
+        "tests/api-flow.mjs"
+      ]
+    },
+    {
+      "requirement": "개인 대화·수동 ChatGPT 응답·공동 요구사항과 PRD 합의",
+      "status": "verified",
+      "evidence": [
+        "evidence/submission-refresh-ui-browser.json",
+        "evidence/submission-refresh-ui-before-stories.json",
+        "tests/requirement-planning.mjs",
+        "tests/prd-review.mjs"
+      ]
+    },
+    {
+      "requirement": "완료 조건·테스트·의존성이 있는 작은 스토리 분할",
+      "status": "verified",
+      "evidence": [
+        "evidence/submission-refresh-ui-plan.json",
+        "tests/story-planning.mjs",
+        "tests/api-guards.mjs"
+      ]
+    },
+    {
+      "requirement": "독립 스토리 병렬 개발 작업과 고정된 수동 전달 요청",
+      "status": "verified-with-manual-handoff-scope",
+      "evidence": [
+        "evidence/submission-refresh-ui-running.json",
+        "evidence/handoff-clipboard-result.json",
+        "evidence/submission-refresh-ui-app.json",
+        "evidence/submission-refresh-ui-style.json"
+      ]
+    },
+    {
+      "requirement": "결과 통합·충돌 검토·격리된 테스트 환경 실행",
+      "status": "verified",
+      "evidence": [
+        "evidence/submission-refresh-ui-browser.json",
+        "evidence/screenshots/submission-refresh-ui-preview.png",
+        "tests/integration-baseline.mjs",
+        "evidence/integration-browser-result.json",
+        "evidence/safe-edit-browser-result.json"
+      ]
+    },
+    {
+      "requirement": "기준별 실제 검증 기록·완료·피드백 후속 작업",
+      "status": "verified",
+      "evidence": [
+        "evidence/submission-refresh-ui-final-project.json",
+        "evidence/feedback-browser-result.json",
+        "tests/feedback-lifecycle.mjs",
+        "evidence/safe-edit-platform-result.json",
+        "evidence/safe-edit-final-project.json"
+      ]
+    },
+    {
+      "requirement": "수정·취소·휴지통·복원과 과거 근거 보존",
+      "status": "verified-with-lifecycle-guards",
+      "evidence": [
+        "docs/ACCEPTANCE.md",
+        "evidence/test-submission-refresh-built-retry.log",
+        "tests/profile-lifecycle.mjs",
+        "tests/run-submissions.mjs",
+        "tests/test-record-lifecycle.mjs"
+      ]
+    },
+    {
+      "requirement": "실행 가능한 코드·합성 샘플·실행 방법과 한계·시연 화면",
+      "status": "verified",
+      "evidence": [
+        "evidence/submission-refresh-validation.json",
+        "README.md",
+        "docs/START_HERE.md",
+        "lib/teamvibe/seed.ts",
+        "data/sample-story-plan.json",
+        "data/demo-safe-edit/app.js",
+        "evidence/safe-edit-preview.html",
+        "evidence/screenshots/final-overview.png",
+        "evidence/screenshots/safe-edit-mobile.png"
+      ]
+    },
+    {
+      "requirement": "실제 세션 로그 및 실제 실행 근거 보존",
+      "status": "verified-timestamped-snapshot",
+      "evidence": [
+        "scripts/preserve-session.mjs",
+        "evidence/agent-sessions/manifest.json",
+        "evidence/VERIFICATION.md",
+        "evidence/agent-session-integrity.json"
+      ]
+    },
+    {
+      "requirement": "한국시간09시까지 보완점 검토 지속",
+      "status": "verified",
+      "deadline": "2026-09-22T00:00:00.000Z",
+      "lastPreDeadlineFunctionalEvidence": "2026-09-21T23:56:59.972Z",
+      "afterDeadlineAudit": "2026-09-22T00:06:09.940Z",
+      "evidence": [
+        "evidence/standalone-edit-before-fix.json",
+        "evidence/safe-edit-validation.json",
+        "evidence/final-current-state-review.json",
+        "docs/CHECKPOINT.md"
+      ]
+    }
+  ],
+  "currentRuntimeFilesMatchVerifiedBuild": 163,
+  "review": "Inspected current API authorization/persistence, domain completion/version/lifecycle rules, sandbox source, regression assertions and full passed logs, actual fresh-install UI flow and restart observations, latest rendered screens, current server project and all source hashes. 195 existing source/test files equal the fresh-installed verified candidate; new sample code/helper match their actual browser/syntax evidence. API fixture data is not browser execution.",
+  "knownLimits": [
+    "Manual copy/import replaces AI backend; no real ChatGPT invocation.",
+    "Local static HTML/CSS/JS sandbox and synthetic demo profiles; no production authentication, backend artifacts, remote team access, or public hosting.",
+    "No other OS/cache-empty install/long-term load test.",
+    "First built regression failed with worker-restart503; same-server full retry passed, original log retained.",
+    "Editable live data supports lifecycle actions; immutable past evidence remains read-only and linked artifacts have removal guards.",
+    "Previous demo-* artifacts retain the discovered edit bug for comparison. Use data/demo-safe-edit and safe-edit-preview.html.",
+    "New sample state is memory-only and resets on reload; standalone file:// was not tested."
+  ],
+  "remaining": [],
+  "latestArchiveEvidence": "evidence/submission-latest-archive-result.json",
+  "finalStateEvidence": "evidence/final-current-state-review.json",
+  "currentSourceAndTestFilesMatchVerifiedCandidate": 195,
+  "latestRecommendedProject": {
+    "id": "944c2652-b7f5-49a5-8e9a-b9d737c3ffb1",
+    "version": 24,
+    "doneStories": 2,
+    "testRecords": 1,
+    "criteria": 5,
+    "preview": "evidence/safe-edit-preview.html"
+  },
+  "finalFinding": "The old sample edit action removed the original row and reset quantity before save. Retained old artifacts and evidence, provided a separately verified safe-edit sample; old basic checks are not treated as proving this boundary.",
+  "deliveryIntegrity": "Final archive hash and actual re-extraction verification are in verification.json alongside the archive and outputs/latest-submission.json. An archive cannot contain its own final hash; evidence/submission-latest-archive-result.json inside an archive may describe the preceding snapshot. Current workspace copy is refreshed after packing."
+}

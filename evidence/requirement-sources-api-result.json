@@ -1,0 +1,16 @@
+{
+  "at": "2026-09-21T23:33:22.716Z",
+  "projectId": "4925b1eb-a4c5-4bb0-993f-c32732ab28fb",
+  "historyCount": 8,
+  "checks": [
+    "replacement/unlink history",
+    "retained archived sources",
+    "new guide/archived/foreign source rejected atomically",
+    "reaccept records old revision",
+    "same sources or order only do not duplicate history",
+    "merge and recycle preserve history",
+    "CAS preserves newer links",
+    "named options and editor rebase values"
+  ],
+  "note": "Synthetic API state and pure option checks; browser behavior recorded separately."
+}

@@ -1,0 +1,22 @@
+{
+  "batchId": "planning-draft-requirement",
+  "projectId": "27d457aa-b234-4fbc-82dd-1ed660221ba1",
+  "projectVersion": 8,
+  "source": "합성 수동 응답 · 실제 ChatGPT 호출 없음",
+  "requirements": [
+    {
+      "key": "cancel",
+      "title": "승인 전 신청 취소",
+      "description": "직원은 승인 전 신청을 취소한다.",
+      "priority": "must",
+      "status": "proposed",
+      "reviewNote": "취소 허용 상태를 팀이 검토한다.",
+      "sourceRefs": [
+        {
+          "messageId": "f4b0f963-a6d8-4ee6-be42-5af5e38b78c6",
+          "revision": 1
+        }
+      ]
+    }
+  ]
+}

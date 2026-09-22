@@ -1,0 +1,22 @@
+{
+  "at": "2026-09-22T00:07:05.703Z",
+  "manifest": "evidence/agent-sessions/manifest.json",
+  "target": "evidence/agent-sessions/01a0c313-d00f-7a90-b2a2-632e4cb8f870.jsonl",
+  "threadId": "01a0c313-d00f-7a90-b2a2-632e4cb8f870",
+  "bytes": 141753817,
+  "sha256": "005e7f6e6d192e2377527cfd45c71d8b1be4092a3f975819a8fc95308d641491",
+  "validJsonLines": 9870,
+  "recordTypes": {
+    "session_meta": 1,
+    "event_msg": 4433,
+    "response_item": 3987,
+    "world_state": 19,
+    "turn_context": 56,
+    "token_usage_record": 1363,
+    "compacted": 11
+  },
+  "firstTimestamp": "2026-09-21T08:27:30.977Z",
+  "lastTimestamp": "2026-09-22T00:07:05.123Z",
+  "capturedAt": "2026-09-22T00:07:05.255Z",
+  "note": "Actual preserved session JSONL parsed fully and matched manifest hash/size/thread ID. Snapshot ends at recorded capture time and does not include future tool results."
+}

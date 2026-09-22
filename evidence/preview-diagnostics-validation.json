@@ -1,0 +1,61 @@
+{
+  "at": "2026-09-21T12:36:30.720Z",
+  "typecheck": {
+    "session": 37136,
+    "exitCode": 0,
+    "finalUiSession": 17534,
+    "finalUiExitCode": 0
+  },
+  "tests": {
+    "session": 37136,
+    "exitCode": 0,
+    "log": "evidence/test-preview-diagnostics.log",
+    "note": "Full suite passed before final copy-status lifecycle adjustment; final UI adjustment separately typechecked, built and browser verified."
+  },
+  "build": {
+    "session": 69508,
+    "exitCode": 0,
+    "initialSession": 75465,
+    "initialExitCode": 0,
+    "command": "node /Users/takykim/.codex/plugins/cache/openai-curated-remote/sites/0.1.65/scripts/build-site.mjs"
+  },
+  "browser": {
+    "observations": 11,
+    "passed": true,
+    "evidence": "evidence/preview-diagnostics-browser-result.json"
+  },
+  "server": {
+    "at": "2026-09-21T12:34:01.406Z",
+    "projectId": "3b437546-bc84-4aa0-8fef-c68cc34cebff",
+    "noAutomaticTests": true,
+    "storiesAndRunsUnchanged": true,
+    "releaseCodeUnchanged": true,
+    "localSinkRequests": 0,
+    "finalActiveReleaseId": "04723260-475a-4739-b9b4-ac110e422d28",
+    "renamedReleaseTitle": "오류를 제거한 확인 화면 · 검토용",
+    "finalCheckedAt": "2026-09-21T12:36:30.717Z",
+    "finalProjectVersion": 16,
+    "localSinkStopped": true
+  },
+  "fixturePreparationFailure": {
+    "file": "evidence/preview-diagnostics-fixture-first-attempt.json",
+    "reason": "Absent activeReleaseId field used by preparation script; 400 rejection correct. Script corrected; first project retained in recoverable trash."
+  },
+  "sourceHashes": {
+    "components/preview-panel.tsx": "e159af3887ef4bc17ec4721d8b16c35139940ac870f4ad9967fa2518f39e2a15",
+    "components/workspace.tsx": "d1026011bb497110f65ee79c2d9d7581fda0851cc46b89b129c97566cfbeafd0",
+    "lib/teamvibe/preview-diagnostics.ts": "c490526e41100ea22c328770f456d588adbadf982acbcb97d627e9b7c5f3094c",
+    "lib/teamvibe/sandbox.ts": "f2a076ea47ca5781b780aa5697557418380dde67188bd4951fc78153b8239b55",
+    "app/globals.css": "d36f09c7ae558699cdd23a4d64f99038c876c4162b3d06f30f3be910eca90318",
+    "scripts/test.mjs": "b3f81fdf0e60778fb34ccf8b2f05688422f2da26fe1a9d80770371b516c40200",
+    "tests/preview-diagnostics.mjs": "4cac20278cbb844fae1a1542c5c39b37672af0a208b9d4f5913d92a1db72f44d",
+    "scripts/prepare-preview-diagnostics-demo.mjs": "0ef3c9001fced360eb0800ca871e80266e9451d106cc88e210cae78208861b1d"
+  },
+  "limits": [
+    "No automatic test result or story completion",
+    "Only observed browser-reported errors; not complete security or functional validation",
+    "Diagnostic content can be forged by imported code",
+    "Clipboard denial and delayed-promise races not forcibly reproduced in browser",
+    "No external AI call, external publish or physical data deletion"
+  ]
+}

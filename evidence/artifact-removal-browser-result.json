@@ -1,0 +1,28 @@
+{
+  "at": "2026-09-21T10:27:44.287Z",
+  "projectId": "6854f1a2-79d9-4785-90a7-9dd2fa68ee3f",
+  "status": "passed",
+  "checks": [
+    "파일 선택기로 deletedFiles 포함 합성 JSON 반입",
+    "동료 수정과 같은 경로의 제외 요청이 통합 충돌로 표시",
+    "동료 코드와 현재 코드를 펼쳐 비교, 제외 선택 후 해결 근거 입력에도 선택 유지",
+    "390px에서 기존 textarea와 제외 선택 보존, scrollWidth=390",
+    "명시적 통합 후 새 릴리스에서 legacy.js 제외, app.js 유지",
+    "iframe 새 안내 문구 및 클릭 후 확인 횟수 0→1 확인",
+    "실제 관찰 내용만 검증 기록 양식으로 저장, 기준 연결과 스토리 완료는 하지 않음",
+    "릴리스 이력의 제외 경로와 해결 이유 표시",
+    "이전 릴리스 활성화 후 이전 안내 문구 복원, 최신 버전 재활성화 후 제외 화면 표시",
+    "API 최종 대조: 초기 코드와 동료 제출 원본 불변"
+  ],
+  "screenshots": [
+    "screenshots/artifact-removal-review.png",
+    "screenshots/artifact-removal-mobile-review.png",
+    "screenshots/artifact-removal-preview.png",
+    "screenshots/artifact-removal-history.png"
+  ],
+  "limitations": [
+    "합성 안내 문장·버튼만 관찰. 전체 업무 기능 보증이 아님",
+    "ChatGPT 외부 호출 없음",
+    "파일 의존성 자동 분석은 없고 참조 변경과 회귀 테스트는 팀이 검토해야 함"
+  ]
+}

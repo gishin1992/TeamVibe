@@ -1,0 +1,125 @@
+{
+  "at": "2026-09-21T12:07:39.094Z",
+  "before": {
+    "id": "1eae1a9b-28e7-4624-b412-dc0570be9065",
+    "createdAt": "2026-09-21T12:07:39.079Z",
+    "name": "스토리 무변경 저장 · 수정 전 재현",
+    "description": "별도 합성 API 재현",
+    "goal": "같은 저장의 불필요한 버전 증가 확인",
+    "inviteCode": "df87ee5a66b0",
+    "ownerId": "jimin",
+    "members": [
+      "jimin"
+    ],
+    "version": 2,
+    "conversations": [],
+    "requirements": [],
+    "prd": {
+      "body": "",
+      "revision": 0,
+      "approvals": [],
+      "history": []
+    },
+    "stories": [
+      {
+        "id": "1d9d5452-d885-41dd-9654-7bdd6c124c44",
+        "createdAt": "2026-09-21T12:07:39.086Z",
+        "title": "합성 기준",
+        "description": "변경 없는 저장",
+        "acceptance": [
+          "기존 문구"
+        ],
+        "tests": [
+          "기존 문구 확인"
+        ],
+        "dependencies": [],
+        "requirementIds": [],
+        "ownerId": "jimin",
+        "status": "ready",
+        "prdRevision": 0,
+        "revision": 1
+      }
+    ],
+    "runs": [],
+    "releases": [],
+    "testResults": [],
+    "feedback": [],
+    "events": [
+      {
+        "id": "c0cce6be-eeed-4a69-a590-55c142c0762b",
+        "at": "2026-09-21T12:07:39.086Z",
+        "actorId": "jimin",
+        "action": "story.save",
+        "detail": "합성 기준"
+      }
+    ],
+    "updatedAt": "2026-09-21T12:07:39.086Z"
+  },
+  "after": {
+    "id": "1eae1a9b-28e7-4624-b412-dc0570be9065",
+    "createdAt": "2026-09-21T12:07:39.079Z",
+    "name": "스토리 무변경 저장 · 수정 전 재현",
+    "description": "별도 합성 API 재현",
+    "goal": "같은 저장의 불필요한 버전 증가 확인",
+    "inviteCode": "df87ee5a66b0",
+    "ownerId": "jimin",
+    "members": [
+      "jimin"
+    ],
+    "version": 3,
+    "conversations": [],
+    "requirements": [],
+    "prd": {
+      "body": "",
+      "revision": 0,
+      "approvals": [],
+      "history": []
+    },
+    "stories": [
+      {
+        "id": "1d9d5452-d885-41dd-9654-7bdd6c124c44",
+        "createdAt": "2026-09-21T12:07:39.086Z",
+        "title": "합성 기준",
+        "description": "변경 없는 저장",
+        "acceptance": [
+          "기존 문구"
+        ],
+        "tests": [
+          "기존 문구 확인"
+        ],
+        "dependencies": [],
+        "requirementIds": [],
+        "ownerId": "jimin",
+        "status": "ready",
+        "prdRevision": 0,
+        "revision": 2
+      }
+    ],
+    "runs": [],
+    "releases": [],
+    "testResults": [],
+    "feedback": [],
+    "events": [
+      {
+        "id": "c0cce6be-eeed-4a69-a590-55c142c0762b",
+        "at": "2026-09-21T12:07:39.086Z",
+        "actorId": "jimin",
+        "action": "story.save",
+        "detail": "합성 기준"
+      },
+      {
+        "id": "58f0a762-4906-4fde-9c77-0fb83cf06e0c",
+        "at": "2026-09-21T12:07:39.093Z",
+        "actorId": "jimin",
+        "action": "story.save",
+        "detail": "합성 기준"
+      }
+    ],
+    "updatedAt": "2026-09-21T12:07:39.093Z"
+  },
+  "observed": {
+    "beforeRevision": 1,
+    "afterRevision": 2,
+    "status": "ready"
+  }
+}

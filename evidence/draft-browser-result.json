@@ -1,0 +1,105 @@
+{
+  "at": "2026-09-21T10:49:41.308Z",
+  "checks": [
+    {
+      "label": "다른 대화는 빈 초안",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "label": "원래 대화 초안 복귀",
+      "expected": "신청 대화 전용 합성 초안 A",
+      "actual": "신청 대화 전용 합성 초안 A",
+      "passed": true
+    },
+    {
+      "label": "다른 프로젝트 빈 초안",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "label": "프로젝트 복귀 초안 유지",
+      "expected": "신청 대화 전용 합성 초안 A",
+      "actual": "신청 대화 전용 합성 초안 A",
+      "passed": true
+    },
+    {
+      "label": "서연 프로필은 빈 초안",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "label": "팀원 대화는 입력창 없이 읽기만 가능",
+      "passed": true
+    },
+    {
+      "label": "지민으로 돌아오면 자신의 초안",
+      "expected": "신청 대화 전용 합성 초안 A",
+      "actual": "신청 대화 전용 합성 초안 A",
+      "passed": true
+    },
+    {
+      "label": "API 길이 거절 후 초안 유지",
+      "expected": 12001,
+      "actual": 12001,
+      "passed": true
+    },
+    {
+      "label": "실제 전송 성공 후 해당 초안 비움",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "label": "전송 후 다른 대화 초안 보존",
+      "expected": "승인 대화 전용 합성 초안 B",
+      "actual": "승인 대화 전용 합성 초안 B",
+      "passed": true
+    },
+    {
+      "label": "390px 초안 유지",
+      "expected": "승인 대화 전용 합성 초안 B",
+      "actual": "승인 대화 전용 합성 초안 B",
+      "passed": true
+    },
+    {
+      "label": "전송 후 다른 프로젝트 초안 보존",
+      "expected": "별도 프로젝트 전용 합성 초안 C",
+      "actual": "별도 프로젝트 전용 합성 초안 C",
+      "passed": true
+    },
+    {
+      "label": "서연 초안도 전환 후 보존",
+      "expected": "서연 전용 합성 초안 D",
+      "actual": "서연 전용 합성 초안 D",
+      "passed": true
+    },
+    {
+      "label": "전송하지 않은 승인 초안 유지",
+      "expected": "승인 대화 전용 합성 초안 B",
+      "actual": "승인 대화 전용 합성 초안 B",
+      "passed": true
+    },
+    {
+      "label": "새로고침 후 초안은 안내대로 비움",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "label": "새로고침 후 전송한 메시지는 유지",
+      "passed": true
+    }
+  ],
+  "mobile": {
+    "width": 390,
+    "scrollWidth": 390
+  },
+  "limitations": [
+    "초안은 현재 페이지 메모리만 사용하며 새로고침 시 사라짐을 실제 확인했다.",
+    "실제 브라우저 네트워크 지연 경합은 재현하지 않았고 지연 응답 상태 테스트를 별도 실행했다."
+  ]
+}

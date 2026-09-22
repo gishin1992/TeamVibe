@@ -1,0 +1,47 @@
+{
+  "at": "2026-09-21T13:38:08.082Z",
+  "projectId": "db7f3003-2748-4edb-9961-f56931a15939",
+  "before": {
+    "id": "1069351f-c9fe-4730-8ae0-9f3b75f8c3d0",
+    "createdAt": "2026-09-21T13:38:08.051Z",
+    "title": "진행 담당자",
+    "description": "합성 담당 변경",
+    "acceptance": [
+      "기존 기준 유지"
+    ],
+    "tests": [
+      "기존 테스트 유지"
+    ],
+    "dependencies": [],
+    "requirementIds": [],
+    "ownerId": "jimin",
+    "status": "ready",
+    "prdRevision": 1,
+    "revision": 1
+  },
+  "after": {
+    "id": "1069351f-c9fe-4730-8ae0-9f3b75f8c3d0",
+    "createdAt": "2026-09-21T13:38:08.051Z",
+    "title": "진행 담당자",
+    "description": "합성 담당 변경",
+    "acceptance": [
+      "기존 기준 유지"
+    ],
+    "tests": [
+      "기존 테스트 유지"
+    ],
+    "dependencies": [],
+    "requirementIds": [],
+    "ownerId": "seoyeon",
+    "status": "ready",
+    "prdRevision": 1,
+    "revision": 2
+  },
+  "runningChange": {
+    "status": 400,
+    "body": {
+      "error": "진행 중인 개발 작업을 취소한 다음 스토리를 수정하세요."
+    }
+  },
+  "note": "Actual local API reproduction. Synthetic story only; no browser business-app test."
+}

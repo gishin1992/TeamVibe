@@ -1,0 +1,58 @@
+{
+  "steps": [
+    {
+      "at": "2026-09-21T12:47:52.675Z",
+      "name": "Current v2 identifies its actual writer",
+      "pass": true
+    },
+    {
+      "at": "2026-09-21T12:48:02.630Z",
+      "name": "Previous v1 separates writer Jimin from archiver Seoyeon",
+      "pass": true,
+      "detail": "이전 문서 · v1 · 김지민\n\n작성: 김지민 · 2026. 9. 21. 오후 9:47:39\n\n직접 편집 · 요구사항 반영 기준 v1\n\n보관: 이서연 · 2026. 9. 21. 오후 9:47:39\n\n# 비품 신청과 취소\n\n직원은 품목과 수량을 입력해 신청한다.\n신청 당일에 취소할 수 있다.\n합성 데이터만 사용한다.\nv1 본문으로 새 버전 만들기"
+    },
+    {
+      "at": "2026-09-21T12:48:03.023Z",
+      "name": "Empty original document explains why it cannot restore",
+      "pass": true
+    },
+    {
+      "at": "2026-09-21T12:48:09.715Z",
+      "name": "Restoration creates v3 with its actor and source version",
+      "pass": true,
+      "detail": "현재 문서 · v3\n\n작성: 김지민 · 2026. 9. 21. 오후 9:48:09\n\n이전 본문 복원 · v1 본문에서 복원 · 요구사항 반영 기준 v1"
+    },
+    {
+      "at": "2026-09-21T12:48:17.608Z",
+      "name": "Restored-away v2 keeps Seoyeon text and identifies Jimin as archiver",
+      "pass": true,
+      "detail": "이전 문서 · v2 · 이서연\n\n작성: 이서연 · 2026. 9. 21. 오후 9:47:39\n\n직접 편집 · 요구사항 반영 기준 v1\n\n보관: 김지민 · 2026. 9. 21. 오후 9:48:09\n\n# 비품 신청과 취소\n\n직원은 품목과 수량을 입력해 신청한다.\n신청 당일에 취소할 수 있다.\n합성 데이터만 사용한다.\n\n## 검토 제안\n신청 사유와 취소 사유를 필수로 받을지 팀이 검토한다.\nv2 본문으로 새 버전 만들기"
+    },
+    {
+      "at": "2026-09-21T12:48:17.613Z",
+      "name": "Mobile history fits 390px",
+      "pass": true
+    },
+    {
+      "at": "2026-09-21T12:48:47.801Z",
+      "name": "Restored current body omits later proposal and needs explicit approval",
+      "pass": false,
+      "detail": "TEAM PROJECT\nWORKSPACE\n공동 PRD · 작성과 복원 이력\n\n두 팀원이 작성한 문서와 이전 본문 복원을 구분하는 합성 예제\n\n아이디어 추가\n김\n이\n김지민, 이서연\nPRD 검토 중\n아이디어 수집\n02\nPRD 검토\n03\n스토리 설계\n04\n병렬 개발\n05\n통합 테스트\n공동 문서\n요구사항\n1\n버전 기록\nChatGPT로 요구사항 정리\n요구사항 추가\n프로젝트 요구사항 문서\n\nv3 · 문서 내용이나 반영 기준이 바뀌면 다시 동의합니다.\n\n편집\n# 비품 신청과 취소\n\n직원은 품목과 수량을 입력해 신청한다.\n신청 당일에 취소할 수 있다.\n합성 데이터만 사용한다.\n문서 검토 현황\n\n팀 전체의 동의를 모으면 스토리를 나눌 수 있어요.\n\n김\n김지민\n검토 대기\n이\n이서연\n검토 대기\n이 버전의 PRD에 동의\n초안 만들기\n\n등록된 요구사항을 문서로 묶는 규칙 기반 도구입니다. AI 생성이 아니며 팀의 검토가 필요합니다.\n\n요구사항으로 초안 만들기\nChatGPT 검토 묶음 복사\nTeamVibe · 함께 생각하고, 함께 만듭니다.\nChatGPT 수동 연계 · 외부 자동 전송 없음"
+    },
+    {
+      "at": "2026-09-21T12:49:01.787Z",
+      "name": "Existing legacy document does not invent its author or creation time",
+      "pass": true,
+      "detail": "현재 문서 · v1\n\n작성: 작성자 미기록 · 작성 시각 미기록\n\n작성 경위 미기록 · 요구사항 반영 기준 v2"
+    },
+    {
+      "at": "2026-09-21T12:49:22.675Z",
+      "name": "Preserved rendered review panel confirms both members pending after whitespace normalization",
+      "pass": true,
+      "detail": {
+        "note": "Reassessed the previously captured DOM text; initial exact-space check failed because names and states were separated by newlines.",
+        "text": "TEAM PROJECT WORKSPACE 공동 PRD · 작성과 복원 이력 두 팀원이 작성한 문서와 이전 본문 복원을 구분하는 합성 예제 아이디어 추가 김 이 김지민, 이서연 PRD 검토 중 아이디어 수집 02 PRD 검토 03 스토리 설계 04 병렬 개발 05 통합 테스트 공동 문서 요구사항 1 버전 기록 ChatGPT로 요구사항 정리 요구사항 추가 프로젝트 요구사항 문서 v3 · 문서 내용이나 반영 기준이 바뀌면 다시 동의합니다. 편집 # 비품 신청과 취소 직원은 품목과 수량을 입력해 신청한다. 신청 당일에 취소할 수 있다. 합성 데이터만 사용한다. 문서 검토 현황 팀 전체의 동의를 모으면 스토리를 나눌 수 있어요. 김 김지민 검토 대기 이 이서연 검토 대기 이 버전의 PRD에 동의 초안 만들기 등록된 요구사항을 문서로 묶는 규칙 기반 도구입니다. AI 생성이 아니며 팀의 검토가 필요합니다. 요구사항으로 초안 만들기 ChatGPT 검토 묶음 복사 TeamVibe · 함께 생각하고, 함께 만듭니다. ChatGPT 수동 연계 · 외부 자동 전송 없음"
+      }
+    }
+  ]
+}

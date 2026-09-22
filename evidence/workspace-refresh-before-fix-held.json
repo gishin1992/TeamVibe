@@ -1,0 +1,22 @@
+{
+  "hold": true,
+  "held": [
+    {
+      "id": 1,
+      "projectVersions": {
+        "93dba294-fcc1-48f9-99f5-8202fa80ba4d": 1
+      }
+    }
+  ],
+  "events": [
+    {
+      "action": "hold",
+      "id": 1,
+      "at": "2026-09-21T23:16:17.552Z",
+      "userId": "jimin",
+      "projectVersions": {
+        "93dba294-fcc1-48f9-99f5-8202fa80ba4d": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data: blob:; font-src data:; frame-src about: blob:; base-uri 'none'; form-action 'none'">
+<title>수정 전 원본 보존 · 합성 시연 v2 · TeamVibe</title>
+<style>html,body{height:100%;margin:0;font:14px system-ui,sans-serif;color:#273149;background:#f7f8fc}body{display:flex;flex-direction:column}header{padding:16px 20px;border-bottom:1px solid #ddd}h1{font-size:18px;margin:0 0 6px}p{margin:0;color:#596174}iframe{flex:1;width:100%;border:0;background:white}</style>
+</head><body><header><h1>수정 전 원본 보존 · 합성 시연 v2</h1><p>TeamVibe 로컬 시연 · 외부 통신 제한 · 새로고침하면 실행 상태가 초기화됩니다.</p></header>
+<iframe title="통합 코드 실행 미리보기" sandbox="allow-scripts allow-forms" srcdoc="&lt;!doctype html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;&gt;&lt;meta http-equiv=&quot;Content-Security-Policy&quot; content=&quot;default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data: blob:; font-src data:; connect-src 'none'; frame-src 'none'; worker-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none';&quot;&gt;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1&quot;&gt;&lt;/head&gt;&lt;body&gt;&lt;!doctype html&gt;
+&lt;html lang=&quot;ko&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;title&gt;팀 비품 신청 · 수정 내용 보존&lt;/title&gt;
+    &lt;style&gt;* { box-sizing: border-box; }
+body { margin: 0; background: #f4f7fc; color: #25334e; font: 16px/1.6 system-ui, sans-serif; }
+main { max-width: 800px; margin: 32px auto; padding: 24px; }
+h1 { font-size: 30px; margin: 8px 0; }
+p { color: #53617a; }
+.eyebrow { font-size: 13px; font-weight: 700; letter-spacing: .08em; color: #365cec; }
+form { display: flex; gap: 16px; flex-wrap: wrap; padding: 24px; background: white; border: 1px solid #dfe6f1; border-radius: 16px; }
+label { display: flex; flex-direction: column; font-size: 14px; gap: 8px; flex: 1 1 170px; min-width: 0; }
+input { font: inherit; padding: 11px; border: 1px solid #aebbd0; border-radius: 8px; min-width: 0; width: 100%; }
+button { font: inherit; padding: 10px 16px; border: 1px solid #365cec; border-radius: 8px; background: #365cec; color: white; cursor: pointer; }
+button:focus-visible, input:focus-visible { outline: 3px solid #7998ff; outline-offset: 3px; }
+button:disabled { opacity: .55; cursor: default; }
+[hidden] { display: none !important; }
+.actions { align-self: end; display: flex; flex-wrap: wrap; gap: 8px; }
+#cancel-edit, li button { background: white; color: #2d4cb8; }
+#status { min-height: 26px; color: #334575; }
+ul { list-style: none; padding: 0; }
+li { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; padding: 18px; background: white; border: 1px solid #dfe6f1; border-radius: 12px; margin: 12px 0; }
+li span { flex: 1 1 220px; overflow-wrap: anywhere; }
+.note { font-size: 14px; }
+@media (max-width: 480px) { main { margin: 12px auto; padding: 16px; } form { padding: 16px; } h1 { font-size: 26px; } }
+&lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;main&gt;
+      &lt;p class=&quot;eyebrow&quot;&gt;TEAMVIBE · 합성 시연&lt;/p&gt;
+      &lt;h1&gt;팀 비품 신청&lt;/h1&gt;
+      &lt;p&gt;신청을 수정해도 저장하기 전까지 원래 내용이 유지됩니다.&lt;/p&gt;
+      &lt;form id=&quot;request-form&quot; novalidate&gt;
+        &lt;label&gt;품목&lt;input id=&quot;item&quot; required maxlength=&quot;100&quot; autocomplete=&quot;off&quot;&gt;&lt;/label&gt;
+        &lt;label&gt;수량&lt;input id=&quot;quantity&quot; type=&quot;number&quot; min=&quot;1&quot; step=&quot;1&quot; value=&quot;1&quot; required&gt;&lt;/label&gt;
+        &lt;div class=&quot;actions&quot;&gt;&lt;button id=&quot;save&quot; type=&quot;submit&quot;&gt;신청하기&lt;/button&gt;&lt;button id=&quot;cancel-edit&quot; type=&quot;button&quot; hidden&gt;수정 취소&lt;/button&gt;&lt;/div&gt;
+      &lt;/form&gt;
+      &lt;p id=&quot;status&quot; role=&quot;status&quot; aria-live=&quot;polite&quot;&gt;&lt;/p&gt;
+      &lt;ul id=&quot;requests&quot; aria-label=&quot;신청 목록&quot;&gt;&lt;/ul&gt;
+      &lt;p id=&quot;empty&quot;&gt;아직 신청이 없습니다.&lt;/p&gt;
+      &lt;p class=&quot;note&quot;&gt;현재 실행 세션의 합성 데이터입니다. 새로고침하면 초기화됩니다.&lt;/p&gt;
+    &lt;/main&gt;
+    &lt;script  &gt;const form = document.querySelector(&quot;#request-form&quot;);
+const item = document.querySelector(&quot;#item&quot;);
+const quantity = document.querySelector(&quot;#quantity&quot;);
+const list = document.querySelector(&quot;#requests&quot;);
+const status = document.querySelector(&quot;#status&quot;);
+const save = document.querySelector(&quot;#save&quot;);
+const cancelEdit = document.querySelector(&quot;#cancel-edit&quot;);
+let entries = [];
+let editing = null;
+let sequence = 0;
+
+function finishEditing() {
+  editing = null;
+  form.reset();
+  save.textContent = &quot;신청하기&quot;;
+  cancelEdit.hidden = true;
+}
+
+function render() {
+  list.replaceChildren();
+  document.querySelector(&quot;#empty&quot;).hidden = entries.length &gt; 0;
+  for (const entry of entries) {
+    const row = document.createElement(&quot;li&quot;);
+    const text = document.createElement(&quot;span&quot;);
+    text.textContent = `${entry.item} · ${entry.quantity}개 · 승인 대기`;
+    const edit = document.createElement(&quot;button&quot;);
+    edit.type = &quot;button&quot;;
+    edit.textContent = editing === entry.id ? &quot;수정 중&quot; : &quot;수정&quot;;
+    edit.disabled = editing !== null;
+    edit.addEventListener(&quot;click&quot;, () =&gt; {
+      editing = entry.id;
+      item.value = entry.item;
+      quantity.value = String(entry.quantity);
+      save.textContent = &quot;수정 저장&quot;;
+      cancelEdit.hidden = false;
+      status.textContent = &quot;저장 전까지 원래 신청이 유지됩니다. 수정 취소로 돌아갈 수 있습니다.&quot;;
+      render();
+      item.focus();
+    });
+    const remove = document.createElement(&quot;button&quot;);
+    remove.type = &quot;button&quot;;
+    remove.textContent = &quot;취소&quot;;
+    remove.addEventListener(&quot;click&quot;, () =&gt; {
+      entries = entries.filter((value) =&gt; value.id !== entry.id);
+      if (editing === entry.id) finishEditing();
+      render();
+      status.textContent = &quot;신청을 취소했습니다.&quot;;
+    });
+    row.append(text, edit, remove);
+    list.append(row);
+  }
+}
+
+form.addEventListener(&quot;submit&quot;, (event) =&gt; {
+  event.preventDefault();
+  const name = item.value.trim();
+  const count = Number(quantity.value);
+  if (!name) {
+    status.textContent = &quot;품목을 입력해 주세요. 기존 신청과 작성 중인 수량은 유지됩니다.&quot;;
+    item.focus();
+    return;
+  }
+  if (!Number.isSafeInteger(count) || count &lt; 1) {
+    status.textContent = &quot;수량은 1 이상의 정수로 입력해 주세요. 기존 신청과 입력은 유지됩니다.&quot;;
+    quantity.focus();
+    return;
+  }
+  const wasEditing = editing !== null;
+  if (wasEditing) {
+    entries = entries.map((entry) =&gt; entry.id === editing ? { ...entry, item: name, quantity: count } : entry);
+  } else {
+    entries.unshift({ id: ++sequence, item: name, quantity: count });
+  }
+  finishEditing();
+  render();
+  status.textContent = wasEditing ? &quot;신청을 수정했습니다.&quot; : &quot;신청을 등록했습니다.&quot;;
+});
+
+cancelEdit.addEventListener(&quot;click&quot;, () =&gt; {
+  finishEditing();
+  render();
+  status.textContent = &quot;수정을 취소했습니다. 원래 신청은 그대로입니다.&quot;;
+});
+render();
+&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+&lt;/body&gt;&lt;/html&gt;"></iframe>
+</body></html>

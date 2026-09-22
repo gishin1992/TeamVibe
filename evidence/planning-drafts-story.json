@@ -1,0 +1,23 @@
+{
+  "planId": "planning-draft-story",
+  "projectId": "27d457aa-b234-4fbc-82dd-1ed660221ba1",
+  "prdRevision": 1,
+  "source": "합성 설계 응답 · 실행 결과가 아님",
+  "stories": [
+    {
+      "key": "list",
+      "title": "신청 목록 보기",
+      "description": "직원이 합성 신청 내역의 품목과 수량을 확인한다.",
+      "acceptance": [
+        "품목과 수량을 목록에 표시한다."
+      ],
+      "tests": [
+        "합성 신청 2건을 표시하고 각 수량을 비교한다."
+      ],
+      "dependencies": [],
+      "existingDependencies": [],
+      "requirementIds": [],
+      "ownerId": "jimin"
+    }
+  ]
+}

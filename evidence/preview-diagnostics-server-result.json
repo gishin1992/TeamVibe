@@ -1,0 +1,13 @@
+{
+  "at": "2026-09-21T12:34:01.406Z",
+  "projectId": "3b437546-bc84-4aa0-8fef-c68cc34cebff",
+  "noAutomaticTests": true,
+  "storiesAndRunsUnchanged": true,
+  "releaseCodeUnchanged": true,
+  "localSinkRequests": 0,
+  "finalActiveReleaseId": "04723260-475a-4739-b9b4-ac110e422d28",
+  "renamedReleaseTitle": "오류를 제거한 확인 화면 · 검토용",
+  "finalCheckedAt": "2026-09-21T12:36:30.717Z",
+  "finalProjectVersion": 16,
+  "localSinkStopped": true
+}

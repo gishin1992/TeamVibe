@@ -1,0 +1,36 @@
+{
+  "at": "2026-09-21T23:56:59.972Z",
+  "before": "evidence/standalone-edit-before-fix.json",
+  "browser": "evidence/safe-edit-browser-result.json",
+  "platform": "evidence/safe-edit-platform-result.json",
+  "projectId": "944c2652-b7f5-49a5-8e9a-b9d737c3ffb1",
+  "version": 24,
+  "done": 2,
+  "testRecords": 1,
+  "coverage": 5,
+  "releaseMatchesTrimmedSource": true,
+  "originalDemoUnchanged": true,
+  "existingVerifiedPlatformFilesUnchanged": 163,
+  "syntaxChecks": {
+    "commands": [
+      "node --check data/demo-safe-edit/app.js",
+      "node --check scripts/prepare-safe-edit-demo.mjs"
+    ],
+    "exitCode": 0
+  },
+  "sourceHashes": {
+    "data/demo-safe-edit/index.html": "01f6dfe38984ff86c94a1930717d69a3b3dc6d03f06d4a3d42cc50f612d7f318",
+    "data/demo-safe-edit/app.js": "6e61e9c44c5125ee5eeda435362b045fc61f1099ab97e447036586ee7ab88397",
+    "data/demo-safe-edit/styles.css": "5f5178de07a207ea4e6def0c975406335c2fc790f5a4b08950ca06da02d37d8f",
+    "scripts/prepare-safe-edit-demo.mjs": "3eb35988209b86a4c312987950b997a92f8d2534f8980c726f18f61018ed49d8",
+    "evidence/safe-edit-preview.html": "e6d48d57387ef3bff5d8407bf8d7254bfbc8567c79bb07da232e5bf0bee0ca2d"
+  },
+  "limits": [
+    "New project prepared through local API; execution, test record and completion verified through CUA UI.",
+    "Standalone exported HTML served by local HTTP-only helper; file:// opening not tested.",
+    "In-memory synthetic app, reset on reload; no external service or backend.",
+    "Prior demo retained; use safe-edit sample for improved edit behavior.",
+    "Initial byte comparison failed on trailing newlines trimmed by domain file import. Verified complete content equality after that existing trim normalization.",
+    "No platform application source changed; prior full-suite/build results cover unchanged source, new sample has actual browser and syntax checks."
+  ]
+}

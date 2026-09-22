@@ -1,0 +1,13 @@
+{
+  "at": "2026-09-21T13:23:36.962Z",
+  "projectId": "9ef5b0c9-730b-42b4-a3e3-4dccfe4d9957",
+  "releaseId": "c0ad711a-5f10-4f0c-8192-50fc41ba61f4",
+  "integratedFilesMatchRetainedDraft": true,
+  "originalSubmissionsAndPromptsPreserved": true,
+  "PRDPreserved": true,
+  "onlyIntegrationAndActualTestRecordAddedAfterPeerChange": true,
+  "testRecords": 1,
+  "coveredCriteria": 2,
+  "storiesRemainReview": true,
+  "resolutionReasonSourceAndRunGroupPreserved": true
+}

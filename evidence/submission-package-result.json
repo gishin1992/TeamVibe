@@ -1,0 +1,20 @@
+{
+  "at": "2026-09-21T13:54:55.670Z",
+  "archive": "/Users/takykim/workspace/codex/TeamVibe/outputs/submissions/2026-09-21T13-54-55-670Z-eACHdH/TeamVibe.tar.gz",
+  "staged": "/Users/takykim/workspace/codex/TeamVibe/outputs/submissions/2026-09-21T13-54-55-670Z-eACHdH/TeamVibe",
+  "fileCount": 603,
+  "bytes": 61503179,
+  "sha256": "ec12ead9f24982bff3cdf2b904200fb2b19c5972458180662428c9859d05d760",
+  "sessionCapturedAt": "2026-09-21T13:54:55.340Z",
+  "localOnly": true,
+  "archiveReopened": true,
+  "extracted": "/Users/takykim/workspace/codex/TeamVibe/.sites-runtime/final-submission-check-AB3PuN/TeamVibe",
+  "verified": {
+    "ok": true,
+    "files": 603,
+    "capturedAt": "2026-09-21T13:54:55.670Z",
+    "note": "목록에 있는 파일의 무결성 검사입니다. 앱 실행·기능 통과를 뜻하지 않으며 추가 파일은 검사하지 않습니다."
+  },
+  "privateRuntimePathsExcluded": true,
+  "sourceAndRequiredDeliverablesPresent": true
+}

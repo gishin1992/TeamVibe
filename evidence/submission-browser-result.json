@@ -1,0 +1,53 @@
+{
+  "at": "2026-09-21T13:53:01.458Z",
+  "base": "http://127.0.0.1:50486",
+  "projectId": "f5f60358-fc90-4b5d-ab1a-f11294e1cbc3",
+  "observations": [
+    {
+      "at": "2026-09-21T13:51:23.527Z",
+      "name": "built server shows three synthetic profiles",
+      "passed": true
+    },
+    {
+      "at": "2026-09-21T13:51:31.047Z",
+      "name": "project created through built UI",
+      "passed": true
+    },
+    {
+      "at": "2026-09-21T13:52:06.760Z",
+      "name": "built preview loads submitted HTML",
+      "passed": true
+    },
+    {
+      "at": "2026-09-21T13:52:07.107Z",
+      "name": "actual JavaScript executes in packaged build",
+      "passed": true
+    },
+    {
+      "at": "2026-09-21T13:52:21.641Z",
+      "name": "built UI stores real test and completes story",
+      "passed": true
+    },
+    {
+      "at": "2026-09-21T13:52:57.385Z",
+      "name": "created project survives built server restart",
+      "passed": true
+    },
+    {
+      "at": "2026-09-21T13:52:57.856Z",
+      "name": "completed story survives built server restart",
+      "passed": true
+    },
+    {
+      "at": "2026-09-21T13:53:01.113Z",
+      "name": "saved test remains after restart",
+      "passed": true
+    },
+    {
+      "at": "2026-09-21T13:53:01.458Z",
+      "name": "preview still executes after restart",
+      "passed": true
+    }
+  ],
+  "note": "Project creation, real iframe click, test record and completion were performed in the built UI. Intermediate PRD/story/run/result/release preparation was via local API, not UI or an AI call."
+}

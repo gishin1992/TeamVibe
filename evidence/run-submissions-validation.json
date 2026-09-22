@@ -1,0 +1,53 @@
+{
+  "at": "2026-09-21T12:57:46.359Z",
+  "typecheck": {
+    "session": 91977,
+    "exitCode": 0
+  },
+  "tests": {
+    "session": 91977,
+    "exitCode": 0,
+    "log": "evidence/test-run-submissions.log"
+  },
+  "build": {
+    "session": 3319,
+    "exitCode": 0,
+    "command": "node /Users/takykim/.codex/plugins/cache/openai-curated-remote/sites/0.1.65/scripts/build-site.mjs"
+  },
+  "browser": {
+    "observations": 9,
+    "passed": true,
+    "result": "evidence/run-submissions-browser-result.json"
+  },
+  "server": {
+    "at": "2026-09-21T12:56:04.316Z",
+    "projectId": "7c1ee587-d38f-430d-ae7a-9aa55b118b49",
+    "runRevision": 3,
+    "previousVersions": 2,
+    "originalPromptPreserved": true,
+    "priorVersionFilesLogsSourcesAndImportersPreserved": true,
+    "integratedFilesMatchExportedV1": true,
+    "testRecords": 1,
+    "coveredCriteria": 1,
+    "storyStatus": "review",
+    "note": "Actual UI test record covers only observed confirmation-button behavior."
+  },
+  "sourceHashes": {
+    "lib/teamvibe/types.ts": "93320c90973d58179627383c71bb7f5102e881340389b17cc04cbb79e03eb880",
+    "lib/teamvibe/domain.ts": "3f46071f0908039a37eaf8ece28e2142b368a3f06057f79f6e2284dff9434dd7",
+    "lib/teamvibe/run-submissions.ts": "8c332c547619ad691653156d92f4621faa8d136ef7d0bb1991e0fc62ea86ca56",
+    "components/run-result-history.tsx": "66d1a0bd01658e4a6f9f712bafc6ec4ac84f3eff58416468e204daa1fb674233",
+    "components/workspace.tsx": "d809008dc1cc55018a9e529b96d2c231e8847735233b0e0900447d83bc7ed42e",
+    "app/globals.css": "282219a4788239863b7d15f27c49b82502470a330e5a5326af7c7bc58d77bd60",
+    "tests/run-submissions.mjs": "2ea8a8732ebdda29b6a30c5f9ea0eafeaf4b1c77570c69b9f707e2f3599a93e7",
+    "scripts/prepare-run-submissions-demo.mjs": "fba11e8eccb572556c8082587b29c019a5ccf405896b441b66beafbd4ed73049",
+    "scripts/test.mjs": "64452f80fcb3a23fc7a2029c989c0e5a02910c419426aeab4f3ca23f67e79151"
+  },
+  "limits": [
+    "Importer identifies who saved the result, not code author or execution verifier",
+    "No retroactive legacy history or importer reconstruction",
+    "No large-code or long-term storage performance validation",
+    "Actual generated app validation covers one synthetic confirmation button",
+    "No external AI calls, publication or physical deletion"
+  ]
+}

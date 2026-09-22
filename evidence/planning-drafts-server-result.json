@@ -1,0 +1,14 @@
+{
+  "at": "2026-09-21T13:15:13.829Z",
+  "projectId": "27d457aa-b234-4fbc-82dd-1ed660221ba1",
+  "otherProjectUnchanged": true,
+  "onlyTwoReviewedImportsPersisted": true,
+  "requirements": 1,
+  "requirementStatus": "proposed",
+  "stories": 1,
+  "storyStatus": "backlog",
+  "originalPRDAndConversationsPreserved": true,
+  "codeRuns": 0,
+  "releases": 0,
+  "testRecords": 0
+}

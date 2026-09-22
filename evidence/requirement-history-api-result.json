@@ -1,0 +1,16 @@
+{
+  "at": "2026-09-21T23:33:22.991Z",
+  "projectId": "2a8db996-f9f6-4536-a605-30d8b05cc106",
+  "revision": 7,
+  "checks": [
+    "full previous values and author preserved before edits",
+    "no-op and source ordering do not duplicate history",
+    "source changes preserve acceptance and mark re-review",
+    "current source version captured only on reacceptance",
+    "import author and merge target/source retained",
+    "untrusted history metadata ignored",
+    "archive/restore and rejected CAS leave history intact",
+    "legacy author unknown and nested sources copied"
+  ],
+  "note": "Synthetic API and helper checks; no generated business app execution claimed."
+}

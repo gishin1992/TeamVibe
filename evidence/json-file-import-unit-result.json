@@ -1,0 +1,15 @@
+{
+  "at": "2026-09-21T23:33:25.437Z",
+  "passed": true,
+  "checks": [
+    "valid bytes preserved",
+    "exact size limit accepted",
+    "oversize rejected before read",
+    "syntax and I/O error messages distinct",
+    "unchanged form receives file while other fields and original snapshot preserved",
+    "deferred read cannot reopen closed form",
+    "cannot replace new form",
+    "cannot overwrite newer edits or identical retyping"
+  ],
+  "scope": "Actual helper calls with controlled asynchronous readers, not delayed browser File.text."
+}

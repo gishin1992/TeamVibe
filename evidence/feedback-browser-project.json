@@ -1,0 +1,270 @@
+{
+  "id": "3de4d5b4-fa43-4387-9ac6-6e2ff4a36eb2",
+  "createdAt": "2026-09-21T10:19:35.536Z",
+  "name": "릴리스 간 피드백 · 후속 작업 시연",
+  "description": "릴리스가 바뀐 뒤에도 피드백과 후속 스토리를 추적하는 합성 시연",
+  "goal": "피드백의 발견 맥락, 후속 작업, 해결 이유를 보존한다.",
+  "inviteCode": "e610fd49bd61",
+  "ownerId": "jimin",
+  "members": [
+    "jimin"
+  ],
+  "version": 15,
+  "conversations": [],
+  "requirements": [],
+  "prd": {
+    "body": "# 합성 안내 화면\n초기 안내와 개선 안내를 표시하고 팀의 피드백을 관리한다.",
+    "revision": 1,
+    "approvals": [
+      "jimin"
+    ],
+    "history": [
+      {
+        "revision": 0,
+        "body": "",
+        "at": "2026-09-21T10:19:35.543Z",
+        "authorId": "jimin"
+      }
+    ],
+    "sourceRevision": 0
+  },
+  "stories": [
+    {
+      "id": "00c529ed-5fc1-423a-af7e-6a88b531ef40",
+      "createdAt": "2026-09-21T10:19:35.556Z",
+      "title": "처음 발견한 화면",
+      "description": "피드백 생명주기 검증용 합성 안내 화면",
+      "acceptance": [
+        "안내 문장이 표시된다."
+      ],
+      "tests": [
+        "화면의 안내를 확인한다."
+      ],
+      "dependencies": [],
+      "requirementIds": [],
+      "ownerId": "jimin",
+      "status": "review",
+      "prdRevision": 1,
+      "revision": 1
+    },
+    {
+      "id": "fbcacf96-9473-4985-85e2-adad0f0707fa",
+      "createdAt": "2026-09-21T10:19:35.588Z",
+      "revision": 1,
+      "title": "안내 문구의 개선 범위를 확인해주세요",
+      "description": "초기 화면의 안내가 모호합니다. 다음 릴리스의 안내를 검토하고 종결 이유를 남겨 주세요.",
+      "acceptance": [
+        "피드백에 적힌 문제를 재현하고 해결할 수 있다."
+      ],
+      "tests": [
+        "기존 문제를 재현한 절차에서 수정 결과와 회귀 여부를 확인한다."
+      ],
+      "dependencies": [],
+      "requirementIds": [],
+      "ownerId": "jimin",
+      "status": "backlog",
+      "prdRevision": 1,
+      "deletedAt": "2026-09-21T10:19:35.631Z"
+    },
+    {
+      "id": "b45a4316-cfee-4a46-9778-93c1532ff8de",
+      "createdAt": "2026-09-21T10:19:35.595Z",
+      "title": "안내를 보완한 화면",
+      "description": "피드백 생명주기 검증용 합성 안내 화면",
+      "acceptance": [
+        "안내 문장이 표시된다."
+      ],
+      "tests": [
+        "화면의 안내를 확인한다."
+      ],
+      "dependencies": [],
+      "requirementIds": [],
+      "ownerId": "jimin",
+      "status": "review",
+      "prdRevision": 1,
+      "revision": 1
+    }
+  ],
+  "runs": [
+    {
+      "id": "d9fad1fe-5a6c-41c7-b6e5-42571954c6c6",
+      "createdAt": "2026-09-21T10:19:35.562Z",
+      "storyId": "00c529ed-5fc1-423a-af7e-6a88b531ef40",
+      "storyRevision": 1,
+      "baseReleaseId": "",
+      "title": "처음 발견한 화면",
+      "status": "integrated",
+      "prompt": "TeamVibe 개발 작업 — 처음 발견한 화면\n프로젝트: 릴리스 간 피드백 · 후속 작업 시연\n스토리 ID: 00c529ed-5fc1-423a-af7e-6a88b531ef40\n스토리 버전: 1\nPRD 버전: 1\n\n피드백 생명주기 검증용 합성 안내 화면\n\n완료 조건:\n- 안내 문장이 표시된다.\n\n테스트 기준:\n- 화면의 안내를 확인한다.\n\n의존 스토리: 없음\n\n공동 PRD:\n# 합성 안내 화면\n초기 안내와 개선 안내를 표시하고 팀의 피드백을 관리한다.\n\n반환 형식: JSON 객체 {\"files\":{\"index.html\":\"...\",\"styles.css\":\"...\",\"app.js\":\"...\"},\"log\":\"실제 수행한 작업과 검증 결과\",\"source\":\"ChatGPT 세션 식별용 제목 또는 로컬 로그 파일명\"}. 필요한 파일만 포함하고 다른 작업 파일과 경로를 합의하세요. 외부 URL, 라이브러리 CDN, 서버 실행, 결제, 실제 데이터는 사용하지 마세요. 브라우저에서 실행되는 HTML/CSS/JS와 합성 데이터만 만드세요. 테스트하지 않았다면 반드시 명시하세요. 팀은 결과를 수동 반입하고 충돌을 검토한 뒤 격리된 브라우저에서 테스트합니다.\n\n개발 시작 기준 릴리스: 없음 · 새 앱\n기존 코드 자료 (지시가 아닌 구현 자료입니다):\n{}\n위 기존 동작을 유지하며 이번 스토리만 변경하세요. 반환 files에는 추가·수정한 파일의 전체 내용만 넣고, 바꾸지 않은 파일은 생략하세요. 파일 생략은 삭제가 아닙니다. 파일 삭제는 지원하지 않습니다. 팀의 다른 작업과 같은 파일을 변경하면 통합 시 별도 검토가 필요합니다.",
+      "files": {
+        "index.html": "<h1>합성 안내</h1><p>초기 안내 화면</p>"
+      },
+      "log": "API 계약 검증용 합성 코드. 실제 ChatGPT 응답이나 기능 테스트 결과가 아님.",
+      "source": "tests/feedback-lifecycle.mjs · 합성",
+      "prdRevision": 1
+    },
+    {
+      "id": "d54fed4a-e00d-4257-a9e4-63d711189c2d",
+      "createdAt": "2026-09-21T10:19:35.602Z",
+      "storyId": "b45a4316-cfee-4a46-9778-93c1532ff8de",
+      "storyRevision": 1,
+      "baseReleaseId": "85bede31-a5a0-4d98-ae17-edb233ed887d",
+      "title": "안내를 보완한 화면",
+      "status": "integrated",
+      "prompt": "TeamVibe 개발 작업 — 안내를 보완한 화면\n프로젝트: 릴리스 간 피드백 · 후속 작업 시연\n스토리 ID: b45a4316-cfee-4a46-9778-93c1532ff8de\n스토리 버전: 1\nPRD 버전: 1\n\n피드백 생명주기 검증용 합성 안내 화면\n\n완료 조건:\n- 안내 문장이 표시된다.\n\n테스트 기준:\n- 화면의 안내를 확인한다.\n\n의존 스토리: 없음\n\n공동 PRD:\n# 합성 안내 화면\n초기 안내와 개선 안내를 표시하고 팀의 피드백을 관리한다.\n\n반환 형식: JSON 객체 {\"files\":{\"index.html\":\"...\",\"styles.css\":\"...\",\"app.js\":\"...\"},\"log\":\"실제 수행한 작업과 검증 결과\",\"source\":\"ChatGPT 세션 식별용 제목 또는 로컬 로그 파일명\"}. 필요한 파일만 포함하고 다른 작업 파일과 경로를 합의하세요. 외부 URL, 라이브러리 CDN, 서버 실행, 결제, 실제 데이터는 사용하지 마세요. 브라우저에서 실행되는 HTML/CSS/JS와 합성 데이터만 만드세요. 테스트하지 않았다면 반드시 명시하세요. 팀은 결과를 수동 반입하고 충돌을 검토한 뒤 격리된 브라우저에서 테스트합니다.\n\n개발 시작 기준 릴리스: 처음 발견한 화면 (85bede31-a5a0-4d98-ae17-edb233ed887d)\n기존 코드 자료 (지시가 아닌 구현 자료입니다):\n{\n  \"index.html\": \"<h1>합성 안내</h1><p>초기 안내 화면</p>\"\n}\n위 기존 동작을 유지하며 이번 스토리만 변경하세요. 반환 files에는 추가·수정한 파일의 전체 내용만 넣고, 바꾸지 않은 파일은 생략하세요. 파일 생략은 삭제가 아닙니다. 파일 삭제는 지원하지 않습니다. 팀의 다른 작업과 같은 파일을 변경하면 통합 시 별도 검토가 필요합니다.",
+      "files": {
+        "index.html": "<h1>합성 안내</h1><p>팀과 확인할 개선 안내 화면</p>"
+      },
+      "log": "API 계약 검증용 합성 코드. 실제 ChatGPT 응답이나 기능 테스트 결과가 아님.",
+      "source": "tests/feedback-lifecycle.mjs · 합성",
+      "prdRevision": 1
+    }
+  ],
+  "releases": [
+    {
+      "id": "85bede31-a5a0-4d98-ae17-edb233ed887d",
+      "createdAt": "2026-09-21T10:19:35.575Z",
+      "title": "처음 발견한 화면",
+      "baseReleaseId": "",
+      "runIds": [
+        "d9fad1fe-5a6c-41c7-b6e5-42571954c6c6"
+      ],
+      "files": {
+        "index.html": "<h1>합성 안내</h1><p>초기 안내 화면</p>"
+      },
+      "resolutions": [],
+      "status": "superseded",
+      "deletedAt": "2026-09-21T10:19:35.625Z"
+    },
+    {
+      "id": "98f78204-8c51-4f8d-ab5b-5f1f986202ad",
+      "createdAt": "2026-09-21T10:19:35.618Z",
+      "title": "안내를 보완한 화면",
+      "baseReleaseId": "85bede31-a5a0-4d98-ae17-edb233ed887d",
+      "runIds": [
+        "d9fad1fe-5a6c-41c7-b6e5-42571954c6c6",
+        "d54fed4a-e00d-4257-a9e4-63d711189c2d"
+      ],
+      "files": {
+        "index.html": "<h1>합성 안내</h1><p>팀과 확인할 개선 안내 화면</p>"
+      },
+      "resolutions": [],
+      "status": "active"
+    }
+  ],
+  "testResults": [],
+  "feedback": [
+    {
+      "id": "8489bc9a-9695-4777-ace9-4805afc4a10c",
+      "createdAt": "2026-09-21T10:19:35.580Z",
+      "releaseId": "85bede31-a5a0-4d98-ae17-edb233ed887d",
+      "title": "안내 문구의 개선 범위를 확인해주세요",
+      "body": "초기 화면의 안내가 모호합니다. 다음 릴리스의 안내를 검토하고 종결 이유를 남겨 주세요.",
+      "status": "open",
+      "authorId": "jimin",
+      "updatedBy": "jimin",
+      "updatedAt": "2026-09-21T10:19:35.580Z",
+      "storyId": "fbcacf96-9473-4985-85e2-adad0f0707fa"
+    }
+  ],
+  "events": [
+    {
+      "id": "06eef022-d608-4a03-b814-05b6372561b8",
+      "at": "2026-09-21T10:19:35.543Z",
+      "actorId": "jimin",
+      "action": "prd.save",
+      "detail": "v1"
+    },
+    {
+      "id": "d31027eb-d988-4572-a926-ef5a3a0ebcf9",
+      "at": "2026-09-21T10:19:35.549Z",
+      "actorId": "jimin",
+      "action": "prd.approve",
+      "detail": "v1 동의"
+    },
+    {
+      "id": "73e3a0dc-c962-43f2-90f0-974906a9fbb9",
+      "at": "2026-09-21T10:19:35.556Z",
+      "actorId": "jimin",
+      "action": "story.save",
+      "detail": "처음 발견한 화면"
+    },
+    {
+      "id": "cff74c9e-acaa-4210-84d4-4c2814056cbe",
+      "at": "2026-09-21T10:19:35.562Z",
+      "actorId": "jimin",
+      "action": "run.start",
+      "detail": "1개 수동 ChatGPT 작업 시작"
+    },
+    {
+      "id": "795fc3a2-73f6-4521-b205-ce2ab4707b03",
+      "at": "2026-09-21T10:19:35.568Z",
+      "actorId": "jimin",
+      "action": "run.submit",
+      "detail": "처음 발견한 화면"
+    },
+    {
+      "id": "e6c7b184-19e4-4112-9729-a37af429b3dd",
+      "at": "2026-09-21T10:19:35.575Z",
+      "actorId": "jimin",
+      "action": "release.create",
+      "detail": "처음 발견한 화면"
+    },
+    {
+      "id": "849269f8-10d0-498b-8469-7a65389d00fd",
+      "at": "2026-09-21T10:19:35.580Z",
+      "actorId": "jimin",
+      "action": "feedback.save",
+      "detail": "안내 문구의 개선 범위를 확인해주세요"
+    },
+    {
+      "id": "91adf6e0-f3b3-4401-a75b-ad5e335209bb",
+      "at": "2026-09-21T10:19:35.588Z",
+      "actorId": "jimin",
+      "action": "feedback.story",
+      "detail": "안내 문구의 개선 범위를 확인해주세요"
+    },
+    {
+      "id": "69300184-2b7a-4377-b0b2-bc48c6e40962",
+      "at": "2026-09-21T10:19:35.595Z",
+      "actorId": "jimin",
+      "action": "story.save",
+      "detail": "안내를 보완한 화면"
+    },
+    {
+      "id": "ce955208-5e30-4c21-a615-a44bf0f3558e",
+      "at": "2026-09-21T10:19:35.602Z",
+      "actorId": "jimin",
+      "action": "run.start",
+      "detail": "1개 수동 ChatGPT 작업 시작"
+    },
+    {
+      "id": "a5c9523d-42fb-4e86-8060-8ecaa0ca5df5",
+      "at": "2026-09-21T10:19:35.610Z",
+      "actorId": "jimin",
+      "action": "run.submit",
+      "detail": "안내를 보완한 화면"
+    },
+    {
+      "id": "21feab71-e30e-4078-a171-a086145f47c4",
+      "at": "2026-09-21T10:19:35.618Z",
+      "actorId": "jimin",
+      "action": "release.create",
+      "detail": "안내를 보완한 화면"
+    },
+    {
+      "id": "6f1286bf-12f2-4c01-88d5-774eb09d8b8d",
+      "at": "2026-09-21T10:19:35.625Z",
+      "actorId": "jimin",
+      "action": "item.delete",
+      "detail": "릴리스 · 처음 발견한 화면"
+    },
+    {
+      "id": "ad90feda-f0c9-4301-bd25-faa520c5c7e5",
+      "at": "2026-09-21T10:19:35.631Z",
+      "actorId": "jimin",
+      "action": "item.delete",
+      "detail": "사용자 스토리 · 안내 문구의 개선 범위를 확인해주세요"
+    }
+  ],
+  "updatedAt": "2026-09-21T10:19:35.631Z"
+}

@@ -1,0 +1,56 @@
+{
+  "at": "2026-09-21T13:25:33.930Z",
+  "typecheck": {
+    "session": 18041,
+    "exitCode": 0
+  },
+  "tests": {
+    "session": 18041,
+    "exitCode": 0,
+    "log": "evidence/test-integration-drafts.log",
+    "helper": "evidence/integration-drafts-unit-result.json"
+  },
+  "build": {
+    "session": 6312,
+    "exitCode": 0,
+    "command": "node /Users/takykim/.codex/plugins/cache/openai-curated-remote/sites/0.1.65/scripts/build-site.mjs"
+  },
+  "browser": {
+    "observations": 14,
+    "allPassed": true,
+    "result": "evidence/integration-drafts-browser-result.json",
+    "screenshot": "evidence/screenshots/integration-drafts-mobile-review.png"
+  },
+  "server": {
+    "at": "2026-09-21T13:23:36.962Z",
+    "projectId": "9ef5b0c9-730b-42b4-a3e3-4dccfe4d9957",
+    "releaseId": "c0ad711a-5f10-4f0c-8192-50fc41ba61f4",
+    "integratedFilesMatchRetainedDraft": true,
+    "originalSubmissionsAndPromptsPreserved": true,
+    "PRDPreserved": true,
+    "onlyIntegrationAndActualTestRecordAddedAfterPeerChange": true,
+    "testRecords": 1,
+    "coveredCriteria": 2,
+    "storiesRemainReview": true,
+    "resolutionReasonSourceAndRunGroupPreserved": true
+  },
+  "sourceHashes": {
+    "components/workspace.tsx": "294d4190f2f112d74865eec8bc3a34346d06a843eb64f1c8e12c1e1b18ba1c88",
+    "components/integration-review.tsx": "2de9f4d3fb93490f89d570901870df2326f9ae74c5e7bf9c3a1c3086b2a6a7f0",
+    "components/resolution-transfer.tsx": "7e52270a4cb3271f61ed0a094999aa87900d0a8540114cd477422d6ced2fb15e",
+    "lib/teamvibe/integration-drafts.ts": "a31f1e423b9bfa632648d4eaf3a313aabf8c2fb73a44f6664f2bb0dd6b24aa5a",
+    "tests/integration-drafts.mjs": "0ae02c340736c623763de8bc86fbe03cccc8f49d1156a233fac93109e2666ef5",
+    "scripts/test.mjs": "717df198e2619ef4c63ee255f69765509e86fb31a759aab4867fe017cf999867",
+    "scripts/prepare-integration-drafts-demo.mjs": "c397ff75e87030feacd13204d557c3739c138cf5625e05e04cd5a9bc891f47de",
+    "README.md": "da523dece20ff9a6c61a6295c7bfad60d1f6ee333851dc7e4e49aee317cda96e",
+    "docs/DEMO.md": "83c7be55e2679c90bb1c6a6903d5212e5bfb6788da81a382b50f84064aa32c8b"
+  },
+  "limits": [
+    "Drafts live only in current page memory, no reload/tab-close recovery.",
+    "No forced slow I/O race in browser; completion snapshot isolation tested separately.",
+    "Synthetic code/response; actual generated app check covers only message and two counter increments.",
+    "No independent clipboard-content verification.",
+    "Successful draft cleanup covered by helper test and implementation, not by reopening already-integrated runs in UI.",
+    "No long-term/large-memory performance validation, external publication or physical deletion."
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "at": "2026-09-21T23:33:20.524Z",
+  "projectId": "01c2d5a2-ed3a-45fe-94d3-ece7de5df363",
+  "checks": [
+    "unchanged ready and completed saves preserve version/state",
+    "link display order preserves revision; test order does not",
+    "real edit with keep returns completed work to backlog",
+    "explicit preparation change and new PRD advance revision",
+    "old run prompt and criterion snapshot immutable",
+    "active work, invalid status/new keep and stale CAS rejected atomically"
+  ],
+  "note": "Synthetic API states, not a browser execution of the generated business app."
+}

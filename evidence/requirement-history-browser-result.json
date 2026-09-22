@@ -1,0 +1,52 @@
+{
+  "at": "2026-09-21T12:04:24.891Z",
+  "projectId": "23f36d87-9bd1-4dc8-85ff-2bd4ab06468b",
+  "observations": [
+    {
+      "check": "first edit shows both authors and original/current decision",
+      "passed": true,
+      "text": "요구사항 수정 이력\n\n승인 후 취소 검토\n\n제목·내용·결정 근거와 검토 상태를 보존한 기록입니다. 이전 합의는 현재의 동의를 대신하지 않습니다. 버전은 보존 시작 시점부터 표시하며, 도입 전 변경과 작성자를 소급해서 만들지 않습니다.\n\n현재 기록 · v2 · 의견 충돌\n승인 후 취소 검토\n이서연 · 2026. 9. 21. 오후 9:02:24\n요구사항 편집 · 필수 · 당시 대화 출처 1개\n요구사항 내용\n승인 후에는 담당자가 확인한 뒤 취소한다.\n결정 근거\n담당자 확인 없이 취소할 수 있는지 팀 의견이 다르다.\n이전 기록 · v1 · 합의됨\n신청자의 취소\n김지민 · 2026. 9. 21. 오후 9:01:57\n직접 등록 · 필수 · 당시 대화 출처 1개\n요구사항 내용\n승인 전 신청자가 직접 취소한다.\n결정 근거\n우선 승인 전 취소만 시연 범위에 포함한다.\nClose"
+    },
+    {
+      "check": "merge preserves preceding title decision and initial version",
+      "passed": true,
+      "text": "요구사항 수정 이력\n\n취소와 사유 관리\n\n제목·내용·결정 근거와 검토 상태를 보존한 기록입니다. 이전 합의는 현재의 동의를 대신하지 않습니다. 버전은 보존 시작 시점부터 표시하며, 도입 전 변경과 작성자를 소급해서 만들지 않습니다.\n\n현재 기록 · v3 · 검토 대기\n취소와 사유 관리\n이서연 · 2026. 9. 21. 오후 9:02:45\n요구사항 통합 · 필수 · 당시 대화 출처 2개\n요구사항 내용\n승인 후에는 담당자가 취소를 확인하고 사유를 함께 남긴다.\n결정 근거\n취소와 사유 입력을 하나의 절차로 묶어 재검토한다.\n이전 기록 · v2 · 의견 충돌\n승인 후 취소 검토\n이서연 · 2026. 9. 21. 오후 9:02:24\n요구사항 편집 · 필수 · 당시 대화 출처 1개\n요구사항 내용\n승인 후에는 담당자가 확인한 뒤 취소한다.\n결정 근거\n담당자 확인 없이 취소할 수 있는지 팀 의견이 다르다.\n이전 기록 · v1 · 합의됨\n신청자의 취소\n김지민 · 2026. 9. 21. 오후 9:01:57\n직접 등록 · 필수 · 당시 대화 출처 1개\n요구사항 내용\n승인 전 신청자가 직접 취소한다.\n결정 근거\n우선 승인 전 취소만 시연 범위에 포함한다.\nClose"
+    },
+    {
+      "check": "immediate close after opening merge history",
+      "passed": false,
+      "note": "CUA click failed with No node found; fresh state still showed open dialog. Retried after confirming state."
+    },
+    {
+      "check": "close recovered and dialog removed",
+      "passed": true
+    },
+    {
+      "check": "source change creates review state and preserves previous accepted decision",
+      "passed": true,
+      "text": "요구사항 수정 이력\n\n취소와 사유 관리\n\n제목·내용·결정 근거와 검토 상태를 보존한 기록입니다. 이전 합의는 현재의 동의를 대신하지 않습니다. 버전은 보존 시작 시점부터 표시하며, 도입 전 변경과 작성자를 소급해서 만들지 않습니다.\n\n현재 기록 · v5 · 검토 대기\n취소와 사유 관리\n이서연 · 2026. 9. 21. 오후 9:03:33\n원문 변경으로 재검토 · 필수 · 당시 대화 출처 2개\n요구사항 내용\n승인 후에는 담당자가 취소를 확인하고 사유를 함께 남긴다.\n결정 근거\n담당자 확인과 취소 사유 기록을 함께 적용하기로 합의했다.\n이전 기록 · v4 · 합의됨\n취소와 사유 관리\n이서연 · 2026. 9. 21. 오후 9:03:22\n요구사항 편집 · 필수 · 당시 대화 출처 2개\n요구사항 내용\n승인 후에는 담당자가 취소를 확인하고 사유를 함께 남긴다.\n결정 근거\n담당자 확인과 취소 사유 기록을 함께 적용하기로 합의했다.\n이전 기록 · v3 · 검토 대기\n취소와 사유 관리\n이서연 · 2026. 9. 21. 오후 9:02:45\n요구사항 통합 · 필수 · 당시 대화 출처 2개\n요구사항 내용\n승인 후에는 담당자가 취소를 확인하고 사유를 함께 남긴다.\n결정 근거\n취소와 사유 입력을 하나의 절차로 묶어 재검토한다.\n이전 기록 · v2 · 의견 충돌\n승인 후 취소 검토\n이서연 · 2026. 9. 21. 오후 9:02:24\n요구사항 편집 · 필수 · 당시 대화 출처 1개\n요구사항 내용\n승인 후에는 담당자가 확인한 뒤 취소한다.\n결정 근거\n담당자 확인 없이 취소할 수 있는지 팀 의견이 다르다.\n이전 기록 · v1 · 합의됨\n신청자의 취소\n김지민 · 2026. 9. 21. 오후 9:01:57\n직접 등록 · 필수 · 당시 대화 출처 1개\n요구사항 내용\n승인 전 신청자가 직접 취소한다.\n결정 근거\n우선 승인 전 취소만 시연 범위에 포함한다.\nClose"
+    },
+    {
+      "check": "mobile history fits viewport",
+      "passed": true,
+      "geometry": {
+        "dialog": {
+          "left": 0,
+          "right": 390,
+          "width": 390
+        },
+        "document": 390,
+        "viewport": 390
+      }
+    },
+    {
+      "check": "archived requirement hidden from active list",
+      "passed": true
+    },
+    {
+      "check": "restored requirement shows same entire history",
+      "passed": true
+    }
+  ],
+  "note": "One immediate close click failed during opening; retry and final DOM confirmed closure. UI runs used synthetic local data only."
+}

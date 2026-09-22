@@ -12,9 +12,15 @@ const json = (
     status,
     headers: { "Cache-Control": "no-store", ...headers },
   });
-const db = () => getDb();
 const databaseSetupMessage =
   "데이터베이스 연결에 실패했습니다. TURSO_DATABASE_URL / TURSO_AUTH_TOKEN 환경 변수를 확인하세요.";
+const db = () => {
+  try {
+    return getDb();
+  } catch {
+    throw new DomainError(databaseSetupMessage, 503);
+  }
+};
 async function databaseReady() {
   const d = db();
   await d.ensureSchema();
